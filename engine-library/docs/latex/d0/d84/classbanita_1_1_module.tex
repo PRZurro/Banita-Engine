@@ -1,0 +1,166 @@
+\hypertarget{classbanita_1_1_module}{}\section{banita\+::Module Class Reference}
+\label{classbanita_1_1_module}\index{banita::Module@{banita::Module}}
+
+
+{\ttfamily \#include $<$Module.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Module\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Module\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Factory}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_virtual}{Virtual}} pure factory of the module class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classbanita_1_1_module_ace6d7ce15d60044f233d30a43dc961dd}{create\+\_\+component}} (X\+M\+L\+\_\+\+Node $\ast$\+\_\+component\+Node, \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity)=0
+\begin{DoxyCompactList}\small\item\em Create a component object to the entity received by processing the xml node received. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$ \mbox{\hyperlink{classbanita_1_1_module_a8e29c0b6d7e11a39dac3c0879ef513d9}{get\+\_\+task}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s task. \end{DoxyCompactList}\item 
+const String \& \mbox{\hyperlink{classbanita_1_1_module_a9a17fbfe0d05359427f2e9cbf956852c}{get\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{classbanita_1_1_module_aa2f74f6ba86841383c427199a03b0f9a}{get\+\_\+scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_module_a7d70379d14dcf081cd9370224a5d5fda}{Module}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_module}{Module}} object by defualt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_module_a5432095b67b68582d293af3a2c106a73}{Module}} (\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$\+\_\+owner, const String \&\+\_\+name=\char`\"{}undefined\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_module}{Module}} object storing the scene owner and it\textquotesingle{}s received name. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbanita_1_1_module_a54299f4573f04a87251805de43f3f3b4}{$\sim$\+Module}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_module}{Module}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{classbanita_1_1_module_a10a833e8e5e1d2fb732f1aacaea32f30}{owner}}
+\item 
+String \mbox{\hyperlink{classbanita_1_1_module_a7295535148079c57f3ab6b4e77908cc5}{name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_module_a7d70379d14dcf081cd9370224a5d5fda}\label{classbanita_1_1_module_a7d70379d14dcf081cd9370224a5d5fda}} 
+\index{banita::Module@{banita::Module}!Module@{Module}}
+\index{Module@{Module}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{Module()}{Module()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Module\+::\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_module}{Module}} object by defualt. 
+
+\mbox{\Hypertarget{classbanita_1_1_module_a5432095b67b68582d293af3a2c106a73}\label{classbanita_1_1_module_a5432095b67b68582d293af3a2c106a73}} 
+\index{banita::Module@{banita::Module}!Module@{Module}}
+\index{Module@{Module}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{Module()}{Module()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Module\+::\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$}]{\+\_\+owner,  }\item[{const String \&}]{\+\_\+name = {\ttfamily \char`\"{}undefined\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_module}{Module}} object storing the scene owner and it\textquotesingle{}s received name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+owner} & \\
+\hline
+{\em \+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_module_a54299f4573f04a87251805de43f3f3b4}\label{classbanita_1_1_module_a54299f4573f04a87251805de43f3f3b4}} 
+\index{banita::Module@{banita::Module}!````~Module@{$\sim$Module}}
+\index{````~Module@{$\sim$Module}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{$\sim$Module()}{~Module()}}
+{\footnotesize\ttfamily virtual banita\+::\+Module\+::$\sim$\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_module}{Module}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_module_ace6d7ce15d60044f233d30a43dc961dd}\label{classbanita_1_1_module_ace6d7ce15d60044f233d30a43dc961dd}} 
+\index{banita::Module@{banita::Module}!create\_component@{create\_component}}
+\index{create\_component@{create\_component}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{create\_component()}{create\_component()}}
+{\footnotesize\ttfamily virtual void banita\+::\+Module\+::create\+\_\+component (\begin{DoxyParamCaption}\item[{X\+M\+L\+\_\+\+Node $\ast$}]{\+\_\+component\+Node,  }\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a component object to the entity received by processing the xml node received. 
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_render___module_a639688937a247c3fcc21e720ec0982b7}{banita\+::\+Render\+\_\+\+Module}}, \mbox{\hyperlink{classbanita_1_1_transform___module_a2a1181f23617bb6dfe71e1f7e16945e9}{banita\+::\+Transform\+\_\+\+Module}}, and \mbox{\hyperlink{classbanita_1_1_controller___module_a5176cb9d457c9bd69d6db37b18a79f13}{banita\+::\+Controller\+\_\+\+Module}}.
+
+\mbox{\Hypertarget{classbanita_1_1_module_a9a17fbfe0d05359427f2e9cbf956852c}\label{classbanita_1_1_module_a9a17fbfe0d05359427f2e9cbf956852c}} 
+\index{banita::Module@{banita::Module}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily const String\& banita\+::\+Module\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the module\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+const String\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_module_aa2f74f6ba86841383c427199a03b0f9a}\label{classbanita_1_1_module_aa2f74f6ba86841383c427199a03b0f9a}} 
+\index{banita::Module@{banita::Module}!get\_scene@{get\_scene}}
+\index{get\_scene@{get\_scene}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{get\_scene()}{get\_scene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_scene}{Scene}}$\ast$ banita\+::\+Module\+::get\+\_\+scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the scene object. 
+
+\begin{DoxyReturn}{Returns}
+Scene$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_module_a8e29c0b6d7e11a39dac3c0879ef513d9}\label{classbanita_1_1_module_a8e29c0b6d7e11a39dac3c0879ef513d9}} 
+\index{banita::Module@{banita::Module}!get\_task@{get\_task}}
+\index{get\_task@{get\_task}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{get\_task()}{get\_task()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classbanita_1_1_task}{Task}}$\ast$ banita\+::\+Module\+::get\+\_\+task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the module\textquotesingle{}s task. 
+
+\begin{DoxyReturn}{Returns}
+Task$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_transform___module_a6cee3919fd2b22f82c41f056ac87e546}{banita\+::\+Transform\+\_\+\+Module}}, \mbox{\hyperlink{classbanita_1_1_controller___module_a8868454d67a5f949b401c9cfc0a12eba}{banita\+::\+Controller\+\_\+\+Module}}, and \mbox{\hyperlink{classbanita_1_1_render___module_a0fbb9b466fa3fd8f55a0898a4aa87bd0}{banita\+::\+Render\+\_\+\+Module}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbanita_1_1_module_a7295535148079c57f3ab6b4e77908cc5}\label{classbanita_1_1_module_a7295535148079c57f3ab6b4e77908cc5}} 
+\index{banita::Module@{banita::Module}!name@{name}}
+\index{name@{name}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String banita\+::\+Module\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_module_a10a833e8e5e1d2fb732f1aacaea32f30}\label{classbanita_1_1_module_a10a833e8e5e1d2fb732f1aacaea32f30}} 
+\index{banita::Module@{banita::Module}!owner@{owner}}
+\index{owner@{owner}!banita::Module@{banita::Module}}
+\subsubsection{\texorpdfstring{owner}{owner}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_scene}{Scene}}$\ast$ banita\+::\+Module\+::owner\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_module_8hpp}{Module.\+hpp}}\end{DoxyCompactItemize}

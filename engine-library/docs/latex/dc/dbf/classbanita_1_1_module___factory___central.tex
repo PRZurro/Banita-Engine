@@ -1,0 +1,112 @@
+\hypertarget{classbanita_1_1_module___factory___central}{}\section{banita\+::Module\+\_\+\+Factory\+\_\+\+Central Class Reference}
+\label{classbanita_1_1_module___factory___central}\index{banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}}
+
+
+{\ttfamily \#include $<$Module\+\_\+\+Factory\+\_\+\+Central.\+hpp$>$}
+
+
+
+Collaboration diagram for banita\+::Module\+\_\+\+Factory\+\_\+\+Central\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbanita_1_1_module___factory___central_aef12a82bd2c051f7be1fc0ef22747517}{register\+\_\+factory}} (const String \&\+\_\+name, \mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}} $\ast$\+\_\+factory)
+\begin{DoxyCompactList}\small\item\em register a new factory by name \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}} $\ast$ \mbox{\hyperlink{classbanita_1_1_module___factory___central_a1ac99380daaa5ab3a5dffb29181e6858}{get\+\_\+module\+\_\+factory}} (String \&\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get the module factory object by name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}} $\ast$ \mbox{\hyperlink{classbanita_1_1_module___factory___central_a3b594f3e8a6ea6b2f4bf7c05c239c7c7}{get\+\_\+module\+\_\+factory}} (Int32 \+\_\+hashed\+Name)
+\begin{DoxyCompactList}\small\item\em Get the module factory object by hashed name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classbanita_1_1_module___factory___central}{Module\+\_\+\+Factory\+\_\+\+Central}} $\ast$ \mbox{\hyperlink{classbanita_1_1_module___factory___central_aba0eb5d045a61c1e85684c3e00ce62f5}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em Singleton\textquotesingle{}s implementation own member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classbanita_1_1_module___factory___central}{Module\+\_\+\+Factory\+\_\+\+Central}} $\ast$ \mbox{\hyperlink{classbanita_1_1_module___factory___central_ad7153b8c574028a3165263b7159ac450}{instance}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_module___factory___central_aba0eb5d045a61c1e85684c3e00ce62f5}\label{classbanita_1_1_module___factory___central_aba0eb5d045a61c1e85684c3e00ce62f5}} 
+\index{banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}}
+\subsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classbanita_1_1_module___factory___central}{Module\+\_\+\+Factory\+\_\+\+Central}}$\ast$ banita\+::\+Module\+\_\+\+Factory\+\_\+\+Central\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Singleton\textquotesingle{}s implementation own member. 
+
+\begin{DoxyReturn}{Returns}
+Module\+\_\+\+Factory\+\_\+\+Central$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_module___factory___central_a1ac99380daaa5ab3a5dffb29181e6858}\label{classbanita_1_1_module___factory___central_a1ac99380daaa5ab3a5dffb29181e6858}} 
+\index{banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}!get\_module\_factory@{get\_module\_factory}}
+\index{get\_module\_factory@{get\_module\_factory}!banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}}
+\subsubsection{\texorpdfstring{get\_module\_factory()}{get\_module\_factory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}}$\ast$ banita\+::\+Module\+\_\+\+Factory\+\_\+\+Central\+::get\+\_\+module\+\_\+factory (\begin{DoxyParamCaption}\item[{String \&}]{\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the module factory object by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}}$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_module___factory___central_a3b594f3e8a6ea6b2f4bf7c05c239c7c7}\label{classbanita_1_1_module___factory___central_a3b594f3e8a6ea6b2f4bf7c05c239c7c7}} 
+\index{banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}!get\_module\_factory@{get\_module\_factory}}
+\index{get\_module\_factory@{get\_module\_factory}!banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}}
+\subsubsection{\texorpdfstring{get\_module\_factory()}{get\_module\_factory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}}$\ast$ banita\+::\+Module\+\_\+\+Factory\+\_\+\+Central\+::get\+\_\+module\+\_\+factory (\begin{DoxyParamCaption}\item[{Int32}]{\+\_\+hashed\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the module factory object by hashed name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+hashed\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}}$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_module___factory___central_aef12a82bd2c051f7be1fc0ef22747517}\label{classbanita_1_1_module___factory___central_aef12a82bd2c051f7be1fc0ef22747517}} 
+\index{banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}!register\_factory@{register\_factory}}
+\index{register\_factory@{register\_factory}!banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}}
+\subsubsection{\texorpdfstring{register\_factory()}{register\_factory()}}
+{\footnotesize\ttfamily void banita\+::\+Module\+\_\+\+Factory\+\_\+\+Central\+::register\+\_\+factory (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{\mbox{\hyperlink{classbanita_1_1_module_1_1_factory}{Module\+::\+Factory}} $\ast$}]{\+\_\+factory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+register a new factory by name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em \+\_\+factory} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbanita_1_1_module___factory___central_ad7153b8c574028a3165263b7159ac450}\label{classbanita_1_1_module___factory___central_ad7153b8c574028a3165263b7159ac450}} 
+\index{banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}!instance@{instance}}
+\index{instance@{instance}!banita::Module\_Factory\_Central@{banita::Module\_Factory\_Central}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_module___factory___central}{Module\+\_\+\+Factory\+\_\+\+Central}}$\ast$ banita\+::\+Module\+\_\+\+Factory\+\_\+\+Central\+::instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_module___factory___central_8hpp}{Module\+\_\+\+Factory\+\_\+\+Central.\+hpp}}\end{DoxyCompactItemize}

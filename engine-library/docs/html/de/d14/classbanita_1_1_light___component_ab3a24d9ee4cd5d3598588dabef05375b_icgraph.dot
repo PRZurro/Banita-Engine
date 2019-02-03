@@ -1,0 +1,14 @@
+digraph "banita::Light_Component::Light_Component"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="banita::Light_Component\l::Light_Component",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Construct a new Light_Component object and store the entity received."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="banita::Light_Component\l::generator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d14/classbanita_1_1_light___component.html#acc13089b837daf1b1751c3dca81fa798",tooltip="light component generator"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="banita::Component_Generator\l::Component_Generator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/dc5/classbanita_1_1_component___generator.html#a2eeb40bd9675d0c1828de601324c503d",tooltip="Construct a new Component_Generator object. Currently doing a unintended step in order to register ne..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="banita::Component_Generator\l::get_instance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/dc5/classbanita_1_1_component___generator.html#a58161267b33b3a6e67edfed079196ebd",tooltip="Get the instance object."];
+}

@@ -1,0 +1,1136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d8/de9/classbanita_1_1_transform___component" kind="class" language="C++" prot="public">
+    <compoundname>banita::Transform_Component</compoundname>
+    <basecompoundref refid="d7/dda/classbanita_1_1_component" prot="public" virt="non-virtual">banita::Component</basecompoundref>
+    <includes refid="d1/d74/_transform___component_8hpp" local="no">Transform_Component.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="d8/de9/classbanita_1_1_transform___component_1a82a2d0648699693dbcfcb8d8875bef0d" prot="private" static="no">
+        <type>Matrix44</type>
+        <definition>using banita::Transform_Component::Transformation_Matrix =  Matrix44</definition>
+        <argsstring></argsstring>
+        <name>Transformation_Matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="27" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/de9/classbanita_1_1_transform___component_1ab2a86a3446fe52274b6cb5de8e35319a" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref> *</type>
+        <definition>Transform_Component* banita::Transform_Component::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="31" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de9/classbanita_1_1_transform___component_1a0edafa7605d43ecd5cf62288775a4e0e" prot="private" static="no" mutable="no">
+        <type>Transformation_Matrix</type>
+        <definition>Transformation_Matrix banita::Transform_Component::local_scale</definition>
+        <argsstring></argsstring>
+        <name>local_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="33" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de9/classbanita_1_1_transform___component_1a515656a72fcc17847a2c9c266e017c3a" prot="private" static="no" mutable="no">
+        <type>Transformation_Matrix</type>
+        <definition>Transformation_Matrix banita::Transform_Component::local_anchor</definition>
+        <argsstring></argsstring>
+        <name>local_anchor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="34" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de9/classbanita_1_1_transform___component_1a7bffd803c90533ec82dde2924c7caea1" prot="private" static="no" mutable="no">
+        <type>Transformation_Matrix</type>
+        <definition>Transformation_Matrix banita::Transform_Component::transformation</definition>
+        <argsstring></argsstring>
+        <name>transformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="35" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de9/classbanita_1_1_transform___component_1a645a4157f00ad6540e7367e8df74c5da" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Vector3f &gt;</type>
+        <definition>std::vector&lt;Vector3f&gt; banita::Transform_Component::movementList</definition>
+        <argsstring></argsstring>
+        <name>movementList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="37" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de9/classbanita_1_1_transform___component_1a7a3f14ec3052489c6cbec42d735f2b43" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool banita::Transform_Component::visible</definition>
+        <argsstring></argsstring>
+        <name>visible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="39" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1af0df15865b1b3576bae0fa9cbdce2669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Transform_Component::Transform_Component</definition>
+        <argsstring>(Entity *_owner)</argsstring>
+        <name>Transform_Component</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_owner</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref> object and store the received entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="48" column="1"/>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a52942de64acefae0655fb17a71add8f3" compoundref="d1/d74/_transform___component_8hpp" startline="388" endline="391">generator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a87e6794c494fefc601ed15c84eaff97c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Transform_Component::~Transform_Component</definition>
+        <argsstring>() override</argsstring>
+        <name>~Transform_Component</name>
+        <briefdescription>
+<para>Destroy the <ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="55" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1af21e03166cba2a8489b2a5e02867ce6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Transform_Component::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a2f700c071185f7033caa69576dafa9e7">initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a0ca137a40cc84ee0825f37bab82d5d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Transform_Component::update</definition>
+        <argsstring>(float _deltaTime) override</argsstring>
+        <name>update</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1ae8f9d11dc8e3c920d6d40146668c429b">update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>_deltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a0f3ace424235b3992e01dbddfe85f088" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Transform_Component::parse_property</definition>
+        <argsstring>(const String &amp;_name, const String &amp;value) override</argsstring>
+        <name>parse_property</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a619154ef2bed8e4493413bdef6117716">parse_property</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a5299c227977c6efd87cc83af7c357a71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Transform_Component::is_near_to_coordinate</definition>
+        <argsstring>(Vector3f _coordinate, float _tridimensionalDistance, bool _despiseX=false, bool _despiseY=false, bool _despiseZ=false)</argsstring>
+        <name>is_near_to_coordinate</name>
+        <param>
+          <type>Vector3f</type>
+          <declname>_coordinate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_tridimensionalDistance</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_despiseX</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_despiseY</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_despiseZ</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>returns if a coordinate is nearest to a coordinate than the limit tridimensional distance. It can despise the desired axis </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_coordinate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_tridimensionalDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_despiseX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_despiseY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_despiseZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="101" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="101" bodyend="117"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1a080736ede5f09898a8b28c2b22e60c61" compoundref="d1/d74/_transform___component_8hpp" startline="142" endline="145">get_position</references>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a376479ef59304837ff6cd5fb50f55058" compoundref="d1/d74/_transform___component_8hpp" startline="130" endline="133">is_near_to_transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a376479ef59304837ff6cd5fb50f55058" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Transform_Component::is_near_to_transform</definition>
+        <argsstring>(Transform_Component &amp;_other, float _tridimensionalDistance, bool _despiseX=false, bool _despiseY=false, bool _despiseZ=false)</argsstring>
+        <name>is_near_to_transform</name>
+        <param>
+          <type><ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref> &amp;</type>
+          <declname>_other</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_tridimensionalDistance</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_despiseX</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_despiseY</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_despiseZ</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>return if the received transform is nearest to this than the limit tridimensional distance. It can despise the desired axis </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_tridimensionalDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_despiseX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_despiseY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_despiseZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="130" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="130" bodyend="133"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1a5299c227977c6efd87cc83af7c357a71" compoundref="d1/d74/_transform___component_8hpp" startline="101" endline="117">is_near_to_coordinate</references>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1a080736ede5f09898a8b28c2b22e60c61" compoundref="d1/d74/_transform___component_8hpp" startline="142" endline="145">get_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a080736ede5f09898a8b28c2b22e60c61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3f</type>
+        <definition>Vector3f banita::Transform_Component::get_position</definition>
+        <argsstring>()</argsstring>
+        <name>get_position</name>
+        <briefdescription>
+<para>Get the position vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector3f </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="142" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="142" bodyend="145"/>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a5299c227977c6efd87cc83af7c357a71" compoundref="d1/d74/_transform___component_8hpp" startline="101" endline="117">is_near_to_coordinate</referencedby>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a376479ef59304837ff6cd5fb50f55058" compoundref="d1/d74/_transform___component_8hpp" startline="130" endline="133">is_near_to_transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a914ced98c4598751de9448cf1491d990" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>glt::Quaternion</type>
+        <definition>glt::Quaternion banita::Transform_Component::get_rotation</definition>
+        <argsstring>()</argsstring>
+        <name>get_rotation</name>
+        <briefdescription>
+<para>Get the rotation vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>glt::Quaternion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="152" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a9b955e7fd44d256dd862f61502ab9ec1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix44</type>
+        <definition>Matrix44 banita::Transform_Component::get_transformation</definition>
+        <argsstring>()</argsstring>
+        <name>get_transformation</name>
+        <briefdescription>
+<para>Get the transformation matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Matrix44 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="167" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a8ffcb477f5e312f75cfb5c9eb9c4ebd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix44</type>
+        <definition>Matrix44 banita::Transform_Component::get_local_transformation</definition>
+        <argsstring>()</argsstring>
+        <name>get_local_transformation</name>
+        <briefdescription>
+<para>Get the local anchor matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Matrix44 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="177" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a8503ea9581479c4d3a7b5e7992d669f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref> *</type>
+        <definition>Transform_Component* banita::Transform_Component::get_parent</definition>
+        <argsstring>()</argsstring>
+        <name>get_parent</name>
+        <briefdescription>
+<para>Get the parent transform component. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Transform_Component* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="187" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a670a3c4266dc6e2ae1e89940684acc5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::move</definition>
+        <argsstring>(Vector3f &amp;_translation)</argsstring>
+        <name>move</name>
+        <param>
+          <type>Vector3f &amp;</type>
+          <declname>_translation</declname>
+        </param>
+        <briefdescription>
+<para>move this transform </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="199" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="199" bodyend="202"/>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a5e0fa58446fb78788c12b64e37b1e32a" compoundref="d1/d74/_transform___component_8hpp" startline="209" endline="220">move</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a5e0fa58446fb78788c12b64e37b1e32a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::move</definition>
+        <argsstring>(std::vector&lt; Vector3f &gt; &amp;_movementList)</argsstring>
+        <name>move</name>
+        <param>
+          <type>std::vector&lt; Vector3f &gt; &amp;</type>
+          <declname>_movementList</declname>
+        </param>
+        <briefdescription>
+<para>move this transform by a movement list </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_movementList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="209" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="209" bodyend="220"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1a670a3c4266dc6e2ae1e89940684acc5b" compoundref="d1/d74/_transform___component_8hpp" startline="199" endline="202">move</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a71e4e16cdbd98c641389455b455ceb01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::add_movement</definition>
+        <argsstring>(Vector3f _translation)</argsstring>
+        <name>add_movement</name>
+        <param>
+          <type>Vector3f</type>
+          <declname>_translation</declname>
+        </param>
+        <briefdescription>
+<para>add a movement to the accumulated move list </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="227" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1abbcce56f6a091161a8ab5e83499282f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::rotate</definition>
+        <argsstring>(Vector3f &amp;_rotation)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>Vector3f &amp;</type>
+          <declname>_rotation</declname>
+        </param>
+        <briefdescription>
+<para>rotate this transform by the received vector </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="237" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="237" bodyend="240"/>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a05644620f98e07a01f0222182ec5c2f3" compoundref="d1/d74/_transform___component_8hpp" startline="261" endline="264">rotateX</referencedby>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a627cc373a6e3d2f9067d9380c272c9cc" compoundref="d1/d74/_transform___component_8hpp" startline="271" endline="274">rotateY</referencedby>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a36eeb4e9eb4d7dfd3fc2e07f650ea70c" compoundref="d1/d74/_transform___component_8hpp" startline="281" endline="284">rotateZ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a4def5a4bcc460815fbfede39643bd08e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::rotate</definition>
+        <argsstring>(float _x, float _y, float _z)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>float</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_z</declname>
+        </param>
+        <briefdescription>
+<para>rotate this transform by the received values </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="249" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="249" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a05644620f98e07a01f0222182ec5c2f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::rotateX</definition>
+        <argsstring>(float _rotX)</argsstring>
+        <name>rotateX</name>
+        <param>
+          <type>float</type>
+          <declname>_rotX</declname>
+        </param>
+        <briefdescription>
+<para>rotate this transform rotation x component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rotX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="261" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="261" bodyend="264"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1abbcce56f6a091161a8ab5e83499282f0" compoundref="d1/d74/_transform___component_8hpp" startline="237" endline="240">rotate</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a627cc373a6e3d2f9067d9380c272c9cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::rotateY</definition>
+        <argsstring>(float _rotY)</argsstring>
+        <name>rotateY</name>
+        <param>
+          <type>float</type>
+          <declname>_rotY</declname>
+        </param>
+        <briefdescription>
+<para>rotate this transform rotation y component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rotY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="271" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="271" bodyend="274"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1abbcce56f6a091161a8ab5e83499282f0" compoundref="d1/d74/_transform___component_8hpp" startline="237" endline="240">rotate</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a36eeb4e9eb4d7dfd3fc2e07f650ea70c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::rotateZ</definition>
+        <argsstring>(float _rotZ)</argsstring>
+        <name>rotateZ</name>
+        <param>
+          <type>float</type>
+          <declname>_rotZ</declname>
+        </param>
+        <briefdescription>
+<para>rotate this transform rotation z component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_rotZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="281" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="281" bodyend="284"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1abbcce56f6a091161a8ab5e83499282f0" compoundref="d1/d74/_transform___component_8hpp" startline="237" endline="240">rotate</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a83cc2d972d98fdcff1be55f9f5448df3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::scale</definition>
+        <argsstring>(float _value)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>scale this transform by the input value </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="291" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="291" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1ae7a4af52065190f0a49a78b8f33da4b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::set_position</definition>
+        <argsstring>(Vector3f &amp;_position)</argsstring>
+        <name>set_position</name>
+        <param>
+          <type>Vector3f &amp;</type>
+          <declname>_position</declname>
+        </param>
+        <briefdescription>
+<para>Set the transform position to the received vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="301" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="301" bodyend="307"/>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a8f3783520cfdd86e531cecb1170af193" compoundref="d1/d74/_transform___component_8hpp" startline="316" endline="320">set_position</referencedby>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a131ef7c654696489df92c39b1135dd90" compoundref="d1/d74/_transform___component_8hpp" startline="327" endline="330">set_positionX</referencedby>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1ae151b9b33e2afaaa9b8ecfedfa2d9a48" compoundref="d1/d74/_transform___component_8hpp" startline="337" endline="340">set_positionY</referencedby>
+        <referencedby refid="d8/de9/classbanita_1_1_transform___component_1a530739c068f5fcf6ed58118761b93e03" compoundref="d1/d74/_transform___component_8hpp" startline="347" endline="350">set_positionZ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a8f3783520cfdd86e531cecb1170af193" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::set_position</definition>
+        <argsstring>(float _pX, float _pY, float _pZ)</argsstring>
+        <name>set_position</name>
+        <param>
+          <type>float</type>
+          <declname>_pX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_pY</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_pZ</declname>
+        </param>
+        <briefdescription>
+<para>Set the position to the received values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_pY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_pZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="316" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="316" bodyend="320"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1ae7a4af52065190f0a49a78b8f33da4b1" compoundref="d1/d74/_transform___component_8hpp" startline="301" endline="307">set_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a131ef7c654696489df92c39b1135dd90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::set_positionX</definition>
+        <argsstring>(float _pX)</argsstring>
+        <name>set_positionX</name>
+        <param>
+          <type>float</type>
+          <declname>_pX</declname>
+        </param>
+        <briefdescription>
+<para>Set the position x to the received value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="327" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="327" bodyend="330"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1ae7a4af52065190f0a49a78b8f33da4b1" compoundref="d1/d74/_transform___component_8hpp" startline="301" endline="307">set_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1ae151b9b33e2afaaa9b8ecfedfa2d9a48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::set_positionY</definition>
+        <argsstring>(float _pY)</argsstring>
+        <name>set_positionY</name>
+        <param>
+          <type>float</type>
+          <declname>_pY</declname>
+        </param>
+        <briefdescription>
+<para>Set the position y to the received value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="337" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="337" bodyend="340"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1ae7a4af52065190f0a49a78b8f33da4b1" compoundref="d1/d74/_transform___component_8hpp" startline="301" endline="307">set_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a530739c068f5fcf6ed58118761b93e03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::set_positionZ</definition>
+        <argsstring>(float _pZ)</argsstring>
+        <name>set_positionZ</name>
+        <param>
+          <type>float</type>
+          <declname>_pZ</declname>
+        </param>
+        <briefdescription>
+<para>Set the position z to the received value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="347" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="347" bodyend="350"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1ae7a4af52065190f0a49a78b8f33da4b1" compoundref="d1/d74/_transform___component_8hpp" startline="301" endline="307">set_position</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1afef6c54fd67345ad97b1deb948a4d9e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::set_visible</definition>
+        <argsstring>(bool _visibility)</argsstring>
+        <name>set_visible</name>
+        <param>
+          <type>bool</type>
+          <declname>_visibility</declname>
+        </param>
+        <briefdescription>
+<para>Set if is visible this transform (and children) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_visibility</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="357" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="357" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1acd8c38c25e9ca8aa7f527605907bca7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Transform_Component::get_visibility</definition>
+        <argsstring>()</argsstring>
+        <name>get_visibility</name>
+        <briefdescription>
+<para>Get the visibility object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="368" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a53215c14bf428c45f39df2861bfeda6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Component::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>reset the transformation of this component </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="377" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="377" bodyend="380"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d8/de9/classbanita_1_1_transform___component_1a52942de64acefae0655fb17a71add8f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Component_sptr</type>
+        <definition>static Component_sptr banita::Transform_Component::generator</definition>
+        <argsstring>(Entity *_entity)</argsstring>
+        <name>generator</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>generator of this component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Component_sptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Component.hpp" line="388" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="388" bodyend="391"/>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1af0df15865b1b3576bae0fa9cbdce2669">Transform_Component</references>
+        <referencedby refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" compoundref="d2/de4/_component___generator_8hpp" startline="46" endline="53">banita::Component_Generator::Component_Generator</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="131">
+        <label>banita::Transform_Component</label>
+        <link refid="d8/de9/classbanita_1_1_transform___component"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="135">
+        <label>banita::Entity</label>
+        <link refid="db/d9f/classbanita_1_1_entity"/>
+      </node>
+      <node id="133">
+        <label>banita::Transform_Component</label>
+        <link refid="d8/de9/classbanita_1_1_transform___component"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Transform_Component.hpp" line="26" column="1" bodyfile="headers/Transform_Component.hpp" bodystart="25" bodyend="393"/>
+    <listofallmembers>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a71e4e16cdbd98c641389455b455ceb01" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>add_movement</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ad73a6ae8fbf56b7d54ef48c5e9ec164d" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>Component</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a3a267ceeceda4ed4f9c7dba7d11f4886" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>Component</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a52942de64acefae0655fb17a71add8f3" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>generator</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_entity</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a8ffcb477f5e312f75cfb5c9eb9c4ebd1" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_local_transformation</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_name</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a8503ea9581479c4d3a7b5e7992d669f2" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_parent</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a080736ede5f09898a8b28c2b22e60c61" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_position</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a914ced98c4598751de9448cf1491d990" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_rotation</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a9b955e7fd44d256dd862f61502ab9ec1" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_transformation</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_type</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1acd8c38c25e9ca8aa7f527605907bca7b" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>get_visibility</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1af21e03166cba2a8489b2a5e02867ce6a" prot="public" virt="virtual"><scope>banita::Transform_Component</scope><name>initialize</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a5299c227977c6efd87cc83af7c357a71" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>is_near_to_coordinate</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a376479ef59304837ff6cd5fb50f55058" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>is_near_to_transform</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a515656a72fcc17847a2c9c266e017c3a" prot="private" virt="non-virtual"><scope>banita::Transform_Component</scope><name>local_anchor</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a0edafa7605d43ecd5cf62288775a4e0e" prot="private" virt="non-virtual"><scope>banita::Transform_Component</scope><name>local_scale</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a670a3c4266dc6e2ae1e89940684acc5b" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>move</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a5e0fa58446fb78788c12b64e37b1e32a" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>move</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a645a4157f00ad6540e7367e8df74c5da" prot="private" virt="non-virtual"><scope>banita::Transform_Component</scope><name>movementList</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" prot="protected" virt="non-virtual"><scope>banita::Transform_Component</scope><name>name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" prot="protected" virt="non-virtual"><scope>banita::Transform_Component</scope><name>owner</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1ab2a86a3446fe52274b6cb5de8e35319a" prot="private" virt="non-virtual"><scope>banita::Transform_Component</scope><name>parent</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a0f3ace424235b3992e01dbddfe85f088" prot="public" virt="virtual"><scope>banita::Transform_Component</scope><name>parse_property</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a53215c14bf428c45f39df2861bfeda6a" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>reset</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1abbcce56f6a091161a8ab5e83499282f0" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>rotate</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a4def5a4bcc460815fbfede39643bd08e" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>rotate</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a05644620f98e07a01f0222182ec5c2f3" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>rotateX</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a627cc373a6e3d2f9067d9380c272c9cc" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>rotateY</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a36eeb4e9eb4d7dfd3fc2e07f650ea70c" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>rotateZ</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a83cc2d972d98fdcff1be55f9f5448df3" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>scale</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>set_name</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1ae7a4af52065190f0a49a78b8f33da4b1" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>set_position</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a8f3783520cfdd86e531cecb1170af193" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>set_position</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a131ef7c654696489df92c39b1135dd90" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>set_positionX</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1ae151b9b33e2afaaa9b8ecfedfa2d9a48" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>set_positionY</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a530739c068f5fcf6ed58118761b93e03" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>set_positionZ</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1afef6c54fd67345ad97b1deb948a4d9e1" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>set_visible</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1af0df15865b1b3576bae0fa9cbdce2669" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>Transform_Component</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a7bffd803c90533ec82dde2924c7caea1" prot="private" virt="non-virtual"><scope>banita::Transform_Component</scope><name>transformation</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a82a2d0648699693dbcfcb8d8875bef0d" prot="private" virt="non-virtual"><scope>banita::Transform_Component</scope><name>Transformation_Matrix</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" prot="protected" virt="non-virtual"><scope>banita::Transform_Component</scope><name>type</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a0ca137a40cc84ee0825f37bab82d5d5d" prot="public" virt="virtual"><scope>banita::Transform_Component</scope><name>update</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a7a3f14ec3052489c6cbec42d735f2b43" prot="private" virt="non-virtual"><scope>banita::Transform_Component</scope><name>visible</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a0dc114b2bed0ec1128b20bbf2b5e2eca" prot="public" virt="virtual"><scope>banita::Transform_Component</scope><name>~Component</name></member>
+      <member refid="d8/de9/classbanita_1_1_transform___component_1a87e6794c494fefc601ed15c84eaff97c" prot="public" virt="non-virtual"><scope>banita::Transform_Component</scope><name>~Transform_Component</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

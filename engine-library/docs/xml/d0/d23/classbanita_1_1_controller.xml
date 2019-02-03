@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d0/d23/classbanita_1_1_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>banita::Controller</compoundname>
+    <basecompoundref refid="d7/dda/classbanita_1_1_component" prot="public" virt="non-virtual">banita::Component</basecompoundref>
+    <basecompoundref refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" prot="public" virt="non-virtual">banita::Message_Handler::Listener</basecompoundref>
+    <derivedcompoundref refid="dc/d66/classbanita_1_1_player___controller" prot="public" virt="non-virtual">banita::Player_Controller</derivedcompoundref>
+    <includes refid="d6/d14/_controller_8hpp" local="no">Controller.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d0/d23/classbanita_1_1_controller_1aa92dd1db0f265962029842ee6495c2cc" prot="protected" static="no" mutable="no">
+        <type><ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref> *</type>
+        <definition>Message_Handler* banita::Controller::messageHandler</definition>
+        <argsstring></argsstring>
+        <name>messageHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="24" column="1" bodyfile="headers/Controller.hpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="d0/d23/classbanita_1_1_controller_1a3686102ef847f2f08a1107cfba48f00c" compoundref="d6/d14/_controller_8hpp" startline="114" endline="117">set_message_handler</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d23/classbanita_1_1_controller_1ab4ca85fe5f2645708b89934f394ad449" prot="protected" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &gt;</type>
+        <definition>std::list&lt;Message&gt; banita::Controller::messages</definition>
+        <argsstring></argsstring>
+        <name>messages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="25" column="1" bodyfile="headers/Controller.hpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="d0/d23/classbanita_1_1_controller_1a355eaba3604cfca01437009c23c1cb41" compoundref="d6/d14/_controller_8hpp" startline="49" endline="52">~Controller</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a4455be6d7e7fc0dcb4d5919b45432020" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Controller::Controller</definition>
+        <argsstring>()</argsstring>
+        <name>Controller</name>
+        <briefdescription>
+<para>Construct a new <ref refid="d0/d23/classbanita_1_1_controller" kindref="compound">Controller</ref> object by default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a9c45447d14400317d8419bbca3bad54a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Controller::Controller</definition>
+        <argsstring>(Entity *_owner, Message_Handler *_mh=nullptr, String _type=&quot;undefined&quot;, String _name=&quot;undefined&quot;)</argsstring>
+        <name>Controller</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_owner</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref> *</type>
+          <declname>_mh</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>_type</declname>
+          <defval>&quot;undefined&quot;</defval>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>_name</declname>
+          <defval>&quot;undefined&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d0/d23/classbanita_1_1_controller" kindref="compound">Controller</ref> object by the received attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_mh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a355eaba3604cfca01437009c23c1cb41" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual banita::Controller::~Controller</definition>
+        <argsstring>()</argsstring>
+        <name>~Controller</name>
+        <briefdescription>
+<para>Destroy the <ref refid="d0/d23/classbanita_1_1_controller" kindref="compound">Controller</ref> object and the messages that stores. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="49" column="1" bodyfile="headers/Controller.hpp" bodystart="49" bodyend="52"/>
+        <references refid="d0/d23/classbanita_1_1_controller_1ab4ca85fe5f2645708b89934f394ad449" compoundref="d6/d14/_controller_8hpp" startline="25">messages</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a3a3bc92a032f22f0cd20cbff0f89d175" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool banita::Controller::initialize</definition>
+        <argsstring>() override=0</argsstring>
+        <name>initialize</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a2f700c071185f7033caa69576dafa9e7">initialize</reimplements>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1a42c2960117c977daf72083452fb69e86">initialize</reimplementedby>
+        <briefdescription>
+<para>component&apos;s legacy method. Initialize the component properties and variables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a44363ca0ed1ba66a9f6c079a6b158d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool banita::Controller::update</definition>
+        <argsstring>(float _deltaTime) override=0</argsstring>
+        <name>update</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1ae8f9d11dc8e3c920d6d40146668c429b">update</reimplements>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1ab7c47cba21892cac0e9f8a366cf86ca8">update</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>_deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>component&apos;s legacy method. Update the component properties and variables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a74933400a4ed56e68ce5cb11ec395a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool banita::Controller::parse_property</definition>
+        <argsstring>(const String &amp;_name, const String &amp;_value) override=0</argsstring>
+        <name>parse_property</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a619154ef2bed8e4493413bdef6117716">parse_property</reimplements>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1ab25a1e791ce020ff226b6324cc2c5c67">parse_property</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>component&apos;s legacy method. Parse an xml node property: E.g.: name: position and value: 0,0,0 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a2feb550d530941ed11312fbbb7730c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void banita::Controller::handle</definition>
+        <argsstring>(const Message &amp;_message) override=0</argsstring>
+        <name>handle</name>
+        <reimplements refid="db/dbe/structbanita_1_1_message___handler_1_1_listener_1a2dfde040fbc7c8d2f17c6ba52722b749">handle</reimplements>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1a6c6aa3a387d36db7306ca557fbb100e6">handle</reimplementedby>
+        <param>
+          <type>const <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+<para>Listener&apos;s legacy method. When triggered, the message is proccesed, producing an action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a988fb70a657c61afb82f4f4cf25e7c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void banita::Controller::on_stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>on_stop</name>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1aedd233c9dcd10f9c8998f48a840f2e57">on_stop</reimplementedby>
+        <briefdescription>
+<para>When this controller is going to be deleted, do something. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a553973436941dd97e75511583a4fff26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Controller::subscribe_messages</definition>
+        <argsstring>()</argsstring>
+        <name>subscribe_messages</name>
+        <briefdescription>
+<para>subscribe the messages of this controller to the <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> Handler </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1ade6c8afa9158a302c5c64231deabb7ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Controller::add_message</definition>
+        <argsstring>(Message &amp;_message)</argsstring>
+        <name>add_message</name>
+        <param>
+          <type><ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+<para>add a message to the message list of this controller </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d23/classbanita_1_1_controller_1a3686102ef847f2f08a1107cfba48f00c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Controller::set_message_handler</definition>
+        <argsstring>(Message_Handler *_mh)</argsstring>
+        <name>set_message_handler</name>
+        <param>
+          <type><ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref> *</type>
+          <declname>_mh</declname>
+        </param>
+        <briefdescription>
+<para>set the message handler to this controller </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_mh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Controller.hpp" line="114" column="1" bodyfile="headers/Controller.hpp" bodystart="114" bodyend="117"/>
+        <references refid="d0/d23/classbanita_1_1_controller_1aa92dd1db0f265962029842ee6495c2cc" compoundref="d6/d14/_controller_8hpp" startline="24">messageHandler</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="22">
+        <label>banita::Controller</label>
+        <link refid="d0/d23/classbanita_1_1_controller"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>banita::Message_Handler::Listener</label>
+        <link refid="db/dbe/structbanita_1_1_message___handler_1_1_listener"/>
+      </node>
+      <node id="25">
+        <label>banita::Player_Controller</label>
+        <link refid="dc/d66/classbanita_1_1_player___controller"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>banita::Controller</label>
+        <link refid="d0/d23/classbanita_1_1_controller"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>messageHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>banita::Entity</label>
+        <link refid="db/d9f/classbanita_1_1_entity"/>
+      </node>
+      <node id="30">
+        <label>banita::Message_Handler</label>
+        <link refid="dc/ddc/classbanita_1_1_message___handler"/>
+      </node>
+      <node id="29">
+        <label>banita::Message_Handler::Listener</label>
+        <link refid="db/dbe/structbanita_1_1_message___handler_1_1_listener"/>
+      </node>
+      <node id="27">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Controller.hpp" line="20" column="1" bodyfile="headers/Controller.hpp" bodystart="19" bodyend="118"/>
+    <listofallmembers>
+      <member refid="d0/d23/classbanita_1_1_controller_1ade6c8afa9158a302c5c64231deabb7ea" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>add_message</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ad73a6ae8fbf56b7d54ef48c5e9ec164d" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>Component</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a3a267ceeceda4ed4f9c7dba7d11f4886" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>Component</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a4455be6d7e7fc0dcb4d5919b45432020" prot="protected" virt="non-virtual"><scope>banita::Controller</scope><name>Controller</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a9c45447d14400317d8419bbca3bad54a" prot="protected" virt="non-virtual"><scope>banita::Controller</scope><name>Controller</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>get_entity</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>get_name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>get_type</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a2feb550d530941ed11312fbbb7730c80" prot="public" virt="pure-virtual"><scope>banita::Controller</scope><name>handle</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a3a3bc92a032f22f0cd20cbff0f89d175" prot="public" virt="pure-virtual"><scope>banita::Controller</scope><name>initialize</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1aa92dd1db0f265962029842ee6495c2cc" prot="protected" virt="non-virtual"><scope>banita::Controller</scope><name>messageHandler</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1ab4ca85fe5f2645708b89934f394ad449" prot="protected" virt="non-virtual"><scope>banita::Controller</scope><name>messages</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" prot="protected" virt="non-virtual"><scope>banita::Controller</scope><name>name</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a988fb70a657c61afb82f4f4cf25e7c66" prot="public" virt="pure-virtual"><scope>banita::Controller</scope><name>on_stop</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" prot="protected" virt="non-virtual"><scope>banita::Controller</scope><name>owner</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a74933400a4ed56e68ce5cb11ec395a1b" prot="public" virt="pure-virtual"><scope>banita::Controller</scope><name>parse_property</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a3686102ef847f2f08a1107cfba48f00c" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>set_message_handler</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>set_name</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a553973436941dd97e75511583a4fff26" prot="public" virt="non-virtual"><scope>banita::Controller</scope><name>subscribe_messages</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" prot="protected" virt="non-virtual"><scope>banita::Controller</scope><name>type</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a44363ca0ed1ba66a9f6c079a6b158d94" prot="public" virt="pure-virtual"><scope>banita::Controller</scope><name>update</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a0dc114b2bed0ec1128b20bbf2b5e2eca" prot="public" virt="virtual"><scope>banita::Controller</scope><name>~Component</name></member>
+      <member refid="d0/d23/classbanita_1_1_controller_1a355eaba3604cfca01437009c23c1cb41" prot="protected" virt="virtual"><scope>banita::Controller</scope><name>~Controller</name></member>
+      <member refid="db/dbe/structbanita_1_1_message___handler_1_1_listener_1aa35b0cfb544e9353f6629d87fcc1799d" prot="public" virt="virtual"><scope>banita::Controller</scope><name>~Listener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

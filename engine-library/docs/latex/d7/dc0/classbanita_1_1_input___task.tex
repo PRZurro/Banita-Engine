@@ -1,0 +1,137 @@
+\hypertarget{classbanita_1_1_input___task}{}\section{banita\+::Input\+\_\+\+Task Class Reference}
+\label{classbanita_1_1_input___task}\index{banita::Input\_Task@{banita::Input\_Task}}
+
+
+{\ttfamily \#include $<$Input\+\_\+\+Task.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Input\+\_\+\+Task\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Input\+\_\+\+Task\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_input___task_a75406b32a241df928053b9627954ad1f}{Input\+\_\+\+Task}} (\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$\+\_\+kernel, Size\+\_\+t \+\_\+priority=50, bool \+\_\+is\+Finished=false)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_input___task}{Input\+\_\+\+Task}} object by the attributes received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_input___task_a53bbe9a3f6505e217785e6ebb4a8e15b}{$\sim$\+Input\+\_\+\+Task}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_input___task}{Input\+\_\+\+Task}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_input___task_a3f7f72ab848a23a92c3351426b3595c9}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em initialize the task attributes and members \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_input___task_a68a88772e60109b5d461b2a75f05ee35}{execute}} (float \+\_\+delta\+Time) override
+\begin{DoxyCompactList}\small\item\em update the task attributes and members \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_input___task_af6f524863581208331f6dd08d7e1cbb5}{terminate}} () override
+\begin{DoxyCompactList}\small\item\em finalize this tasks \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classbanita_1_1_input___task_a3c49cbbd067e4eb65a55393207b69bdc}{translate\+\_\+key\+\_\+code\+\_\+to\+\_\+action}} (\mbox{\hyperlink{classbanita_1_1_keyboard_a0dee214e6cb4f246866603b85568b9ab}{Keyboard\+::\+Key\+\_\+\+Code}} keycode)
+\begin{DoxyCompactList}\small\item\em translates an \mbox{\hyperlink{classbanita_1_1_keyboard_a0dee214e6cb4f246866603b85568b9ab}{Keyboard\+::\+Key\+\_\+\+Code}} int (enum) to the action to which it should be translated \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_input___task_a75406b32a241df928053b9627954ad1f}\label{classbanita_1_1_input___task_a75406b32a241df928053b9627954ad1f}} 
+\index{banita::Input\_Task@{banita::Input\_Task}!Input\_Task@{Input\_Task}}
+\index{Input\_Task@{Input\_Task}!banita::Input\_Task@{banita::Input\_Task}}
+\subsubsection{\texorpdfstring{Input\_Task()}{Input\_Task()}}
+{\footnotesize\ttfamily banita\+::\+Input\+\_\+\+Task\+::\+Input\+\_\+\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$}]{\+\_\+kernel,  }\item[{Size\+\_\+t}]{\+\_\+priority = {\ttfamily 50},  }\item[{bool}]{\+\_\+is\+Finished = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_input___task}{Input\+\_\+\+Task}} object by the attributes received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+kernel} & \\
+\hline
+{\em \+\_\+priority} & \\
+\hline
+{\em \+\_\+is\+Finished} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_input___task_a53bbe9a3f6505e217785e6ebb4a8e15b}\label{classbanita_1_1_input___task_a53bbe9a3f6505e217785e6ebb4a8e15b}} 
+\index{banita::Input\_Task@{banita::Input\_Task}!````~Input\_Task@{$\sim$Input\_Task}}
+\index{````~Input\_Task@{$\sim$Input\_Task}!banita::Input\_Task@{banita::Input\_Task}}
+\subsubsection{\texorpdfstring{$\sim$Input\_Task()}{~Input\_Task()}}
+{\footnotesize\ttfamily banita\+::\+Input\+\_\+\+Task\+::$\sim$\+Input\+\_\+\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_input___task}{Input\+\_\+\+Task}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_input___task_a68a88772e60109b5d461b2a75f05ee35}\label{classbanita_1_1_input___task_a68a88772e60109b5d461b2a75f05ee35}} 
+\index{banita::Input\_Task@{banita::Input\_Task}!execute@{execute}}
+\index{execute@{execute}!banita::Input\_Task@{banita::Input\_Task}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void banita\+::\+Input\+\_\+\+Task\+::execute (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update the task attributes and members 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_task_aa79a45c9cbfac80ec9e4f060d5d444aa}{banita\+::\+Task}}.
+
+\mbox{\Hypertarget{classbanita_1_1_input___task_a3f7f72ab848a23a92c3351426b3595c9}\label{classbanita_1_1_input___task_a3f7f72ab848a23a92c3351426b3595c9}} 
+\index{banita::Input\_Task@{banita::Input\_Task}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Input\_Task@{banita::Input\_Task}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void banita\+::\+Input\+\_\+\+Task\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+initialize the task attributes and members 
+
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_task_a34578cdd41899a338ac09fec3a285487}{banita\+::\+Task}}.
+
+\mbox{\Hypertarget{classbanita_1_1_input___task_af6f524863581208331f6dd08d7e1cbb5}\label{classbanita_1_1_input___task_af6f524863581208331f6dd08d7e1cbb5}} 
+\index{banita::Input\_Task@{banita::Input\_Task}!terminate@{terminate}}
+\index{terminate@{terminate}!banita::Input\_Task@{banita::Input\_Task}}
+\subsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily void banita\+::\+Input\+\_\+\+Task\+::terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+finalize this tasks 
+
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_task_acccbd449402b1e9ce1ba34c26333a1b6}{banita\+::\+Task}}.
+
+\mbox{\Hypertarget{classbanita_1_1_input___task_a3c49cbbd067e4eb65a55393207b69bdc}\label{classbanita_1_1_input___task_a3c49cbbd067e4eb65a55393207b69bdc}} 
+\index{banita::Input\_Task@{banita::Input\_Task}!translate\_key\_code\_to\_action@{translate\_key\_code\_to\_action}}
+\index{translate\_key\_code\_to\_action@{translate\_key\_code\_to\_action}!banita::Input\_Task@{banita::Input\_Task}}
+\subsubsection{\texorpdfstring{translate\_key\_code\_to\_action()}{translate\_key\_code\_to\_action()}}
+{\footnotesize\ttfamily String banita\+::\+Input\+\_\+\+Task\+::translate\+\_\+key\+\_\+code\+\_\+to\+\_\+action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_keyboard_a0dee214e6cb4f246866603b85568b9ab}{Keyboard\+::\+Key\+\_\+\+Code}}}]{keycode }\end{DoxyParamCaption})}
+
+
+
+translates an \mbox{\hyperlink{classbanita_1_1_keyboard_a0dee214e6cb4f246866603b85568b9ab}{Keyboard\+::\+Key\+\_\+\+Code}} int (enum) to the action to which it should be translated 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_input___task_8hpp}{Input\+\_\+\+Task.\+hpp}}\end{DoxyCompactItemize}

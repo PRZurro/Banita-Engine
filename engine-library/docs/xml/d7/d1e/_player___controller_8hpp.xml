@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d7/d1e/_player___controller_8hpp" kind="file" language="C++">
+    <compoundname>Player_Controller.hpp</compoundname>
+    <includes local="yes">declarations.hpp</includes>
+    <includes refid="d6/d14/_controller_8hpp" local="yes">Controller.hpp</includes>
+    <includes refid="dc/dbc/_message_8hpp" local="yes">Message.hpp</includes>
+    <includedby refid="d2/de4/_component___generator_8hpp" local="yes">headers/Component_Generator.hpp</includedby>
+    <incdepgraph>
+      <node id="257">
+        <label>Node.hpp</label>
+      </node>
+      <node id="256">
+        <label>Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>headers/Player_Controller.hpp</label>
+        <link refid="d7/d1e/_player___controller_8hpp"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>unordered_map</label>
+      </node>
+      <node id="254">
+        <label>declarations.hpp</label>
+      </node>
+      <node id="258">
+        <label>Message_Handler.hpp</label>
+        <link refid="d2/d26/_message___handler_8hpp"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>Controller.hpp</label>
+        <link refid="d6/d14/_controller_8hpp"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>Message.hpp</label>
+        <link refid="dc/dbc/_message_8hpp"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="262">
+        <label>headers/Component_Generator.hpp</label>
+        <link refid="d2/de4/_component___generator_8hpp"/>
+      </node>
+      <node id="261">
+        <label>headers/Player_Controller.hpp</label>
+        <link refid="d7/d1e/_player___controller_8hpp"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dc/d66/classbanita_1_1_player___controller" prot="public">banita::Player_Controller</innerclass>
+    <innernamespace refid="d6/de5/namespacebanita">banita</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;declarations.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d14/_controller_8hpp" kindref="compound">Controller.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/dbc/_message_8hpp" kindref="compound">Message.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/de5/namespacebanita" kindref="compound">banita</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="dc/d66/classbanita_1_1_player___controller" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/d66/classbanita_1_1_player___controller" kindref="compound">Player_Controller</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d0/d23/classbanita_1_1_controller" kindref="compound">Controller</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//static<sp/>fnControllerComponentGenerator<sp/>generatorInstance;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref><sp/>*<sp/>moveUp,<sp/>*<sp/>moveDown,<sp/><sp/>*<sp/>moveLeft,<sp/>*<sp/>moveRight;<sp/><sp/></highlight><highlight class="comment">//<sp/>Created<sp/>to<sp/>ease<sp/>of<sp/>use.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>turn;<sp/></highlight><highlight class="comment">//<sp/>&quot;Game<sp/>Controller&quot;<sp/>needed<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>limits;<sp/></highlight><highlight class="comment">//<sp/>&quot;Game<sp/>Controller&quot;<sp/>needed<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1acbb318ac5deac46dc7cd745689406e65" kindref="member">Player_Controller</ref>(<ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref><sp/>*<sp/>_entity,<sp/><ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref><sp/>*<sp/>_mh,<sp/>String<sp/>_type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;playercontroller&quot;</highlight><highlight class="normal">,<sp/>String<sp/>_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;undefined&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1acbb318ac5deac46dc7cd745689406e65" kindref="member">Player_Controller</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1a42c2960117c977daf72083452fb69e86" kindref="member">initialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1ab7c47cba21892cac0e9f8a366cf86ca8" kindref="member">update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_deltaTime)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1ab25a1e791ce020ff226b6324cc2c5c67" kindref="member">parse_property</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/>&amp;<sp/>_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/>&amp;<sp/>_value)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1a6c6aa3a387d36db7306ca557fbb100e6" kindref="member">handle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref><sp/>&amp;<sp/>_message)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1aedd233c9dcd10f9c8998f48a840f2e57" kindref="member">on_stop</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="dc/d66/classbanita_1_1_player___controller_1a0596cf1ee132d70f8f7eabfb3be2cfbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Component_sptr<sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1a0596cf1ee132d70f8f7eabfb3be2cfbc" kindref="member">generator</ref>(<ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref><sp/>*<sp/>_entity,<sp/><ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref><sp/>*<sp/>_mh<sp/>)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dda/classbanita_1_1_component" kindref="compound">Component</ref><sp/>*<sp/>controller<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="dc/d66/classbanita_1_1_player___controller_1acbb318ac5deac46dc7cd745689406e65" kindref="member">Player_Controller</ref>(_entity,<sp/>_mh);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Component_sptr(controller);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_messages();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>game_controller();<sp/></highlight><highlight class="comment">//<sp/>This<sp/>method<sp/>should<sp/>be<sp/>in<sp/>a<sp/>game<sp/>controller<sp/>component<sp/>script<sp/>and<sp/>shoulds<sp/>communicates<sp/>with<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="headers/Player_Controller.hpp"/>
+  </compounddef>
+</doxygen>

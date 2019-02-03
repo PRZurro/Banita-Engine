@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d1/d27/classbanita_1_1_model___component" kind="class" language="C++" prot="public">
+    <compoundname>banita::Model_Component</compoundname>
+    <basecompoundref refid="d7/dda/classbanita_1_1_component" prot="public" virt="non-virtual">banita::Component</basecompoundref>
+    <includes refid="d0/da4/_model___component_8hpp" local="no">Model_Component.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="d1/d27/classbanita_1_1_model___component_1a7fd008bda4135489b17b06733d2817e5" prot="private" static="no">
+        <type>glt::Model_Obj</type>
+        <definition>using banita::Model_Component::Model =  glt::Model_Obj</definition>
+        <argsstring></argsstring>
+        <name>Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="25" column="1" bodyfile="headers/Model_Component.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d1/d27/classbanita_1_1_model___component_1a4fc37d365953c498a8740aa9f5e5c848" prot="private" static="no">
+        <type>std::shared_ptr&lt; glt::Model_Obj &gt;</type>
+        <definition>using banita::Model_Component::Model_sptr =  std::shared_ptr&lt;glt::Model_Obj&gt;</definition>
+        <argsstring></argsstring>
+        <name>Model_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="26" column="1" bodyfile="headers/Model_Component.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d27/classbanita_1_1_model___component_1aaad3e0da24da813c77e00fdca2dc2271" prot="private" static="no" mutable="no">
+        <type>Model_sptr</type>
+        <definition>Model_sptr banita::Model_Component::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="30" column="1" bodyfile="headers/Model_Component.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d27/classbanita_1_1_model___component_1a2f9baa86605d6d152e69cd73af41cf7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Model_Component::Model_Component</definition>
+        <argsstring>(Entity *_entity)</argsstring>
+        <name>Model_Component</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d1/d27/classbanita_1_1_model___component" kindref="compound">Model_Component</ref> object and store the entity received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="43" column="1"/>
+        <referencedby refid="d1/d27/classbanita_1_1_model___component_1a4a5d4212e321577342bc1a8f4c997ca9" compoundref="d0/da4/_model___component_8hpp" startline="102" endline="105">generator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d27/classbanita_1_1_model___component_1aa8bdeb97075af832ea0c0f32b302e799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Model_Component::Model_Component</definition>
+        <argsstring>(Entity *entity, const String &amp;_modelPath)</argsstring>
+        <name>Model_Component</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_modelPath</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d1/d27/classbanita_1_1_model___component" kindref="compound">Model_Component</ref> object by the current obj path. Currently unavailable the creation of the 3d mesh with this constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_modelPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d27/classbanita_1_1_model___component_1af87c47483437405822718949a448bc14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Model_Component::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a2f700c071185f7033caa69576dafa9e7">initialize</reimplements>
+        <briefdescription>
+<para>initialize the model component attributes and members </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d27/classbanita_1_1_model___component_1ab8acac6bf05bc01a8529235904b81a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Model_Component::update</definition>
+        <argsstring>(float _deltaTime) override</argsstring>
+        <name>update</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1ae8f9d11dc8e3c920d6d40146668c429b">update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>_deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>update the model component attributes and members </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d27/classbanita_1_1_model___component_1a1a6acbf643bd87acabfc2a31b7be4db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Model_Component::parse_property</definition>
+        <argsstring>(const String &amp;_name, const String &amp;value) override</argsstring>
+        <name>parse_property</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a619154ef2bed8e4493413bdef6117716">parse_property</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>parse the xml node parameters and initialize the 3d mesh by the value (name of the file) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d27/classbanita_1_1_model___component_1ae0c1a224521a196fad83dcc09e34097b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Model_sptr</type>
+        <definition>Model_sptr banita::Model_Component::get_model</definition>
+        <argsstring>()</argsstring>
+        <name>get_model</name>
+        <briefdescription>
+<para>Get the model shared pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Model_sptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="89" column="1" bodyfile="headers/Model_Component.hpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d1/d27/classbanita_1_1_model___component_1a4a5d4212e321577342bc1a8f4c997ca9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Component_sptr</type>
+        <definition>static Component_sptr banita::Model_Component::generator</definition>
+        <argsstring>(Entity *_entity)</argsstring>
+        <name>generator</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>Model component&apos;s generator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Component_sptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Model_Component.hpp" line="102" column="1" bodyfile="headers/Model_Component.hpp" bodystart="102" bodyend="105"/>
+        <references refid="d1/d27/classbanita_1_1_model___component_1a2f9baa86605d6d152e69cd73af41cf7b">Model_Component</references>
+        <referencedby refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" compoundref="d2/de4/_component___generator_8hpp" startline="46" endline="53">banita::Component_Generator::Component_Generator</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="81">
+        <label>banita::Model_Component</label>
+        <link refid="d1/d27/classbanita_1_1_model___component"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="85">
+        <label>banita::Entity</label>
+        <link refid="db/d9f/classbanita_1_1_entity"/>
+      </node>
+      <node id="83">
+        <label>banita::Model_Component</label>
+        <link refid="d1/d27/classbanita_1_1_model___component"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Model_Component.hpp" line="24" column="1" bodyfile="headers/Model_Component.hpp" bodystart="23" bodyend="106"/>
+    <listofallmembers>
+      <member refid="d7/dda/classbanita_1_1_component_1ad73a6ae8fbf56b7d54ef48c5e9ec164d" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>Component</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a3a267ceeceda4ed4f9c7dba7d11f4886" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>Component</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1a4a5d4212e321577342bc1a8f4c997ca9" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>generator</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>get_entity</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1ae0c1a224521a196fad83dcc09e34097b" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>get_model</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>get_name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>get_type</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1af87c47483437405822718949a448bc14" prot="public" virt="virtual"><scope>banita::Model_Component</scope><name>initialize</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1a7fd008bda4135489b17b06733d2817e5" prot="private" virt="non-virtual"><scope>banita::Model_Component</scope><name>Model</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1aaad3e0da24da813c77e00fdca2dc2271" prot="private" virt="non-virtual"><scope>banita::Model_Component</scope><name>model</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1a2f9baa86605d6d152e69cd73af41cf7b" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>Model_Component</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1aa8bdeb97075af832ea0c0f32b302e799" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>Model_Component</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1a4fc37d365953c498a8740aa9f5e5c848" prot="private" virt="non-virtual"><scope>banita::Model_Component</scope><name>Model_sptr</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" prot="protected" virt="non-virtual"><scope>banita::Model_Component</scope><name>name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" prot="protected" virt="non-virtual"><scope>banita::Model_Component</scope><name>owner</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1a1a6acbf643bd87acabfc2a31b7be4db8" prot="public" virt="virtual"><scope>banita::Model_Component</scope><name>parse_property</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" prot="public" virt="non-virtual"><scope>banita::Model_Component</scope><name>set_name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" prot="protected" virt="non-virtual"><scope>banita::Model_Component</scope><name>type</name></member>
+      <member refid="d1/d27/classbanita_1_1_model___component_1ab8acac6bf05bc01a8529235904b81a5b" prot="public" virt="virtual"><scope>banita::Model_Component</scope><name>update</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a0dc114b2bed0ec1128b20bbf2b5e2eca" prot="public" virt="virtual"><scope>banita::Model_Component</scope><name>~Component</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

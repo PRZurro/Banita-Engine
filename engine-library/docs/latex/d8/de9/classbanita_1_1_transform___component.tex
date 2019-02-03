@@ -1,0 +1,607 @@
+\hypertarget{classbanita_1_1_transform___component}{}\section{banita\+::Transform\+\_\+\+Component Class Reference}
+\label{classbanita_1_1_transform___component}\index{banita::Transform\_Component@{banita::Transform\_Component}}
+
+
+{\ttfamily \#include $<$Transform\+\_\+\+Component.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Transform\+\_\+\+Component\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Transform\+\_\+\+Component\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_transform___component_af0df15865b1b3576bae0fa9cbdce2669}{Transform\+\_\+\+Component}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+owner)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} object and store the received entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_transform___component_a87e6794c494fefc601ed15c84eaff97c}{$\sim$\+Transform\+\_\+\+Component}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_transform___component_af21e03166cba2a8489b2a5e02867ce6a}{initialize}} () override
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_transform___component_a0ca137a40cc84ee0825f37bab82d5d5d}{update}} (float \+\_\+delta\+Time) override
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_transform___component_a0f3ace424235b3992e01dbddfe85f088}{parse\+\_\+property}} (const String \&\+\_\+name, const String \&value) override
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_transform___component_a5299c227977c6efd87cc83af7c357a71}{is\+\_\+near\+\_\+to\+\_\+coordinate}} (Vector3f \+\_\+coordinate, float \+\_\+tridimensional\+Distance, bool \+\_\+despiseX=false, bool \+\_\+despiseY=false, bool \+\_\+despiseZ=false)
+\begin{DoxyCompactList}\small\item\em returns if a coordinate is nearest to a coordinate than the limit tridimensional distance. It can despise the desired axis \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_transform___component_a376479ef59304837ff6cd5fb50f55058}{is\+\_\+near\+\_\+to\+\_\+transform}} (\mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} \&\+\_\+other, float \+\_\+tridimensional\+Distance, bool \+\_\+despiseX=false, bool \+\_\+despiseY=false, bool \+\_\+despiseZ=false)
+\begin{DoxyCompactList}\small\item\em return if the received transform is nearest to this than the limit tridimensional distance. It can despise the desired axis \end{DoxyCompactList}\item 
+Vector3f \mbox{\hyperlink{classbanita_1_1_transform___component_a080736ede5f09898a8b28c2b22e60c61}{get\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Get the position vector. \end{DoxyCompactList}\item 
+glt\+::\+Quaternion \mbox{\hyperlink{classbanita_1_1_transform___component_a914ced98c4598751de9448cf1491d990}{get\+\_\+rotation}} ()
+\begin{DoxyCompactList}\small\item\em Get the rotation vector. \end{DoxyCompactList}\item 
+Matrix44 \mbox{\hyperlink{classbanita_1_1_transform___component_a9b955e7fd44d256dd862f61502ab9ec1}{get\+\_\+transformation}} ()
+\begin{DoxyCompactList}\small\item\em Get the transformation matrix. \end{DoxyCompactList}\item 
+Matrix44 \mbox{\hyperlink{classbanita_1_1_transform___component_a8ffcb477f5e312f75cfb5c9eb9c4ebd1}{get\+\_\+local\+\_\+transformation}} ()
+\begin{DoxyCompactList}\small\item\em Get the local anchor matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} $\ast$ \mbox{\hyperlink{classbanita_1_1_transform___component_a8503ea9581479c4d3a7b5e7992d669f2}{get\+\_\+parent}} ()
+\begin{DoxyCompactList}\small\item\em Get the parent transform component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a670a3c4266dc6e2ae1e89940684acc5b}{move}} (Vector3f \&\+\_\+translation)
+\begin{DoxyCompactList}\small\item\em move this transform \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a5e0fa58446fb78788c12b64e37b1e32a}{move}} (std\+::vector$<$ Vector3f $>$ \&\+\_\+movement\+List)
+\begin{DoxyCompactList}\small\item\em move this transform by a movement list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a71e4e16cdbd98c641389455b455ceb01}{add\+\_\+movement}} (Vector3f \+\_\+translation)
+\begin{DoxyCompactList}\small\item\em add a movement to the accumulated move list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_abbcce56f6a091161a8ab5e83499282f0}{rotate}} (Vector3f \&\+\_\+rotation)
+\begin{DoxyCompactList}\small\item\em rotate this transform by the received vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a4def5a4bcc460815fbfede39643bd08e}{rotate}} (float \+\_\+x, float \+\_\+y, float \+\_\+z)
+\begin{DoxyCompactList}\small\item\em rotate this transform by the received values \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a05644620f98e07a01f0222182ec5c2f3}{rotateX}} (float \+\_\+rotX)
+\begin{DoxyCompactList}\small\item\em rotate this transform rotation x component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a627cc373a6e3d2f9067d9380c272c9cc}{rotateY}} (float \+\_\+rotY)
+\begin{DoxyCompactList}\small\item\em rotate this transform rotation y component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a36eeb4e9eb4d7dfd3fc2e07f650ea70c}{rotateZ}} (float \+\_\+rotZ)
+\begin{DoxyCompactList}\small\item\em rotate this transform rotation z component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a83cc2d972d98fdcff1be55f9f5448df3}{scale}} (float \+\_\+value)
+\begin{DoxyCompactList}\small\item\em scale this transform by the input value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_ae7a4af52065190f0a49a78b8f33da4b1}{set\+\_\+position}} (Vector3f \&\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Set the transform position to the received vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a8f3783520cfdd86e531cecb1170af193}{set\+\_\+position}} (float \+\_\+pX, float \+\_\+pY, float \+\_\+pZ)
+\begin{DoxyCompactList}\small\item\em Set the position to the received values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a131ef7c654696489df92c39b1135dd90}{set\+\_\+positionX}} (float \+\_\+pX)
+\begin{DoxyCompactList}\small\item\em Set the position x to the received value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_ae151b9b33e2afaaa9b8ecfedfa2d9a48}{set\+\_\+positionY}} (float \+\_\+pY)
+\begin{DoxyCompactList}\small\item\em Set the position y to the received value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a530739c068f5fcf6ed58118761b93e03}{set\+\_\+positionZ}} (float \+\_\+pZ)
+\begin{DoxyCompactList}\small\item\em Set the position z to the received value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_afef6c54fd67345ad97b1deb948a4d9e1}{set\+\_\+visible}} (bool \+\_\+visibility)
+\begin{DoxyCompactList}\small\item\em Set if is visible this transform (and children) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_transform___component_acd8c38c25e9ca8aa7f527605907bca7b}{get\+\_\+visibility}} ()
+\begin{DoxyCompactList}\small\item\em Get the visibility object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_transform___component_a53215c14bf428c45f39df2861bfeda6a}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset the transformation of this component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Component\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_transform___component_a52942de64acefae0655fb17a71add8f3}{generator}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity)
+\begin{DoxyCompactList}\small\item\em generator of this component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_af0df15865b1b3576bae0fa9cbdce2669}\label{classbanita_1_1_transform___component_af0df15865b1b3576bae0fa9cbdce2669}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!Transform\_Component@{Transform\_Component}}
+\index{Transform\_Component@{Transform\_Component}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{Transform\_Component()}{Transform\_Component()}}
+{\footnotesize\ttfamily banita\+::\+Transform\+\_\+\+Component\+::\+Transform\+\_\+\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+owner }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} object and store the received entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+owner} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a87e6794c494fefc601ed15c84eaff97c}\label{classbanita_1_1_transform___component_a87e6794c494fefc601ed15c84eaff97c}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!````~Transform\_Component@{$\sim$Transform\_Component}}
+\index{````~Transform\_Component@{$\sim$Transform\_Component}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{$\sim$Transform\_Component()}{~Transform\_Component()}}
+{\footnotesize\ttfamily banita\+::\+Transform\+\_\+\+Component\+::$\sim$\+Transform\+\_\+\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a71e4e16cdbd98c641389455b455ceb01}\label{classbanita_1_1_transform___component_a71e4e16cdbd98c641389455b455ceb01}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!add\_movement@{add\_movement}}
+\index{add\_movement@{add\_movement}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{add\_movement()}{add\_movement()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::add\+\_\+movement (\begin{DoxyParamCaption}\item[{Vector3f}]{\+\_\+translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+add a movement to the accumulated move list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+translation} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a52942de64acefae0655fb17a71add8f3}\label{classbanita_1_1_transform___component_a52942de64acefae0655fb17a71add8f3}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!generator@{generator}}
+\index{generator@{generator}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{generator()}{generator()}}
+{\footnotesize\ttfamily static Component\+\_\+sptr banita\+::\+Transform\+\_\+\+Component\+::generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+generator of this component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component\+\_\+sptr 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a8ffcb477f5e312f75cfb5c9eb9c4ebd1}\label{classbanita_1_1_transform___component_a8ffcb477f5e312f75cfb5c9eb9c4ebd1}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!get\_local\_transformation@{get\_local\_transformation}}
+\index{get\_local\_transformation@{get\_local\_transformation}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{get\_local\_transformation()}{get\_local\_transformation()}}
+{\footnotesize\ttfamily Matrix44 banita\+::\+Transform\+\_\+\+Component\+::get\+\_\+local\+\_\+transformation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the local anchor matrix. 
+
+\begin{DoxyReturn}{Returns}
+Matrix44 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a8503ea9581479c4d3a7b5e7992d669f2}\label{classbanita_1_1_transform___component_a8503ea9581479c4d3a7b5e7992d669f2}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!get\_parent@{get\_parent}}
+\index{get\_parent@{get\_parent}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{get\_parent()}{get\_parent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}}$\ast$ banita\+::\+Transform\+\_\+\+Component\+::get\+\_\+parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the parent transform component. 
+
+\begin{DoxyReturn}{Returns}
+Transform\+\_\+\+Component$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a080736ede5f09898a8b28c2b22e60c61}\label{classbanita_1_1_transform___component_a080736ede5f09898a8b28c2b22e60c61}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily Vector3f banita\+::\+Transform\+\_\+\+Component\+::get\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the position vector. 
+
+\begin{DoxyReturn}{Returns}
+Vector3f 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a914ced98c4598751de9448cf1491d990}\label{classbanita_1_1_transform___component_a914ced98c4598751de9448cf1491d990}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!get\_rotation@{get\_rotation}}
+\index{get\_rotation@{get\_rotation}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{get\_rotation()}{get\_rotation()}}
+{\footnotesize\ttfamily glt\+::\+Quaternion banita\+::\+Transform\+\_\+\+Component\+::get\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the rotation vector. 
+
+\begin{DoxyReturn}{Returns}
+glt\+::\+Quaternion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a9b955e7fd44d256dd862f61502ab9ec1}\label{classbanita_1_1_transform___component_a9b955e7fd44d256dd862f61502ab9ec1}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!get\_transformation@{get\_transformation}}
+\index{get\_transformation@{get\_transformation}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{get\_transformation()}{get\_transformation()}}
+{\footnotesize\ttfamily Matrix44 banita\+::\+Transform\+\_\+\+Component\+::get\+\_\+transformation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the transformation matrix. 
+
+\begin{DoxyReturn}{Returns}
+Matrix44 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_acd8c38c25e9ca8aa7f527605907bca7b}\label{classbanita_1_1_transform___component_acd8c38c25e9ca8aa7f527605907bca7b}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!get\_visibility@{get\_visibility}}
+\index{get\_visibility@{get\_visibility}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{get\_visibility()}{get\_visibility()}}
+{\footnotesize\ttfamily bool banita\+::\+Transform\+\_\+\+Component\+::get\+\_\+visibility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the visibility object. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_af21e03166cba2a8489b2a5e02867ce6a}\label{classbanita_1_1_transform___component_af21e03166cba2a8489b2a5e02867ce6a}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool banita\+::\+Transform\+\_\+\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a5299c227977c6efd87cc83af7c357a71}\label{classbanita_1_1_transform___component_a5299c227977c6efd87cc83af7c357a71}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!is\_near\_to\_coordinate@{is\_near\_to\_coordinate}}
+\index{is\_near\_to\_coordinate@{is\_near\_to\_coordinate}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{is\_near\_to\_coordinate()}{is\_near\_to\_coordinate()}}
+{\footnotesize\ttfamily bool banita\+::\+Transform\+\_\+\+Component\+::is\+\_\+near\+\_\+to\+\_\+coordinate (\begin{DoxyParamCaption}\item[{Vector3f}]{\+\_\+coordinate,  }\item[{float}]{\+\_\+tridimensional\+Distance,  }\item[{bool}]{\+\_\+despiseX = {\ttfamily false},  }\item[{bool}]{\+\_\+despiseY = {\ttfamily false},  }\item[{bool}]{\+\_\+despiseZ = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns if a coordinate is nearest to a coordinate than the limit tridimensional distance. It can despise the desired axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+coordinate} & \\
+\hline
+{\em \+\_\+tridimensional\+Distance} & \\
+\hline
+{\em \+\_\+despiseX} & \\
+\hline
+{\em \+\_\+despiseY} & \\
+\hline
+{\em \+\_\+despiseZ} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a376479ef59304837ff6cd5fb50f55058}\label{classbanita_1_1_transform___component_a376479ef59304837ff6cd5fb50f55058}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!is\_near\_to\_transform@{is\_near\_to\_transform}}
+\index{is\_near\_to\_transform@{is\_near\_to\_transform}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{is\_near\_to\_transform()}{is\_near\_to\_transform()}}
+{\footnotesize\ttfamily bool banita\+::\+Transform\+\_\+\+Component\+::is\+\_\+near\+\_\+to\+\_\+transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} \&}]{\+\_\+other,  }\item[{float}]{\+\_\+tridimensional\+Distance,  }\item[{bool}]{\+\_\+despiseX = {\ttfamily false},  }\item[{bool}]{\+\_\+despiseY = {\ttfamily false},  }\item[{bool}]{\+\_\+despiseZ = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return if the received transform is nearest to this than the limit tridimensional distance. It can despise the desired axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+other} & \\
+\hline
+{\em \+\_\+tridimensional\+Distance} & \\
+\hline
+{\em \+\_\+despiseX} & \\
+\hline
+{\em \+\_\+despiseY} & \\
+\hline
+{\em \+\_\+despiseZ} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a670a3c4266dc6e2ae1e89940684acc5b}\label{classbanita_1_1_transform___component_a670a3c4266dc6e2ae1e89940684acc5b}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!move@{move}}
+\index{move@{move}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::move (\begin{DoxyParamCaption}\item[{Vector3f \&}]{\+\_\+translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+move this transform 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+translation} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a5e0fa58446fb78788c12b64e37b1e32a}\label{classbanita_1_1_transform___component_a5e0fa58446fb78788c12b64e37b1e32a}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!move@{move}}
+\index{move@{move}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::move (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Vector3f $>$ \&}]{\+\_\+movement\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+move this transform by a movement list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+movement\+List} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a0f3ace424235b3992e01dbddfe85f088}\label{classbanita_1_1_transform___component_a0f3ace424235b3992e01dbddfe85f088}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily bool banita\+::\+Transform\+\_\+\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{const String \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a53215c14bf428c45f39df2861bfeda6a}\label{classbanita_1_1_transform___component_a53215c14bf428c45f39df2861bfeda6a}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!reset@{reset}}
+\index{reset@{reset}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+reset the transformation of this component 
+
+\mbox{\Hypertarget{classbanita_1_1_transform___component_abbcce56f6a091161a8ab5e83499282f0}\label{classbanita_1_1_transform___component_abbcce56f6a091161a8ab5e83499282f0}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!rotate@{rotate}}
+\index{rotate@{rotate}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::rotate (\begin{DoxyParamCaption}\item[{Vector3f \&}]{\+\_\+rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rotate this transform by the received vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+rotation} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a4def5a4bcc460815fbfede39643bd08e}\label{classbanita_1_1_transform___component_a4def5a4bcc460815fbfede39643bd08e}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!rotate@{rotate}}
+\index{rotate@{rotate}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::rotate (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x,  }\item[{float}]{\+\_\+y,  }\item[{float}]{\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rotate this transform by the received values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & \\
+\hline
+{\em \+\_\+y} & \\
+\hline
+{\em \+\_\+z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a05644620f98e07a01f0222182ec5c2f3}\label{classbanita_1_1_transform___component_a05644620f98e07a01f0222182ec5c2f3}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!rotateX@{rotateX}}
+\index{rotateX@{rotateX}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{rotateX()}{rotateX()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::rotateX (\begin{DoxyParamCaption}\item[{float}]{\+\_\+rotX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rotate this transform rotation x component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+rotX} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a627cc373a6e3d2f9067d9380c272c9cc}\label{classbanita_1_1_transform___component_a627cc373a6e3d2f9067d9380c272c9cc}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!rotateY@{rotateY}}
+\index{rotateY@{rotateY}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{rotateY()}{rotateY()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::rotateY (\begin{DoxyParamCaption}\item[{float}]{\+\_\+rotY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rotate this transform rotation y component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+rotY} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a36eeb4e9eb4d7dfd3fc2e07f650ea70c}\label{classbanita_1_1_transform___component_a36eeb4e9eb4d7dfd3fc2e07f650ea70c}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!rotateZ@{rotateZ}}
+\index{rotateZ@{rotateZ}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{rotateZ()}{rotateZ()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::rotateZ (\begin{DoxyParamCaption}\item[{float}]{\+\_\+rotZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rotate this transform rotation z component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+rotZ} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a83cc2d972d98fdcff1be55f9f5448df3}\label{classbanita_1_1_transform___component_a83cc2d972d98fdcff1be55f9f5448df3}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!scale@{scale}}
+\index{scale@{scale}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::scale (\begin{DoxyParamCaption}\item[{float}]{\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+scale this transform by the input value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_ae7a4af52065190f0a49a78b8f33da4b1}\label{classbanita_1_1_transform___component_ae7a4af52065190f0a49a78b8f33da4b1}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{set\_position()}{set\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{Vector3f \&}]{\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the transform position to the received vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a8f3783520cfdd86e531cecb1170af193}\label{classbanita_1_1_transform___component_a8f3783520cfdd86e531cecb1170af193}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{set\_position()}{set\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{float}]{\+\_\+pX,  }\item[{float}]{\+\_\+pY,  }\item[{float}]{\+\_\+pZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the position to the received values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pX} & \\
+\hline
+{\em \+\_\+pY} & \\
+\hline
+{\em \+\_\+pZ} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a131ef7c654696489df92c39b1135dd90}\label{classbanita_1_1_transform___component_a131ef7c654696489df92c39b1135dd90}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!set\_positionX@{set\_positionX}}
+\index{set\_positionX@{set\_positionX}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{set\_positionX()}{set\_positionX()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::set\+\_\+positionX (\begin{DoxyParamCaption}\item[{float}]{\+\_\+pX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the position x to the received value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pX} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{classbanita_1_1_transform___component_ae151b9b33e2afaaa9b8ecfedfa2d9a48}\label{classbanita_1_1_transform___component_ae151b9b33e2afaaa9b8ecfedfa2d9a48}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!set\_positionY@{set\_positionY}}
+\index{set\_positionY@{set\_positionY}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{set\_positionY()}{set\_positionY()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::set\+\_\+positionY (\begin{DoxyParamCaption}\item[{float}]{\+\_\+pY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the position y to the received value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pY} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a530739c068f5fcf6ed58118761b93e03}\label{classbanita_1_1_transform___component_a530739c068f5fcf6ed58118761b93e03}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!set\_positionZ@{set\_positionZ}}
+\index{set\_positionZ@{set\_positionZ}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{set\_positionZ()}{set\_positionZ()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::set\+\_\+positionZ (\begin{DoxyParamCaption}\item[{float}]{\+\_\+pZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the position z to the received value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pZ} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 19
+\mbox{\Hypertarget{classbanita_1_1_transform___component_afef6c54fd67345ad97b1deb948a4d9e1}\label{classbanita_1_1_transform___component_afef6c54fd67345ad97b1deb948a4d9e1}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!set\_visible@{set\_visible}}
+\index{set\_visible@{set\_visible}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{set\_visible()}{set\_visible()}}
+{\footnotesize\ttfamily void banita\+::\+Transform\+\_\+\+Component\+::set\+\_\+visible (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+visibility }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set if is visible this transform (and children) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+visibility} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_transform___component_a0ca137a40cc84ee0825f37bab82d5d5d}\label{classbanita_1_1_transform___component_a0ca137a40cc84ee0825f37bab82d5d5d}} 
+\index{banita::Transform\_Component@{banita::Transform\_Component}!update@{update}}
+\index{update@{update}!banita::Transform\_Component@{banita::Transform\_Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool banita\+::\+Transform\+\_\+\+Component\+::update (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}{banita\+::\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_transform___component_8hpp}{Transform\+\_\+\+Component.\+hpp}}\end{DoxyCompactItemize}

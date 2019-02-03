@@ -1,0 +1,220 @@
+\hypertarget{classbanita_1_1_light___component}{}\section{banita\+::Light\+\_\+\+Component Class Reference}
+\label{classbanita_1_1_light___component}\index{banita::Light\_Component@{banita::Light\_Component}}
+
+
+{\ttfamily \#include $<$Light\+\_\+\+Component.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Light\+\_\+\+Component\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Light\+\_\+\+Component\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_light___component_ab3a24d9ee4cd5d3598588dabef05375b}{Light\+\_\+\+Component}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_light___component}{Light\+\_\+\+Component}} object and store the entity received. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_light___component_a2afec04726df91aee59837fa1481d361}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em initialize the light\textquotesingle{}s attribute and members \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_light___component_a1cba9ef2cb6b798623899ad94f68df9f}{update}} (float \+\_\+delta\+Time) override
+\begin{DoxyCompactList}\small\item\em update the light\textquotesingle{}s attribute and members \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_light___component_aa808026256f8f1050a1a90cc3b6a0602}{parse\+\_\+property}} (const String \&\+\_\+name, const String \&value) override
+\begin{DoxyCompactList}\small\item\em parse the input property and modify the values of the light \end{DoxyCompactList}\item 
+Light\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_light___component_a4de1a5438ce5f15ecd46544bf27b4d6e}{get\+\_\+light}} ()
+\begin{DoxyCompactList}\small\item\em Get a shared pointer to the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_light___component_a92916e5a6493c735954aec600c1aa77f}{set\+\_\+color}} (float \+\_\+r=252.\+0f, float \+\_\+g=252.\+0f, float \+\_\+b=0.\+f)
+\begin{DoxyCompactList}\small\item\em Set the light\textquotesingle{}s color by the floats received. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_light___component_ad6e5bef3588a571ef6390476fc9c1d42}{set\+\_\+color}} (Vector3f \+\_\+color)
+\begin{DoxyCompactList}\small\item\em Set the light\textquotesingle{}s color by the float vector received. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_light___component_a54164691efbc95979cb869910b4f34fd}{set\+\_\+intensity}} (float \+\_\+intensity)
+\begin{DoxyCompactList}\small\item\em Set the light\textquotesingle{}s intensity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Component\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_light___component_acc13089b837daf1b1751c3dca81fa798}{generator}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity)
+\begin{DoxyCompactList}\small\item\em light component generator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_light___component_ab3a24d9ee4cd5d3598588dabef05375b}\label{classbanita_1_1_light___component_ab3a24d9ee4cd5d3598588dabef05375b}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!Light\_Component@{Light\_Component}}
+\index{Light\_Component@{Light\_Component}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{Light\_Component()}{Light\_Component()}}
+{\footnotesize\ttfamily banita\+::\+Light\+\_\+\+Component\+::\+Light\+\_\+\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_light___component}{Light\+\_\+\+Component}} object and store the entity received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_light___component_acc13089b837daf1b1751c3dca81fa798}\label{classbanita_1_1_light___component_acc13089b837daf1b1751c3dca81fa798}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!generator@{generator}}
+\index{generator@{generator}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{generator()}{generator()}}
+{\footnotesize\ttfamily static Component\+\_\+sptr banita\+::\+Light\+\_\+\+Component\+::generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+light component generator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component\+\_\+sptr 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classbanita_1_1_light___component_a4de1a5438ce5f15ecd46544bf27b4d6e}\label{classbanita_1_1_light___component_a4de1a5438ce5f15ecd46544bf27b4d6e}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!get\_light@{get\_light}}
+\index{get\_light@{get\_light}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{get\_light()}{get\_light()}}
+{\footnotesize\ttfamily Light\+\_\+sptr banita\+::\+Light\+\_\+\+Component\+::get\+\_\+light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a shared pointer to the light. 
+
+\begin{DoxyReturn}{Returns}
+Light\+\_\+sptr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_light___component_a2afec04726df91aee59837fa1481d361}\label{classbanita_1_1_light___component_a2afec04726df91aee59837fa1481d361}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool banita\+::\+Light\+\_\+\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+initialize the light\textquotesingle{}s attribute and members 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_light___component_aa808026256f8f1050a1a90cc3b6a0602}\label{classbanita_1_1_light___component_aa808026256f8f1050a1a90cc3b6a0602}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily bool banita\+::\+Light\+\_\+\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{const String \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+parse the input property and modify the values of the light 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_light___component_a92916e5a6493c735954aec600c1aa77f}\label{classbanita_1_1_light___component_a92916e5a6493c735954aec600c1aa77f}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{set\_color()}{set\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void banita\+::\+Light\+\_\+\+Component\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{float}]{\+\_\+r = {\ttfamily 252.0f},  }\item[{float}]{\+\_\+g = {\ttfamily 252.0f},  }\item[{float}]{\+\_\+b = {\ttfamily 0.f} }\end{DoxyParamCaption})}
+
+
+
+Set the light\textquotesingle{}s color by the floats received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+r} & \\
+\hline
+{\em \+\_\+g} & \\
+\hline
+{\em \+\_\+b} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_light___component_ad6e5bef3588a571ef6390476fc9c1d42}\label{classbanita_1_1_light___component_ad6e5bef3588a571ef6390476fc9c1d42}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{set\_color()}{set\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void banita\+::\+Light\+\_\+\+Component\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{Vector3f}]{\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+Set the light\textquotesingle{}s color by the float vector received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_light___component_a54164691efbc95979cb869910b4f34fd}\label{classbanita_1_1_light___component_a54164691efbc95979cb869910b4f34fd}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!set\_intensity@{set\_intensity}}
+\index{set\_intensity@{set\_intensity}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{set\_intensity()}{set\_intensity()}}
+{\footnotesize\ttfamily void banita\+::\+Light\+\_\+\+Component\+::set\+\_\+intensity (\begin{DoxyParamCaption}\item[{float}]{\+\_\+intensity }\end{DoxyParamCaption})}
+
+
+
+Set the light\textquotesingle{}s intensity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+intensity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_light___component_a1cba9ef2cb6b798623899ad94f68df9f}\label{classbanita_1_1_light___component_a1cba9ef2cb6b798623899ad94f68df9f}} 
+\index{banita::Light\_Component@{banita::Light\_Component}!update@{update}}
+\index{update@{update}!banita::Light\_Component@{banita::Light\_Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool banita\+::\+Light\+\_\+\+Component\+::update (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update the light\textquotesingle{}s attribute and members 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}{banita\+::\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_light___component_8hpp}{Light\+\_\+\+Component.\+hpp}}\end{DoxyCompactItemize}

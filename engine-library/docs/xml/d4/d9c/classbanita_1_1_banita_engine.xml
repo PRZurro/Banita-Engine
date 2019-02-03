@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d4/d9c/classbanita_1_1_banita_engine" kind="class" language="C++" prot="public">
+    <compoundname>banita::BanitaEngine</compoundname>
+    <includes refid="d6/d14/_banita_engine_8hpp" local="no">BanitaEngine.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d9c/classbanita_1_1_banita_engine_1abdb08737880ae46f671e0780251ea4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::BanitaEngine::BanitaEngine</definition>
+        <argsstring>()</argsstring>
+        <name>BanitaEngine</name>
+        <briefdescription>
+<para>Construct a new Banita Engine object. This serves as a encapsulator, to avoid errors of header inclusion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/BanitaEngine.hpp" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d9c/classbanita_1_1_banita_engine_1a9bd490383a9a8baaed3a2b4a3d8c7bcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::BanitaEngine::~BanitaEngine</definition>
+        <argsstring>()</argsstring>
+        <name>~BanitaEngine</name>
+        <briefdescription>
+<para>Destroy the Banita Engine object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/BanitaEngine.hpp" line="31" column="1" bodyfile="headers/BanitaEngine.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d9c/classbanita_1_1_banita_engine_1ac2b3d79609be0bad75ec9ed6b5b3cd1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::BanitaEngine::run</definition>
+        <argsstring>(std::string scenePath=&quot;../../assets/Scenes/test_scene.xml&quot;, int windowWidth=1280, int windowHeight=720, std::string windowName=&quot;BanitaEngine&quot;, bool fullscreen=false)</argsstring>
+        <name>run</name>
+        <param>
+          <type>std::string</type>
+          <declname>scenePath</declname>
+          <defval>&quot;../../assets/Scenes/test_scene.xml&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>windowWidth</declname>
+          <defval>1280</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>windowHeight</declname>
+          <defval>720</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>windowName</declname>
+          <defval>&quot;BanitaEngine&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fullscreen</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>run the engine. Create a new window, scene and input task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scenePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>windowWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>windowHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>windowName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fullscreen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/BanitaEngine.hpp" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/BanitaEngine.hpp" line="19" column="1" bodyfile="headers/BanitaEngine.hpp" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="d4/d9c/classbanita_1_1_banita_engine_1abdb08737880ae46f671e0780251ea4c4" prot="public" virt="non-virtual"><scope>banita::BanitaEngine</scope><name>BanitaEngine</name></member>
+      <member refid="d4/d9c/classbanita_1_1_banita_engine_1ac2b3d79609be0bad75ec9ed6b5b3cd1f" prot="public" virt="non-virtual"><scope>banita::BanitaEngine</scope><name>run</name></member>
+      <member refid="d4/d9c/classbanita_1_1_banita_engine_1a9bd490383a9a8baaed3a2b4a3d8c7bcc" prot="public" virt="non-virtual"><scope>banita::BanitaEngine</scope><name>~BanitaEngine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

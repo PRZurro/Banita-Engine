@@ -1,0 +1,137 @@
+\hypertarget{classbanita_1_1_render___task}{}\section{banita\+::Render\+\_\+\+Task Class Reference}
+\label{classbanita_1_1_render___task}\index{banita::Render\_Task@{banita::Render\_Task}}
+
+
+{\ttfamily \#include $<$Render\+\_\+\+Task.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Render\+\_\+\+Task\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Render\+\_\+\+Task\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_render___task_a1b8ba204040888c1b9487cd2d08e2e3d}{Render\+\_\+\+Task}} (\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$\+\_\+kernel)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_render___task}{Render\+\_\+\+Task}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_render___task_a556e9242d3cf844f11790daa616e6036}{Render\+\_\+\+Task}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_render___task}{Render\+\_\+\+Task}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_render___task_a34f649b5ad434cf7f6bb04604173afed}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em initialize the members and attributes of this task \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_render___task_a94a8e1921a653ec6da9d1797ad2abcab}{execute}} (float \+\_\+delta\+Time) override
+\begin{DoxyCompactList}\small\item\em update the members and attributes of this task \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_render___task_a7518f53ea9050d2312f02ba0389188c6}{terminate}} () override
+\begin{DoxyCompactList}\small\item\em finalize this task \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_render___task_af909021398c0b93207f2502d172138bf}{renderize}} ()
+\begin{DoxyCompactList}\small\item\em renderize the scene by the window and renderer node members \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Render\+\_\+\+Node \mbox{\hyperlink{classbanita_1_1_render___task_ac90f3e16c8bafe5644de67226231a8ab}{renderer}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_render___task_a1b8ba204040888c1b9487cd2d08e2e3d}\label{classbanita_1_1_render___task_a1b8ba204040888c1b9487cd2d08e2e3d}} 
+\index{banita::Render\_Task@{banita::Render\_Task}!Render\_Task@{Render\_Task}}
+\index{Render\_Task@{Render\_Task}!banita::Render\_Task@{banita::Render\_Task}}
+\subsubsection{\texorpdfstring{Render\_Task()}{Render\_Task()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Render\+\_\+\+Task\+::\+Render\+\_\+\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$}]{\+\_\+kernel }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_render___task}{Render\+\_\+\+Task}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+kernel} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_render___task_a556e9242d3cf844f11790daa616e6036}\label{classbanita_1_1_render___task_a556e9242d3cf844f11790daa616e6036}} 
+\index{banita::Render\_Task@{banita::Render\_Task}!Render\_Task@{Render\_Task}}
+\index{Render\_Task@{Render\_Task}!banita::Render\_Task@{banita::Render\_Task}}
+\subsubsection{\texorpdfstring{Render\_Task()}{Render\_Task()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Render\+\_\+\+Task\+::\+Render\+\_\+\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_render___task}{Render\+\_\+\+Task}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_render___task_a94a8e1921a653ec6da9d1797ad2abcab}\label{classbanita_1_1_render___task_a94a8e1921a653ec6da9d1797ad2abcab}} 
+\index{banita::Render\_Task@{banita::Render\_Task}!execute@{execute}}
+\index{execute@{execute}!banita::Render\_Task@{banita::Render\_Task}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void banita\+::\+Render\+\_\+\+Task\+::execute (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update the members and attributes of this task 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_task_aa79a45c9cbfac80ec9e4f060d5d444aa}{banita\+::\+Task}}.
+
+\mbox{\Hypertarget{classbanita_1_1_render___task_a34f649b5ad434cf7f6bb04604173afed}\label{classbanita_1_1_render___task_a34f649b5ad434cf7f6bb04604173afed}} 
+\index{banita::Render\_Task@{banita::Render\_Task}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Render\_Task@{banita::Render\_Task}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void banita\+::\+Render\+\_\+\+Task\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+initialize the members and attributes of this task 
+
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_task_a34578cdd41899a338ac09fec3a285487}{banita\+::\+Task}}.
+
+\mbox{\Hypertarget{classbanita_1_1_render___task_af909021398c0b93207f2502d172138bf}\label{classbanita_1_1_render___task_af909021398c0b93207f2502d172138bf}} 
+\index{banita::Render\_Task@{banita::Render\_Task}!renderize@{renderize}}
+\index{renderize@{renderize}!banita::Render\_Task@{banita::Render\_Task}}
+\subsubsection{\texorpdfstring{renderize()}{renderize()}}
+{\footnotesize\ttfamily void banita\+::\+Render\+\_\+\+Task\+::renderize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+renderize the scene by the window and renderer node members 
+
+\mbox{\Hypertarget{classbanita_1_1_render___task_a7518f53ea9050d2312f02ba0389188c6}\label{classbanita_1_1_render___task_a7518f53ea9050d2312f02ba0389188c6}} 
+\index{banita::Render\_Task@{banita::Render\_Task}!terminate@{terminate}}
+\index{terminate@{terminate}!banita::Render\_Task@{banita::Render\_Task}}
+\subsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily void banita\+::\+Render\+\_\+\+Task\+::terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+finalize this task 
+
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_task_acccbd449402b1e9ce1ba34c26333a1b6}{banita\+::\+Task}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbanita_1_1_render___task_ac90f3e16c8bafe5644de67226231a8ab}\label{classbanita_1_1_render___task_ac90f3e16c8bafe5644de67226231a8ab}} 
+\index{banita::Render\_Task@{banita::Render\_Task}!renderer@{renderer}}
+\index{renderer@{renderer}!banita::Render\_Task@{banita::Render\_Task}}
+\subsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily Render\+\_\+\+Node banita\+::\+Render\+\_\+\+Task\+::renderer}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_render___task_8hpp}{Render\+\_\+\+Task.\+hpp}}\end{DoxyCompactItemize}

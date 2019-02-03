@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node25 [label="Factory",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node25 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="banita::Controller\l_Module::Controller\l_Factory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dcb/classbanita_1_1_controller___module_1_1_controller___factory.html",tooltip="Factory of the controller module."];
+  Node25 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="banita::Transform_Module\l::Transform_Factory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory.html",tooltip="Factory of the transform module."];
+}

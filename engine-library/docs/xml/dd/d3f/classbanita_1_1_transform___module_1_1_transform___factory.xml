@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory" kind="class" language="C++" prot="public">
+    <compoundname>banita::Transform_Module::Transform_Factory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Factory</basecompoundref>
+    <includes refid="d3/dfa/_transform___module_8hpp" local="no">Transform_Module.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory_1a030c569c27df0cf90faf7b87450c70fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Transform_Module::Transform_Factory::Transform_Factory</definition>
+        <argsstring>()</argsstring>
+        <name>Transform_Factory</name>
+        <briefdescription>
+<para>Construct a new <ref refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory" kindref="compound">Transform_Factory</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory_1af7dee8a255d901ad4190757ee9c68728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Module_sptr</type>
+        <definition>Module_sptr banita::Transform_Module::Transform_Factory::create_module</definition>
+        <argsstring>(Scene *_scene) override</argsstring>
+        <name>create_module</name>
+        <param>
+          <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <briefdescription>
+<para>Create a transform module in the received scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Module_sptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Factory of the transform module. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="136">
+        <label>banita::Transform_Module::Transform_Factory</label>
+        <link refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>Factory</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="138">
+        <label>banita::Transform_Module::Transform_Factory</label>
+        <link refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>Factory</label>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Transform_Module.hpp" line="35" column="1" bodyfile="headers/Transform_Module.hpp" bodystart="34" bodyend="53"/>
+    <listofallmembers>
+      <member refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory_1af7dee8a255d901ad4190757ee9c68728" prot="public" virt="non-virtual"><scope>banita::Transform_Module::Transform_Factory</scope><name>create_module</name></member>
+      <member refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory_1a030c569c27df0cf90faf7b87450c70fc" prot="public" virt="non-virtual"><scope>banita::Transform_Module::Transform_Factory</scope><name>Transform_Factory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

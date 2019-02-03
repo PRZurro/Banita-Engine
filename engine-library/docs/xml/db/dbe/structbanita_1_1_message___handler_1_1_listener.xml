@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="db/dbe/structbanita_1_1_message___handler_1_1_listener" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>banita::Message_Handler::Listener</compoundname>
+    <derivedcompoundref refid="d0/d23/classbanita_1_1_controller" prot="public" virt="non-virtual">banita::Controller</derivedcompoundref>
+    <includes refid="d2/d26/_message___handler_8hpp" local="no">Message_Handler.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/dbe/structbanita_1_1_message___handler_1_1_listener_1aa35b0cfb544e9353f6629d87fcc1799d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual banita::Message_Handler::Listener::~Listener</definition>
+        <argsstring>()</argsstring>
+        <name>~Listener</name>
+        <briefdescription>
+<para>Destroy the <ref refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" kindref="compound">Listener</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="36" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dbe/structbanita_1_1_message___handler_1_1_listener_1a2dfde040fbc7c8d2f17c6ba52722b749" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void banita::Message_Handler::Listener::handle</definition>
+        <argsstring>(const Message &amp;_message)=0</argsstring>
+        <name>handle</name>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1a6c6aa3a387d36db7306ca557fbb100e6">handle</reimplementedby>
+        <reimplementedby refid="d0/d23/classbanita_1_1_controller_1a2feb550d530941ed11312fbbb7730c80">handle</reimplementedby>
+        <param>
+          <type>const <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+<para>handle the received message </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>almost empty pure virtual struct that let the children handle a received message </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="72">
+        <label>banita::Controller</label>
+        <link refid="d0/d23/classbanita_1_1_controller"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>banita::Message_Handler::Listener</label>
+        <link refid="db/dbe/structbanita_1_1_message___handler_1_1_listener"/>
+      </node>
+      <node id="73">
+        <label>banita::Player_Controller</label>
+        <link refid="dc/d66/classbanita_1_1_player___controller"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="headers/Message_Handler.hpp" line="29" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="28" bodyend="46"/>
+    <listofallmembers>
+      <member refid="db/dbe/structbanita_1_1_message___handler_1_1_listener_1a2dfde040fbc7c8d2f17c6ba52722b749" prot="public" virt="pure-virtual"><scope>banita::Message_Handler::Listener</scope><name>handle</name></member>
+      <member refid="db/dbe/structbanita_1_1_message___handler_1_1_listener_1aa35b0cfb544e9353f6629d87fcc1799d" prot="public" virt="virtual"><scope>banita::Message_Handler::Listener</scope><name>~Listener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

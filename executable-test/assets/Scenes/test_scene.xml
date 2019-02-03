@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<scene>
+	<entities>
+		<entity id="e_player">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>0,0,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="t-rex">
+				  <obj>t-rex.obj</obj>
+				</component>  
+				<component module = "controller" type = "playercontroller" name = "player_controller01" >
+				</component>
+			</components>
+		</entity>
+			<entity id="e_main camera">
+		  <components>
+				<component module="transform" name = "transform">
+					<position>0,0,0</position>
+					<rotation>0,0,0</rotation>
+					<scale>1</scale>
+				</component>
+				<component module = "render" type = "camera" name = "camera01"> 
+				</component>
+		  </components>      
+		</entity>
+		<entity id ="e_light_01">
+		  <components>
+				<component module = "transform" type = "transform" name = "transform">
+					<position>10.0,10.0,10.0</position>
+					<rotation>0,0,0</rotation>
+					<scale>1</scale>
+				</component>
+				<component module = "render" type = "light" name = "light01">
+					<color>0.7,0.7,0.7</color>
+					<intensity>2</intensity>
+				</component>
+			</components>
+		</entity>
+		<entity id="bad_bunny">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>0,0,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="bunny01">
+				  <obj>bunny.obj</obj>
+				</component>  
+			</components>
+		</entity>
+		 <entity id="number1">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>6.5,-3.5,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="modelNumber01">
+				  <obj>number1.obj</obj>
+				</component>  
+			</components>
+		</entity>
+		<entity id="number2">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>0,-3.5,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="modelNumber02">
+				  <obj>number2.obj</obj>
+				</component>  
+			</components>
+		</entity>
+			<entity id="number3">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>-6.5,-3.5,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="modelNumber03">
+				  <obj>number3.obj</obj>
+				</component>  
+			</components>
+		</entity>
+			<entity id="number4">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>-6.5,3.5,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="modelNumber04">
+				  <obj>number4.obj</obj>
+				</component>  
+			</components>
+		</entity>
+			<entity id="number5">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>0,3.5,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="modelNumber05">
+				  <obj>number5.obj</obj>
+				</component>  
+			</components>
+		</entity>
+		<entity id="number6">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>6.5,3.5,4</position>
+				  <rotation>0,0,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="modelNumber06">
+				  <obj>number6.obj</obj>
+				</component>  
+			</components>
+		</entity>
+		<entity id="wall-down">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>0,6.5,4</position>
+				  <rotation>90,90,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="wallModel01">
+				  <obj>wall.obj</obj>
+				</component>  
+			</components>
+		</entity>
+		<entity id="wall-left">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>7,0,4</position>
+				  <rotation>45,45,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="wallModel02">
+				  <obj>wall.obj</obj>
+				</component>  
+			</components>
+		</entity>
+		<entity id="wall-up">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>0,-6.5,4</position>
+				  <rotation>45,0,90</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="wallModel03">
+				  <obj>wall.obj</obj>
+				</component>  
+			</components>
+		</entity>
+		<entity id="wall-right">
+			<components>
+				<component module = "transform" type = "transform" name = "transform">
+				  <position>-7,0,4</position>
+				  <rotation>45,45,0</rotation>
+				  <scale>1</scale>
+				</component>
+				<component module = "render" type = "model" name="wallModel04">
+				  <obj>wall.obj</obj>
+				</component>  
+			</components>
+		</entity>
+	</entities>
+</scene>

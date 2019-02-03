@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="da/d5c/classbanita_1_1_message" kind="class" language="C++" prot="public">
+    <compoundname>banita::Message</compoundname>
+    <includes refid="dc/dbc/_message_8hpp" local="no">Message.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="da/d5c/classbanita_1_1_message_1ab38626a5034f095bf7d856e95ab89290" prot="public" static="no">
+        <type>std::unordered_map&lt; Int32, Var &gt;</type>
+        <definition>using banita::Message::Properties =  std::unordered_map&lt;Int32, Var&gt;</definition>
+        <argsstring></argsstring>
+        <name>Properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="24" column="1" bodyfile="headers/Message.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d5c/classbanita_1_1_message_1a2624098d22b1c27e468a297fa28a3e1b" prot="private" static="no" mutable="no">
+        <type>Int32</type>
+        <definition>Int32 banita::Message::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="28" column="1" bodyfile="headers/Message.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d5c/classbanita_1_1_message_1a4a7d101bfa718c6d37d9645718d594a4" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d5c/classbanita_1_1_message_1ab38626a5034f095bf7d856e95ab89290" kindref="member">Properties</ref></type>
+        <definition>Properties banita::Message::messageProperties</definition>
+        <argsstring></argsstring>
+        <name>messageProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="29" column="1" bodyfile="headers/Message.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a24549655ea0b48a3a3f19cf3a40988cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message::Message</definition>
+        <argsstring>()</argsstring>
+        <name>Message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a31f83b3410a80c1bc34c41d33faab5e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message::Message</definition>
+        <argsstring>(Int32 _id)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>Int32</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="34" column="1" bodyfile="headers/Message.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1ade7a1c60f22840e12613a3816e29f0f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message::Message</definition>
+        <argsstring>(String _idString)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>String</type>
+          <declname>_idString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="35" column="1" bodyfile="headers/Message.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a18f6412c3a331b29e003c9f7b85e9aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message::~Message</definition>
+        <argsstring>()</argsstring>
+        <name>~Message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="37" column="1" bodyfile="headers/Message.hpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a70400180d77ac6461296cd634b5f102a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message::add_property</definition>
+        <argsstring>(String _key, Var &amp;_property)</argsstring>
+        <name>add_property</name>
+        <param>
+          <type>String</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>Var &amp;</type>
+          <declname>_property</declname>
+        </param>
+        <briefdescription>
+<para>adds a property from the content of the message and it&apos;s hashed value </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hashed value of the content to add </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_property</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current value of the content to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="48" column="1" bodyfile="headers/Message.hpp" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1af38e2a1b0ab69d111ba296f549665e13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message::remove_property</definition>
+        <argsstring>(String &amp;_key)</argsstring>
+        <name>remove_property</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <briefdescription>
+<para>Removes a property in a located key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="66" column="1" bodyfile="headers/Message.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1ac05afd843e1c6cee7965bdc90bcce84f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Variant &amp;</type>
+        <definition>const Variant&amp; banita::Message::get_property</definition>
+        <argsstring>(String &amp;_key)</argsstring>
+        <name>get_property</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <briefdescription>
+<para>returns a constant refence to a message property </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Variant&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="78" column="1" bodyfile="headers/Message.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a339b3ec9d64aeaeb726fa90d2a6162c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="da/d5c/classbanita_1_1_message_1ab38626a5034f095bf7d856e95ab89290" kindref="member">Properties</ref> &amp;</type>
+        <definition>const Properties&amp; banita::Message::get_properties</definition>
+        <argsstring>() const</argsstring>
+        <name>get_properties</name>
+        <briefdescription>
+<para>Get the properties object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const Properties&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="88" column="1" bodyfile="headers/Message.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1ac28e1eb6fc91d5cd728bcdc398458d36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Int32</type>
+        <definition>Int32 banita::Message::get_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_id</name>
+        <briefdescription>
+<para>Get the id object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Int32 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="98" column="1" bodyfile="headers/Message.hpp" bodystart="98" bodyend="101"/>
+        <referencedby refid="dc/ddc/classbanita_1_1_message___handler_1a3833f61bd8a4ef5e0f625b1ed5306b1c" compoundref="d2/d26/_message___handler_8hpp" startline="136" endline="139">banita::Message_Handler::block_message</referencedby>
+        <referencedby refid="dc/ddc/classbanita_1_1_message___handler_1ae1f927231f5e2b9807c281dc83decb1d" compoundref="d2/d26/_message___handler_8hpp" startline="141" endline="155">banita::Message_Handler::unblock_message</referencedby>
+        <referencedby refid="dc/ddc/classbanita_1_1_message___handler_1a9aa44b5857d36ea645f7c1d6631f299e" compoundref="d2/d26/_message___handler_8hpp" startline="164" endline="178">banita::Message_Handler::is_message_blocked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a68cb40efc158cc95be690c2a0f78843e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Variant &amp;</type>
+        <definition>Variant&amp; banita::Message::operator[]</definition>
+        <argsstring>(const Int32 _key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const Int32</type>
+          <declname>_key</declname>
+        </param>
+        <briefdescription>
+<para>operator that returns a property stored in a given _key </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Variant&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="111" column="1" bodyfile="headers/Message.hpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1afd7d83bc7864713a4e0654b39f633263" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Variant &amp;</type>
+        <definition>Variant&amp; banita::Message::operator[]</definition>
+        <argsstring>(const String &amp;_key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <briefdescription>
+<para>operator that returns a property stored in a given unhashed _key </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Variant&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="122" column="1" bodyfile="headers/Message.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a0a586520c54ba6631e91f907ac6d0dc0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message::operator Int32</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Int32</name>
+        <briefdescription>
+<para>when an instance of this class is treated as an uint32_t returns the message&apos;s id </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Int32 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="132" column="1" bodyfile="headers/Message.hpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1ae3d403e037b9c9b58ba11821f98b3489" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message::operator Properties</definition>
+        <argsstring>() const</argsstring>
+        <name>operator Properties</name>
+        <briefdescription>
+<para>when an instance of this class is treated as an unordered map &lt;Int32, Var&gt; returns the message properties object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Properties </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="142" column="1" bodyfile="headers/Message.hpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a14f6afe3532703912bab45350dbb848d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Message::operator==</definition>
+        <argsstring>(const Message &amp;_other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="147" column="1" bodyfile="headers/Message.hpp" bodystart="147" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d5c/classbanita_1_1_message_1a0eafd97ad4fbb72b96f464280c68bec5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Message::operator !=</definition>
+        <argsstring>(const Message &amp;_other) const</argsstring>
+        <name>operator !=</name>
+        <param>
+          <type>const <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="171" column="1" bodyfile="headers/Message.hpp" bodystart="171" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Message.hpp" line="22" column="1" bodyfile="headers/Message.hpp" bodystart="21" bodyend="175"/>
+    <listofallmembers>
+      <member refid="da/d5c/classbanita_1_1_message_1a70400180d77ac6461296cd634b5f102a" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>add_property</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1ac28e1eb6fc91d5cd728bcdc398458d36" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>get_id</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a339b3ec9d64aeaeb726fa90d2a6162c3" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>get_properties</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1ac05afd843e1c6cee7965bdc90bcce84f" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>get_property</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a2624098d22b1c27e468a297fa28a3e1b" prot="private" virt="non-virtual"><scope>banita::Message</scope><name>ID</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a24549655ea0b48a3a3f19cf3a40988cc" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>Message</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a31f83b3410a80c1bc34c41d33faab5e6" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>Message</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1ade7a1c60f22840e12613a3816e29f0f5" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>Message</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a4a7d101bfa718c6d37d9645718d594a4" prot="private" virt="non-virtual"><scope>banita::Message</scope><name>messageProperties</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a0eafd97ad4fbb72b96f464280c68bec5" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>operator !=</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a0a586520c54ba6631e91f907ac6d0dc0" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>operator Int32</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1ae3d403e037b9c9b58ba11821f98b3489" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>operator Properties</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a14f6afe3532703912bab45350dbb848d" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>operator==</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a68cb40efc158cc95be690c2a0f78843e" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>operator[]</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1afd7d83bc7864713a4e0654b39f633263" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>operator[]</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1ab38626a5034f095bf7d856e95ab89290" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>Properties</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1af38e2a1b0ab69d111ba296f549665e13" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>remove_property</name></member>
+      <member refid="da/d5c/classbanita_1_1_message_1a18f6412c3a331b29e003c9f7b85e9aa7" prot="public" virt="non-virtual"><scope>banita::Message</scope><name>~Message</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

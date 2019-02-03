@@ -1,0 +1,240 @@
+\hypertarget{classbanita_1_1_message}{}\section{banita\+::Message Class Reference}
+\label{classbanita_1_1_message}\index{banita::Message@{banita::Message}}
+
+
+{\ttfamily \#include $<$Message.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classbanita_1_1_message_ab38626a5034f095bf7d856e95ab89290}{Properties}} = std\+::unordered\+\_\+map$<$ Int32, Var $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_message_a24549655ea0b48a3a3f19cf3a40988cc}{Message}} ()
+\item 
+\mbox{\hyperlink{classbanita_1_1_message_a31f83b3410a80c1bc34c41d33faab5e6}{Message}} (Int32 \+\_\+id)
+\item 
+\mbox{\hyperlink{classbanita_1_1_message_ade7a1c60f22840e12613a3816e29f0f5}{Message}} (String \+\_\+id\+String)
+\item 
+\mbox{\hyperlink{classbanita_1_1_message_a18f6412c3a331b29e003c9f7b85e9aa7}{$\sim$\+Message}} ()
+\item 
+void \mbox{\hyperlink{classbanita_1_1_message_a70400180d77ac6461296cd634b5f102a}{add\+\_\+property}} (String \+\_\+key, Var \&\+\_\+property)
+\begin{DoxyCompactList}\small\item\em adds a property from the content of the message and it\textquotesingle{}s hashed value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_message_af38e2a1b0ab69d111ba296f549665e13}{remove\+\_\+property}} (String \&\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Removes a property in a located key. \end{DoxyCompactList}\item 
+const Variant \& \mbox{\hyperlink{classbanita_1_1_message_ac05afd843e1c6cee7965bdc90bcce84f}{get\+\_\+property}} (String \&\+\_\+key)
+\begin{DoxyCompactList}\small\item\em returns a constant refence to a message property \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classbanita_1_1_message_ab38626a5034f095bf7d856e95ab89290}{Properties}} \& \mbox{\hyperlink{classbanita_1_1_message_a339b3ec9d64aeaeb726fa90d2a6162c3}{get\+\_\+properties}} () const
+\begin{DoxyCompactList}\small\item\em Get the properties object. \end{DoxyCompactList}\item 
+Int32 \mbox{\hyperlink{classbanita_1_1_message_ac28e1eb6fc91d5cd728bcdc398458d36}{get\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Get the id object. \end{DoxyCompactList}\item 
+Variant \& \mbox{\hyperlink{classbanita_1_1_message_a68cb40efc158cc95be690c2a0f78843e}{operator\mbox{[}$\,$\mbox{]}}} (const Int32 \+\_\+key)
+\begin{DoxyCompactList}\small\item\em operator that returns a property stored in a given \+\_\+key \end{DoxyCompactList}\item 
+Variant \& \mbox{\hyperlink{classbanita_1_1_message_afd7d83bc7864713a4e0654b39f633263}{operator\mbox{[}$\,$\mbox{]}}} (const String \&\+\_\+key)
+\begin{DoxyCompactList}\small\item\em operator that returns a property stored in a given unhashed \+\_\+key \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_message_a0a586520c54ba6631e91f907ac6d0dc0}{operator Int32}} () const
+\begin{DoxyCompactList}\small\item\em when an instance of this class is treated as an uint32\+\_\+t returns the message\textquotesingle{}s id \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_message_ae3d403e037b9c9b58ba11821f98b3489}{operator Properties}} () const
+\begin{DoxyCompactList}\small\item\em when an instance of this class is treated as an unordered map $<$Int32, Var$>$ returns the message properties object \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_message_a14f6afe3532703912bab45350dbb848d}{operator==}} (const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+other) const
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_message_a0eafd97ad4fbb72b96f464280c68bec5}{operator !=}} (const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+other) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbanita_1_1_message_ab38626a5034f095bf7d856e95ab89290}\label{classbanita_1_1_message_ab38626a5034f095bf7d856e95ab89290}} 
+\index{banita::Message@{banita::Message}!Properties@{Properties}}
+\index{Properties@{Properties}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{Properties}{Properties}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classbanita_1_1_message_ab38626a5034f095bf7d856e95ab89290}{banita\+::\+Message\+::\+Properties}} =  std\+::unordered\+\_\+map$<$Int32, Var$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_message_a24549655ea0b48a3a3f19cf3a40988cc}\label{classbanita_1_1_message_a24549655ea0b48a3a3f19cf3a40988cc}} 
+\index{banita::Message@{banita::Message}!Message@{Message}}
+\index{Message@{Message}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily banita\+::\+Message\+::\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbanita_1_1_message_a31f83b3410a80c1bc34c41d33faab5e6}\label{classbanita_1_1_message_a31f83b3410a80c1bc34c41d33faab5e6}} 
+\index{banita::Message@{banita::Message}!Message@{Message}}
+\index{Message@{Message}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily banita\+::\+Message\+::\+Message (\begin{DoxyParamCaption}\item[{Int32}]{\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_message_ade7a1c60f22840e12613a3816e29f0f5}\label{classbanita_1_1_message_ade7a1c60f22840e12613a3816e29f0f5}} 
+\index{banita::Message@{banita::Message}!Message@{Message}}
+\index{Message@{Message}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{Message()}{Message()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily banita\+::\+Message\+::\+Message (\begin{DoxyParamCaption}\item[{String}]{\+\_\+id\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_message_a18f6412c3a331b29e003c9f7b85e9aa7}\label{classbanita_1_1_message_a18f6412c3a331b29e003c9f7b85e9aa7}} 
+\index{banita::Message@{banita::Message}!````~Message@{$\sim$Message}}
+\index{````~Message@{$\sim$Message}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{$\sim$Message()}{~Message()}}
+{\footnotesize\ttfamily banita\+::\+Message\+::$\sim$\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_message_a70400180d77ac6461296cd634b5f102a}\label{classbanita_1_1_message_a70400180d77ac6461296cd634b5f102a}} 
+\index{banita::Message@{banita::Message}!add\_property@{add\_property}}
+\index{add\_property@{add\_property}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{add\_property()}{add\_property()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+::add\+\_\+property (\begin{DoxyParamCaption}\item[{String}]{\+\_\+key,  }\item[{Var \&}]{\+\_\+property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+adds a property from the content of the message and it\textquotesingle{}s hashed value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & hashed value of the content to add \\
+\hline
+{\em \+\_\+property} & current value of the content to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_message_ac28e1eb6fc91d5cd728bcdc398458d36}\label{classbanita_1_1_message_ac28e1eb6fc91d5cd728bcdc398458d36}} 
+\index{banita::Message@{banita::Message}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily Int32 banita\+::\+Message\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the id object. 
+
+\begin{DoxyReturn}{Returns}
+Int32 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classbanita_1_1_message_a339b3ec9d64aeaeb726fa90d2a6162c3}\label{classbanita_1_1_message_a339b3ec9d64aeaeb726fa90d2a6162c3}} 
+\index{banita::Message@{banita::Message}!get\_properties@{get\_properties}}
+\index{get\_properties@{get\_properties}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{get\_properties()}{get\_properties()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classbanita_1_1_message_ab38626a5034f095bf7d856e95ab89290}{Properties}}\& banita\+::\+Message\+::get\+\_\+properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the properties object. 
+
+\begin{DoxyReturn}{Returns}
+const Properties\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_message_ac05afd843e1c6cee7965bdc90bcce84f}\label{classbanita_1_1_message_ac05afd843e1c6cee7965bdc90bcce84f}} 
+\index{banita::Message@{banita::Message}!get\_property@{get\_property}}
+\index{get\_property@{get\_property}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{get\_property()}{get\_property()}}
+{\footnotesize\ttfamily const Variant\& banita\+::\+Message\+::get\+\_\+property (\begin{DoxyParamCaption}\item[{String \&}]{\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns a constant refence to a message property 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Variant\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_message_a0eafd97ad4fbb72b96f464280c68bec5}\label{classbanita_1_1_message_a0eafd97ad4fbb72b96f464280c68bec5}} 
+\index{banita::Message@{banita::Message}!operator "!=@{operator "!=}}
+\index{operator "!=@{operator "!=}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{operator "!=()}{operator !=()}}
+{\footnotesize\ttfamily bool banita\+::\+Message\+::operator != (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_message_a0a586520c54ba6631e91f907ac6d0dc0}\label{classbanita_1_1_message_a0a586520c54ba6631e91f907ac6d0dc0}} 
+\index{banita::Message@{banita::Message}!operator Int32@{operator Int32}}
+\index{operator Int32@{operator Int32}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{operator Int32()}{operator Int32()}}
+{\footnotesize\ttfamily banita\+::\+Message\+::operator Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+when an instance of this class is treated as an uint32\+\_\+t returns the message\textquotesingle{}s id 
+
+\begin{DoxyReturn}{Returns}
+Int32 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_message_ae3d403e037b9c9b58ba11821f98b3489}\label{classbanita_1_1_message_ae3d403e037b9c9b58ba11821f98b3489}} 
+\index{banita::Message@{banita::Message}!operator Properties@{operator Properties}}
+\index{operator Properties@{operator Properties}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{operator Properties()}{operator Properties()}}
+{\footnotesize\ttfamily banita\+::\+Message\+::operator \mbox{\hyperlink{classbanita_1_1_message_ab38626a5034f095bf7d856e95ab89290}{Properties}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+when an instance of this class is treated as an unordered map $<$Int32, Var$>$ returns the message properties object 
+
+\begin{DoxyReturn}{Returns}
+Properties 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_message_a14f6afe3532703912bab45350dbb848d}\label{classbanita_1_1_message_a14f6afe3532703912bab45350dbb848d}} 
+\index{banita::Message@{banita::Message}!operator==@{operator==}}
+\index{operator==@{operator==}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool banita\+::\+Message\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_message_a68cb40efc158cc95be690c2a0f78843e}\label{classbanita_1_1_message_a68cb40efc158cc95be690c2a0f78843e}} 
+\index{banita::Message@{banita::Message}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Variant\& banita\+::\+Message\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const Int32}]{\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+operator that returns a property stored in a given \+\_\+key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Variant\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_message_afd7d83bc7864713a4e0654b39f633263}\label{classbanita_1_1_message_afd7d83bc7864713a4e0654b39f633263}} 
+\index{banita::Message@{banita::Message}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Variant\& banita\+::\+Message\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+operator that returns a property stored in a given unhashed \+\_\+key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Variant\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_message_af38e2a1b0ab69d111ba296f549665e13}\label{classbanita_1_1_message_af38e2a1b0ab69d111ba296f549665e13}} 
+\index{banita::Message@{banita::Message}!remove\_property@{remove\_property}}
+\index{remove\_property@{remove\_property}!banita::Message@{banita::Message}}
+\subsubsection{\texorpdfstring{remove\_property()}{remove\_property()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+::remove\+\_\+property (\begin{DoxyParamCaption}\item[{String \&}]{\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a property in a located key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_message_8hpp}{Message.\+hpp}}\end{DoxyCompactItemize}

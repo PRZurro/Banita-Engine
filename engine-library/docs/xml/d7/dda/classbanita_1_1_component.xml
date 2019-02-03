@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d7/dda/classbanita_1_1_component" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>banita::Component</compoundname>
+    <derivedcompoundref refid="d8/d6f/classbanita_1_1_camera___component" prot="public" virt="non-virtual">banita::Camera_Component</derivedcompoundref>
+    <derivedcompoundref refid="d0/d23/classbanita_1_1_controller" prot="public" virt="non-virtual">banita::Controller</derivedcompoundref>
+    <derivedcompoundref refid="de/d14/classbanita_1_1_light___component" prot="public" virt="non-virtual">banita::Light_Component</derivedcompoundref>
+    <derivedcompoundref refid="d1/d27/classbanita_1_1_model___component" prot="public" virt="non-virtual">banita::Model_Component</derivedcompoundref>
+    <derivedcompoundref refid="d8/de9/classbanita_1_1_transform___component" prot="public" virt="non-virtual">banita::Transform_Component</derivedcompoundref>
+    <includes refid="da/d5c/_component_8hpp" local="no">Component.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" prot="protected" static="no" mutable="no">
+        <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity* banita::Component::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="24" column="1" bodyfile="headers/Component.hpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" compoundref="da/d5c/_component_8hpp" startline="51" endline="54">get_entity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String banita::Component::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="25" column="1" bodyfile="headers/Component.hpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" compoundref="da/d5c/_component_8hpp" startline="61" endline="64">get_type</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String banita::Component::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="26" column="1" bodyfile="headers/Component.hpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" compoundref="da/d5c/_component_8hpp" startline="71" endline="74">get_name</referencedby>
+        <referencedby refid="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" compoundref="da/d5c/_component_8hpp" startline="84" endline="87">set_name</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1ad73a6ae8fbf56b7d54ef48c5e9ec164d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Component::Component</definition>
+        <argsstring>()</argsstring>
+        <name>Component</name>
+        <briefdescription>
+<para>Construct a new <ref refid="d7/dda/classbanita_1_1_component" kindref="compound">Component</ref> object by default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1a3a267ceeceda4ed4f9c7dba7d11f4886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Component::Component</definition>
+        <argsstring>(Entity *_owner, String _type=&quot;undefined&quot;, String _name=&quot;undefined&quot;)</argsstring>
+        <name>Component</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_owner</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>_type</declname>
+          <defval>&quot;undefined&quot;</defval>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>_name</declname>
+          <defval>&quot;undefined&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d7/dda/classbanita_1_1_component" kindref="compound">Component</ref> object, storing and processing the children&apos;s input objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1a0dc114b2bed0ec1128b20bbf2b5e2eca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual banita::Component::~Component</definition>
+        <argsstring>()</argsstring>
+        <name>~Component</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="42" column="1" bodyfile="headers/Component.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> &amp;</type>
+        <definition>Entity&amp; banita::Component::get_entity</definition>
+        <argsstring>() const</argsstring>
+        <name>get_entity</name>
+        <briefdescription>
+<para>Get the entity object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="51" column="1" bodyfile="headers/Component.hpp" bodystart="51" bodyend="54"/>
+        <references refid="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" compoundref="da/d5c/_component_8hpp" startline="24">owner</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const String &amp;</type>
+        <definition>const String&amp; banita::Component::get_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_type</name>
+        <briefdescription>
+<para>Get the type object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const String&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="61" column="1" bodyfile="headers/Component.hpp" bodystart="61" bodyend="64"/>
+        <references refid="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" compoundref="da/d5c/_component_8hpp" startline="25">type</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const String &amp;</type>
+        <definition>const String&amp; banita::Component::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Get the name object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const String&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="71" column="1" bodyfile="headers/Component.hpp" bodystart="71" bodyend="74"/>
+        <references refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" compoundref="da/d5c/_component_8hpp" startline="26">name</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Component::set_name</definition>
+        <argsstring>(String &amp;_newName)</argsstring>
+        <name>set_name</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_newName</declname>
+        </param>
+        <briefdescription>
+<para>Set the name object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_newName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="84" column="1" bodyfile="headers/Component.hpp" bodystart="84" bodyend="87"/>
+        <references refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" compoundref="da/d5c/_component_8hpp" startline="26">name</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1a2f700c071185f7033caa69576dafa9e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool banita::Component::initialize</definition>
+        <argsstring>()=0</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1a42c2960117c977daf72083452fb69e86">initialize</reimplementedby>
+        <reimplementedby refid="de/d14/classbanita_1_1_light___component_1a2afec04726df91aee59837fa1481d361">initialize</reimplementedby>
+        <reimplementedby refid="d1/d27/classbanita_1_1_model___component_1af87c47483437405822718949a448bc14">initialize</reimplementedby>
+        <reimplementedby refid="d0/d23/classbanita_1_1_controller_1a3a3bc92a032f22f0cd20cbff0f89d175">initialize</reimplementedby>
+        <reimplementedby refid="d8/d6f/classbanita_1_1_camera___component_1a5cf5d281063a61d5c11914d30c512f40">initialize</reimplementedby>
+        <reimplementedby refid="d8/de9/classbanita_1_1_transform___component_1af21e03166cba2a8489b2a5e02867ce6a">initialize</reimplementedby>
+        <briefdescription>
+<para>initialize the attributes and logic of this component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1ae8f9d11dc8e3c920d6d40146668c429b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool banita::Component::update</definition>
+        <argsstring>(float _deltaTime)=0</argsstring>
+        <name>update</name>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1ab7c47cba21892cac0e9f8a366cf86ca8">update</reimplementedby>
+        <reimplementedby refid="de/d14/classbanita_1_1_light___component_1a1cba9ef2cb6b798623899ad94f68df9f">update</reimplementedby>
+        <reimplementedby refid="d1/d27/classbanita_1_1_model___component_1ab8acac6bf05bc01a8529235904b81a5b">update</reimplementedby>
+        <reimplementedby refid="d0/d23/classbanita_1_1_controller_1a44363ca0ed1ba66a9f6c079a6b158d94">update</reimplementedby>
+        <reimplementedby refid="d8/d6f/classbanita_1_1_camera___component_1a177f9d18f146b83d6dc08eab3c576cae">update</reimplementedby>
+        <reimplementedby refid="d8/de9/classbanita_1_1_transform___component_1a0ca137a40cc84ee0825f37bab82d5d5d">update</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>_deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>update this component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>provided by the kernel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dda/classbanita_1_1_component_1a619154ef2bed8e4493413bdef6117716" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool banita::Component::parse_property</definition>
+        <argsstring>(const String &amp;_name, const String &amp;value)=0</argsstring>
+        <name>parse_property</name>
+        <reimplementedby refid="dc/d66/classbanita_1_1_player___controller_1ab25a1e791ce020ff226b6324cc2c5c67">parse_property</reimplementedby>
+        <reimplementedby refid="de/d14/classbanita_1_1_light___component_1aa808026256f8f1050a1a90cc3b6a0602">parse_property</reimplementedby>
+        <reimplementedby refid="d1/d27/classbanita_1_1_model___component_1a1a6acbf643bd87acabfc2a31b7be4db8">parse_property</reimplementedby>
+        <reimplementedby refid="d0/d23/classbanita_1_1_controller_1a74933400a4ed56e68ce5cb11ec395a1b">parse_property</reimplementedby>
+        <reimplementedby refid="d8/d6f/classbanita_1_1_camera___component_1a1f494aa6cd8edcbe61866dc5e053c6be">parse_property</reimplementedby>
+        <reimplementedby refid="d8/de9/classbanita_1_1_transform___component_1a0f3ace424235b3992e01dbddfe85f088">parse_property</reimplementedby>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>parse the xml property node in each children </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component.hpp" line="116" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>banita::Controller</label>
+        <link refid="d0/d23/classbanita_1_1_controller"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>banita::Camera_Component</label>
+        <link refid="d8/d6f/classbanita_1_1_camera___component"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>banita::Light_Component</label>
+        <link refid="de/d14/classbanita_1_1_light___component"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>banita::Model_Component</label>
+        <link refid="d1/d27/classbanita_1_1_model___component"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>banita::Player_Controller</label>
+        <link refid="dc/d66/classbanita_1_1_player___controller"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>banita::Transform_Component</label>
+        <link refid="d8/de9/classbanita_1_1_transform___component"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>banita::Entity</label>
+        <link refid="db/d9f/classbanita_1_1_entity"/>
+      </node>
+      <node id="18">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Component.hpp" line="21" column="1" bodyfile="headers/Component.hpp" bodystart="20" bodyend="117"/>
+    <listofallmembers>
+      <member refid="d7/dda/classbanita_1_1_component_1ad73a6ae8fbf56b7d54ef48c5e9ec164d" prot="public" virt="non-virtual"><scope>banita::Component</scope><name>Component</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a3a267ceeceda4ed4f9c7dba7d11f4886" prot="public" virt="non-virtual"><scope>banita::Component</scope><name>Component</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" prot="public" virt="non-virtual"><scope>banita::Component</scope><name>get_entity</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" prot="public" virt="non-virtual"><scope>banita::Component</scope><name>get_name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" prot="public" virt="non-virtual"><scope>banita::Component</scope><name>get_type</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a2f700c071185f7033caa69576dafa9e7" prot="public" virt="pure-virtual"><scope>banita::Component</scope><name>initialize</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" prot="protected" virt="non-virtual"><scope>banita::Component</scope><name>name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" prot="protected" virt="non-virtual"><scope>banita::Component</scope><name>owner</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a619154ef2bed8e4493413bdef6117716" prot="public" virt="pure-virtual"><scope>banita::Component</scope><name>parse_property</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" prot="public" virt="non-virtual"><scope>banita::Component</scope><name>set_name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" prot="protected" virt="non-virtual"><scope>banita::Component</scope><name>type</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ae8f9d11dc8e3c920d6d40146668c429b" prot="public" virt="pure-virtual"><scope>banita::Component</scope><name>update</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a0dc114b2bed0ec1128b20bbf2b5e2eca" prot="public" virt="virtual"><scope>banita::Component</scope><name>~Component</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+\hypertarget{classbanita_1_1_model___component}{}\section{banita\+::Model\+\_\+\+Component Class Reference}
+\label{classbanita_1_1_model___component}\index{banita::Model\_Component@{banita::Model\_Component}}
+
+
+{\ttfamily \#include $<$Model\+\_\+\+Component.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Model\+\_\+\+Component\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Model\+\_\+\+Component\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_model___component_a2f9baa86605d6d152e69cd73af41cf7b}{Model\+\_\+\+Component}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_model___component}{Model\+\_\+\+Component}} object and store the entity received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_model___component_aa8bdeb97075af832ea0c0f32b302e799}{Model\+\_\+\+Component}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$entity, const String \&\+\_\+model\+Path)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_model___component}{Model\+\_\+\+Component}} object by the current obj path. Currently unavailable the creation of the 3d mesh with this constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_model___component_af87c47483437405822718949a448bc14}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em initialize the model component attributes and members \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_model___component_ab8acac6bf05bc01a8529235904b81a5b}{update}} (float \+\_\+delta\+Time) override
+\begin{DoxyCompactList}\small\item\em update the model component attributes and members \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_model___component_a1a6acbf643bd87acabfc2a31b7be4db8}{parse\+\_\+property}} (const String \&\+\_\+name, const String \&value) override
+\begin{DoxyCompactList}\small\item\em parse the xml node parameters and initialize the 3d mesh by the value (name of the file) \end{DoxyCompactList}\item 
+Model\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_model___component_ae0c1a224521a196fad83dcc09e34097b}{get\+\_\+model}} ()
+\begin{DoxyCompactList}\small\item\em Get the model shared pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Component\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_model___component_a4a5d4212e321577342bc1a8f4c997ca9}{generator}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity)
+\begin{DoxyCompactList}\small\item\em Model component\textquotesingle{}s generator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_model___component_a2f9baa86605d6d152e69cd73af41cf7b}\label{classbanita_1_1_model___component_a2f9baa86605d6d152e69cd73af41cf7b}} 
+\index{banita::Model\_Component@{banita::Model\_Component}!Model\_Component@{Model\_Component}}
+\index{Model\_Component@{Model\_Component}!banita::Model\_Component@{banita::Model\_Component}}
+\subsubsection{\texorpdfstring{Model\_Component()}{Model\_Component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Model\+\_\+\+Component\+::\+Model\+\_\+\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_model___component}{Model\+\_\+\+Component}} object and store the entity received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classbanita_1_1_model___component_aa8bdeb97075af832ea0c0f32b302e799}\label{classbanita_1_1_model___component_aa8bdeb97075af832ea0c0f32b302e799}} 
+\index{banita::Model\_Component@{banita::Model\_Component}!Model\_Component@{Model\_Component}}
+\index{Model\_Component@{Model\_Component}!banita::Model\_Component@{banita::Model\_Component}}
+\subsubsection{\texorpdfstring{Model\_Component()}{Model\_Component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Model\+\_\+\+Component\+::\+Model\+\_\+\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{entity,  }\item[{const String \&}]{\+\_\+model\+Path }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_model___component}{Model\+\_\+\+Component}} object by the current obj path. Currently unavailable the creation of the 3d mesh with this constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & \\
+\hline
+{\em \+\_\+model\+Path} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_model___component_a4a5d4212e321577342bc1a8f4c997ca9}\label{classbanita_1_1_model___component_a4a5d4212e321577342bc1a8f4c997ca9}} 
+\index{banita::Model\_Component@{banita::Model\_Component}!generator@{generator}}
+\index{generator@{generator}!banita::Model\_Component@{banita::Model\_Component}}
+\subsubsection{\texorpdfstring{generator()}{generator()}}
+{\footnotesize\ttfamily static Component\+\_\+sptr banita\+::\+Model\+\_\+\+Component\+::generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Model component\textquotesingle{}s generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component\+\_\+sptr 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classbanita_1_1_model___component_ae0c1a224521a196fad83dcc09e34097b}\label{classbanita_1_1_model___component_ae0c1a224521a196fad83dcc09e34097b}} 
+\index{banita::Model\_Component@{banita::Model\_Component}!get\_model@{get\_model}}
+\index{get\_model@{get\_model}!banita::Model\_Component@{banita::Model\_Component}}
+\subsubsection{\texorpdfstring{get\_model()}{get\_model()}}
+{\footnotesize\ttfamily Model\+\_\+sptr banita\+::\+Model\+\_\+\+Component\+::get\+\_\+model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the model shared pointer. 
+
+\begin{DoxyReturn}{Returns}
+Model\+\_\+sptr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_model___component_af87c47483437405822718949a448bc14}\label{classbanita_1_1_model___component_af87c47483437405822718949a448bc14}} 
+\index{banita::Model\_Component@{banita::Model\_Component}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Model\_Component@{banita::Model\_Component}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool banita\+::\+Model\+\_\+\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+initialize the model component attributes and members 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_model___component_a1a6acbf643bd87acabfc2a31b7be4db8}\label{classbanita_1_1_model___component_a1a6acbf643bd87acabfc2a31b7be4db8}} 
+\index{banita::Model\_Component@{banita::Model\_Component}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!banita::Model\_Component@{banita::Model\_Component}}
+\subsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily bool banita\+::\+Model\+\_\+\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{const String \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+parse the xml node parameters and initialize the 3d mesh by the value (name of the file) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_model___component_ab8acac6bf05bc01a8529235904b81a5b}\label{classbanita_1_1_model___component_ab8acac6bf05bc01a8529235904b81a5b}} 
+\index{banita::Model\_Component@{banita::Model\_Component}!update@{update}}
+\index{update@{update}!banita::Model\_Component@{banita::Model\_Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool banita\+::\+Model\+\_\+\+Component\+::update (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update the model component attributes and members 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}{banita\+::\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_model___component_8hpp}{Model\+\_\+\+Component.\+hpp}}\end{DoxyCompactItemize}

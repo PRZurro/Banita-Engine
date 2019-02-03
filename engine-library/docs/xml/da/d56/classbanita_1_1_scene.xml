@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="da/d56/classbanita_1_1_scene" kind="class" language="C++" prot="public">
+    <compoundname>banita::Scene</compoundname>
+    <includes refid="d0/d8f/_scene_8hpp" local="no">Scene.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="da/d56/classbanita_1_1_scene_1aabf996ff2af5e6cb0b6e835f0b6e016a" prot="private" static="no">
+        <type>std::unordered_map&lt; Int32, Entity_sptr &gt;</type>
+        <definition>using banita::Scene::Entities_Map =  std::unordered_map&lt;Int32, Entity_sptr&gt;</definition>
+        <argsstring></argsstring>
+        <name>Entities_Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="29" column="1" bodyfile="headers/Scene.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d56/classbanita_1_1_scene_1a530a4842456d11c04505c80c75befc00" prot="private" static="no">
+        <type>std::unordered_map&lt; Int32, Module_sptr &gt;</type>
+        <definition>using banita::Scene::Modules_Map =  std::unordered_map&lt;Int32, Module_sptr&gt;</definition>
+        <argsstring></argsstring>
+        <name>Modules_Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="30" column="1" bodyfile="headers/Scene.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d56/classbanita_1_1_scene_1af8e0e440a6498b1e21c8660582ec838a" prot="private" static="no" mutable="no">
+        <type>Entities_Map</type>
+        <definition>Entities_Map banita::Scene::entities</definition>
+        <argsstring></argsstring>
+        <name>entities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="34" column="1" bodyfile="headers/Scene.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d56/classbanita_1_1_scene_1a659c09a36271caf6e144d326000874cf" prot="private" static="no" mutable="no">
+        <type>Modules_Map</type>
+        <definition>Modules_Map banita::Scene::modules</definition>
+        <argsstring></argsstring>
+        <name>modules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="35" column="1" bodyfile="headers/Scene.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d56/classbanita_1_1_scene_1a2324cfc3519ab453a473a42d04c200d3" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref> *</type>
+        <definition>Kernel* banita::Scene::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="37" column="1" bodyfile="headers/Scene.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d56/classbanita_1_1_scene_1a7918a3775391dde372743c03e3426911" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d15/classbanita_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window* banita::Scene::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="38" column="1" bodyfile="headers/Scene.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d56/classbanita_1_1_scene_1a6c12e96defcb7d30da946b91d02fb9d2" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref> *</type>
+        <definition>Message_Handler* banita::Scene::messageHandler</definition>
+        <argsstring></argsstring>
+        <name>messageHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="39" column="1" bodyfile="headers/Scene.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1ac1cd51735d74d50dcefa500f715988a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Scene::Scene</definition>
+        <argsstring>(Window *_window, const String &amp;_scenePathXML)</argsstring>
+        <name>Scene</name>
+        <param>
+          <type><ref refid="d5/d15/classbanita_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>_window</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_scenePathXML</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_scenePathXML</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1a1c17873d5172df34c9a6a62dc3b13fa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Scene::~Scene</definition>
+        <argsstring>()</argsstring>
+        <name>~Scene</name>
+        <briefdescription>
+<para>Destroy the <ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="55" column="1" bodyfile="headers/Scene.hpp" bodystart="55" bodyend="63"/>
+        <references refid="d6/d5d/classbanita_1_1_kernel_1aee9ff2e2d1816a4b3c1ef2694034e0ce" compoundref="dd/d8b/_kernel_8hpp" startline="82" endline="85">banita::Kernel::stop</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1aaf3588951958ee81114f0e58e5aead92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Scene::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="71" column="1" bodyfile="headers/Scene.hpp" bodystart="71" bodyend="74"/>
+        <references refid="d6/d5d/classbanita_1_1_kernel_1af596d1e111f5d7dd9d9e483eda630695">banita::Kernel::run</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1a0b6fe86bd75f0baa4b7d8e259a8ebf07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Scene::pause</definition>
+        <argsstring>()</argsstring>
+        <name>pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="80" column="1" bodyfile="headers/Scene.hpp" bodystart="80" bodyend="83"/>
+        <references refid="d6/d5d/classbanita_1_1_kernel_1a69c51724e7192464b086b3c357fdcb7f" compoundref="dd/d8b/_kernel_8hpp" startline="73" endline="76">banita::Kernel::pause</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1ad27b01f5b3a31a7fb81f5ec7dc6c63c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Scene::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="89" column="1" bodyfile="headers/Scene.hpp" bodystart="89" bodyend="92"/>
+        <references refid="d6/d5d/classbanita_1_1_kernel_1aee9ff2e2d1816a4b3c1ef2694034e0ce" compoundref="dd/d8b/_kernel_8hpp" startline="82" endline="85">banita::Kernel::stop</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1adaa0e0879b6714fe1932562f6088892c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref> *</type>
+        <definition>Kernel* banita::Scene::get_kernel</definition>
+        <argsstring>()</argsstring>
+        <name>get_kernel</name>
+        <briefdescription>
+<para>Get the kernel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Kernel* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="101" column="1" bodyfile="headers/Scene.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1ae3121d9444a4197d3f7ebfffd37d8a4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d5/d15/classbanita_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window* banita::Scene::get_window</definition>
+        <argsstring>()</argsstring>
+        <name>get_window</name>
+        <briefdescription>
+<para>Get the window object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Window* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="111" column="1" bodyfile="headers/Scene.hpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1ab95cc89547ab5d33414a7743bfe9f60f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref> *</type>
+        <definition>Message_Handler* banita::Scene::get_message_handler</definition>
+        <argsstring>()</argsstring>
+        <name>get_message_handler</name>
+        <briefdescription>
+<para>Get the message handler object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Message_Handler* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="121" column="1" bodyfile="headers/Scene.hpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1abbb415ef292d34cc6882af2d59e5a25d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity* banita::Scene::get_entity</definition>
+        <argsstring>(Int32 _ID)</argsstring>
+        <name>get_entity</name>
+        <param>
+          <type>Int32</type>
+          <declname>_ID</declname>
+        </param>
+        <briefdescription>
+<para>Get the entity object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Entity* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="132" column="1" bodyfile="headers/Scene.hpp" bodystart="132" bodyend="140"/>
+        <referencedby refid="da/d56/classbanita_1_1_scene_1a9acedd39a5c861b803818635c355a81f" compoundref="d0/d8f/_scene_8hpp" startline="148" endline="151">get_entity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1a9acedd39a5c861b803818635c355a81f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity* banita::Scene::get_entity</definition>
+        <argsstring>(String &amp;_ID)</argsstring>
+        <name>get_entity</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_ID</declname>
+        </param>
+        <briefdescription>
+<para>Get the entity object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Entity* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="148" column="1" bodyfile="headers/Scene.hpp" bodystart="148" bodyend="151"/>
+        <references refid="da/d56/classbanita_1_1_scene_1abbb415ef292d34cc6882af2d59e5a25d" compoundref="d0/d8f/_scene_8hpp" startline="132" endline="140">get_entity</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1a6c535a65a7fcd80bf6d1d04a59b056cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d0/d84/classbanita_1_1_module" kindref="compound">Module</ref> *</type>
+        <definition>Module* banita::Scene::get_module</definition>
+        <argsstring>(String &amp;_name)</argsstring>
+        <name>get_module</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Get the module object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Module* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="159" column="1" bodyfile="headers/Scene.hpp" bodystart="159" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1ac931053391e339ef352562f9528c0b11" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Scene::load_scene</definition>
+        <argsstring>(const String &amp;_filePath)</argsstring>
+        <name>load_scene</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_filePath</declname>
+        </param>
+        <briefdescription>
+<para>load the scene by the file path received </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1a859bc4a976e5ae0ed3fa29dad24e4124" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Scene::load_entities</definition>
+        <argsstring>(XML_Node *_entities)</argsstring>
+        <name>load_entities</name>
+        <param>
+          <type>XML_Node *</type>
+          <declname>_entities</declname>
+        </param>
+        <briefdescription>
+<para>load the scene&apos;s entities by parsing the entities node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_entities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1adf3048ac8c14729c7c0264b104901abe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Scene::load_components</definition>
+        <argsstring>(XML_Node *_componentRoot, Entity &amp;_entity)</argsstring>
+        <name>load_components</name>
+        <param>
+          <type>XML_Node *</type>
+          <declname>_componentRoot</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> &amp;</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>load the entity&apos;s components by parsing the components node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_componentRoot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d56/classbanita_1_1_scene_1a980181cda5dbcbda743c63e5f1be7c3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Scene::load_module</definition>
+        <argsstring>(String &amp;_moduleName)</argsstring>
+        <name>load_module</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_moduleName</declname>
+        </param>
+        <briefdescription>
+<para>load a module by name if is not existing yet </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_moduleName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Scene.hpp" line="206" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Scene.hpp" line="28" column="1" bodyfile="headers/Scene.hpp" bodystart="27" bodyend="207"/>
+    <listofallmembers>
+      <member refid="da/d56/classbanita_1_1_scene_1af8e0e440a6498b1e21c8660582ec838a" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>entities</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1aabf996ff2af5e6cb0b6e835f0b6e016a" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>Entities_Map</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1aaf3588951958ee81114f0e58e5aead92" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>execute</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1abbb415ef292d34cc6882af2d59e5a25d" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>get_entity</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a9acedd39a5c861b803818635c355a81f" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>get_entity</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1adaa0e0879b6714fe1932562f6088892c" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>get_kernel</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1ab95cc89547ab5d33414a7743bfe9f60f" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>get_message_handler</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a6c535a65a7fcd80bf6d1d04a59b056cb" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>get_module</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1ae3121d9444a4197d3f7ebfffd37d8a4a" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>get_window</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a2324cfc3519ab453a473a42d04c200d3" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>kernel</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1adf3048ac8c14729c7c0264b104901abe" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>load_components</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a859bc4a976e5ae0ed3fa29dad24e4124" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>load_entities</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a980181cda5dbcbda743c63e5f1be7c3e" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>load_module</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1ac931053391e339ef352562f9528c0b11" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>load_scene</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a6c12e96defcb7d30da946b91d02fb9d2" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>messageHandler</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a659c09a36271caf6e144d326000874cf" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>modules</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a530a4842456d11c04505c80c75befc00" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>Modules_Map</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a0b6fe86bd75f0baa4b7d8e259a8ebf07" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>pause</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1ac1cd51735d74d50dcefa500f715988a2" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>Scene</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1ad27b01f5b3a31a7fb81f5ec7dc6c63c6" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>stop</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a7918a3775391dde372743c03e3426911" prot="private" virt="non-virtual"><scope>banita::Scene</scope><name>window</name></member>
+      <member refid="da/d56/classbanita_1_1_scene_1a1c17873d5172df34c9a6a62dc3b13fa6" prot="public" virt="non-virtual"><scope>banita::Scene</scope><name>~Scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

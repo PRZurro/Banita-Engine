@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="da/dc1/_module___factory___central_8hpp" kind="file" language="C++">
+    <compoundname>Module_Factory_Central.hpp</compoundname>
+    <includes local="yes">declarations.hpp</includes>
+    <includes refid="db/db6/_module_8hpp" local="yes">Module.hpp</includes>
+    <includes refid="de/d59/_render___module_8hpp" local="yes">Render_Module.hpp</includes>
+    <includes refid="df/dc9/_controller___module_8hpp" local="yes">Controller_Module.hpp</includes>
+    <includes refid="d3/dfa/_transform___module_8hpp" local="yes">Transform_Module.hpp</includes>
+    <includes local="no">unordered_map</includes>
+    <incdepgraph>
+      <node id="231">
+        <label>list</label>
+      </node>
+      <node id="237">
+        <label>Entity.hpp</label>
+        <link refid="d2/db6/_entity_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>Transform_Module.hpp</label>
+        <link refid="d3/dfa/_transform___module_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>headers/Module_Factory_Central.hpp</label>
+        <link refid="da/dc1/_module___factory___central_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>string</label>
+      </node>
+      <node id="234">
+        <label>Timer.hpp</label>
+      </node>
+      <node id="232">
+        <label>Render_Node.hpp</label>
+      </node>
+      <node id="243">
+        <label>Transform_Task.hpp</label>
+        <link refid="dc/d1d/_transform___task_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>Module.hpp</label>
+        <link refid="db/db6/_module_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>Node.hpp</label>
+      </node>
+      <node id="238">
+        <label>Component.hpp</label>
+        <link refid="da/d5c/_component_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>Task.hpp</label>
+        <link refid="d6/d1e/_task_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>Render_Module.hpp</label>
+        <link refid="de/d59/_render___module_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>vector</label>
+      </node>
+      <node id="229">
+        <label>Render_Task.hpp</label>
+        <link refid="db/df5/_render___task_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>Kernel.hpp</label>
+        <link refid="dd/d8b/_kernel_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>Window.hpp</label>
+        <link refid="de/d0b/_window_8hpp"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>Controller_Task.hpp</label>
+        <link refid="da/da0/_controller___task_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>unordered_map</label>
+      </node>
+      <node id="224">
+        <label>declarations.hpp</label>
+      </node>
+      <node id="244">
+        <label>Message_Handler.hpp</label>
+        <link refid="d2/d26/_message___handler_8hpp"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>set</label>
+      </node>
+      <node id="250">
+        <label>Controller_Module.hpp</label>
+        <link refid="df/dc9/_controller___module_8hpp"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>Keyboard.hpp</label>
+        <link refid="db/ddd/_keyboard_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>Transform_Component.hpp</label>
+        <link refid="d1/d74/_transform___component_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>memory</label>
+      </node>
+      <node id="245">
+        <label>Message.hpp</label>
+        <link refid="dc/dbc/_message_8hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>glm/glm.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="dc/dbf/classbanita_1_1_module___factory___central" prot="public">banita::Module_Factory_Central</innerclass>
+    <innernamespace refid="d6/de5/namespacebanita">banita</innernamespace>
+    <briefdescription>
+<para>Patch to the problem of auto-registration of static members in cpp files. Registers and stores the module factories. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Pablo Rodríguez Zurro (<ulink url="mailto:pablorodriguezzurro@gmail.com">pablorodriguezzurro@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2019-02-01</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;declarations.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/db6/_module_8hpp" kindref="compound">Module.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/d59/_render___module_8hpp" kindref="compound">Render_Module.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/dc9/_controller___module_8hpp" kindref="compound">Controller_Module.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/dfa/_transform___module_8hpp" kindref="compound">Transform_Module.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/de5/namespacebanita" kindref="compound">banita</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24" refid="dc/dbf/classbanita_1_1_module___factory___central" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ModFactory_Map<sp/>=<sp/>std::unordered_map&lt;Int32,<sp/>Module::Factory*&gt;;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ModFactory_Map<sp/>moduleFactories;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref>()<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" kindref="member">register_factory</ref>(</highlight><highlight class="stringliteral">&quot;transform&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory" kindref="compound">Transform_Module::Transform_Factory</ref>());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" kindref="member">register_factory</ref>(</highlight><highlight class="stringliteral">&quot;render&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d5/dce/classbanita_1_1_render___module_1_1_render___factory" kindref="compound">Render_Module::Render_Factory</ref>());</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" kindref="member">register_factory</ref>(</highlight><highlight class="stringliteral">&quot;controller&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="dc/dcb/classbanita_1_1_controller___module_1_1_controller___factory" kindref="compound">Controller_Module::Controller_Factory</ref>());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref><sp/>*<sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="dc/dbf/classbanita_1_1_module___factory___central_1aba0eb5d045a61c1e85684c3e00ce62f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref><sp/>*<sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1aba0eb5d045a61c1e85684c3e00ce62f5" kindref="member">get_instance</ref>()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" kindref="member">instance</ref>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" kindref="member">instance</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" kindref="member">register_factory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/>&amp;<sp/>_name,<sp/><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref><sp/>*<sp/>_factory)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moduleFactories[FNV32(_name)]<sp/>=<sp/>_factory;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="dc/dbf/classbanita_1_1_module___factory___central_1a1ac99380daaa5ab3a5dffb29181e6858" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref><sp/>*<sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1a1ac99380daaa5ab3a5dffb29181e6858" kindref="member">get_module_factory</ref>(String<sp/>&amp;<sp/>_name)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Int32<sp/>hashedName<sp/>=<sp/>FNV32(_name);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1a1ac99380daaa5ab3a5dffb29181e6858" kindref="member">get_module_factory</ref>(hashedName);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref><sp/>*<sp/><ref refid="dc/dbf/classbanita_1_1_module___factory___central_1a1ac99380daaa5ab3a5dffb29181e6858" kindref="member">get_module_factory</ref>(Int32<sp/>_hashedName);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="headers/Module_Factory_Central.hpp"/>
+  </compounddef>
+</doxygen>

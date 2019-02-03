@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d2/d00/class_component" kind="class" language="C++" prot="public">
+    <compoundname>Component</compoundname>
+    <includes refid="da/d5c/_component_8hpp" local="no">Component.hpp</includes>
+    <briefdescription>
+<para><ref refid="d2/d00/class_component" kindref="compound">Component</ref> virtual class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Component.hpp" line="7" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

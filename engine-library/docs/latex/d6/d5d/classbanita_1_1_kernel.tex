@@ -1,0 +1,242 @@
+\hypertarget{classbanita_1_1_kernel}{}\section{banita\+::Kernel Class Reference}
+\label{classbanita_1_1_kernel}\index{banita::Kernel@{banita::Kernel}}
+
+
+{\ttfamily \#include $<$Kernel.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_kernel_a07f2a762b74482c2e384c84531151cf4}{Kernel}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} object by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_kernel_ad0fef1effc29769a6438653e86e04b25}{Kernel}} (\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} object and store the pointer to the scene received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_kernel_a76d732a249e2b546288488af3fa7f928}{$\sim$\+Kernel}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} object and destroy the tasks that store. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_kernel_af596d1e111f5d7dd9d9e483eda630695}{run}} ()
+\begin{DoxyCompactList}\small\item\em run the kernel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_kernel_a69c51724e7192464b086b3c357fdcb7f}{pause}} ()
+\begin{DoxyCompactList}\small\item\em pause the kernel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_kernel_aee9ff2e2d1816a4b3c1ef2694034e0ce}{stop}} ()
+\begin{DoxyCompactList}\small\item\em stop the kernel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_kernel_a51ad67eb5beec04052643a58698a1263}{add\+\_\+task}} (\mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task)
+\begin{DoxyCompactList}\small\item\em adds a task to the tasks set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_kernel_a50aee62acd308f995925dab46106ef75}{add\+\_\+tasks}} (\mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task\+Array, Size\+\_\+t \+\_\+array\+Size)
+\begin{DoxyCompactList}\small\item\em adds an array of tasks to the current tasks set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_kernel_aad63c1940db1247c8ba02fb84f78ec1f}{add\+\_\+tasks}} (Task\+\_\+\+Set \&\+\_\+tasks)
+\begin{DoxyCompactList}\small\item\em adds a set of tasks to the current tasks set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_kernel_a463aa154233f381167fc18f6e754b084}{remove\+\_\+task}} (\mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task)
+\begin{DoxyCompactList}\small\item\em removes an specific task from the tasks set \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_kernel_a7d940a9448b56f01eb2ca1bc415b661f}{is\+\_\+paused}} ()
+\begin{DoxyCompactList}\small\item\em get the pause state object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{classbanita_1_1_kernel_a0a5e53e8727da203aad7dcb730a39244}{get\+\_\+scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classbanita_1_1_kernel_a32e78faeb3605d236939d4e7182fae23}{task\+\_\+priority\+\_\+comparator\+\_\+lower\+\_\+than}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task1, const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task2)
+\item 
+static bool \mbox{\hyperlink{classbanita_1_1_kernel_a7bddd1303197058cc83fb4c78adfe2d8}{task\+\_\+comparator\+\_\+greater\+\_\+than}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task1, const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task2)
+\item 
+static bool \mbox{\hyperlink{classbanita_1_1_kernel_a84ff44eb0c0d6d01073e01b1aa2c6c55}{task\+\_\+comparator\+\_\+lower\+\_\+or\+\_\+equal\+\_\+than}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task1, const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task2)
+\item 
+static bool \mbox{\hyperlink{classbanita_1_1_kernel_a4f86a08b65bb2dee12329ddb9ec127a9}{task\+\_\+comparator\+\_\+greater\+\_\+or\+\_\+equal\+\_\+than}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task1, const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$\+\_\+task2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_kernel_a07f2a762b74482c2e384c84531151cf4}\label{classbanita_1_1_kernel_a07f2a762b74482c2e384c84531151cf4}} 
+\index{banita::Kernel@{banita::Kernel}!Kernel@{Kernel}}
+\index{Kernel@{Kernel}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{Kernel()}{Kernel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Kernel\+::\+Kernel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} object by default. 
+
+\mbox{\Hypertarget{classbanita_1_1_kernel_ad0fef1effc29769a6438653e86e04b25}\label{classbanita_1_1_kernel_ad0fef1effc29769a6438653e86e04b25}} 
+\index{banita::Kernel@{banita::Kernel}!Kernel@{Kernel}}
+\index{Kernel@{Kernel}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{Kernel()}{Kernel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Kernel\+::\+Kernel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$}]{\+\_\+scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} object and store the pointer to the scene received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_kernel_a76d732a249e2b546288488af3fa7f928}\label{classbanita_1_1_kernel_a76d732a249e2b546288488af3fa7f928}} 
+\index{banita::Kernel@{banita::Kernel}!````~Kernel@{$\sim$Kernel}}
+\index{````~Kernel@{$\sim$Kernel}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{$\sim$Kernel()}{~Kernel()}}
+{\footnotesize\ttfamily banita\+::\+Kernel\+::$\sim$\+Kernel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} object and destroy the tasks that store. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_kernel_a51ad67eb5beec04052643a58698a1263}\label{classbanita_1_1_kernel_a51ad67eb5beec04052643a58698a1263}} 
+\index{banita::Kernel@{banita::Kernel}!add\_task@{add\_task}}
+\index{add\_task@{add\_task}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{add\_task()}{add\_task()}}
+{\footnotesize\ttfamily void banita\+::\+Kernel\+::add\+\_\+task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+adds a task to the tasks set 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+task} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classbanita_1_1_kernel_a50aee62acd308f995925dab46106ef75}\label{classbanita_1_1_kernel_a50aee62acd308f995925dab46106ef75}} 
+\index{banita::Kernel@{banita::Kernel}!add\_tasks@{add\_tasks}}
+\index{add\_tasks@{add\_tasks}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{add\_tasks()}{add\_tasks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void banita\+::\+Kernel\+::add\+\_\+tasks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task\+Array,  }\item[{Size\+\_\+t}]{\+\_\+array\+Size }\end{DoxyParamCaption})}
+
+
+
+adds an array of tasks to the current tasks set 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+task\+Array} & \\
+\hline
+{\em \+\_\+array\+Size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_kernel_aad63c1940db1247c8ba02fb84f78ec1f}\label{classbanita_1_1_kernel_aad63c1940db1247c8ba02fb84f78ec1f}} 
+\index{banita::Kernel@{banita::Kernel}!add\_tasks@{add\_tasks}}
+\index{add\_tasks@{add\_tasks}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{add\_tasks()}{add\_tasks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void banita\+::\+Kernel\+::add\+\_\+tasks (\begin{DoxyParamCaption}\item[{Task\+\_\+\+Set \&}]{\+\_\+tasks }\end{DoxyParamCaption})}
+
+
+
+adds a set of tasks to the current tasks set 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tasks} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_kernel_a0a5e53e8727da203aad7dcb730a39244}\label{classbanita_1_1_kernel_a0a5e53e8727da203aad7dcb730a39244}} 
+\index{banita::Kernel@{banita::Kernel}!get\_scene@{get\_scene}}
+\index{get\_scene@{get\_scene}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{get\_scene()}{get\_scene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_scene}{Scene}}$\ast$ banita\+::\+Kernel\+::get\+\_\+scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the scene object. 
+
+\begin{DoxyReturn}{Returns}
+Scene$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_kernel_a7d940a9448b56f01eb2ca1bc415b661f}\label{classbanita_1_1_kernel_a7d940a9448b56f01eb2ca1bc415b661f}} 
+\index{banita::Kernel@{banita::Kernel}!is\_paused@{is\_paused}}
+\index{is\_paused@{is\_paused}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{is\_paused()}{is\_paused()}}
+{\footnotesize\ttfamily bool banita\+::\+Kernel\+::is\+\_\+paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the pause state object 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_kernel_a69c51724e7192464b086b3c357fdcb7f}\label{classbanita_1_1_kernel_a69c51724e7192464b086b3c357fdcb7f}} 
+\index{banita::Kernel@{banita::Kernel}!pause@{pause}}
+\index{pause@{pause}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void banita\+::\+Kernel\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+pause the kernel 
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classbanita_1_1_kernel_a463aa154233f381167fc18f6e754b084}\label{classbanita_1_1_kernel_a463aa154233f381167fc18f6e754b084}} 
+\index{banita::Kernel@{banita::Kernel}!remove\_task@{remove\_task}}
+\index{remove\_task@{remove\_task}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{remove\_task()}{remove\_task()}}
+{\footnotesize\ttfamily void banita\+::\+Kernel\+::remove\+\_\+task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+removes an specific task from the tasks set 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+task} & task to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_kernel_af596d1e111f5d7dd9d9e483eda630695}\label{classbanita_1_1_kernel_af596d1e111f5d7dd9d9e483eda630695}} 
+\index{banita::Kernel@{banita::Kernel}!run@{run}}
+\index{run@{run}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void banita\+::\+Kernel\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+run the kernel 
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classbanita_1_1_kernel_aee9ff2e2d1816a4b3c1ef2694034e0ce}\label{classbanita_1_1_kernel_aee9ff2e2d1816a4b3c1ef2694034e0ce}} 
+\index{banita::Kernel@{banita::Kernel}!stop@{stop}}
+\index{stop@{stop}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void banita\+::\+Kernel\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+stop the kernel 
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classbanita_1_1_kernel_a4f86a08b65bb2dee12329ddb9ec127a9}\label{classbanita_1_1_kernel_a4f86a08b65bb2dee12329ddb9ec127a9}} 
+\index{banita::Kernel@{banita::Kernel}!task\_comparator\_greater\_or\_equal\_than@{task\_comparator\_greater\_or\_equal\_than}}
+\index{task\_comparator\_greater\_or\_equal\_than@{task\_comparator\_greater\_or\_equal\_than}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{task\_comparator\_greater\_or\_equal\_than()}{task\_comparator\_greater\_or\_equal\_than()}}
+{\footnotesize\ttfamily static bool banita\+::\+Kernel\+::task\+\_\+comparator\+\_\+greater\+\_\+or\+\_\+equal\+\_\+than (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task1,  }\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbanita_1_1_kernel_a7bddd1303197058cc83fb4c78adfe2d8}\label{classbanita_1_1_kernel_a7bddd1303197058cc83fb4c78adfe2d8}} 
+\index{banita::Kernel@{banita::Kernel}!task\_comparator\_greater\_than@{task\_comparator\_greater\_than}}
+\index{task\_comparator\_greater\_than@{task\_comparator\_greater\_than}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{task\_comparator\_greater\_than()}{task\_comparator\_greater\_than()}}
+{\footnotesize\ttfamily static bool banita\+::\+Kernel\+::task\+\_\+comparator\+\_\+greater\+\_\+than (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task1,  }\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbanita_1_1_kernel_a84ff44eb0c0d6d01073e01b1aa2c6c55}\label{classbanita_1_1_kernel_a84ff44eb0c0d6d01073e01b1aa2c6c55}} 
+\index{banita::Kernel@{banita::Kernel}!task\_comparator\_lower\_or\_equal\_than@{task\_comparator\_lower\_or\_equal\_than}}
+\index{task\_comparator\_lower\_or\_equal\_than@{task\_comparator\_lower\_or\_equal\_than}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{task\_comparator\_lower\_or\_equal\_than()}{task\_comparator\_lower\_or\_equal\_than()}}
+{\footnotesize\ttfamily static bool banita\+::\+Kernel\+::task\+\_\+comparator\+\_\+lower\+\_\+or\+\_\+equal\+\_\+than (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task1,  }\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbanita_1_1_kernel_a32e78faeb3605d236939d4e7182fae23}\label{classbanita_1_1_kernel_a32e78faeb3605d236939d4e7182fae23}} 
+\index{banita::Kernel@{banita::Kernel}!task\_priority\_comparator\_lower\_than@{task\_priority\_comparator\_lower\_than}}
+\index{task\_priority\_comparator\_lower\_than@{task\_priority\_comparator\_lower\_than}!banita::Kernel@{banita::Kernel}}
+\subsubsection{\texorpdfstring{task\_priority\_comparator\_lower\_than()}{task\_priority\_comparator\_lower\_than()}}
+{\footnotesize\ttfamily static bool banita\+::\+Kernel\+::task\+\_\+priority\+\_\+comparator\+\_\+lower\+\_\+than (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task1,  }\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$}]{\+\_\+task2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_kernel_8hpp}{Kernel.\+hpp}}\end{DoxyCompactItemize}

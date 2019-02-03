@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d5/d15/classbanita_1_1_window" kind="class" language="C++" prot="public">
+    <compoundname>banita::Window</compoundname>
+    <includes refid="de/d0b/_window_8hpp" local="no">Window.hpp</includes>
+    <innerclass refid="d5/ded/structbanita_1_1_window_1_1_event" prot="public">banita::Window::Event</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d15/classbanita_1_1_window_1a8ce0f57c1c200644efabd17ba34636c2" prot="private" static="no" mutable="no">
+        <type>SDL_Window *</type>
+        <definition>SDL_Window* banita::Window::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="49" column="1" bodyfile="headers/Window.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d15/classbanita_1_1_window_1a7f22b30b3ec95ce234a70a907df663f8" prot="private" static="no" mutable="no">
+        <type>SDL_GLContext</type>
+        <definition>SDL_GLContext banita::Window::gl_context</definition>
+        <argsstring></argsstring>
+        <name>gl_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="50" column="1" bodyfile="headers/Window.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1ae0a1e293ad0a06d2c76faffb2ea2584a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Window::Window</definition>
+        <argsstring>(const std::string &amp;title, int width, int height, bool fullscreen=false)</argsstring>
+        <name>Window</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fullscreen</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1a7dc6f77899cbb641225ef36b1ab2f83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1a5ff600fc2263ed812abbc9395d7a5dde" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned banita::Window::get_width</definition>
+        <argsstring>() const</argsstring>
+        <name>get_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retorna el ancho actual de la ventana (el usuario puede cambiarlo). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1a795dd72e44eb07310830aa516d4d9b99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned banita::Window::get_height</definition>
+        <argsstring>() const</argsstring>
+        <name>get_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retorna el alto actual de la ventana (el usuario puede cambiarlo). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1aee3634f0202d871a8fb9cf477cf23a15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Window::poll</definition>
+        <argsstring>(Event &amp;event) const</argsstring>
+        <name>poll</name>
+        <param>
+          <type><ref refid="d5/ded/structbanita_1_1_window_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Permite extraer un evento de la cola de eventos asociada a la ventana. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1ace182aba92f36eeb05a63160b9f269f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Window::enable_vsync</definition>
+        <argsstring>()</argsstring>
+        <name>enable_vsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1a1fe74bf9ef2333299983ee6198c13f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Window::disable_vsync</definition>
+        <argsstring>()</argsstring>
+        <name>disable_vsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1a535e8db0d7c55078fb708dcacf1226e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Window::clear</definition>
+        <argsstring>() const</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Borra el buffer de la pantalla usando OpenGL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d15/classbanita_1_1_window_1a87aa2169094bc025281540a81cfc96a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Window::swap_buffers</definition>
+        <argsstring>() const</argsstring>
+        <name>swap_buffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intercambia el buffer visible con el buffer oculto. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="81" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Window.hpp" line="17" column="1" bodyfile="headers/Window.hpp" bodystart="16" bodyend="83"/>
+    <listofallmembers>
+      <member refid="d5/d15/classbanita_1_1_window_1a535e8db0d7c55078fb708dcacf1226e8" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>clear</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1a1fe74bf9ef2333299983ee6198c13f91" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>disable_vsync</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1ace182aba92f36eeb05a63160b9f269f8" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>enable_vsync</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1a795dd72e44eb07310830aa516d4d9b99" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>get_height</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1a5ff600fc2263ed812abbc9395d7a5dde" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>get_width</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1a7f22b30b3ec95ce234a70a907df663f8" prot="private" virt="non-virtual"><scope>banita::Window</scope><name>gl_context</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1aee3634f0202d871a8fb9cf477cf23a15" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>poll</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1a87aa2169094bc025281540a81cfc96a8" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>swap_buffers</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1a8ce0f57c1c200644efabd17ba34636c2" prot="private" virt="non-virtual"><scope>banita::Window</scope><name>window</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1ae0a1e293ad0a06d2c76faffb2ea2584a" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>Window</name></member>
+      <member refid="d5/d15/classbanita_1_1_window_1a7dc6f77899cbb641225ef36b1ab2f83a" prot="public" virt="non-virtual"><scope>banita::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dc/dbf/classbanita_1_1_module___factory___central" kind="class" language="C++" prot="public">
+    <compoundname>banita::Module_Factory_Central</compoundname>
+    <includes refid="da/dc1/_module___factory___central_8hpp" local="no">Module_Factory_Central.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="dc/dbf/classbanita_1_1_module___factory___central_1aabad82d50003b813d1fb42ae28a6aa80" prot="private" static="no">
+        <type>std::unordered_map&lt; Int32, <ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref> * &gt;</type>
+        <definition>using banita::Module_Factory_Central::ModFactory_Map =  std::unordered_map&lt;Int32, Module::Factory*&gt;</definition>
+        <argsstring></argsstring>
+        <name>ModFactory_Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="26" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/dbf/classbanita_1_1_module___factory___central_1ad2c82bf7ea67adfdeb06093195cf70ce" prot="private" static="no" mutable="no">
+        <type>ModFactory_Map</type>
+        <definition>ModFactory_Map banita::Module_Factory_Central::moduleFactories</definition>
+        <argsstring></argsstring>
+        <name>moduleFactories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="30" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" prot="public" static="yes" mutable="no">
+        <type><ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref> *</type>
+        <definition>Module_Factory_Central* banita::Module_Factory_Central::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="53" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="dc/dbf/classbanita_1_1_module___factory___central_1aba0eb5d045a61c1e85684c3e00ce62f5" compoundref="da/dc1/_module___factory___central_8hpp" startline="62" endline="68">get_instance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/dbf/classbanita_1_1_module___factory___central_1ac2c952171c29b0576055c37c1a7926fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Module_Factory_Central::Module_Factory_Central</definition>
+        <argsstring>()</argsstring>
+        <name>Module_Factory_Central</name>
+        <briefdescription>
+<para>Construct a new <ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="38" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbf/classbanita_1_1_module___factory___central_1a6e4ebe269d984c77fcb338980d1a0521" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Module_Factory_Central::~Module_Factory_Central</definition>
+        <argsstring>()</argsstring>
+        <name>~Module_Factory_Central</name>
+        <briefdescription>
+<para>Destroy the <ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="49" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/dbf/classbanita_1_1_module___factory___central_1aba0eb5d045a61c1e85684c3e00ce62f5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/dbf/classbanita_1_1_module___factory___central" kindref="compound">Module_Factory_Central</ref> *</type>
+        <definition>static Module_Factory_Central* banita::Module_Factory_Central::get_instance</definition>
+        <argsstring>()</argsstring>
+        <name>get_instance</name>
+        <briefdescription>
+<para>Singleton&apos;s implementation own member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Module_Factory_Central* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="62" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="62" bodyend="68"/>
+        <references refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" compoundref="da/dc1/_module___factory___central_8hpp" startline="53">instance</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Module_Factory_Central::register_factory</definition>
+        <argsstring>(const String &amp;_name, Module::Factory *_factory)</argsstring>
+        <name>register_factory</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref> *</type>
+          <declname>_factory</declname>
+        </param>
+        <briefdescription>
+<para>register a new factory by name </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="76" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbf/classbanita_1_1_module___factory___central_1a1ac99380daaa5ab3a5dffb29181e6858" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref> *</type>
+        <definition>Module::Factory* banita::Module_Factory_Central::get_module_factory</definition>
+        <argsstring>(String &amp;_name)</argsstring>
+        <name>get_module_factory</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Get the module factory object by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref>* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="87" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dbf/classbanita_1_1_module___factory___central_1a3b594f3e8a6ea6b2f4bf7c05c239c7c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref> *</type>
+        <definition>Module::Factory* banita::Module_Factory_Central::get_module_factory</definition>
+        <argsstring>(Int32 _hashedName)</argsstring>
+        <name>get_module_factory</name>
+        <param>
+          <type>Int32</type>
+          <declname>_hashedName</declname>
+        </param>
+        <briefdescription>
+<para>Get the module factory object by hashed name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_hashedName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="df/d1d/classbanita_1_1_module_1_1_factory" kindref="compound">Module::Factory</ref>* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module_Factory_Central.hpp" line="100" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="93">
+        <label>banita::Module_Factory_Central</label>
+        <link refid="dc/dbf/classbanita_1_1_module___factory___central"/>
+        <childnode refid="93" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Module_Factory_Central.hpp" line="25" column="1" bodyfile="headers/Module_Factory_Central.hpp" bodystart="24" bodyend="102"/>
+    <listofallmembers>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1aba0eb5d045a61c1e85684c3e00ce62f5" prot="public" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>get_instance</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1a1ac99380daaa5ab3a5dffb29181e6858" prot="public" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>get_module_factory</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1a3b594f3e8a6ea6b2f4bf7c05c239c7c7" prot="public" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>get_module_factory</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" prot="public" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>instance</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1aabad82d50003b813d1fb42ae28a6aa80" prot="private" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>ModFactory_Map</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1ac2c952171c29b0576055c37c1a7926fa" prot="private" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>Module_Factory_Central</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1ad2c82bf7ea67adfdeb06093195cf70ce" prot="private" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>moduleFactories</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" prot="public" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>register_factory</name></member>
+      <member refid="dc/dbf/classbanita_1_1_module___factory___central_1a6e4ebe269d984c77fcb338980d1a0521" prot="private" virt="non-virtual"><scope>banita::Module_Factory_Central</scope><name>~Module_Factory_Central</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

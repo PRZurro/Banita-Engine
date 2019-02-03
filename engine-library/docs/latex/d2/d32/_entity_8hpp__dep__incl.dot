@@ -1,0 +1,19 @@
+digraph "headers/Entity.hpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node13 [label="headers/Entity.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Entity class. An entity is an object that belongs to an engine's scene and has components."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="headers/Scene.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d8f/_scene_8hpp.html",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="headers/Render_Task.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/df5/_render___task_8hpp.html",tooltip="Task of the render module."];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="headers/Render_Module.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d59/_render___module_8hpp.html",tooltip="Module of the render type components (model, camera and light). Create components and store the task ..."];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="headers/Model_Component.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/da4/_model___component_8hpp.html",tooltip="Component that stores a 3d mesh and process it's information and attributes."];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="headers/Component_Generator.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de4/_component___generator_8hpp.html",tooltip="Generator of components, store and create components."];
+  Node16 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="headers/Module_Factory\l_Central.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc1/_module___factory___central_8hpp.html",tooltip="Patch to the problem of auto-registration of static members in cpp files. Registers and stores the mo..."];
+}

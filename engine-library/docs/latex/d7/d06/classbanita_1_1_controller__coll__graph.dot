@@ -1,0 +1,15 @@
+digraph "banita::Controller"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node4 [label="banita::Controller",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="banita::Component",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dda/classbanita_1_1_component.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" owner" ];
+  Node6 [label="banita::Entity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d9f/classbanita_1_1_entity.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="banita::Message_Handler\l::Listener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dbe/structbanita_1_1_message___handler_1_1_listener.html",tooltip="almost empty pure virtual struct that let the children handle a received message"];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" messageHandler" ];
+  Node8 [label="banita::Message_Handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/ddc/classbanita_1_1_message___handler.html",tooltip=" "];
+}

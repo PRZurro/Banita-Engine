@@ -1,0 +1,274 @@
+\hypertarget{classbanita_1_1_controller}{}\section{banita\+::Controller Class Reference}
+\label{classbanita_1_1_controller}\index{banita::Controller@{banita::Controller}}
+
+
+{\ttfamily \#include $<$Controller.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Controller\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Controller\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classbanita_1_1_controller_a3a3bc92a032f22f0cd20cbff0f89d175}{initialize}} () override=0
+\begin{DoxyCompactList}\small\item\em component\textquotesingle{}s legacy method. Initialize the component properties and variables. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classbanita_1_1_controller_a44363ca0ed1ba66a9f6c079a6b158d94}{update}} (float \+\_\+delta\+Time) override=0
+\begin{DoxyCompactList}\small\item\em component\textquotesingle{}s legacy method. Update the component properties and variables. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classbanita_1_1_controller_a74933400a4ed56e68ce5cb11ec395a1b}{parse\+\_\+property}} (const String \&\+\_\+name, const String \&\+\_\+value) override=0
+\begin{DoxyCompactList}\small\item\em component\textquotesingle{}s legacy method. Parse an xml node property\+: E.\+g.\+: name\+: position and value\+: 0,0,0 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classbanita_1_1_controller_a2feb550d530941ed11312fbbb7730c80}{handle}} (const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+message) override=0
+\begin{DoxyCompactList}\small\item\em Listener\textquotesingle{}s legacy method. When triggered, the message is proccesed, producing an action. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classbanita_1_1_controller_a988fb70a657c61afb82f4f4cf25e7c66}{on\+\_\+stop}} ()=0
+\begin{DoxyCompactList}\small\item\em When this controller is going to be deleted, do something. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_controller_a553973436941dd97e75511583a4fff26}{subscribe\+\_\+messages}} ()
+\begin{DoxyCompactList}\small\item\em subscribe the messages of this controller to the \mbox{\hyperlink{classbanita_1_1_message}{Message}} Handler \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_controller_ade6c8afa9158a302c5c64231deabb7ea}{add\+\_\+message}} (\mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+message)
+\begin{DoxyCompactList}\small\item\em add a message to the message list of this controller \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_controller_a3686102ef847f2f08a1107cfba48f00c}{set\+\_\+message\+\_\+handler}} (\mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$\+\_\+mh)
+\begin{DoxyCompactList}\small\item\em set the message handler to this controller \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_controller_a4455be6d7e7fc0dcb4d5919b45432020}{Controller}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_controller}{Controller}} object by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_controller_a9c45447d14400317d8419bbca3bad54a}{Controller}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+owner, \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$\+\_\+mh=nullptr, String \+\_\+type=\char`\"{}undefined\char`\"{}, String \+\_\+name=\char`\"{}undefined\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_controller}{Controller}} object by the received attributes. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbanita_1_1_controller_a355eaba3604cfca01437009c23c1cb41}{$\sim$\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_controller}{Controller}} object and the messages that stores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$ \mbox{\hyperlink{classbanita_1_1_controller_aa92dd1db0f265962029842ee6495c2cc}{message\+Handler}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classbanita_1_1_message}{Message}} $>$ \mbox{\hyperlink{classbanita_1_1_controller_ab4ca85fe5f2645708b89934f394ad449}{messages}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_controller_a4455be6d7e7fc0dcb4d5919b45432020}\label{classbanita_1_1_controller_a4455be6d7e7fc0dcb4d5919b45432020}} 
+\index{banita::Controller@{banita::Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{Controller()}{Controller()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Controller\+::\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_controller}{Controller}} object by default. 
+
+\mbox{\Hypertarget{classbanita_1_1_controller_a9c45447d14400317d8419bbca3bad54a}\label{classbanita_1_1_controller_a9c45447d14400317d8419bbca3bad54a}} 
+\index{banita::Controller@{banita::Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{Controller()}{Controller()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Controller\+::\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+owner,  }\item[{\mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$}]{\+\_\+mh = {\ttfamily nullptr},  }\item[{String}]{\+\_\+type = {\ttfamily \char`\"{}undefined\char`\"{}},  }\item[{String}]{\+\_\+name = {\ttfamily \char`\"{}undefined\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_controller}{Controller}} object by the received attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+owner} & \\
+\hline
+{\em \+\_\+mh} & \\
+\hline
+{\em \+\_\+type} & \\
+\hline
+{\em \+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_controller_a355eaba3604cfca01437009c23c1cb41}\label{classbanita_1_1_controller_a355eaba3604cfca01437009c23c1cb41}} 
+\index{banita::Controller@{banita::Controller}!````~Controller@{$\sim$Controller}}
+\index{````~Controller@{$\sim$Controller}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{$\sim$Controller()}{~Controller()}}
+{\footnotesize\ttfamily virtual banita\+::\+Controller\+::$\sim$\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_controller}{Controller}} object and the messages that stores. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_controller_ade6c8afa9158a302c5c64231deabb7ea}\label{classbanita_1_1_controller_ade6c8afa9158a302c5c64231deabb7ea}} 
+\index{banita::Controller@{banita::Controller}!add\_message@{add\_message}}
+\index{add\_message@{add\_message}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{add\_message()}{add\_message()}}
+{\footnotesize\ttfamily void banita\+::\+Controller\+::add\+\_\+message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+add a message to the message list of this controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_controller_a2feb550d530941ed11312fbbb7730c80}\label{classbanita_1_1_controller_a2feb550d530941ed11312fbbb7730c80}} 
+\index{banita::Controller@{banita::Controller}!handle@{handle}}
+\index{handle@{handle}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual void banita\+::\+Controller\+::handle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Listener\textquotesingle{}s legacy method. When triggered, the message is proccesed, producing an action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{structbanita_1_1_message___handler_1_1_listener_a2dfde040fbc7c8d2f17c6ba52722b749}{banita\+::\+Message\+\_\+\+Handler\+::\+Listener}}.
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_player___controller_a6c6aa3a387d36db7306ca557fbb100e6}{banita\+::\+Player\+\_\+\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_controller_a3a3bc92a032f22f0cd20cbff0f89d175}\label{classbanita_1_1_controller_a3a3bc92a032f22f0cd20cbff0f89d175}} 
+\index{banita::Controller@{banita::Controller}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual bool banita\+::\+Controller\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+component\textquotesingle{}s legacy method. Initialize the component properties and variables. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}{banita\+::\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_player___controller_a42c2960117c977daf72083452fb69e86}{banita\+::\+Player\+\_\+\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_controller_a988fb70a657c61afb82f4f4cf25e7c66}\label{classbanita_1_1_controller_a988fb70a657c61afb82f4f4cf25e7c66}} 
+\index{banita::Controller@{banita::Controller}!on\_stop@{on\_stop}}
+\index{on\_stop@{on\_stop}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{on\_stop()}{on\_stop()}}
+{\footnotesize\ttfamily virtual void banita\+::\+Controller\+::on\+\_\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+When this controller is going to be deleted, do something. 
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_player___controller_aedd233c9dcd10f9c8998f48a840f2e57}{banita\+::\+Player\+\_\+\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_controller_a74933400a4ed56e68ce5cb11ec395a1b}\label{classbanita_1_1_controller_a74933400a4ed56e68ce5cb11ec395a1b}} 
+\index{banita::Controller@{banita::Controller}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily virtual bool banita\+::\+Controller\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{const String \&}]{\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+component\textquotesingle{}s legacy method. Parse an xml node property\+: E.\+g.\+: name\+: position and value\+: 0,0,0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em \+\_\+value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}{banita\+::\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_player___controller_ab25a1e791ce020ff226b6324cc2c5c67}{banita\+::\+Player\+\_\+\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_controller_a3686102ef847f2f08a1107cfba48f00c}\label{classbanita_1_1_controller_a3686102ef847f2f08a1107cfba48f00c}} 
+\index{banita::Controller@{banita::Controller}!set\_message\_handler@{set\_message\_handler}}
+\index{set\_message\_handler@{set\_message\_handler}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{set\_message\_handler()}{set\_message\_handler()}}
+{\footnotesize\ttfamily void banita\+::\+Controller\+::set\+\_\+message\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$}]{\+\_\+mh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set the message handler to this controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+mh} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_controller_a553973436941dd97e75511583a4fff26}\label{classbanita_1_1_controller_a553973436941dd97e75511583a4fff26}} 
+\index{banita::Controller@{banita::Controller}!subscribe\_messages@{subscribe\_messages}}
+\index{subscribe\_messages@{subscribe\_messages}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{subscribe\_messages()}{subscribe\_messages()}}
+{\footnotesize\ttfamily void banita\+::\+Controller\+::subscribe\+\_\+messages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+subscribe the messages of this controller to the \mbox{\hyperlink{classbanita_1_1_message}{Message}} Handler 
+
+\mbox{\Hypertarget{classbanita_1_1_controller_a44363ca0ed1ba66a9f6c079a6b158d94}\label{classbanita_1_1_controller_a44363ca0ed1ba66a9f6c079a6b158d94}} 
+\index{banita::Controller@{banita::Controller}!update@{update}}
+\index{update@{update}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool banita\+::\+Controller\+::update (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+component\textquotesingle{}s legacy method. Update the component properties and variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}{banita\+::\+Component}}.
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_player___controller_ab7c47cba21892cac0e9f8a366cf86ca8}{banita\+::\+Player\+\_\+\+Controller}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbanita_1_1_controller_aa92dd1db0f265962029842ee6495c2cc}\label{classbanita_1_1_controller_aa92dd1db0f265962029842ee6495c2cc}} 
+\index{banita::Controller@{banita::Controller}!messageHandler@{messageHandler}}
+\index{messageHandler@{messageHandler}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{messageHandler}{messageHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}}$\ast$ banita\+::\+Controller\+::message\+Handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_controller_ab4ca85fe5f2645708b89934f394ad449}\label{classbanita_1_1_controller_ab4ca85fe5f2645708b89934f394ad449}} 
+\index{banita::Controller@{banita::Controller}!messages@{messages}}
+\index{messages@{messages}!banita::Controller@{banita::Controller}}
+\subsubsection{\texorpdfstring{messages}{messages}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classbanita_1_1_message}{Message}}$>$ banita\+::\+Controller\+::messages\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_controller_8hpp}{Controller.\+hpp}}\end{DoxyCompactItemize}

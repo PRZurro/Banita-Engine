@@ -1,0 +1,177 @@
+\hypertarget{classbanita_1_1_player___controller}{}\section{banita\+::Player\+\_\+\+Controller Class Reference}
+\label{classbanita_1_1_player___controller}\index{banita::Player\_Controller@{banita::Player\_Controller}}
+
+
+{\ttfamily \#include $<$Player\+\_\+\+Controller.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Player\+\_\+\+Controller\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Player\+\_\+\+Controller\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_player___controller_a42c2960117c977daf72083452fb69e86}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em component\textquotesingle{}s legacy method. Initialize the component properties and variables. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_player___controller_ab7c47cba21892cac0e9f8a366cf86ca8}{update}} (float \+\_\+delta\+Time) override
+\begin{DoxyCompactList}\small\item\em component\textquotesingle{}s legacy method. Update the component properties and variables. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_player___controller_ab25a1e791ce020ff226b6324cc2c5c67}{parse\+\_\+property}} (const String \&\+\_\+name, const String \&\+\_\+value) override
+\begin{DoxyCompactList}\small\item\em component\textquotesingle{}s legacy method. Parse an xml node property\+: E.\+g.\+: name\+: position and value\+: 0,0,0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_player___controller_a6c6aa3a387d36db7306ca557fbb100e6}{handle}} (const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+message) override
+\begin{DoxyCompactList}\small\item\em Listener\textquotesingle{}s legacy method. When triggered, the message is proccesed, producing an action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_player___controller_aedd233c9dcd10f9c8998f48a840f2e57}{on\+\_\+stop}} ()
+\begin{DoxyCompactList}\small\item\em When this controller is going to be deleted, do something. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Component\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_player___controller_a0596cf1ee132d70f8f7eabfb3be2cfbc}{generator}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity, \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$\+\_\+mh)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_player___controller_a56ffb40adc44a04e06b0008855d9ead8}{Player\+\_\+\+Controller}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity, \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$\+\_\+mh, String \+\_\+type=\char`\"{}playercontroller\char`\"{}, String \+\_\+name=\char`\"{}undefined\char`\"{})
+\item 
+\mbox{\hyperlink{classbanita_1_1_player___controller_acbb318ac5deac46dc7cd745689406e65}{Player\+\_\+\+Controller}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_player___controller_a56ffb40adc44a04e06b0008855d9ead8}\label{classbanita_1_1_player___controller_a56ffb40adc44a04e06b0008855d9ead8}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!Player\_Controller@{Player\_Controller}}
+\index{Player\_Controller@{Player\_Controller}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{Player\_Controller()}{Player\_Controller()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Player\+\_\+\+Controller\+::\+Player\+\_\+\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity,  }\item[{\mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$}]{\+\_\+mh,  }\item[{String}]{\+\_\+type = {\ttfamily \char`\"{}playercontroller\char`\"{}},  }\item[{String}]{\+\_\+name = {\ttfamily \char`\"{}undefined\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_player___controller_acbb318ac5deac46dc7cd745689406e65}\label{classbanita_1_1_player___controller_acbb318ac5deac46dc7cd745689406e65}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!Player\_Controller@{Player\_Controller}}
+\index{Player\_Controller@{Player\_Controller}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{Player\_Controller()}{Player\_Controller()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Player\+\_\+\+Controller\+::\+Player\+\_\+\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_player___controller_a0596cf1ee132d70f8f7eabfb3be2cfbc}\label{classbanita_1_1_player___controller_a0596cf1ee132d70f8f7eabfb3be2cfbc}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!generator@{generator}}
+\index{generator@{generator}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{generator()}{generator()}}
+{\footnotesize\ttfamily static Component\+\_\+sptr banita\+::\+Player\+\_\+\+Controller\+::generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity,  }\item[{\mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$}]{\+\_\+mh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classbanita_1_1_player___controller_a6c6aa3a387d36db7306ca557fbb100e6}\label{classbanita_1_1_player___controller_a6c6aa3a387d36db7306ca557fbb100e6}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!handle@{handle}}
+\index{handle@{handle}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void banita\+::\+Player\+\_\+\+Controller\+::handle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Listener\textquotesingle{}s legacy method. When triggered, the message is proccesed, producing an action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_controller_a2feb550d530941ed11312fbbb7730c80}{banita\+::\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_player___controller_a42c2960117c977daf72083452fb69e86}\label{classbanita_1_1_player___controller_a42c2960117c977daf72083452fb69e86}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool banita\+::\+Player\+\_\+\+Controller\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+component\textquotesingle{}s legacy method. Initialize the component properties and variables. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_controller_a3a3bc92a032f22f0cd20cbff0f89d175}{banita\+::\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_player___controller_aedd233c9dcd10f9c8998f48a840f2e57}\label{classbanita_1_1_player___controller_aedd233c9dcd10f9c8998f48a840f2e57}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!on\_stop@{on\_stop}}
+\index{on\_stop@{on\_stop}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{on\_stop()}{on\_stop()}}
+{\footnotesize\ttfamily void banita\+::\+Player\+\_\+\+Controller\+::on\+\_\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+When this controller is going to be deleted, do something. 
+
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_controller_a988fb70a657c61afb82f4f4cf25e7c66}{banita\+::\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_player___controller_ab25a1e791ce020ff226b6324cc2c5c67}\label{classbanita_1_1_player___controller_ab25a1e791ce020ff226b6324cc2c5c67}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily bool banita\+::\+Player\+\_\+\+Controller\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{const String \&}]{\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+component\textquotesingle{}s legacy method. Parse an xml node property\+: E.\+g.\+: name\+: position and value\+: 0,0,0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em \+\_\+value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_controller_a74933400a4ed56e68ce5cb11ec395a1b}{banita\+::\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_player___controller_ab7c47cba21892cac0e9f8a366cf86ca8}\label{classbanita_1_1_player___controller_ab7c47cba21892cac0e9f8a366cf86ca8}} 
+\index{banita::Player\_Controller@{banita::Player\_Controller}!update@{update}}
+\index{update@{update}!banita::Player\_Controller@{banita::Player\_Controller}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool banita\+::\+Player\+\_\+\+Controller\+::update (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+component\textquotesingle{}s legacy method. Update the component properties and variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_controller_a44363ca0ed1ba66a9f6c079a6b158d94}{banita\+::\+Controller}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_player___controller_8hpp}{Player\+\_\+\+Controller.\+hpp}}\end{DoxyCompactItemize}

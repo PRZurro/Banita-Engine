@@ -1,0 +1,10 @@
+digraph "banita::Keyboard::translate_key_code_sdl"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node12 [label="banita::Keyboard::translate\l_key_code_sdl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="banita::Keyboard::check\l_state_of_key",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d29/classbanita_1_1_keyboard.html#a7d92be8f7f9f629d8ec4f8da0c5367d5",tooltip="DEPRECATED, check the state buffer of the keyboard."];
+}

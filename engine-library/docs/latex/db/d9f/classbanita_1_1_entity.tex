@@ -1,0 +1,198 @@
+\hypertarget{classbanita_1_1_entity}{}\section{banita\+::Entity Class Reference}
+\label{classbanita_1_1_entity}\index{banita::Entity@{banita::Entity}}
+
+
+{\ttfamily \#include $<$Entity.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_entity_aea5e59bc61fed11d1c23cd6108613b37}{Entity}} (\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} object and store the scene pointer received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_entity_a01b2f03d793f06528e1d4c4112d4f62d}{Entity}} (String \&\+\_\+name, \mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} object and store the scene pointer and name received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_entity_ab426b4d2def681300d007e27626f70da}{$\sim$\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_entity_a1e070b4458ecebabbec87e90a3235f8e}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em initialize the attributes and members of this entity \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_entity_a37c77bf77f2148e886571ef988b98749}{add\+\_\+component}} (const String \&\+\_\+type, Component\+\_\+sptr \+\_\+component)
+\begin{DoxyCompactList}\small\item\em add a component to this entity \end{DoxyCompactList}\item 
+String \& \mbox{\hyperlink{classbanita_1_1_entity_aa270c75c0dead62a45a39e4b2b016988}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em return the name object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}} \& \mbox{\hyperlink{classbanita_1_1_entity_af19f6e2e27d0f519032da54ef7dec759}{get\+\_\+transform}} ()
+\begin{DoxyCompactList}\small\item\em return the transform object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_component}{Component}} $\ast$ \mbox{\hyperlink{classbanita_1_1_entity_a6e24a4ca55bf664035d39ab229f849c1}{get\+\_\+component}} (Int32 \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em return the component object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_component}{Component}} $\ast$ \mbox{\hyperlink{classbanita_1_1_entity_aa8fbd735440d40b2a934828aa5e726d6}{get\+\_\+component}} (const String \&\+\_\+type)
+\begin{DoxyCompactList}\small\item\em return the component object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{classbanita_1_1_entity_abc8ae6f7a0de629ae3a35d904c4338de}{get\+\_\+scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_entity_aea5e59bc61fed11d1c23cd6108613b37}\label{classbanita_1_1_entity_aea5e59bc61fed11d1c23cd6108613b37}} 
+\index{banita::Entity@{banita::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$}]{\+\_\+scene }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} object and store the scene pointer received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_entity_a01b2f03d793f06528e1d4c4112d4f62d}\label{classbanita_1_1_entity_a01b2f03d793f06528e1d4c4112d4f62d}} 
+\index{banita::Entity@{banita::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{String \&}]{\+\_\+name,  }\item[{\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$}]{\+\_\+scene }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} object and store the scene pointer and name received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em \+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_entity_ab426b4d2def681300d007e27626f70da}\label{classbanita_1_1_entity_ab426b4d2def681300d007e27626f70da}} 
+\index{banita::Entity@{banita::Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily banita\+::\+Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_entity_a37c77bf77f2148e886571ef988b98749}\label{classbanita_1_1_entity_a37c77bf77f2148e886571ef988b98749}} 
+\index{banita::Entity@{banita::Entity}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{add\_component()}{add\_component()}}
+{\footnotesize\ttfamily bool banita\+::\+Entity\+::add\+\_\+component (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+type,  }\item[{Component\+\_\+sptr}]{\+\_\+component }\end{DoxyParamCaption})}
+
+
+
+add a component to this entity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+type} & \\
+\hline
+{\em \+\_\+component} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_entity_a6e24a4ca55bf664035d39ab229f849c1}\label{classbanita_1_1_entity_a6e24a4ca55bf664035d39ab229f849c1}} 
+\index{banita::Entity@{banita::Entity}!get\_component@{get\_component}}
+\index{get\_component@{get\_component}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{get\_component()}{get\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_component}{Component}}$\ast$ banita\+::\+Entity\+::get\+\_\+component (\begin{DoxyParamCaption}\item[{Int32}]{\+\_\+\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return the component object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component$\ast$ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classbanita_1_1_entity_aa8fbd735440d40b2a934828aa5e726d6}\label{classbanita_1_1_entity_aa8fbd735440d40b2a934828aa5e726d6}} 
+\index{banita::Entity@{banita::Entity}!get\_component@{get\_component}}
+\index{get\_component@{get\_component}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{get\_component()}{get\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_component}{Component}}$\ast$ banita\+::\+Entity\+::get\+\_\+component (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return the component object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component$\ast$ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classbanita_1_1_entity_aa270c75c0dead62a45a39e4b2b016988}\label{classbanita_1_1_entity_aa270c75c0dead62a45a39e4b2b016988}} 
+\index{banita::Entity@{banita::Entity}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily String\& banita\+::\+Entity\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return the name object 
+
+\begin{DoxyReturn}{Returns}
+String\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_entity_abc8ae6f7a0de629ae3a35d904c4338de}\label{classbanita_1_1_entity_abc8ae6f7a0de629ae3a35d904c4338de}} 
+\index{banita::Entity@{banita::Entity}!get\_scene@{get\_scene}}
+\index{get\_scene@{get\_scene}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{get\_scene()}{get\_scene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_scene}{Scene}}$\ast$ banita\+::\+Entity\+::get\+\_\+scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the scene object. 
+
+\begin{DoxyReturn}{Returns}
+Scene$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_entity_af19f6e2e27d0f519032da54ef7dec759}\label{classbanita_1_1_entity_af19f6e2e27d0f519032da54ef7dec759}} 
+\index{banita::Entity@{banita::Entity}!get\_transform@{get\_transform}}
+\index{get\_transform@{get\_transform}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{get\_transform()}{get\_transform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}}\& banita\+::\+Entity\+::get\+\_\+transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+return the transform object 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classbanita_1_1_transform___component}{Transform\+\_\+\+Component}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_entity_a1e070b4458ecebabbec87e90a3235f8e}\label{classbanita_1_1_entity_a1e070b4458ecebabbec87e90a3235f8e}} 
+\index{banita::Entity@{banita::Entity}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Entity@{banita::Entity}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool banita\+::\+Entity\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialize the attributes and members of this entity 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_entity_8hpp}{Entity.\+hpp}}\end{DoxyCompactItemize}

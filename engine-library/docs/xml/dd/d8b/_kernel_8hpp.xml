@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dd/d8b/_kernel_8hpp" kind="file" language="C++">
+    <compoundname>Kernel.hpp</compoundname>
+    <includes local="yes">declarations.hpp</includes>
+    <includes refid="d6/d1e/_task_8hpp" local="yes">Task.hpp</includes>
+    <includes local="no">list</includes>
+    <includes local="no">Timer.hpp</includes>
+    <includes local="no">set</includes>
+    <includedby refid="db/df5/_render___task_8hpp" local="yes">headers/Render_Task.hpp</includedby>
+    <includedby refid="d0/d8f/_scene_8hpp" local="yes">headers/Scene.hpp</includedby>
+    <incdepgraph>
+      <node id="122">
+        <label>list</label>
+      </node>
+      <node id="123">
+        <label>Timer.hpp</label>
+      </node>
+      <node id="121">
+        <label>Task.hpp</label>
+        <link refid="d6/d1e/_task_8hpp"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>headers/Kernel.hpp</label>
+        <link refid="dd/d8b/_kernel_8hpp"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>declarations.hpp</label>
+      </node>
+      <node id="124">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="129">
+        <label>headers/Component_Generator.hpp</label>
+        <link refid="d2/de4/_component___generator_8hpp"/>
+      </node>
+      <node id="130">
+        <label>headers/Module_Factory_Central.hpp</label>
+        <link refid="da/dc1/_module___factory___central_8hpp"/>
+      </node>
+      <node id="128">
+        <label>headers/Model_Component.hpp</label>
+        <link refid="d0/da4/_model___component_8hpp"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>headers/Render_Module.hpp</label>
+        <link refid="de/d59/_render___module_8hpp"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>headers/Render_Task.hpp</label>
+        <link refid="db/df5/_render___task_8hpp"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>headers/Kernel.hpp</label>
+        <link refid="dd/d8b/_kernel_8hpp"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>headers/Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d6/d5d/classbanita_1_1_kernel" prot="public">banita::Kernel</innerclass>
+    <innernamespace refid="d6/de5/namespacebanita">banita</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Pablo Rodr�guez Zurro</para>
+</simplesect>
+<simplesect kind="date"><para>28/12/2018 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;declarations.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d1e/_task_8hpp" kindref="compound">Task.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Timer.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/de5/namespacebanita" kindref="compound">banita</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="d6/d5d/classbanita_1_1_kernel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Task_Set<sp/>=<sp/>std::multiset&lt;<sp/>Task<sp/>*<sp/>&gt;;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Task_Set<sp/>tasks;<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref><sp/>*<sp/>scene;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Timer<sp/>timer;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>time;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exit;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isPaused;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d6/d5d/classbanita_1_1_kernel_1a07f2a762b74482c2e384c84531151cf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a07f2a762b74482c2e384c84531151cf4" kindref="member">Kernel</ref>()<sp/>:<sp/>scene(nullptr),<sp/>exit(false),<sp/>isPaused(false),<sp/>time(1.f<sp/>/<sp/>60.f)<sp/>{}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d6/d5d/classbanita_1_1_kernel_1ad0fef1effc29769a6438653e86e04b25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1ad0fef1effc29769a6438653e86e04b25" kindref="member">Kernel</ref>(<ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref><sp/>*<sp/>_scene)<sp/>:<sp/>scene(_scene),<sp/>exit(false),<sp/>isPaused(false),<sp/>time(1.f<sp/>/<sp/>60.f)<sp/>{}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d6/d5d/classbanita_1_1_kernel_1a76d732a249e2b546288488af3fa7f928" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a76d732a249e2b546288488af3fa7f928" kindref="member">~Kernel</ref>()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tasks.clear();<sp/></highlight><highlight class="comment">//<sp/>it&apos;s<sp/>required<sp/>to<sp/>clear<sp/>the<sp/>list<sp/>to<sp/>avoid<sp/>unwanted<sp/>memory<sp/>allocation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1af596d1e111f5d7dd9d9e483eda630695" kindref="member">run</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="d6/d5d/classbanita_1_1_kernel_1a69c51724e7192464b086b3c357fdcb7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a69c51724e7192464b086b3c357fdcb7f" kindref="member">pause</ref>()</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isPaused<sp/>=<sp/>(isPaused)<sp/>?<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="d6/d5d/classbanita_1_1_kernel_1aee9ff2e2d1816a4b3c1ef2694034e0ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1aee9ff2e2d1816a4b3c1ef2694034e0ce" kindref="member">stop</ref>()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_tasks();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>execute_tasks();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminate_tasks();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="d6/d5d/classbanita_1_1_kernel_1a51ad67eb5beec04052643a58698a1263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a51ad67eb5beec04052643a58698a1263" kindref="member">add_task</ref>(<ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>&amp;<sp/>_task)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tasks.insert(&amp;_task);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_task.<ref refid="d8/dfd/classbanita_1_1_task_1a2f8babba8f085c5a65b58eaf2f73c121" kindref="member">set_kernel</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a50aee62acd308f995925dab46106ef75" kindref="member">add_tasks</ref>(<ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_taskArray,<sp/>Size_t<sp/>_arraySize);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a50aee62acd308f995925dab46106ef75" kindref="member">add_tasks</ref>(Task_Set<sp/>&amp;<sp/>_tasks);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="d6/d5d/classbanita_1_1_kernel_1a463aa154233f381167fc18f6e754b084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a463aa154233f381167fc18f6e754b084" kindref="member">remove_task</ref>(<ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>&amp;<sp/>_task)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tasks.erase(&amp;_task);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="d6/d5d/classbanita_1_1_kernel_1a7d940a9448b56f01eb2ca1bc415b661f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a7d940a9448b56f01eb2ca1bc415b661f" kindref="member">is_paused</ref>()</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isPaused;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="d6/d5d/classbanita_1_1_kernel_1a0a5e53e8727da203aad7dcb730a39244" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref><sp/>*<sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a0a5e53e8727da203aad7dcb730a39244" kindref="member">get_scene</ref>()</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scene;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>It<sp/>is<sp/>not<sp/>needed<sp/>to<sp/>use<sp/>an<sp/>ordinary<sp/>list<sp/>because<sp/>a<sp/>set<sp/>sortens<sp/>the<sp/>contents<sp/>when<sp/>they<sp/>are<sp/>inserted<sp/>so,<sp/>this<sp/>methods<sp/>are<sp/>not<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="d6/d5d/classbanita_1_1_kernel_1a32e78faeb3605d236939d4e7182fae23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a32e78faeb3605d236939d4e7182fae23" kindref="member">task_priority_comparator_lower_than</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task2)<sp/></highlight><highlight class="comment">//<sp/>can&apos;t<sp/>call<sp/>a<sp/>predicate<sp/>comparator<sp/>without<sp/>the<sp/>static<sp/>tag<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_task1<sp/>&lt;<sp/>_task2;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="d6/d5d/classbanita_1_1_kernel_1a7bddd1303197058cc83fb4c78adfe2d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a7bddd1303197058cc83fb4c78adfe2d8" kindref="member">task_comparator_greater_than</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task2)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_task1<sp/>&gt;<sp/>_task2;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="d6/d5d/classbanita_1_1_kernel_1a84ff44eb0c0d6d01073e01b1aa2c6c55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a84ff44eb0c0d6d01073e01b1aa2c6c55" kindref="member">task_comparator_lower_or_equal_than</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task2)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_task1<sp/>&lt;=<sp/>_task2;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="d6/d5d/classbanita_1_1_kernel_1a4f86a08b65bb2dee12329ddb9ec127a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d5d/classbanita_1_1_kernel_1a4f86a08b65bb2dee12329ddb9ec127a9" kindref="member">task_comparator_greater_or_equal_than</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref><sp/>*<sp/>_task2)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_task1<sp/>&gt;=<sp/>_task2;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="headers/Kernel.hpp"/>
+  </compounddef>
+</doxygen>

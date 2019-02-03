@@ -1,0 +1,192 @@
+\hypertarget{classbanita_1_1_scene}{}\section{banita\+::Scene Class Reference}
+\label{classbanita_1_1_scene}\index{banita::Scene@{banita::Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_scene_ac1cd51735d74d50dcefa500f715988a2}{Scene}} (\mbox{\hyperlink{classbanita_1_1_window}{Window}} $\ast$\+\_\+window, const String \&\+\_\+scene\+Path\+X\+ML)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_scene}{Scene}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_scene_a1c17873d5172df34c9a6a62dc3b13fa6}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_scene}{Scene}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_scene_aaf3588951958ee81114f0e58e5aead92}{execute}} ()
+\item 
+void \mbox{\hyperlink{classbanita_1_1_scene_a0b6fe86bd75f0baa4b7d8e259a8ebf07}{pause}} ()
+\item 
+void \mbox{\hyperlink{classbanita_1_1_scene_ad27b01f5b3a31a7fb81f5ec7dc6c63c6}{stop}} ()
+\item 
+\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$ \mbox{\hyperlink{classbanita_1_1_scene_adaa0e0879b6714fe1932562f6088892c}{get\+\_\+kernel}} ()
+\begin{DoxyCompactList}\small\item\em Get the kernel object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_window}{Window}} $\ast$ \mbox{\hyperlink{classbanita_1_1_scene_ae3121d9444a4197d3f7ebfffd37d8a4a}{get\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Get the window object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} $\ast$ \mbox{\hyperlink{classbanita_1_1_scene_ab95cc89547ab5d33414a7743bfe9f60f}{get\+\_\+message\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em Get the message handler object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{classbanita_1_1_scene_abbb415ef292d34cc6882af2d59e5a25d}{get\+\_\+entity}} (Int32 \+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Get the entity object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{classbanita_1_1_scene_a9acedd39a5c861b803818635c355a81f}{get\+\_\+entity}} (String \&\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Get the entity object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_module}{Module}} $\ast$ \mbox{\hyperlink{classbanita_1_1_scene_a6c535a65a7fcd80bf6d1d04a59b056cb}{get\+\_\+module}} (String \&\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get the module object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_scene_ac1cd51735d74d50dcefa500f715988a2}\label{classbanita_1_1_scene_ac1cd51735d74d50dcefa500f715988a2}} 
+\index{banita::Scene@{banita::Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily banita\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_window}{Window}} $\ast$}]{\+\_\+window,  }\item[{const String \&}]{\+\_\+scene\+Path\+X\+ML }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_scene}{Scene}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+window} & \\
+\hline
+{\em \+\_\+scene\+Path\+X\+ML} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_scene_a1c17873d5172df34c9a6a62dc3b13fa6}\label{classbanita_1_1_scene_a1c17873d5172df34c9a6a62dc3b13fa6}} 
+\index{banita::Scene@{banita::Scene}!````~Scene@{$\sim$Scene}}
+\index{````~Scene@{$\sim$Scene}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{$\sim$Scene()}{~Scene()}}
+{\footnotesize\ttfamily banita\+::\+Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_scene}{Scene}} object. 
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_scene_aaf3588951958ee81114f0e58e5aead92}\label{classbanita_1_1_scene_aaf3588951958ee81114f0e58e5aead92}} 
+\index{banita::Scene@{banita::Scene}!execute@{execute}}
+\index{execute@{execute}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void banita\+::\+Scene\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classbanita_1_1_scene_abbb415ef292d34cc6882af2d59e5a25d}\label{classbanita_1_1_scene_abbb415ef292d34cc6882af2d59e5a25d}} 
+\index{banita::Scene@{banita::Scene}!get\_entity@{get\_entity}}
+\index{get\_entity@{get\_entity}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{get\_entity()}{get\_entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_entity}{Entity}}$\ast$ banita\+::\+Scene\+::get\+\_\+entity (\begin{DoxyParamCaption}\item[{Int32}]{\+\_\+\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the entity object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classbanita_1_1_scene_a9acedd39a5c861b803818635c355a81f}\label{classbanita_1_1_scene_a9acedd39a5c861b803818635c355a81f}} 
+\index{banita::Scene@{banita::Scene}!get\_entity@{get\_entity}}
+\index{get\_entity@{get\_entity}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{get\_entity()}{get\_entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_entity}{Entity}}$\ast$ banita\+::\+Scene\+::get\+\_\+entity (\begin{DoxyParamCaption}\item[{String \&}]{\+\_\+\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the entity object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classbanita_1_1_scene_adaa0e0879b6714fe1932562f6088892c}\label{classbanita_1_1_scene_adaa0e0879b6714fe1932562f6088892c}} 
+\index{banita::Scene@{banita::Scene}!get\_kernel@{get\_kernel}}
+\index{get\_kernel@{get\_kernel}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{get\_kernel()}{get\_kernel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}}$\ast$ banita\+::\+Scene\+::get\+\_\+kernel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the kernel object. 
+
+\begin{DoxyReturn}{Returns}
+Kernel$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_scene_ab95cc89547ab5d33414a7743bfe9f60f}\label{classbanita_1_1_scene_ab95cc89547ab5d33414a7743bfe9f60f}} 
+\index{banita::Scene@{banita::Scene}!get\_message\_handler@{get\_message\_handler}}
+\index{get\_message\_handler@{get\_message\_handler}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{get\_message\_handler()}{get\_message\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}}$\ast$ banita\+::\+Scene\+::get\+\_\+message\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the message handler object. 
+
+\begin{DoxyReturn}{Returns}
+Message\+\_\+\+Handler$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_scene_a6c535a65a7fcd80bf6d1d04a59b056cb}\label{classbanita_1_1_scene_a6c535a65a7fcd80bf6d1d04a59b056cb}} 
+\index{banita::Scene@{banita::Scene}!get\_module@{get\_module}}
+\index{get\_module@{get\_module}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{get\_module()}{get\_module()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_module}{Module}}$\ast$ banita\+::\+Scene\+::get\+\_\+module (\begin{DoxyParamCaption}\item[{String \&}]{\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the module object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Module$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_scene_ae3121d9444a4197d3f7ebfffd37d8a4a}\label{classbanita_1_1_scene_ae3121d9444a4197d3f7ebfffd37d8a4a}} 
+\index{banita::Scene@{banita::Scene}!get\_window@{get\_window}}
+\index{get\_window@{get\_window}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{get\_window()}{get\_window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_window}{Window}}$\ast$ banita\+::\+Scene\+::get\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the window object. 
+
+\begin{DoxyReturn}{Returns}
+Window$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_scene_a0b6fe86bd75f0baa4b7d8e259a8ebf07}\label{classbanita_1_1_scene_a0b6fe86bd75f0baa4b7d8e259a8ebf07}} 
+\index{banita::Scene@{banita::Scene}!pause@{pause}}
+\index{pause@{pause}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void banita\+::\+Scene\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classbanita_1_1_scene_ad27b01f5b3a31a7fb81f5ec7dc6c63c6}\label{classbanita_1_1_scene_ad27b01f5b3a31a7fb81f5ec7dc6c63c6}} 
+\index{banita::Scene@{banita::Scene}!stop@{stop}}
+\index{stop@{stop}!banita::Scene@{banita::Scene}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void banita\+::\+Scene\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_scene_8hpp}{Scene.\+hpp}}\end{DoxyCompactItemize}

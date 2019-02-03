@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d8/dfd/classbanita_1_1_task" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>banita::Task</compoundname>
+    <derivedcompoundref refid="dd/dee/classbanita_1_1_controller___task" prot="public" virt="non-virtual">banita::Controller_Task</derivedcompoundref>
+    <derivedcompoundref refid="d7/dc0/classbanita_1_1_input___task" prot="public" virt="non-virtual">banita::Input_Task</derivedcompoundref>
+    <derivedcompoundref refid="db/d15/classbanita_1_1_render___task" prot="public" virt="non-virtual">banita::Render_Task</derivedcompoundref>
+    <derivedcompoundref refid="dc/da0/classbanita_1_1_transform___task" prot="public" virt="non-virtual">banita::Transform_Task</derivedcompoundref>
+    <includes refid="d6/d1e/_task_8hpp" local="no">Task.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="d8/dfd/classbanita_1_1_task_1a3ce05486a9ea43de1e74fd4644dad11b" prot="private" static="no">
+        <type>std::list&lt; <ref refid="d7/dda/classbanita_1_1_component" kindref="compound">Component</ref> * &gt;</type>
+        <definition>using banita::Task::Components_List =  std::list&lt;Component * &gt;</definition>
+        <argsstring></argsstring>
+        <name>Components_List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="26" column="1" bodyfile="headers/Task.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d8/dfd/classbanita_1_1_task_1aa0a41413c212ad29bb32bd74d35b0585" prot="protected" static="no" mutable="no">
+        <type>Components_List</type>
+        <definition>Components_List banita::Task::components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="30" column="1" bodyfile="headers/Task.hpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1ab0d9e75daff35c07cdb6bea71d0bf605" compoundref="d6/d1e/_task_8hpp" startline="49" endline="52">add_component</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dfd/classbanita_1_1_task_1a6525188adf77e008e70e2b7cae631bd4" prot="protected" static="no" mutable="no">
+        <type><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref> *</type>
+        <definition>Kernel* banita::Task::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="32" column="1" bodyfile="headers/Task.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1acce4efa4b9ded5502ee9a70093f87855" compoundref="d6/d1e/_task_8hpp" startline="66" endline="69">get_kernel</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1a2f8babba8f085c5a65b58eaf2f73c121" compoundref="d6/d1e/_task_8hpp" startline="73" endline="76">set_kernel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" prot="protected" static="no" mutable="no">
+        <type>Size_t</type>
+        <definition>Size_t banita::Task::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="33" column="1" bodyfile="headers/Task.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1a8b798d792fefb09525e48eb836a8cbb7" compoundref="d6/d1e/_task_8hpp" startline="61" endline="64">get_priority</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1a254be860b0f3f3c687b8f52e090de228" compoundref="d6/d1e/_task_8hpp" startline="78" endline="81">set_priority</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1ac088e4c87f080fb26dfdfc1ef13f78d6" compoundref="d6/d1e/_task_8hpp" startline="95" endline="98">operator&lt;</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1a5fe48a7f1fc054c0f2376cf06853253c" compoundref="d6/d1e/_task_8hpp" startline="105" endline="108">operator&lt;=</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1ae5392bebeb2c9c1e8c83ab1e48446f90" compoundref="d6/d1e/_task_8hpp" startline="110" endline="113">operator &gt;=</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1af893f3c0cfefa81d9311c2b3532c597c" compoundref="d6/d1e/_task_8hpp" startline="115" endline="118">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dfd/classbanita_1_1_task_1ac90bfd55ed4f8f90afa2984218c61433" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool banita::Task::isFinished</definition>
+        <argsstring></argsstring>
+        <name>isFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="34" column="1" bodyfile="headers/Task.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1a46dfe5e26db0311f2a4bc7630bc0e2b7" compoundref="d6/d1e/_task_8hpp" startline="56" endline="59">is_finished</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1a5c635a75f1a8b735354d458684838d5b" compoundref="d6/d1e/_task_8hpp" startline="83" endline="86">finalize</referencedby>
+        <referencedby refid="d8/dfd/classbanita_1_1_task_1a3727f04d5ac8dcdf3ff41cc0609139e0" compoundref="d6/d1e/_task_8hpp" startline="88" endline="91">set_finished</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1ae212c6c6b6f007e953ba8406d82528be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Task::Task</definition>
+        <argsstring>(Kernel *_kernel, Size_t _priority=-1, bool _isFinished=false)</argsstring>
+        <name>Task</name>
+        <param>
+          <type><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref> *</type>
+          <declname>_kernel</declname>
+        </param>
+        <param>
+          <type>Size_t</type>
+          <declname>_priority</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_isFinished</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1add906131c42cec4d75df03eceeb870e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Task::Task</definition>
+        <argsstring>()</argsstring>
+        <name>Task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a34578cdd41899a338ac09fec3a285487" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void banita::Task::initialize</definition>
+        <argsstring>()=0</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="dc/da0/classbanita_1_1_transform___task_1ab94871acd76fbde7de99755cd6ac4e49">initialize</reimplementedby>
+        <reimplementedby refid="dd/dee/classbanita_1_1_controller___task_1a87990651d658eb3d26a9b8526e600fd7">initialize</reimplementedby>
+        <reimplementedby refid="db/d15/classbanita_1_1_render___task_1a34f649b5ad434cf7f6bb04604173afed">initialize</reimplementedby>
+        <reimplementedby refid="d7/dc0/classbanita_1_1_input___task_1a3f7f72ab848a23a92c3351426b3595c9">initialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1aa79a45c9cbfac80ec9e4f060d5d444aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void banita::Task::execute</definition>
+        <argsstring>(float _deltaTime)=0</argsstring>
+        <name>execute</name>
+        <reimplementedby refid="dc/da0/classbanita_1_1_transform___task_1a63ce627e86225d2264093ce932706074">execute</reimplementedby>
+        <reimplementedby refid="dd/dee/classbanita_1_1_controller___task_1a7391e5e47d43ac832fdff9912e140815">execute</reimplementedby>
+        <reimplementedby refid="db/d15/classbanita_1_1_render___task_1a94a8e1921a653ec6da9d1797ad2abcab">execute</reimplementedby>
+        <reimplementedby refid="d7/dc0/classbanita_1_1_input___task_1a68a88772e60109b5d461b2a75f05ee35">execute</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>_deltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1acccbd449402b1e9ce1ba34c26333a1b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void banita::Task::terminate</definition>
+        <argsstring>()=0</argsstring>
+        <name>terminate</name>
+        <reimplementedby refid="dc/da0/classbanita_1_1_transform___task_1a95d857713fec2b3bf90d64260be0a997">terminate</reimplementedby>
+        <reimplementedby refid="dd/dee/classbanita_1_1_controller___task_1a6d1e35ea53bb0dcb64d579937dc7d5f4">terminate</reimplementedby>
+        <reimplementedby refid="db/d15/classbanita_1_1_render___task_1a7518f53ea9050d2312f02ba0389188c6">terminate</reimplementedby>
+        <reimplementedby refid="d7/dc0/classbanita_1_1_input___task_1af6f524863581208331f6dd08d7e1cbb5">terminate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1ab0d9e75daff35c07cdb6bea71d0bf605" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Task::add_component</definition>
+        <argsstring>(Component *_component)</argsstring>
+        <name>add_component</name>
+        <param>
+          <type><ref refid="d7/dda/classbanita_1_1_component" kindref="compound">Component</ref> *</type>
+          <declname>_component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="49" column="1" bodyfile="headers/Task.hpp" bodystart="49" bodyend="52"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1aa0a41413c212ad29bb32bd74d35b0585" compoundref="d6/d1e/_task_8hpp" startline="30">components</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a46dfe5e26db0311f2a4bc7630bc0e2b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Task::is_finished</definition>
+        <argsstring>() const</argsstring>
+        <name>is_finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="56" column="1" bodyfile="headers/Task.hpp" bodystart="56" bodyend="59"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ac90bfd55ed4f8f90afa2984218c61433" compoundref="d6/d1e/_task_8hpp" startline="34">isFinished</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a8b798d792fefb09525e48eb836a8cbb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Size_t</type>
+        <definition>Size_t banita::Task::get_priority</definition>
+        <argsstring>() const</argsstring>
+        <name>get_priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="61" column="1" bodyfile="headers/Task.hpp" bodystart="61" bodyend="64"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" compoundref="d6/d1e/_task_8hpp" startline="33">priority</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1acce4efa4b9ded5502ee9a70093f87855" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref> &amp;</type>
+        <definition>Kernel&amp; banita::Task::get_kernel</definition>
+        <argsstring>() const</argsstring>
+        <name>get_kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="66" column="1" bodyfile="headers/Task.hpp" bodystart="66" bodyend="69"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1a6525188adf77e008e70e2b7cae631bd4" compoundref="d6/d1e/_task_8hpp" startline="32">kernel</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a2f8babba8f085c5a65b58eaf2f73c121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Task::set_kernel</definition>
+        <argsstring>(Kernel &amp;_kernel)</argsstring>
+        <name>set_kernel</name>
+        <param>
+          <type><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref> &amp;</type>
+          <declname>_kernel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="73" column="1" bodyfile="headers/Task.hpp" bodystart="73" bodyend="76"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1a6525188adf77e008e70e2b7cae631bd4" compoundref="d6/d1e/_task_8hpp" startline="32">kernel</references>
+        <referencedby refid="d6/d5d/classbanita_1_1_kernel_1a51ad67eb5beec04052643a58698a1263" compoundref="dd/d8b/_kernel_8hpp" startline="113" endline="117">banita::Kernel::add_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a254be860b0f3f3c687b8f52e090de228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Task::set_priority</definition>
+        <argsstring>(Size_t _priority)</argsstring>
+        <name>set_priority</name>
+        <param>
+          <type>Size_t</type>
+          <declname>_priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="78" column="1" bodyfile="headers/Task.hpp" bodystart="78" bodyend="81"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" compoundref="d6/d1e/_task_8hpp" startline="33">priority</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a5c635a75f1a8b735354d458684838d5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Task::finalize</definition>
+        <argsstring>()</argsstring>
+        <name>finalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="83" column="1" bodyfile="headers/Task.hpp" bodystart="83" bodyend="86"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ac90bfd55ed4f8f90afa2984218c61433" compoundref="d6/d1e/_task_8hpp" startline="34">isFinished</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a3727f04d5ac8dcdf3ff41cc0609139e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Task::set_finished</definition>
+        <argsstring>(bool _state)</argsstring>
+        <name>set_finished</name>
+        <param>
+          <type>bool</type>
+          <declname>_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="88" column="1" bodyfile="headers/Task.hpp" bodystart="88" bodyend="91"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ac90bfd55ed4f8f90afa2984218c61433" compoundref="d6/d1e/_task_8hpp" startline="34">isFinished</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1ac088e4c87f080fb26dfdfc1ef13f78d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Task::operator&lt;</definition>
+        <argsstring>(const Task &amp;_task) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> &amp;</type>
+          <declname>_task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="95" column="1" bodyfile="headers/Task.hpp" bodystart="95" bodyend="98"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" compoundref="d6/d1e/_task_8hpp" startline="33">priority</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a2d5f75c11032d7b6a7c4e0697d4434b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Task::operator &gt;</definition>
+        <argsstring>(const Task &amp;_task) const</argsstring>
+        <name>operator &gt;</name>
+        <param>
+          <type>const <ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> &amp;</type>
+          <declname>_task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="100" column="1" bodyfile="headers/Task.hpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a5fe48a7f1fc054c0f2376cf06853253c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Task::operator&lt;=</definition>
+        <argsstring>(const Task &amp;_task) const</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> &amp;</type>
+          <declname>_task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="105" column="1" bodyfile="headers/Task.hpp" bodystart="105" bodyend="108"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" compoundref="d6/d1e/_task_8hpp" startline="33">priority</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1ae5392bebeb2c9c1e8c83ab1e48446f90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Task::operator &gt;=</definition>
+        <argsstring>(const Task &amp;_task) const</argsstring>
+        <name>operator &gt;=</name>
+        <param>
+          <type>const <ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> &amp;</type>
+          <declname>_task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="110" column="1" bodyfile="headers/Task.hpp" bodystart="110" bodyend="113"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" compoundref="d6/d1e/_task_8hpp" startline="33">priority</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1af893f3c0cfefa81d9311c2b3532c597c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Task::operator==</definition>
+        <argsstring>(const Task &amp;_task) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> &amp;</type>
+          <declname>_task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="115" column="1" bodyfile="headers/Task.hpp" bodystart="115" bodyend="118"/>
+        <references refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" compoundref="d6/d1e/_task_8hpp" startline="33">priority</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dfd/classbanita_1_1_task_1a475f0812eff764bef68edefc3893df67" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Task::operator !=</definition>
+        <argsstring>(const Task &amp;_task) const</argsstring>
+        <name>operator !=</name>
+        <param>
+          <type>const <ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> &amp;</type>
+          <declname>_task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Task.hpp" line="120" column="1" bodyfile="headers/Task.hpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="126">
+        <label>banita::Input_Task</label>
+        <link refid="d7/dc0/classbanita_1_1_input___task"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>banita::Controller_Task</label>
+        <link refid="dd/dee/classbanita_1_1_controller___task"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>banita::Transform_Task</label>
+        <link refid="dc/da0/classbanita_1_1_transform___task"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>banita::Render_Task</label>
+        <link refid="db/d15/classbanita_1_1_render___task"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>banita::Task</label>
+        <link refid="d8/dfd/classbanita_1_1_task"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="130">
+        <label>banita::Kernel</label>
+        <link refid="d6/d5d/classbanita_1_1_kernel"/>
+      </node>
+      <node id="129">
+        <label>banita::Task</label>
+        <link refid="d8/dfd/classbanita_1_1_task"/>
+        <childnode refid="130" relation="usage">
+          <edgelabel>kernel</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Task.hpp" line="25" column="1" bodyfile="headers/Task.hpp" bodystart="24" bodyend="124"/>
+    <listofallmembers>
+      <member refid="d8/dfd/classbanita_1_1_task_1ab0d9e75daff35c07cdb6bea71d0bf605" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>add_component</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1aa0a41413c212ad29bb32bd74d35b0585" prot="protected" virt="non-virtual"><scope>banita::Task</scope><name>components</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a3ce05486a9ea43de1e74fd4644dad11b" prot="private" virt="non-virtual"><scope>banita::Task</scope><name>Components_List</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1aa79a45c9cbfac80ec9e4f060d5d444aa" prot="public" virt="pure-virtual"><scope>banita::Task</scope><name>execute</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a5c635a75f1a8b735354d458684838d5b" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>finalize</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1acce4efa4b9ded5502ee9a70093f87855" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>get_kernel</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a8b798d792fefb09525e48eb836a8cbb7" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>get_priority</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a34578cdd41899a338ac09fec3a285487" prot="public" virt="pure-virtual"><scope>banita::Task</scope><name>initialize</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a46dfe5e26db0311f2a4bc7630bc0e2b7" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>is_finished</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ac90bfd55ed4f8f90afa2984218c61433" prot="protected" virt="non-virtual"><scope>banita::Task</scope><name>isFinished</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a6525188adf77e008e70e2b7cae631bd4" prot="protected" virt="non-virtual"><scope>banita::Task</scope><name>kernel</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a475f0812eff764bef68edefc3893df67" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>operator !=</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a2d5f75c11032d7b6a7c4e0697d4434b1" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>operator &gt;</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ae5392bebeb2c9c1e8c83ab1e48446f90" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>operator &gt;=</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ac088e4c87f080fb26dfdfc1ef13f78d6" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>operator&lt;</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a5fe48a7f1fc054c0f2376cf06853253c" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>operator&lt;=</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1af893f3c0cfefa81d9311c2b3532c597c" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>operator==</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" prot="protected" virt="non-virtual"><scope>banita::Task</scope><name>priority</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a3727f04d5ac8dcdf3ff41cc0609139e0" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>set_finished</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a2f8babba8f085c5a65b58eaf2f73c121" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>set_kernel</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a254be860b0f3f3c687b8f52e090de228" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>set_priority</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ae212c6c6b6f007e953ba8406d82528be" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>Task</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1add906131c42cec4d75df03eceeb870e6" prot="public" virt="non-virtual"><scope>banita::Task</scope><name>Task</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1acccbd449402b1e9ce1ba34c26333a1b6" prot="public" virt="pure-virtual"><scope>banita::Task</scope><name>terminate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

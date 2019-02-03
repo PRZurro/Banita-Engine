@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dc/ddc/classbanita_1_1_message___handler" kind="class" language="C++" prot="public">
+    <compoundname>banita::Message_Handler</compoundname>
+    <includes refid="d2/d26/_message___handler_8hpp" local="no">Message_Handler.hpp</includes>
+    <innerclass refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" prot="public">banita::Message_Handler::Listener</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="dc/ddc/classbanita_1_1_message___handler_1ae9638d03b0397e8853710174c3e1e3f4" prot="private" static="no">
+        <type>std::list&lt; <ref refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" kindref="compound">Listener</ref> * &gt;</type>
+        <definition>using banita::Message_Handler::Listener_List =  std::list&lt;Listener*&gt;</definition>
+        <argsstring></argsstring>
+        <name>Listener_List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="50" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dc/ddc/classbanita_1_1_message___handler_1a15b035a4660e9e6fbced756b1754544c" prot="private" static="no">
+        <type>std::unordered_map&lt; Int32, <ref refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" kindref="compound">Listener</ref> * &gt;</type>
+        <definition>using banita::Message_Handler::Listener_Map =  std::unordered_map&lt; Int32, Listener * &gt;</definition>
+        <argsstring></argsstring>
+        <name>Listener_Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="51" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dc/ddc/classbanita_1_1_message___handler_1addd0c9b855f2f0f3e91738e23671f348" prot="private" static="no">
+        <type>std::unordered_map&lt; Int32, Listener_List &gt;</type>
+        <definition>using banita::Message_Handler::Listener_List_Map =  std::unordered_map&lt; Int32, Listener_List &gt;</definition>
+        <argsstring></argsstring>
+        <name>Listener_List_Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="52" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/ddc/classbanita_1_1_message___handler_1a5e651b556b1b7eb56d231d4f6436df3d" prot="private" static="no" mutable="no">
+        <type>Listener_Map</type>
+        <definition>Listener_Map banita::Message_Handler::singlecastTargets</definition>
+        <argsstring></argsstring>
+        <name>singlecastTargets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="56" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/ddc/classbanita_1_1_message___handler_1a79e9873b3a9449214b5541034af50baa" prot="private" static="no" mutable="no">
+        <type>Listener_List_Map</type>
+        <definition>Listener_List_Map banita::Message_Handler::multicastTargets</definition>
+        <argsstring></argsstring>
+        <name>multicastTargets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="57" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/ddc/classbanita_1_1_message___handler_1ab40bf3ee9636f9589b7fb0a325e5a9e4" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; Int32, std::list&lt; <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt; Int32, std::list&lt; Message &gt; &gt; banita::Message_Handler::blockedMessages</definition>
+        <argsstring></argsstring>
+        <name>blockedMessages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="59" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1ab610f5ffc535a86ed43c24323277225c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message_Handler::Message_Handler</definition>
+        <argsstring>()</argsstring>
+        <name>Message_Handler</name>
+        <briefdescription>
+<para>Construct a new <ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref> object by default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="69" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1afd3d620e8b639c50504fba6783e4e31f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Message_Handler::~Message_Handler</definition>
+        <argsstring>()</argsstring>
+        <name>~Message_Handler</name>
+        <briefdescription>
+<para>Destroy the <ref refid="dc/ddc/classbanita_1_1_message___handler" kindref="compound">Message_Handler</ref> object and empty the maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="79" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="79" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1ac1606f794ec41c49d406524da8450e2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message_Handler::add_singlecast_listener</definition>
+        <argsstring>(Int32 listener_id, Listener *_listener)</argsstring>
+        <name>add_singlecast_listener</name>
+        <param>
+          <type>Int32</type>
+          <declname>listener_id</declname>
+        </param>
+        <param>
+          <type><ref refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" kindref="compound">Listener</ref> *</type>
+          <declname>_listener</declname>
+        </param>
+        <briefdescription>
+<para>Adds a listener to the listeners map singlecastTargets with the given listener id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the listener. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">_listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The listener. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="110" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1a606a8f9a0c7fa63f74d53062a06a25fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message_Handler::add_multicast_listener</definition>
+        <argsstring>(Int32 message_id, Listener *_listener)</argsstring>
+        <name>add_multicast_listener</name>
+        <param>
+          <type>Int32</type>
+          <declname>message_id</declname>
+        </param>
+        <param>
+          <type><ref refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" kindref="compound">Listener</ref> *</type>
+          <declname>_listener</declname>
+        </param>
+        <briefdescription>
+<para>Adds a listener to an specific message id list of listeners. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">_listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The listener. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="123" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="123" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1a3833f61bd8a4ef5e0f625b1ed5306b1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message_Handler::block_message</definition>
+        <argsstring>(Message _message)</argsstring>
+        <name>block_message</name>
+        <param>
+          <type><ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref></type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="136" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="136" bodyend="139"/>
+        <references refid="da/d5c/classbanita_1_1_message_1ac28e1eb6fc91d5cd728bcdc398458d36" compoundref="dc/dbc/_message_8hpp" startline="98" endline="101">banita::Message::get_id</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1ae1f927231f5e2b9807c281dc83decb1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message_Handler::unblock_message</definition>
+        <argsstring>(Message _message)</argsstring>
+        <name>unblock_message</name>
+        <param>
+          <type><ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref></type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="141" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="141" bodyend="155"/>
+        <references refid="da/d5c/classbanita_1_1_message_1ac28e1eb6fc91d5cd728bcdc398458d36" compoundref="dc/dbc/_message_8hpp" startline="98" endline="101">banita::Message::get_id</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1a9aa44b5857d36ea645f7c1d6631f299e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Message_Handler::is_message_blocked</definition>
+        <argsstring>(const Message &amp;_message)</argsstring>
+        <name>is_message_blocked</name>
+        <param>
+          <type>const <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+<para>check if the input message is in the blocked messages map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="164" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="164" bodyend="178"/>
+        <references refid="da/d5c/classbanita_1_1_message_1ac28e1eb6fc91d5cd728bcdc398458d36" compoundref="dc/dbc/_message_8hpp" startline="98" endline="101">banita::Message::get_id</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1a689c5f2971747e4b7c9e3b5a678adf52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message_Handler::singlecast</definition>
+        <argsstring>(Int32 id, const Message &amp;_message)</argsstring>
+        <name>singlecast</name>
+        <param>
+          <type>Int32</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+<para>Check if there it is a pending message for an specific listener id. If it is a message for the listener, let it handle the message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/ddc/classbanita_1_1_message___handler_1a66509928c2131bf12c35192aead8c327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Message_Handler::multicast</definition>
+        <argsstring>(const Message &amp;_message)</argsstring>
+        <name>multicast</name>
+        <param>
+          <type>const <ref refid="da/d5c/classbanita_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>_message</declname>
+        </param>
+        <briefdescription>
+<para>Check if there it is a pending message. If it is, let the subscribed listeners handle the message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message_Handler.hpp" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Message_Handler.hpp" line="21" column="1" bodyfile="headers/Message_Handler.hpp" bodystart="20" bodyend="199"/>
+    <listofallmembers>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a606a8f9a0c7fa63f74d53062a06a25fe" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>add_multicast_listener</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1ac1606f794ec41c49d406524da8450e2f" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>add_singlecast_listener</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a3833f61bd8a4ef5e0f625b1ed5306b1c" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>block_message</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1ab40bf3ee9636f9589b7fb0a325e5a9e4" prot="private" virt="non-virtual"><scope>banita::Message_Handler</scope><name>blockedMessages</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a9aa44b5857d36ea645f7c1d6631f299e" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>is_message_blocked</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1ae9638d03b0397e8853710174c3e1e3f4" prot="private" virt="non-virtual"><scope>banita::Message_Handler</scope><name>Listener_List</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1addd0c9b855f2f0f3e91738e23671f348" prot="private" virt="non-virtual"><scope>banita::Message_Handler</scope><name>Listener_List_Map</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a15b035a4660e9e6fbced756b1754544c" prot="private" virt="non-virtual"><scope>banita::Message_Handler</scope><name>Listener_Map</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1ab610f5ffc535a86ed43c24323277225c" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>Message_Handler</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a66509928c2131bf12c35192aead8c327" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>multicast</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a79e9873b3a9449214b5541034af50baa" prot="private" virt="non-virtual"><scope>banita::Message_Handler</scope><name>multicastTargets</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a689c5f2971747e4b7c9e3b5a678adf52" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>singlecast</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1a5e651b556b1b7eb56d231d4f6436df3d" prot="private" virt="non-virtual"><scope>banita::Message_Handler</scope><name>singlecastTargets</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1ae1f927231f5e2b9807c281dc83decb1d" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>unblock_message</name></member>
+      <member refid="dc/ddc/classbanita_1_1_message___handler_1afd3d620e8b639c50504fba6783e4e31f" prot="public" virt="non-virtual"><scope>banita::Message_Handler</scope><name>~Message_Handler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

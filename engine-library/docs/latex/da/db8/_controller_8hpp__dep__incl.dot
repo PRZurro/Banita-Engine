@@ -1,0 +1,11 @@
+digraph "headers/Controller.hpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node7 [label="headers/Controller.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Virtual class of the controller component. A controller is a component and a listener at the same tim..."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="headers/Player_Controller.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d1e/_player___controller_8hpp.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="headers/Component_Generator.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de4/_component___generator_8hpp.html",tooltip="Generator of components, store and create components."];
+}

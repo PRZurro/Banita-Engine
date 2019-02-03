@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d6/de5/namespacebanita" kind="namespace" language="C++">
+    <compoundname>banita</compoundname>
+    <innerclass refid="d4/d9c/classbanita_1_1_banita_engine" prot="public">banita::BanitaEngine</innerclass>
+    <innerclass refid="d8/d6f/classbanita_1_1_camera___component" prot="public">banita::Camera_Component</innerclass>
+    <innerclass refid="d7/dda/classbanita_1_1_component" prot="public">banita::Component</innerclass>
+    <innerclass refid="d8/dc5/classbanita_1_1_component___generator" prot="public">banita::Component_Generator</innerclass>
+    <innerclass refid="d0/d23/classbanita_1_1_controller" prot="public">banita::Controller</innerclass>
+    <innerclass refid="d3/d0a/classbanita_1_1_controller___module" prot="public">banita::Controller_Module</innerclass>
+    <innerclass refid="dd/dee/classbanita_1_1_controller___task" prot="public">banita::Controller_Task</innerclass>
+    <innerclass refid="db/d9f/classbanita_1_1_entity" prot="public">banita::Entity</innerclass>
+    <innerclass refid="d7/dc0/classbanita_1_1_input___task" prot="public">banita::Input_Task</innerclass>
+    <innerclass refid="d6/d5d/classbanita_1_1_kernel" prot="public">banita::Kernel</innerclass>
+    <innerclass refid="d5/d29/classbanita_1_1_keyboard" prot="public">banita::Keyboard</innerclass>
+    <innerclass refid="de/d14/classbanita_1_1_light___component" prot="public">banita::Light_Component</innerclass>
+    <innerclass refid="da/d5c/classbanita_1_1_message" prot="public">banita::Message</innerclass>
+    <innerclass refid="dc/ddc/classbanita_1_1_message___handler" prot="public">banita::Message_Handler</innerclass>
+    <innerclass refid="d1/d27/classbanita_1_1_model___component" prot="public">banita::Model_Component</innerclass>
+    <innerclass refid="d0/d84/classbanita_1_1_module" prot="public">banita::Module</innerclass>
+    <innerclass refid="dc/dbf/classbanita_1_1_module___factory___central" prot="public">banita::Module_Factory_Central</innerclass>
+    <innerclass refid="dc/d66/classbanita_1_1_player___controller" prot="public">banita::Player_Controller</innerclass>
+    <innerclass refid="de/da2/classbanita_1_1_render___module" prot="public">banita::Render_Module</innerclass>
+    <innerclass refid="db/d15/classbanita_1_1_render___task" prot="public">banita::Render_Task</innerclass>
+    <innerclass refid="de/d36/classbanita_1_1_sample___renderer" prot="public">banita::Sample_Renderer</innerclass>
+    <innerclass refid="da/d56/classbanita_1_1_scene" prot="public">banita::Scene</innerclass>
+    <innerclass refid="d8/dfd/classbanita_1_1_task" prot="public">banita::Task</innerclass>
+    <innerclass refid="d8/de9/classbanita_1_1_transform___component" prot="public">banita::Transform_Component</innerclass>
+    <innerclass refid="df/dfe/classbanita_1_1_transform___module" prot="public">banita::Transform_Module</innerclass>
+    <innerclass refid="dc/da0/classbanita_1_1_transform___task" prot="public">banita::Transform_Task</innerclass>
+    <innerclass refid="d5/d15/classbanita_1_1_window" prot="public">banita::Window</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d6/de5/namespacebanita_1abd75c694144bac2707c40f23bf242509" prot="public" static="no" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto banita::KEY_PRESSED_ID</definition>
+        <argsstring></argsstring>
+        <name>KEY_PRESSED_ID</name>
+        <initializer>= &quot;key pressed&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Message.hpp" line="20" column="1" bodyfile="headers/Message.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/BanitaEngine.hpp" line="17" column="1"/>
+  </compounddef>
+</doxygen>

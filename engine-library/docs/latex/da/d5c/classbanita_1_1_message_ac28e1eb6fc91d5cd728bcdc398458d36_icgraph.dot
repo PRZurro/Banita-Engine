@@ -1,0 +1,14 @@
+digraph "banita::Message::get_id"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node11 [label="banita::Message::get_id",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Get the id object."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="banita::Message_Handler\l::block_message",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/ddc/classbanita_1_1_message___handler.html#a3833f61bd8a4ef5e0f625b1ed5306b1c",tooltip=" "];
+  Node11 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="banita::Message_Handler\l::unblock_message",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/ddc/classbanita_1_1_message___handler.html#ae1f927231f5e2b9807c281dc83decb1d",tooltip=" "];
+  Node11 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="banita::Message_Handler\l::is_message_blocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/ddc/classbanita_1_1_message___handler.html#a9aa44b5857d36ea645f7c1d6631f299e",tooltip="check if the input message is in the blocked messages map"];
+}

@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="de/d14/classbanita_1_1_light___component" kind="class" language="C++" prot="public">
+    <compoundname>banita::Light_Component</compoundname>
+    <basecompoundref refid="d7/dda/classbanita_1_1_component" prot="public" virt="non-virtual">banita::Component</basecompoundref>
+    <includes refid="df/dc8/_light___component_8hpp" local="no">Light_Component.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="de/d14/classbanita_1_1_light___component_1aeec3921ed4ecce5575c22c036f73c61d" prot="private" static="no">
+        <type>glt::Light</type>
+        <definition>using banita::Light_Component::Light =  glt::Light</definition>
+        <argsstring></argsstring>
+        <name>Light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="23" column="1" bodyfile="headers/Light_Component.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="de/d14/classbanita_1_1_light___component_1ab23135113556b92dd9ed386b6dcde302" prot="private" static="no">
+        <type>std::shared_ptr&lt; Light &gt;</type>
+        <definition>using banita::Light_Component::Light_sptr =  std::shared_ptr&lt;Light&gt;</definition>
+        <argsstring></argsstring>
+        <name>Light_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="24" column="1" bodyfile="headers/Light_Component.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d14/classbanita_1_1_light___component_1ad45983bd83620c0cc2ff46c02986c4d5" prot="private" static="no" mutable="no">
+        <type>Light_sptr</type>
+        <definition>Light_sptr banita::Light_Component::light</definition>
+        <argsstring></argsstring>
+        <name>light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="28" column="1" bodyfile="headers/Light_Component.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1ab3a24d9ee4cd5d3598588dabef05375b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Light_Component::Light_Component</definition>
+        <argsstring>(Entity *_entity)</argsstring>
+        <name>Light_Component</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="de/d14/classbanita_1_1_light___component" kindref="compound">Light_Component</ref> object and store the entity received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="41" column="1"/>
+        <referencedby refid="de/d14/classbanita_1_1_light___component_1acc13089b837daf1b1751c3dca81fa798" compoundref="df/dc8/_light___component_8hpp" startline="117" endline="120">generator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1a2afec04726df91aee59837fa1481d361" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Light_Component::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a2f700c071185f7033caa69576dafa9e7">initialize</reimplements>
+        <briefdescription>
+<para>initialize the light&apos;s attribute and members </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1a1cba9ef2cb6b798623899ad94f68df9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Light_Component::update</definition>
+        <argsstring>(float _deltaTime) override</argsstring>
+        <name>update</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1ae8f9d11dc8e3c920d6d40146668c429b">update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>_deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>update the light&apos;s attribute and members </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1aa808026256f8f1050a1a90cc3b6a0602" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool banita::Light_Component::parse_property</definition>
+        <argsstring>(const String &amp;_name, const String &amp;value) override</argsstring>
+        <name>parse_property</name>
+        <reimplements refid="d7/dda/classbanita_1_1_component_1a619154ef2bed8e4493413bdef6117716">parse_property</reimplements>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>parse the input property and modify the values of the light </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1a4de1a5438ce5f15ecd46544bf27b4d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Light_sptr</type>
+        <definition>Light_sptr banita::Light_Component::get_light</definition>
+        <argsstring>()</argsstring>
+        <name>get_light</name>
+        <briefdescription>
+<para>Get a shared pointer to the light. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Light_sptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="79" column="1" bodyfile="headers/Light_Component.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1a92916e5a6493c735954aec600c1aa77f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Light_Component::set_color</definition>
+        <argsstring>(float _r=252.0f, float _g=252.0f, float _b=0.f)</argsstring>
+        <name>set_color</name>
+        <param>
+          <type>float</type>
+          <declname>_r</declname>
+          <defval>252.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_g</declname>
+          <defval>252.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_b</declname>
+          <defval>0.f</defval>
+        </param>
+        <briefdescription>
+<para>Set the light&apos;s color by the floats received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1ad6e5bef3588a571ef6390476fc9c1d42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Light_Component::set_color</definition>
+        <argsstring>(Vector3f _color)</argsstring>
+        <name>set_color</name>
+        <param>
+          <type>Vector3f</type>
+          <declname>_color</declname>
+        </param>
+        <briefdescription>
+<para>Set the light&apos;s color by the float vector received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1a54164691efbc95979cb869910b4f34fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Light_Component::set_intensity</definition>
+        <argsstring>(float _intensity)</argsstring>
+        <name>set_intensity</name>
+        <param>
+          <type>float</type>
+          <declname>_intensity</declname>
+        </param>
+        <briefdescription>
+<para>Set the light&apos;s intensity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_intensity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="107" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/d14/classbanita_1_1_light___component_1acc13089b837daf1b1751c3dca81fa798" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Component_sptr</type>
+        <definition>static Component_sptr banita::Light_Component::generator</definition>
+        <argsstring>(Entity *_entity)</argsstring>
+        <name>generator</name>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>light component generator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Component_sptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Light_Component.hpp" line="117" column="1" bodyfile="headers/Light_Component.hpp" bodystart="117" bodyend="120"/>
+        <references refid="de/d14/classbanita_1_1_light___component_1ab3a24d9ee4cd5d3598588dabef05375b">Light_Component</references>
+        <referencedby refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" compoundref="d2/de4/_component___generator_8hpp" startline="46" endline="53">banita::Component_Generator::Component_Generator</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="66">
+        <label>banita::Light_Component</label>
+        <link refid="de/d14/classbanita_1_1_light___component"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="70">
+        <label>banita::Entity</label>
+        <link refid="db/d9f/classbanita_1_1_entity"/>
+      </node>
+      <node id="68">
+        <label>banita::Light_Component</label>
+        <link refid="de/d14/classbanita_1_1_light___component"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>banita::Component</label>
+        <link refid="d7/dda/classbanita_1_1_component"/>
+        <childnode refid="70" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Light_Component.hpp" line="22" column="1" bodyfile="headers/Light_Component.hpp" bodystart="21" bodyend="121"/>
+    <listofallmembers>
+      <member refid="d7/dda/classbanita_1_1_component_1ad73a6ae8fbf56b7d54ef48c5e9ec164d" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>Component</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a3a267ceeceda4ed4f9c7dba7d11f4886" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>Component</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1acc13089b837daf1b1751c3dca81fa798" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>generator</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>get_entity</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1a4de1a5438ce5f15ecd46544bf27b4d6e" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>get_light</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>get_name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>get_type</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1a2afec04726df91aee59837fa1481d361" prot="public" virt="virtual"><scope>banita::Light_Component</scope><name>initialize</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1aeec3921ed4ecce5575c22c036f73c61d" prot="private" virt="non-virtual"><scope>banita::Light_Component</scope><name>Light</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1ad45983bd83620c0cc2ff46c02986c4d5" prot="private" virt="non-virtual"><scope>banita::Light_Component</scope><name>light</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1ab3a24d9ee4cd5d3598588dabef05375b" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>Light_Component</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1ab23135113556b92dd9ed386b6dcde302" prot="private" virt="non-virtual"><scope>banita::Light_Component</scope><name>Light_sptr</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" prot="protected" virt="non-virtual"><scope>banita::Light_Component</scope><name>name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" prot="protected" virt="non-virtual"><scope>banita::Light_Component</scope><name>owner</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1aa808026256f8f1050a1a90cc3b6a0602" prot="public" virt="virtual"><scope>banita::Light_Component</scope><name>parse_property</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1a92916e5a6493c735954aec600c1aa77f" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>set_color</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1ad6e5bef3588a571ef6390476fc9c1d42" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>set_color</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1a54164691efbc95979cb869910b4f34fd" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>set_intensity</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" prot="public" virt="non-virtual"><scope>banita::Light_Component</scope><name>set_name</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" prot="protected" virt="non-virtual"><scope>banita::Light_Component</scope><name>type</name></member>
+      <member refid="de/d14/classbanita_1_1_light___component_1a1cba9ef2cb6b798623899ad94f68df9f" prot="public" virt="virtual"><scope>banita::Light_Component</scope><name>update</name></member>
+      <member refid="d7/dda/classbanita_1_1_component_1a0dc114b2bed0ec1128b20bbf2b5e2eca" prot="public" virt="virtual"><scope>banita::Light_Component</scope><name>~Component</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

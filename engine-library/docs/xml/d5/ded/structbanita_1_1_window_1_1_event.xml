@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d5/ded/structbanita_1_1_window_1_1_event" kind="struct" language="C++" prot="public">
+    <compoundname>banita::Window::Event</compoundname>
+    <includes refid="de/d0b/_window_8hpp" local="no">Window.hpp</includes>
+    <innerclass refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data" prot="public">banita::Window::Event::Data</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Type</name>
+        <enumvalue id="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a65bab3c2fe8ee38573749bba577b5486" prot="public">
+          <name>CLOSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a2d56fe4635e732f310e356891ea68d41" prot="public">
+          <name>KEY_PRESSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3ab674d26e557bc61004bb4075a8141943" prot="public">
+          <name>KEY_RELEASED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="26" column="1" bodyfile="headers/Window.hpp" bodystart="25" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/ded/structbanita_1_1_window_1_1_event_1a465ac3171aa3d833333b37c4d2d5fff7" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3" kindref="member">banita::Window::Event::Type</ref></type>
+        <definition>enum banita::Window::Event::Type
+             banita::Window::Event::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/ded/structbanita_1_1_window_1_1_event_1a1b8d8286e719931337c294db3fd49b11" prot="public" static="no" mutable="no">
+        <type>union <ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data" kindref="compound">banita::Window::Event::Data</ref></type>
+        <definition>union banita::Window::Event::Data
+             banita::Window::Event::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Esta clase <ref refid="d5/ded/structbanita_1_1_window_1_1_event" kindref="compound">Event</ref> es específica para los eventos de la ventana. Por ello está anidada dentro de <ref refid="d5/d15/classbanita_1_1_window" kindref="compound">Window</ref>. Se podría generalizar. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="50">
+        <label>banita::Window::Event</label>
+        <link refid="d5/ded/structbanita_1_1_window_1_1_event"/>
+        <childnode refid="51" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>banita::Window::Event::Data</label>
+        <link refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data"/>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Window.hpp" line="24" column="1" bodyfile="headers/Window.hpp" bodystart="23" bodyend="45"/>
+    <listofallmembers>
+      <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a65bab3c2fe8ee38573749bba577b5486" prot="public" virt="non-virtual"><scope>banita::Window::Event</scope><name>CLOSE</name></member>
+      <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a1b8d8286e719931337c294db3fd49b11" prot="public" virt="non-virtual"><scope>banita::Window::Event</scope><name>data</name></member>
+      <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a2d56fe4635e732f310e356891ea68d41" prot="public" virt="non-virtual"><scope>banita::Window::Event</scope><name>KEY_PRESSED</name></member>
+      <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3ab674d26e557bc61004bb4075a8141943" prot="public" virt="non-virtual"><scope>banita::Window::Event</scope><name>KEY_RELEASED</name></member>
+      <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a465ac3171aa3d833333b37c4d2d5fff7" prot="public" virt="non-virtual"><scope>banita::Window::Event</scope><name>type</name></member>
+      <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3" prot="public" virt="non-virtual"><scope>banita::Window::Event</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

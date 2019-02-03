@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_7f57b1e41c5acd0e859ae5f3a2b075a9" kind="dir">
+    <compoundname>headers</compoundname>
+    <innerfile refid="d6/d14/_banita_engine_8hpp">BanitaEngine.hpp</innerfile>
+    <innerfile refid="dd/dd5/_camera___component_8hpp">Camera_Component.hpp</innerfile>
+    <innerfile refid="da/d5c/_component_8hpp">Component.hpp</innerfile>
+    <innerfile refid="d2/de4/_component___generator_8hpp">Component_Generator.hpp</innerfile>
+    <innerfile refid="d6/d14/_controller_8hpp">Controller.hpp</innerfile>
+    <innerfile refid="df/dc9/_controller___module_8hpp">Controller_Module.hpp</innerfile>
+    <innerfile refid="da/da0/_controller___task_8hpp">Controller_Task.hpp</innerfile>
+    <innerfile refid="d2/db6/_entity_8hpp">Entity.hpp</innerfile>
+    <innerfile refid="d0/d83/_input___task_8hpp">Input_Task.hpp</innerfile>
+    <innerfile refid="dd/d8b/_kernel_8hpp">Kernel.hpp</innerfile>
+    <innerfile refid="db/ddd/_keyboard_8hpp">Keyboard.hpp</innerfile>
+    <innerfile refid="df/dc8/_light___component_8hpp">Light_Component.hpp</innerfile>
+    <innerfile refid="dc/dbc/_message_8hpp">Message.hpp</innerfile>
+    <innerfile refid="d2/d26/_message___handler_8hpp">Message_Handler.hpp</innerfile>
+    <innerfile refid="d0/da4/_model___component_8hpp">Model_Component.hpp</innerfile>
+    <innerfile refid="db/db6/_module_8hpp">Module.hpp</innerfile>
+    <innerfile refid="da/dc1/_module___factory___central_8hpp">Module_Factory_Central.hpp</innerfile>
+    <innerfile refid="d7/d1e/_player___controller_8hpp">Player_Controller.hpp</innerfile>
+    <innerfile refid="de/d59/_render___module_8hpp">Render_Module.hpp</innerfile>
+    <innerfile refid="db/df5/_render___task_8hpp">Render_Task.hpp</innerfile>
+    <innerfile refid="d5/d6c/_sample___renderer_8hpp">Sample_Renderer.hpp</innerfile>
+    <innerfile refid="d0/d8f/_scene_8hpp">Scene.hpp</innerfile>
+    <innerfile refid="d6/d1e/_task_8hpp">Task.hpp</innerfile>
+    <innerfile refid="d1/d74/_transform___component_8hpp">Transform_Component.hpp</innerfile>
+    <innerfile refid="d3/dfa/_transform___module_8hpp">Transform_Module.hpp</innerfile>
+    <innerfile refid="dc/d1d/_transform___task_8hpp">Transform_Task.hpp</innerfile>
+    <innerfile refid="de/d0b/_window_8hpp">Window.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/"/>
+  </compounddef>
+</doxygen>

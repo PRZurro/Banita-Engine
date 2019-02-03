@@ -1,0 +1,117 @@
+\hypertarget{classbanita_1_1_render___module}{}\section{banita\+::Render\+\_\+\+Module Class Reference}
+\label{classbanita_1_1_render___module}\index{banita::Render\_Module@{banita::Render\_Module}}
+
+
+{\ttfamily \#include $<$Render\+\_\+\+Module.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Render\+\_\+\+Module\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Render\+\_\+\+Module\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbanita_1_1_render___module_1_1_render___factory}{Render\+\_\+\+Factory}}
+\begin{DoxyCompactList}\small\item\em Factory of the Render module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_render___module_ac1d3202b1acb7b04b6bab43b6d154417}{Render\+\_\+\+Module}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_render___module}{Render\+\_\+\+Module}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_render___module_a3e74fda921261303b79e9f439080bf9d}{Render\+\_\+\+Module}} (\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$\+\_\+owner)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_render___module}{Render\+\_\+\+Module}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_render___module_a338c9943a6a739c0a2517203c2986d2d}{$\sim$\+Render\+\_\+\+Module}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_render___module}{Render\+\_\+\+Module}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$ \mbox{\hyperlink{classbanita_1_1_render___module_a0fbb9b466fa3fd8f55a0898a4aa87bd0}{get\+\_\+task}} () override
+\begin{DoxyCompactList}\small\item\em Get the task object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_render___module_a639688937a247c3fcc21e720ec0982b7}{create\+\_\+component}} (X\+M\+L\+\_\+\+Node $\ast$\+\_\+component\+Node, \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity) override
+\begin{DoxyCompactList}\small\item\em Create a component object to the entity received by parsing the xml node\textquotesingle{}s attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_render___module_ac1d3202b1acb7b04b6bab43b6d154417}\label{classbanita_1_1_render___module_ac1d3202b1acb7b04b6bab43b6d154417}} 
+\index{banita::Render\_Module@{banita::Render\_Module}!Render\_Module@{Render\_Module}}
+\index{Render\_Module@{Render\_Module}!banita::Render\_Module@{banita::Render\_Module}}
+\subsubsection{\texorpdfstring{Render\_Module()}{Render\_Module()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Render\+\_\+\+Module\+::\+Render\+\_\+\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_render___module}{Render\+\_\+\+Module}} object. 
+
+\mbox{\Hypertarget{classbanita_1_1_render___module_a3e74fda921261303b79e9f439080bf9d}\label{classbanita_1_1_render___module_a3e74fda921261303b79e9f439080bf9d}} 
+\index{banita::Render\_Module@{banita::Render\_Module}!Render\_Module@{Render\_Module}}
+\index{Render\_Module@{Render\_Module}!banita::Render\_Module@{banita::Render\_Module}}
+\subsubsection{\texorpdfstring{Render\_Module()}{Render\_Module()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Render\+\_\+\+Module\+::\+Render\+\_\+\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$}]{\+\_\+owner }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_render___module}{Render\+\_\+\+Module}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+owner} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_render___module_a338c9943a6a739c0a2517203c2986d2d}\label{classbanita_1_1_render___module_a338c9943a6a739c0a2517203c2986d2d}} 
+\index{banita::Render\_Module@{banita::Render\_Module}!````~Render\_Module@{$\sim$Render\_Module}}
+\index{````~Render\_Module@{$\sim$Render\_Module}!banita::Render\_Module@{banita::Render\_Module}}
+\subsubsection{\texorpdfstring{$\sim$Render\_Module()}{~Render\_Module()}}
+{\footnotesize\ttfamily banita\+::\+Render\+\_\+\+Module\+::$\sim$\+Render\+\_\+\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_render___module}{Render\+\_\+\+Module}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_render___module_a639688937a247c3fcc21e720ec0982b7}\label{classbanita_1_1_render___module_a639688937a247c3fcc21e720ec0982b7}} 
+\index{banita::Render\_Module@{banita::Render\_Module}!create\_component@{create\_component}}
+\index{create\_component@{create\_component}!banita::Render\_Module@{banita::Render\_Module}}
+\subsubsection{\texorpdfstring{create\_component()}{create\_component()}}
+{\footnotesize\ttfamily void banita\+::\+Render\+\_\+\+Module\+::create\+\_\+component (\begin{DoxyParamCaption}\item[{X\+M\+L\+\_\+\+Node $\ast$}]{\+\_\+component\+Node,  }\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a component object to the entity received by parsing the xml node\textquotesingle{}s attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+component\+Node} & \\
+\hline
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_module_ace6d7ce15d60044f233d30a43dc961dd}{banita\+::\+Module}}.
+
+\mbox{\Hypertarget{classbanita_1_1_render___module_a0fbb9b466fa3fd8f55a0898a4aa87bd0}\label{classbanita_1_1_render___module_a0fbb9b466fa3fd8f55a0898a4aa87bd0}} 
+\index{banita::Render\_Module@{banita::Render\_Module}!get\_task@{get\_task}}
+\index{get\_task@{get\_task}!banita::Render\_Module@{banita::Render\_Module}}
+\subsubsection{\texorpdfstring{get\_task()}{get\_task()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_task}{Task}}$\ast$ banita\+::\+Render\+\_\+\+Module\+::get\+\_\+task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the task object. 
+
+\begin{DoxyReturn}{Returns}
+Task$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_module_a8e29c0b6d7e11a39dac3c0879ef513d9}{banita\+::\+Module}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_render___module_8hpp}{Render\+\_\+\+Module.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d0/d84/classbanita_1_1_module" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>banita::Module</compoundname>
+    <derivedcompoundref refid="d3/d0a/classbanita_1_1_controller___module" prot="public" virt="non-virtual">banita::Controller_Module</derivedcompoundref>
+    <derivedcompoundref refid="de/da2/classbanita_1_1_render___module" prot="public" virt="non-virtual">banita::Render_Module</derivedcompoundref>
+    <derivedcompoundref refid="df/dfe/classbanita_1_1_transform___module" prot="public" virt="non-virtual">banita::Transform_Module</derivedcompoundref>
+    <includes refid="db/db6/_module_8hpp" local="no">Module.hpp</includes>
+    <innerclass refid="df/d1d/classbanita_1_1_module_1_1_factory" prot="public">banita::Module::Factory</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d0/d84/classbanita_1_1_module_1a10a833e8e5e1d2fb732f1aacaea32f30" prot="protected" static="no" mutable="no">
+        <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* banita::Module::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="49" column="1" bodyfile="headers/Module.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="d0/d84/classbanita_1_1_module_1aa2f74f6ba86841383c427199a03b0f9a" compoundref="db/db6/_module_8hpp" startline="136" endline="139">get_scene</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d84/classbanita_1_1_module_1a7295535148079c57f3ab6b4e77908cc5" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String banita::Module::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="50" column="1" bodyfile="headers/Module.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="d0/d84/classbanita_1_1_module_1a9a17fbfe0d05359427f2e9cbf956852c" compoundref="db/db6/_module_8hpp" startline="126" endline="129">get_name</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d0/d84/classbanita_1_1_module_1a7d70379d14dcf081cd9370224a5d5fda" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Module::Module</definition>
+        <argsstring>()</argsstring>
+        <name>Module</name>
+        <briefdescription>
+<para>Construct a new <ref refid="d0/d84/classbanita_1_1_module" kindref="compound">Module</ref> object by defualt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d84/classbanita_1_1_module_1a5432095b67b68582d293af3a2c106a73" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Module::Module</definition>
+        <argsstring>(Scene *_owner, const String &amp;_name=&quot;undefined&quot;)</argsstring>
+        <name>Module</name>
+        <param>
+          <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_owner</declname>
+        </param>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;undefined&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d0/d84/classbanita_1_1_module" kindref="compound">Module</ref> object storing the scene owner and it&apos;s received name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d84/classbanita_1_1_module_1a54299f4573f04a87251805de43f3f3b4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual banita::Module::~Module</definition>
+        <argsstring>()</argsstring>
+        <name>~Module</name>
+        <briefdescription>
+<para>Destroy the <ref refid="d0/d84/classbanita_1_1_module" kindref="compound">Module</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="72" column="1" bodyfile="headers/Module.hpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d84/classbanita_1_1_module_1ace6d7ce15d60044f233d30a43dc961dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void banita::Module::create_component</definition>
+        <argsstring>(XML_Node *_componentNode, Entity *_entity)=0</argsstring>
+        <name>create_component</name>
+        <reimplementedby refid="d3/d0a/classbanita_1_1_controller___module_1a5176cb9d457c9bd69d6db37b18a79f13">create_component</reimplementedby>
+        <reimplementedby refid="df/dfe/classbanita_1_1_transform___module_1a2a1181f23617bb6dfe71e1f7e16945e9">create_component</reimplementedby>
+        <reimplementedby refid="de/da2/classbanita_1_1_render___module_1a639688937a247c3fcc21e720ec0982b7">create_component</reimplementedby>
+        <param>
+          <type>XML_Node *</type>
+          <declname>_componentNode</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>Create a component object to the entity received by processing the xml node received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d84/classbanita_1_1_module_1a8e29c0b6d7e11a39dac3c0879ef513d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> *</type>
+        <definition>virtual Task* banita::Module::get_task</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_task</name>
+        <reimplementedby refid="de/da2/classbanita_1_1_render___module_1a0fbb9b466fa3fd8f55a0898a4aa87bd0">get_task</reimplementedby>
+        <reimplementedby refid="d3/d0a/classbanita_1_1_controller___module_1a8868454d67a5f949b401c9cfc0a12eba">get_task</reimplementedby>
+        <reimplementedby refid="df/dfe/classbanita_1_1_transform___module_1a6cee3919fd2b22f82c41f056ac87e546">get_task</reimplementedby>
+        <briefdescription>
+<para>Get the module&apos;s task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Task* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d84/classbanita_1_1_module_1a9a17fbfe0d05359427f2e9cbf956852c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const String &amp;</type>
+        <definition>const String&amp; banita::Module::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Get the module&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const String&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="126" column="1" bodyfile="headers/Module.hpp" bodystart="126" bodyend="129"/>
+        <references refid="d0/d84/classbanita_1_1_module_1a7295535148079c57f3ab6b4e77908cc5" compoundref="db/db6/_module_8hpp" startline="50">name</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d84/classbanita_1_1_module_1aa2f74f6ba86841383c427199a03b0f9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* banita::Module::get_scene</definition>
+        <argsstring>()</argsstring>
+        <name>get_scene</name>
+        <briefdescription>
+<para>Get the scene object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Scene* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="136" column="1" bodyfile="headers/Module.hpp" bodystart="136" bodyend="139"/>
+        <references refid="d0/d84/classbanita_1_1_module_1a10a833e8e5e1d2fb732f1aacaea32f30" compoundref="db/db6/_module_8hpp" startline="49">owner</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="86">
+        <label>banita::Module</label>
+        <link refid="d0/d84/classbanita_1_1_module"/>
+      </node>
+      <node id="89">
+        <label>banita::Transform_Module</label>
+        <link refid="df/dfe/classbanita_1_1_transform___module"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>banita::Render_Module</label>
+        <link refid="de/da2/classbanita_1_1_render___module"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>banita::Controller_Module</label>
+        <link refid="d3/d0a/classbanita_1_1_controller___module"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="90">
+        <label>banita::Module</label>
+        <link refid="d0/d84/classbanita_1_1_module"/>
+        <childnode refid="91" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="91">
+        <label>banita::Scene</label>
+        <link refid="da/d56/classbanita_1_1_scene"/>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Module.hpp" line="26" column="1" bodyfile="headers/Module.hpp" bodystart="25" bodyend="140"/>
+    <listofallmembers>
+      <member refid="d0/d84/classbanita_1_1_module_1ace6d7ce15d60044f233d30a43dc961dd" prot="public" virt="pure-virtual"><scope>banita::Module</scope><name>create_component</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a9a17fbfe0d05359427f2e9cbf956852c" prot="public" virt="non-virtual"><scope>banita::Module</scope><name>get_name</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1aa2f74f6ba86841383c427199a03b0f9a" prot="public" virt="non-virtual"><scope>banita::Module</scope><name>get_scene</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a8e29c0b6d7e11a39dac3c0879ef513d9" prot="public" virt="pure-virtual"><scope>banita::Module</scope><name>get_task</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a7d70379d14dcf081cd9370224a5d5fda" prot="protected" virt="non-virtual"><scope>banita::Module</scope><name>Module</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a5432095b67b68582d293af3a2c106a73" prot="protected" virt="non-virtual"><scope>banita::Module</scope><name>Module</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a7295535148079c57f3ab6b4e77908cc5" prot="protected" virt="non-virtual"><scope>banita::Module</scope><name>name</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a10a833e8e5e1d2fb732f1aacaea32f30" prot="protected" virt="non-virtual"><scope>banita::Module</scope><name>owner</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a54299f4573f04a87251805de43f3f3b4" prot="protected" virt="virtual"><scope>banita::Module</scope><name>~Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,176 @@
+\hypertarget{classbanita_1_1_component___generator}{}\section{banita\+::Component\+\_\+\+Generator Class Reference}
+\label{classbanita_1_1_component___generator}\index{banita::Component\_Generator@{banita::Component\_Generator}}
+
+
+{\ttfamily \#include $<$Component\+\_\+\+Generator.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_component___generator_a2eeb40bd9675d0c1828de601324c503d}{Component\+\_\+\+Generator}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_component___generator}{Component\+\_\+\+Generator}} object. Currently doing a unintended step in order to register new component. Each component should auto-\/register invoking this instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_component___generator_a7d43e1dbee3a0addf85bd96422bef52d}{$\sim$\+Component\+\_\+\+Generator}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_component___generator}{Component\+\_\+\+Generator}} object and it\textquotesingle{}s maps. \end{DoxyCompactList}\item 
+fn\+Component\+Generator \mbox{\hyperlink{classbanita_1_1_component___generator_a6c94801a7c5c3eb6aedc0c97bf786b39}{register\+\_\+component\+\_\+generator}} (String \+\_\+module, String \+\_\+type, fn\+Component\+Generator \+\_\+generator)
+\begin{DoxyCompactList}\small\item\em register a new component generator function pointer \end{DoxyCompactList}\item 
+fn\+Controller\+Component\+Generator \mbox{\hyperlink{classbanita_1_1_component___generator_af81270da5efa804c17285d1a6ffc861f}{register\+\_\+controller}} (String \+\_\+type, fn\+Controller\+Component\+Generator \+\_\+generator)
+\item 
+fn\+Controller\+Component\+Generator \mbox{\hyperlink{classbanita_1_1_component___generator_a607e2c3ac5e7f0b8d419e610d419f3a6}{get\+\_\+controller}} (String \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Get the controller generator function pointer. \end{DoxyCompactList}\item 
+fn\+Component\+Generator \mbox{\hyperlink{classbanita_1_1_component___generator_ad8a76cb6dfb2b8667d412b0b014ca75d}{get\+\_\+component\+\_\+generator}} (String \+\_\+module, String \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Get the component generator function pointer. \end{DoxyCompactList}\item 
+fn\+Controller\+Component\+Generator \mbox{\hyperlink{classbanita_1_1_component___generator_a026cadc610c5c75a911ed1299047190a}{get\+\_\+controller\+\_\+generator}} (String \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Get the controller generator function pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classbanita_1_1_component___generator}{Component\+\_\+\+Generator}} $\ast$ \mbox{\hyperlink{classbanita_1_1_component___generator_a58161267b33b3a6e67edfed079196ebd}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_component___generator_a2eeb40bd9675d0c1828de601324c503d}\label{classbanita_1_1_component___generator_a2eeb40bd9675d0c1828de601324c503d}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!Component\_Generator@{Component\_Generator}}
+\index{Component\_Generator@{Component\_Generator}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{Component\_Generator()}{Component\_Generator()}}
+{\footnotesize\ttfamily banita\+::\+Component\+\_\+\+Generator\+::\+Component\+\_\+\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_component___generator}{Component\+\_\+\+Generator}} object. Currently doing a unintended step in order to register new component. Each component should auto-\/register invoking this instance. 
+
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classbanita_1_1_component___generator_a7d43e1dbee3a0addf85bd96422bef52d}\label{classbanita_1_1_component___generator_a7d43e1dbee3a0addf85bd96422bef52d}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!````~Component\_Generator@{$\sim$Component\_Generator}}
+\index{````~Component\_Generator@{$\sim$Component\_Generator}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{$\sim$Component\_Generator()}{~Component\_Generator()}}
+{\footnotesize\ttfamily banita\+::\+Component\+\_\+\+Generator\+::$\sim$\+Component\+\_\+\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_component___generator}{Component\+\_\+\+Generator}} object and it\textquotesingle{}s maps. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_component___generator_ad8a76cb6dfb2b8667d412b0b014ca75d}\label{classbanita_1_1_component___generator_ad8a76cb6dfb2b8667d412b0b014ca75d}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!get\_component\_generator@{get\_component\_generator}}
+\index{get\_component\_generator@{get\_component\_generator}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{get\_component\_generator()}{get\_component\_generator()}}
+{\footnotesize\ttfamily fn\+Component\+Generator banita\+::\+Component\+\_\+\+Generator\+::get\+\_\+component\+\_\+generator (\begin{DoxyParamCaption}\item[{String}]{\+\_\+module,  }\item[{String}]{\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Get the component generator function pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+module} & \\
+\hline
+{\em \+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fn\+Component\+Generator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_component___generator_a607e2c3ac5e7f0b8d419e610d419f3a6}\label{classbanita_1_1_component___generator_a607e2c3ac5e7f0b8d419e610d419f3a6}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!get\_controller@{get\_controller}}
+\index{get\_controller@{get\_controller}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{get\_controller()}{get\_controller()}}
+{\footnotesize\ttfamily fn\+Controller\+Component\+Generator banita\+::\+Component\+\_\+\+Generator\+::get\+\_\+controller (\begin{DoxyParamCaption}\item[{String}]{\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the controller generator function pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fn\+Controller\+Component\+Generator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_component___generator_a026cadc610c5c75a911ed1299047190a}\label{classbanita_1_1_component___generator_a026cadc610c5c75a911ed1299047190a}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!get\_controller\_generator@{get\_controller\_generator}}
+\index{get\_controller\_generator@{get\_controller\_generator}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{get\_controller\_generator()}{get\_controller\_generator()}}
+{\footnotesize\ttfamily fn\+Controller\+Component\+Generator banita\+::\+Component\+\_\+\+Generator\+::get\+\_\+controller\+\_\+generator (\begin{DoxyParamCaption}\item[{String}]{\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the controller generator function pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fn\+Controller\+Component\+Generator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_component___generator_a58161267b33b3a6e67edfed079196ebd}\label{classbanita_1_1_component___generator_a58161267b33b3a6e67edfed079196ebd}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classbanita_1_1_component___generator}{Component\+\_\+\+Generator}}$\ast$ banita\+::\+Component\+\_\+\+Generator\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the instance object. 
+
+\begin{DoxyReturn}{Returns}
+Component\+\_\+\+Generator$\ast$ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classbanita_1_1_component___generator_a6c94801a7c5c3eb6aedc0c97bf786b39}\label{classbanita_1_1_component___generator_a6c94801a7c5c3eb6aedc0c97bf786b39}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!register\_component\_generator@{register\_component\_generator}}
+\index{register\_component\_generator@{register\_component\_generator}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{register\_component\_generator()}{register\_component\_generator()}}
+{\footnotesize\ttfamily fn\+Component\+Generator banita\+::\+Component\+\_\+\+Generator\+::register\+\_\+component\+\_\+generator (\begin{DoxyParamCaption}\item[{String}]{\+\_\+module,  }\item[{String}]{\+\_\+type,  }\item[{fn\+Component\+Generator}]{\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+register a new component generator function pointer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+module} & \\
+\hline
+{\em \+\_\+type} & \\
+\hline
+{\em \+\_\+generator} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the component generator function pointer that receives 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classbanita_1_1_component___generator_af81270da5efa804c17285d1a6ffc861f}\label{classbanita_1_1_component___generator_af81270da5efa804c17285d1a6ffc861f}} 
+\index{banita::Component\_Generator@{banita::Component\_Generator}!register\_controller@{register\_controller}}
+\index{register\_controller@{register\_controller}!banita::Component\_Generator@{banita::Component\_Generator}}
+\subsubsection{\texorpdfstring{register\_controller()}{register\_controller()}}
+{\footnotesize\ttfamily fn\+Controller\+Component\+Generator banita\+::\+Component\+\_\+\+Generator\+::register\+\_\+controller (\begin{DoxyParamCaption}\item[{String}]{\+\_\+type,  }\item[{fn\+Controller\+Component\+Generator}]{\+\_\+generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+type} & \\
+\hline
+{\em \+\_\+generator} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the controller function pointer that receives 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_component___generator_8hpp}{Component\+\_\+\+Generator.\+hpp}}\end{DoxyCompactItemize}

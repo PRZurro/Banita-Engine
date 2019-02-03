@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="db/d9f/classbanita_1_1_entity" kind="class" language="C++" prot="public">
+    <compoundname>banita::Entity</compoundname>
+    <includes refid="d2/db6/_entity_8hpp" local="no">Entity.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="db/d9f/classbanita_1_1_entity_1a6a5ae135d135ecef6a6f4bdaeb7da6b4" prot="private" static="no">
+        <type>std::unordered_map&lt; Size_t, Component_sptr &gt;</type>
+        <definition>using banita::Entity::Components =  std::unordered_map&lt; Size_t, Component_sptr&gt;</definition>
+        <argsstring></argsstring>
+        <name>Components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="28" column="1" bodyfile="headers/Entity.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="db/d9f/classbanita_1_1_entity_1a59aa5e25cff7b281e39633eb5bfbc74b" prot="private" static="no">
+        <type>std::shared_ptr&lt; <ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref> &gt;</type>
+        <definition>using banita::Entity::Tr_Comp_sptr =  std::shared_ptr&lt; Transform_Component&gt;</definition>
+        <argsstring></argsstring>
+        <name>Tr_Comp_sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="29" column="1" bodyfile="headers/Entity.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d9f/classbanita_1_1_entity_1a8c79cf2a53317cf8e26248a7a68a0193" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String banita::Entity::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="33" column="1" bodyfile="headers/Entity.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9f/classbanita_1_1_entity_1a0268988c8142094c6b933673329a1b73" prot="private" static="no" mutable="no">
+        <type>Components</type>
+        <definition>Components banita::Entity::components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="34" column="1" bodyfile="headers/Entity.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9f/classbanita_1_1_entity_1ae8534853967d3ab3395f827ac1a5f24d" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* banita::Entity::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="35" column="1" bodyfile="headers/Entity.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d9f/classbanita_1_1_entity_1a8f6ed997bc32bfb0c69cb0b643f342fa" prot="private" static="no" mutable="no">
+        <type>Tr_Comp_sptr</type>
+        <definition>Tr_Comp_sptr banita::Entity::transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="37" column="1" bodyfile="headers/Entity.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1aea5e59bc61fed11d1c23cd6108613b37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Entity::Entity</definition>
+        <argsstring>(Scene *_scene)</argsstring>
+        <name>Entity</name>
+        <param>
+          <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> object and store the scene pointer received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1a01b2f03d793f06528e1d4c4112d4f62d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Entity::Entity</definition>
+        <argsstring>(String &amp;_name, Scene *_scene)</argsstring>
+        <name>Entity</name>
+        <param>
+          <type>String &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> object and store the scene pointer and name received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1ab426b4d2def681300d007e27626f70da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Entity::~Entity</definition>
+        <argsstring>()</argsstring>
+        <name>~Entity</name>
+        <briefdescription>
+<para>Destroy the <ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="60" column="1" bodyfile="headers/Entity.hpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1a1e070b4458ecebabbec87e90a3235f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Entity::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+<para>initialize the attributes and members of this entity </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1a37c77bf77f2148e886571ef988b98749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool banita::Entity::add_component</definition>
+        <argsstring>(const String &amp;_type, Component_sptr _component)</argsstring>
+        <name>add_component</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>Component_sptr</type>
+          <declname>_component</declname>
+        </param>
+        <briefdescription>
+<para>add a component to this entity </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1aa270c75c0dead62a45a39e4b2b016988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String &amp;</type>
+        <definition>String&amp; banita::Entity::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>return the name object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="94" column="1" bodyfile="headers/Entity.hpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1af19f6e2e27d0f519032da54ef7dec759" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref> &amp;</type>
+        <definition>Transform_Component&amp; banita::Entity::get_transform</definition>
+        <argsstring>()</argsstring>
+        <name>get_transform</name>
+        <briefdescription>
+<para>return the transform object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="d8/de9/classbanita_1_1_transform___component" kindref="compound">Transform_Component</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="104" column="1" bodyfile="headers/Entity.hpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1a6e24a4ca55bf664035d39ab229f849c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/dda/classbanita_1_1_component" kindref="compound">Component</ref> *</type>
+        <definition>Component* banita::Entity::get_component</definition>
+        <argsstring>(Int32 _ID)</argsstring>
+        <name>get_component</name>
+        <param>
+          <type>Int32</type>
+          <declname>_ID</declname>
+        </param>
+        <briefdescription>
+<para>return the component object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Component* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="115" column="1" bodyfile="headers/Entity.hpp" bodystart="115" bodyend="123"/>
+        <referencedby refid="db/d9f/classbanita_1_1_entity_1aa8fbd735440d40b2a934828aa5e726d6" compoundref="d2/db6/_entity_8hpp" startline="131" endline="134">get_component</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1aa8fbd735440d40b2a934828aa5e726d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/dda/classbanita_1_1_component" kindref="compound">Component</ref> *</type>
+        <definition>Component* banita::Entity::get_component</definition>
+        <argsstring>(const String &amp;_type)</argsstring>
+        <name>get_component</name>
+        <param>
+          <type>const String &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+<para>return the component object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Component* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="131" column="1" bodyfile="headers/Entity.hpp" bodystart="131" bodyend="134"/>
+        <references refid="db/d9f/classbanita_1_1_entity_1a6e24a4ca55bf664035d39ab229f849c1" compoundref="d2/db6/_entity_8hpp" startline="115" endline="123">get_component</references>
+      </memberdef>
+      <memberdef kind="function" id="db/d9f/classbanita_1_1_entity_1abc8ae6f7a0de629ae3a35d904c4338de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* banita::Entity::get_scene</definition>
+        <argsstring>()</argsstring>
+        <name>get_scene</name>
+        <briefdescription>
+<para>Get the scene object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Scene* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Entity.hpp" line="141" column="1" bodyfile="headers/Entity.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Entity.hpp" line="27" column="1" bodyfile="headers/Entity.hpp" bodystart="26" bodyend="145"/>
+    <listofallmembers>
+      <member refid="db/d9f/classbanita_1_1_entity_1a37c77bf77f2148e886571ef988b98749" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>add_component</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a6a5ae135d135ecef6a6f4bdaeb7da6b4" prot="private" virt="non-virtual"><scope>banita::Entity</scope><name>Components</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a0268988c8142094c6b933673329a1b73" prot="private" virt="non-virtual"><scope>banita::Entity</scope><name>components</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1aea5e59bc61fed11d1c23cd6108613b37" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>Entity</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a01b2f03d793f06528e1d4c4112d4f62d" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>Entity</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a6e24a4ca55bf664035d39ab229f849c1" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>get_component</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1aa8fbd735440d40b2a934828aa5e726d6" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>get_component</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1aa270c75c0dead62a45a39e4b2b016988" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>get_name</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1abc8ae6f7a0de629ae3a35d904c4338de" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>get_scene</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1af19f6e2e27d0f519032da54ef7dec759" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>get_transform</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a1e070b4458ecebabbec87e90a3235f8e" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>initialize</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a8c79cf2a53317cf8e26248a7a68a0193" prot="private" virt="non-virtual"><scope>banita::Entity</scope><name>name</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1ae8534853967d3ab3395f827ac1a5f24d" prot="private" virt="non-virtual"><scope>banita::Entity</scope><name>scene</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a59aa5e25cff7b281e39633eb5bfbc74b" prot="private" virt="non-virtual"><scope>banita::Entity</scope><name>Tr_Comp_sptr</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1a8f6ed997bc32bfb0c69cb0b643f342fa" prot="private" virt="non-virtual"><scope>banita::Entity</scope><name>transform</name></member>
+      <member refid="db/d9f/classbanita_1_1_entity_1ab426b4d2def681300d007e27626f70da" prot="public" virt="non-virtual"><scope>banita::Entity</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

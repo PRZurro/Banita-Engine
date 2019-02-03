@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d4/d7f/class_message" kind="class" language="C++" prot="public">
+    <compoundname>Message</compoundname>
+    <includes refid="dc/dbc/_message_8hpp" local="no">Message.hpp</includes>
+    <briefdescription>
+<para>class in charge of save information that is necessary to reach another class inherited from listener </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Message.hpp" line="7" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

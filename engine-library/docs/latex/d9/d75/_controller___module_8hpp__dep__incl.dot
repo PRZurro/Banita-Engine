@@ -1,0 +1,9 @@
+digraph "headers/Controller_Module.hpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node8 [label="headers/Controller\l_Module.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Module of the controllers. Create components and store the task to update and initialize each compone..."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="headers/Module_Factory\l_Central.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dc1/_module___factory___central_8hpp.html",tooltip="Patch to the problem of auto-registration of static members in cpp files. Registers and stores the mo..."];
+}

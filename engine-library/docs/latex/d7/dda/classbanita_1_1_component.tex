@@ -1,0 +1,227 @@
+\hypertarget{classbanita_1_1_component}{}\section{banita\+::Component Class Reference}
+\label{classbanita_1_1_component}\index{banita::Component@{banita::Component}}
+
+
+{\ttfamily \#include $<$Component.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Component\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Component\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_component_ad73a6ae8fbf56b7d54ef48c5e9ec164d}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_component}{Component}} object by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_component_a3a267ceeceda4ed4f9c7dba7d11f4886}{Component}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+owner, String \+\_\+type=\char`\"{}undefined\char`\"{}, String \+\_\+name=\char`\"{}undefined\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_component}{Component}} object, storing and processing the children\textquotesingle{}s input objects. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbanita_1_1_component_a0dc114b2bed0ec1128b20bbf2b5e2eca}{$\sim$\+Component}} ()
+\item 
+\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} \& \mbox{\hyperlink{classbanita_1_1_component_a054621244d350d5b8e8543dd3ddd8a61}{get\+\_\+entity}} () const
+\begin{DoxyCompactList}\small\item\em Get the entity object. \end{DoxyCompactList}\item 
+const String \& \mbox{\hyperlink{classbanita_1_1_component_a69929c9ea05264cc3625c9475de6489d}{get\+\_\+type}} () const
+\begin{DoxyCompactList}\small\item\em Get the type object. \end{DoxyCompactList}\item 
+const String \& \mbox{\hyperlink{classbanita_1_1_component_ae4bb6625c9d7ed340b4e1d41ef85f4ed}{get\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_component_a8a88347900a1cbfbc8069c57ce162abd}{set\+\_\+name}} (String \&\+\_\+new\+Name)
+\begin{DoxyCompactList}\small\item\em Set the name object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}{initialize}} ()=0
+\begin{DoxyCompactList}\small\item\em initialize the attributes and logic of this component \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}{update}} (float \+\_\+delta\+Time)=0
+\begin{DoxyCompactList}\small\item\em update this component \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}{parse\+\_\+property}} (const String \&\+\_\+name, const String \&value)=0
+\begin{DoxyCompactList}\small\item\em parse the xml property node in each children \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{classbanita_1_1_component_a07c865f44bee743430ed80ab182c6881}{owner}}
+\item 
+String \mbox{\hyperlink{classbanita_1_1_component_ad3a027af9ddc4fa9479d7b53449e91b5}{type}}
+\item 
+String \mbox{\hyperlink{classbanita_1_1_component_a61fdddb6f5b235753aca4cedc9aca588}{name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_component_ad73a6ae8fbf56b7d54ef48c5e9ec164d}\label{classbanita_1_1_component_ad73a6ae8fbf56b7d54ef48c5e9ec164d}} 
+\index{banita::Component@{banita::Component}!Component@{Component}}
+\index{Component@{Component}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{Component()}{Component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Component\+::\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_component}{Component}} object by default. 
+
+\mbox{\Hypertarget{classbanita_1_1_component_a3a267ceeceda4ed4f9c7dba7d11f4886}\label{classbanita_1_1_component_a3a267ceeceda4ed4f9c7dba7d11f4886}} 
+\index{banita::Component@{banita::Component}!Component@{Component}}
+\index{Component@{Component}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{Component()}{Component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Component\+::\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+owner,  }\item[{String}]{\+\_\+type = {\ttfamily \char`\"{}undefined\char`\"{}},  }\item[{String}]{\+\_\+name = {\ttfamily \char`\"{}undefined\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_component}{Component}} object, storing and processing the children\textquotesingle{}s input objects. 
+
+\mbox{\Hypertarget{classbanita_1_1_component_a0dc114b2bed0ec1128b20bbf2b5e2eca}\label{classbanita_1_1_component_a0dc114b2bed0ec1128b20bbf2b5e2eca}} 
+\index{banita::Component@{banita::Component}!````~Component@{$\sim$Component}}
+\index{````~Component@{$\sim$Component}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{$\sim$Component()}{~Component()}}
+{\footnotesize\ttfamily virtual banita\+::\+Component\+::$\sim$\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_component_a054621244d350d5b8e8543dd3ddd8a61}\label{classbanita_1_1_component_a054621244d350d5b8e8543dd3ddd8a61}} 
+\index{banita::Component@{banita::Component}!get\_entity@{get\_entity}}
+\index{get\_entity@{get\_entity}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{get\_entity()}{get\_entity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_entity}{Entity}}\& banita\+::\+Component\+::get\+\_\+entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the entity object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classbanita_1_1_entity}{Entity}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_component_ae4bb6625c9d7ed340b4e1d41ef85f4ed}\label{classbanita_1_1_component_ae4bb6625c9d7ed340b4e1d41ef85f4ed}} 
+\index{banita::Component@{banita::Component}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily const String\& banita\+::\+Component\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name object. 
+
+\begin{DoxyReturn}{Returns}
+const String\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_component_a69929c9ea05264cc3625c9475de6489d}\label{classbanita_1_1_component_a69929c9ea05264cc3625c9475de6489d}} 
+\index{banita::Component@{banita::Component}!get\_type@{get\_type}}
+\index{get\_type@{get\_type}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{get\_type()}{get\_type()}}
+{\footnotesize\ttfamily const String\& banita\+::\+Component\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the type object. 
+
+\begin{DoxyReturn}{Returns}
+const String\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}\label{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}} 
+\index{banita::Component@{banita::Component}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual bool banita\+::\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+initialize the attributes and logic of this component 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_transform___component_af21e03166cba2a8489b2a5e02867ce6a}{banita\+::\+Transform\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_camera___component_a5cf5d281063a61d5c11914d30c512f40}{banita\+::\+Camera\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_controller_a3a3bc92a032f22f0cd20cbff0f89d175}{banita\+::\+Controller}}, \mbox{\hyperlink{classbanita_1_1_model___component_af87c47483437405822718949a448bc14}{banita\+::\+Model\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_light___component_a2afec04726df91aee59837fa1481d361}{banita\+::\+Light\+\_\+\+Component}}, and \mbox{\hyperlink{classbanita_1_1_player___controller_a42c2960117c977daf72083452fb69e86}{banita\+::\+Player\+\_\+\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}\label{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}} 
+\index{banita::Component@{banita::Component}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily virtual bool banita\+::\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{const String \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+parse the xml property node in each children 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_transform___component_a0f3ace424235b3992e01dbddfe85f088}{banita\+::\+Transform\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_camera___component_a1f494aa6cd8edcbe61866dc5e053c6be}{banita\+::\+Camera\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_controller_a74933400a4ed56e68ce5cb11ec395a1b}{banita\+::\+Controller}}, \mbox{\hyperlink{classbanita_1_1_model___component_a1a6acbf643bd87acabfc2a31b7be4db8}{banita\+::\+Model\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_light___component_aa808026256f8f1050a1a90cc3b6a0602}{banita\+::\+Light\+\_\+\+Component}}, and \mbox{\hyperlink{classbanita_1_1_player___controller_ab25a1e791ce020ff226b6324cc2c5c67}{banita\+::\+Player\+\_\+\+Controller}}.
+
+\mbox{\Hypertarget{classbanita_1_1_component_a8a88347900a1cbfbc8069c57ce162abd}\label{classbanita_1_1_component_a8a88347900a1cbfbc8069c57ce162abd}} 
+\index{banita::Component@{banita::Component}!set\_name@{set\_name}}
+\index{set\_name@{set\_name}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{set\_name()}{set\_name()}}
+{\footnotesize\ttfamily void banita\+::\+Component\+::set\+\_\+name (\begin{DoxyParamCaption}\item[{String \&}]{\+\_\+new\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+new\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}\label{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}} 
+\index{banita::Component@{banita::Component}!update@{update}}
+\index{update@{update}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool banita\+::\+Component\+::update (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+update this component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & provided by the kernel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_transform___component_a0ca137a40cc84ee0825f37bab82d5d5d}{banita\+::\+Transform\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_camera___component_a177f9d18f146b83d6dc08eab3c576cae}{banita\+::\+Camera\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_controller_a44363ca0ed1ba66a9f6c079a6b158d94}{banita\+::\+Controller}}, \mbox{\hyperlink{classbanita_1_1_model___component_ab8acac6bf05bc01a8529235904b81a5b}{banita\+::\+Model\+\_\+\+Component}}, \mbox{\hyperlink{classbanita_1_1_light___component_a1cba9ef2cb6b798623899ad94f68df9f}{banita\+::\+Light\+\_\+\+Component}}, and \mbox{\hyperlink{classbanita_1_1_player___controller_ab7c47cba21892cac0e9f8a366cf86ca8}{banita\+::\+Player\+\_\+\+Controller}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbanita_1_1_component_a61fdddb6f5b235753aca4cedc9aca588}\label{classbanita_1_1_component_a61fdddb6f5b235753aca4cedc9aca588}} 
+\index{banita::Component@{banita::Component}!name@{name}}
+\index{name@{name}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily String banita\+::\+Component\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_component_a07c865f44bee743430ed80ab182c6881}\label{classbanita_1_1_component_a07c865f44bee743430ed80ab182c6881}} 
+\index{banita::Component@{banita::Component}!owner@{owner}}
+\index{owner@{owner}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{owner}{owner}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_entity}{Entity}}$\ast$ banita\+::\+Component\+::owner\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_component_ad3a027af9ddc4fa9479d7b53449e91b5}\label{classbanita_1_1_component_ad3a027af9ddc4fa9479d7b53449e91b5}} 
+\index{banita::Component@{banita::Component}!type@{type}}
+\index{type@{type}!banita::Component@{banita::Component}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily String banita\+::\+Component\+::type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_component_8hpp}{Component.\+hpp}}\end{DoxyCompactItemize}

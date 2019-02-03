@@ -1,0 +1,232 @@
+\hypertarget{classbanita_1_1_task}{}\section{banita\+::Task Class Reference}
+\label{classbanita_1_1_task}\index{banita::Task@{banita::Task}}
+
+
+{\ttfamily \#include $<$Task.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Task\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Task\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_task_ae212c6c6b6f007e953ba8406d82528be}{Task}} (\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$\+\_\+kernel, Size\+\_\+t \+\_\+priority=-\/1, bool \+\_\+is\+Finished=false)
+\item 
+\mbox{\hyperlink{classbanita_1_1_task_add906131c42cec4d75df03eceeb870e6}{Task}} ()
+\item 
+virtual void \mbox{\hyperlink{classbanita_1_1_task_a34578cdd41899a338ac09fec3a285487}{initialize}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classbanita_1_1_task_aa79a45c9cbfac80ec9e4f060d5d444aa}{execute}} (float \+\_\+delta\+Time)=0
+\item 
+virtual void \mbox{\hyperlink{classbanita_1_1_task_acccbd449402b1e9ce1ba34c26333a1b6}{terminate}} ()=0
+\item 
+void \mbox{\hyperlink{classbanita_1_1_task_ab0d9e75daff35c07cdb6bea71d0bf605}{add\+\_\+component}} (\mbox{\hyperlink{classbanita_1_1_component}{Component}} $\ast$\+\_\+component)
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_a46dfe5e26db0311f2a4bc7630bc0e2b7}{is\+\_\+finished}} () const
+\item 
+Size\+\_\+t \mbox{\hyperlink{classbanita_1_1_task_a8b798d792fefb09525e48eb836a8cbb7}{get\+\_\+priority}} () const
+\item 
+\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} \& \mbox{\hyperlink{classbanita_1_1_task_acce4efa4b9ded5502ee9a70093f87855}{get\+\_\+kernel}} () const
+\item 
+void \mbox{\hyperlink{classbanita_1_1_task_a2f8babba8f085c5a65b58eaf2f73c121}{set\+\_\+kernel}} (\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} \&\+\_\+kernel)
+\item 
+void \mbox{\hyperlink{classbanita_1_1_task_a254be860b0f3f3c687b8f52e090de228}{set\+\_\+priority}} (Size\+\_\+t \+\_\+priority)
+\item 
+void \mbox{\hyperlink{classbanita_1_1_task_a5c635a75f1a8b735354d458684838d5b}{finalize}} ()
+\item 
+void \mbox{\hyperlink{classbanita_1_1_task_a3727f04d5ac8dcdf3ff41cc0609139e0}{set\+\_\+finished}} (bool \+\_\+state)
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_ac088e4c87f080fb26dfdfc1ef13f78d6}{operator$<$}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task) const
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_a2d5f75c11032d7b6a7c4e0697d4434b1}{operator $>$}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task) const
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_a5fe48a7f1fc054c0f2376cf06853253c}{operator$<$=}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task) const
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_ae5392bebeb2c9c1e8c83ab1e48446f90}{operator $>$=}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task) const
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_af893f3c0cfefa81d9311c2b3532c597c}{operator==}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task) const
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_a475f0812eff764bef68edefc3893df67}{operator !=}} (const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&\+\_\+task) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Components\+\_\+\+List \mbox{\hyperlink{classbanita_1_1_task_aa0a41413c212ad29bb32bd74d35b0585}{components}}
+\item 
+\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$ \mbox{\hyperlink{classbanita_1_1_task_a6525188adf77e008e70e2b7cae631bd4}{kernel}}
+\item 
+Size\+\_\+t \mbox{\hyperlink{classbanita_1_1_task_ad2bb89f0c32415917e5b336fdcd9fd5d}{priority}}
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_task_ac90bfd55ed4f8f90afa2984218c61433}{is\+Finished}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_task_ae212c6c6b6f007e953ba8406d82528be}\label{classbanita_1_1_task_ae212c6c6b6f007e953ba8406d82528be}} 
+\index{banita::Task@{banita::Task}!Task@{Task}}
+\index{Task@{Task}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{Task()}{Task()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} $\ast$}]{\+\_\+kernel,  }\item[{Size\+\_\+t}]{\+\_\+priority = {\ttfamily -\/1},  }\item[{bool}]{\+\_\+is\+Finished = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbanita_1_1_task_add906131c42cec4d75df03eceeb870e6}\label{classbanita_1_1_task_add906131c42cec4d75df03eceeb870e6}} 
+\index{banita::Task@{banita::Task}!Task@{Task}}
+\index{Task@{Task}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{Task()}{Task()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Task\+::\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_task_ab0d9e75daff35c07cdb6bea71d0bf605}\label{classbanita_1_1_task_ab0d9e75daff35c07cdb6bea71d0bf605}} 
+\index{banita::Task@{banita::Task}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{add\_component()}{add\_component()}}
+{\footnotesize\ttfamily void banita\+::\+Task\+::add\+\_\+component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_component}{Component}} $\ast$}]{\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_aa79a45c9cbfac80ec9e4f060d5d444aa}\label{classbanita_1_1_task_aa79a45c9cbfac80ec9e4f060d5d444aa}} 
+\index{banita::Task@{banita::Task}!execute@{execute}}
+\index{execute@{execute}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void banita\+::\+Task\+::execute (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_input___task_a68a88772e60109b5d461b2a75f05ee35}{banita\+::\+Input\+\_\+\+Task}}, \mbox{\hyperlink{classbanita_1_1_render___task_a94a8e1921a653ec6da9d1797ad2abcab}{banita\+::\+Render\+\_\+\+Task}}, \mbox{\hyperlink{classbanita_1_1_controller___task_a7391e5e47d43ac832fdff9912e140815}{banita\+::\+Controller\+\_\+\+Task}}, and \mbox{\hyperlink{classbanita_1_1_transform___task_a63ce627e86225d2264093ce932706074}{banita\+::\+Transform\+\_\+\+Task}}.
+
+\mbox{\Hypertarget{classbanita_1_1_task_a5c635a75f1a8b735354d458684838d5b}\label{classbanita_1_1_task_a5c635a75f1a8b735354d458684838d5b}} 
+\index{banita::Task@{banita::Task}!finalize@{finalize}}
+\index{finalize@{finalize}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void banita\+::\+Task\+::finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_acce4efa4b9ded5502ee9a70093f87855}\label{classbanita_1_1_task_acce4efa4b9ded5502ee9a70093f87855}} 
+\index{banita::Task@{banita::Task}!get\_kernel@{get\_kernel}}
+\index{get\_kernel@{get\_kernel}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{get\_kernel()}{get\_kernel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}}\& banita\+::\+Task\+::get\+\_\+kernel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a8b798d792fefb09525e48eb836a8cbb7}\label{classbanita_1_1_task_a8b798d792fefb09525e48eb836a8cbb7}} 
+\index{banita::Task@{banita::Task}!get\_priority@{get\_priority}}
+\index{get\_priority@{get\_priority}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{get\_priority()}{get\_priority()}}
+{\footnotesize\ttfamily Size\+\_\+t banita\+::\+Task\+::get\+\_\+priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a34578cdd41899a338ac09fec3a285487}\label{classbanita_1_1_task_a34578cdd41899a338ac09fec3a285487}} 
+\index{banita::Task@{banita::Task}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual void banita\+::\+Task\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_input___task_a3f7f72ab848a23a92c3351426b3595c9}{banita\+::\+Input\+\_\+\+Task}}, \mbox{\hyperlink{classbanita_1_1_render___task_a34f649b5ad434cf7f6bb04604173afed}{banita\+::\+Render\+\_\+\+Task}}, \mbox{\hyperlink{classbanita_1_1_controller___task_a87990651d658eb3d26a9b8526e600fd7}{banita\+::\+Controller\+\_\+\+Task}}, and \mbox{\hyperlink{classbanita_1_1_transform___task_ab94871acd76fbde7de99755cd6ac4e49}{banita\+::\+Transform\+\_\+\+Task}}.
+
+\mbox{\Hypertarget{classbanita_1_1_task_a46dfe5e26db0311f2a4bc7630bc0e2b7}\label{classbanita_1_1_task_a46dfe5e26db0311f2a4bc7630bc0e2b7}} 
+\index{banita::Task@{banita::Task}!is\_finished@{is\_finished}}
+\index{is\_finished@{is\_finished}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{is\_finished()}{is\_finished()}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::is\+\_\+finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a475f0812eff764bef68edefc3893df67}\label{classbanita_1_1_task_a475f0812eff764bef68edefc3893df67}} 
+\index{banita::Task@{banita::Task}!operator "!=@{operator "!=}}
+\index{operator "!=@{operator "!=}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{operator "!=()}{operator !=()}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::operator != (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a2d5f75c11032d7b6a7c4e0697d4434b1}\label{classbanita_1_1_task_a2d5f75c11032d7b6a7c4e0697d4434b1}} 
+\index{banita::Task@{banita::Task}!operator $>$@{operator $>$}}
+\index{operator $>$@{operator $>$}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{operator $>$()}{operator >()}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::operator $>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_ae5392bebeb2c9c1e8c83ab1e48446f90}\label{classbanita_1_1_task_ae5392bebeb2c9c1e8c83ab1e48446f90}} 
+\index{banita::Task@{banita::Task}!operator $>$=@{operator $>$=}}
+\index{operator $>$=@{operator $>$=}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{operator $>$=()}{operator >=()}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::operator $>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_ac088e4c87f080fb26dfdfc1ef13f78d6}\label{classbanita_1_1_task_ac088e4c87f080fb26dfdfc1ef13f78d6}} 
+\index{banita::Task@{banita::Task}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a5fe48a7f1fc054c0f2376cf06853253c}\label{classbanita_1_1_task_a5fe48a7f1fc054c0f2376cf06853253c}} 
+\index{banita::Task@{banita::Task}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_af893f3c0cfefa81d9311c2b3532c597c}\label{classbanita_1_1_task_af893f3c0cfefa81d9311c2b3532c597c}} 
+\index{banita::Task@{banita::Task}!operator==@{operator==}}
+\index{operator==@{operator==}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_task}{Task}} \&}]{\+\_\+task }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a3727f04d5ac8dcdf3ff41cc0609139e0}\label{classbanita_1_1_task_a3727f04d5ac8dcdf3ff41cc0609139e0}} 
+\index{banita::Task@{banita::Task}!set\_finished@{set\_finished}}
+\index{set\_finished@{set\_finished}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{set\_finished()}{set\_finished()}}
+{\footnotesize\ttfamily void banita\+::\+Task\+::set\+\_\+finished (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a2f8babba8f085c5a65b58eaf2f73c121}\label{classbanita_1_1_task_a2f8babba8f085c5a65b58eaf2f73c121}} 
+\index{banita::Task@{banita::Task}!set\_kernel@{set\_kernel}}
+\index{set\_kernel@{set\_kernel}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{set\_kernel()}{set\_kernel()}}
+{\footnotesize\ttfamily void banita\+::\+Task\+::set\+\_\+kernel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}} \&}]{\+\_\+kernel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classbanita_1_1_task_a254be860b0f3f3c687b8f52e090de228}\label{classbanita_1_1_task_a254be860b0f3f3c687b8f52e090de228}} 
+\index{banita::Task@{banita::Task}!set\_priority@{set\_priority}}
+\index{set\_priority@{set\_priority}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{set\_priority()}{set\_priority()}}
+{\footnotesize\ttfamily void banita\+::\+Task\+::set\+\_\+priority (\begin{DoxyParamCaption}\item[{Size\+\_\+t}]{\+\_\+priority }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_acccbd449402b1e9ce1ba34c26333a1b6}\label{classbanita_1_1_task_acccbd449402b1e9ce1ba34c26333a1b6}} 
+\index{banita::Task@{banita::Task}!terminate@{terminate}}
+\index{terminate@{terminate}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily virtual void banita\+::\+Task\+::terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classbanita_1_1_input___task_af6f524863581208331f6dd08d7e1cbb5}{banita\+::\+Input\+\_\+\+Task}}, \mbox{\hyperlink{classbanita_1_1_render___task_a7518f53ea9050d2312f02ba0389188c6}{banita\+::\+Render\+\_\+\+Task}}, \mbox{\hyperlink{classbanita_1_1_controller___task_a6d1e35ea53bb0dcb64d579937dc7d5f4}{banita\+::\+Controller\+\_\+\+Task}}, and \mbox{\hyperlink{classbanita_1_1_transform___task_a95d857713fec2b3bf90d64260be0a997}{banita\+::\+Transform\+\_\+\+Task}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbanita_1_1_task_aa0a41413c212ad29bb32bd74d35b0585}\label{classbanita_1_1_task_aa0a41413c212ad29bb32bd74d35b0585}} 
+\index{banita::Task@{banita::Task}!components@{components}}
+\index{components@{components}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily Components\+\_\+\+List banita\+::\+Task\+::components\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_ac90bfd55ed4f8f90afa2984218c61433}\label{classbanita_1_1_task_ac90bfd55ed4f8f90afa2984218c61433}} 
+\index{banita::Task@{banita::Task}!isFinished@{isFinished}}
+\index{isFinished@{isFinished}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{isFinished}{isFinished}}
+{\footnotesize\ttfamily bool banita\+::\+Task\+::is\+Finished\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_a6525188adf77e008e70e2b7cae631bd4}\label{classbanita_1_1_task_a6525188adf77e008e70e2b7cae631bd4}} 
+\index{banita::Task@{banita::Task}!kernel@{kernel}}
+\index{kernel@{kernel}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{kernel}{kernel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_kernel}{Kernel}}$\ast$ banita\+::\+Task\+::kernel\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbanita_1_1_task_ad2bb89f0c32415917e5b336fdcd9fd5d}\label{classbanita_1_1_task_ad2bb89f0c32415917e5b336fdcd9fd5d}} 
+\index{banita::Task@{banita::Task}!priority@{priority}}
+\index{priority@{priority}!banita::Task@{banita::Task}}
+\subsubsection{\texorpdfstring{priority}{priority}}
+{\footnotesize\ttfamily Size\+\_\+t banita\+::\+Task\+::priority\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_task_8hpp}{Task.\+hpp}}\end{DoxyCompactItemize}

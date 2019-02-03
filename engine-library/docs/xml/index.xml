@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="d4/d9c/classbanita_1_1_banita_engine" kind="class"><name>banita::BanitaEngine</name>
+    <member refid="d4/d9c/classbanita_1_1_banita_engine_1abdb08737880ae46f671e0780251ea4c4" kind="function"><name>BanitaEngine</name></member>
+    <member refid="d4/d9c/classbanita_1_1_banita_engine_1a9bd490383a9a8baaed3a2b4a3d8c7bcc" kind="function"><name>~BanitaEngine</name></member>
+    <member refid="d4/d9c/classbanita_1_1_banita_engine_1ac2b3d79609be0bad75ec9ed6b5b3cd1f" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="d8/d6f/classbanita_1_1_camera___component" kind="class"><name>banita::Camera_Component</name>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1a955a4ec697ce5509e8a2c9665e55c9d5" kind="typedef"><name>Camera</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1aed748ce355df65581366505bf380711e" kind="typedef"><name>Camera_sptr</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1a91e9f473da0025b1d38373d1cc500299" kind="variable"><name>camera</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1a5fcebd13ad636d4973e257ac3b4d7e84" kind="function"><name>Camera_Component</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1a5cf5d281063a61d5c11914d30c512f40" kind="function"><name>initialize</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1a177f9d18f146b83d6dc08eab3c576cae" kind="function"><name>update</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1a1f494aa6cd8edcbe61866dc5e053c6be" kind="function"><name>parse_property</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1aa29ffc5af9f30bea479dada4bf588726" kind="function"><name>get_camera</name></member>
+    <member refid="d8/d6f/classbanita_1_1_camera___component_1a91756a8ab968d38dae63a2c688d47221" kind="function"><name>generator</name></member>
+  </compound>
+  <compound refid="d4/d14/class_class" kind="class"><name>Class</name>
+  </compound>
+  <compound refid="d2/d00/class_component" kind="class"><name>Component</name>
+  </compound>
+  <compound refid="d7/dda/classbanita_1_1_component" kind="class"><name>banita::Component</name>
+    <member refid="d7/dda/classbanita_1_1_component_1a07c865f44bee743430ed80ab182c6881" kind="variable"><name>owner</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1ad3a027af9ddc4fa9479d7b53449e91b5" kind="variable"><name>type</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a61fdddb6f5b235753aca4cedc9aca588" kind="variable"><name>name</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1ad73a6ae8fbf56b7d54ef48c5e9ec164d" kind="function"><name>Component</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a3a267ceeceda4ed4f9c7dba7d11f4886" kind="function"><name>Component</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a0dc114b2bed0ec1128b20bbf2b5e2eca" kind="function"><name>~Component</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a054621244d350d5b8e8543dd3ddd8a61" kind="function"><name>get_entity</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a69929c9ea05264cc3625c9475de6489d" kind="function"><name>get_type</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1ae4bb6625c9d7ed340b4e1d41ef85f4ed" kind="function"><name>get_name</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a8a88347900a1cbfbc8069c57ce162abd" kind="function"><name>set_name</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a2f700c071185f7033caa69576dafa9e7" kind="function"><name>initialize</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1ae8f9d11dc8e3c920d6d40146668c429b" kind="function"><name>update</name></member>
+    <member refid="d7/dda/classbanita_1_1_component_1a619154ef2bed8e4493413bdef6117716" kind="function"><name>parse_property</name></member>
+  </compound>
+  <compound refid="d8/dc5/classbanita_1_1_component___generator" kind="class"><name>banita::Component_Generator</name>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a8b2269a65faddcc9d4e63c6ce897977f" kind="typedef"><name>generatorsMap</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a42ffeedf4da597714c09110433a04a2a" kind="variable"><name>instance</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a7edb9f12ce6ac20208926f2ee298674a" kind="variable"><name>mapOfGeneratorMaps</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a5380e3ea4676775c3dfe080bfa3b962c" kind="variable"><name>controllerGenerators</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" kind="function"><name>Component_Generator</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a7d43e1dbee3a0addf85bd96422bef52d" kind="function"><name>~Component_Generator</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a6c94801a7c5c3eb6aedc0c97bf786b39" kind="function"><name>register_component_generator</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1af81270da5efa804c17285d1a6ffc861f" kind="function"><name>register_controller</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a607e2c3ac5e7f0b8d419e610d419f3a6" kind="function"><name>get_controller</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1ad8a76cb6dfb2b8667d412b0b014ca75d" kind="function"><name>get_component_generator</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a026cadc610c5c75a911ed1299047190a" kind="function"><name>get_controller_generator</name></member>
+    <member refid="d8/dc5/classbanita_1_1_component___generator_1a58161267b33b3a6e67edfed079196ebd" kind="function"><name>get_instance</name></member>
+  </compound>
+  <compound refid="d0/d23/classbanita_1_1_controller" kind="class"><name>banita::Controller</name>
+    <member refid="d0/d23/classbanita_1_1_controller_1aa92dd1db0f265962029842ee6495c2cc" kind="variable"><name>messageHandler</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1ab4ca85fe5f2645708b89934f394ad449" kind="variable"><name>messages</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a4455be6d7e7fc0dcb4d5919b45432020" kind="function"><name>Controller</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a9c45447d14400317d8419bbca3bad54a" kind="function"><name>Controller</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a355eaba3604cfca01437009c23c1cb41" kind="function"><name>~Controller</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a3a3bc92a032f22f0cd20cbff0f89d175" kind="function"><name>initialize</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a44363ca0ed1ba66a9f6c079a6b158d94" kind="function"><name>update</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a74933400a4ed56e68ce5cb11ec395a1b" kind="function"><name>parse_property</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a2feb550d530941ed11312fbbb7730c80" kind="function"><name>handle</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a988fb70a657c61afb82f4f4cf25e7c66" kind="function"><name>on_stop</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a553973436941dd97e75511583a4fff26" kind="function"><name>subscribe_messages</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1ade6c8afa9158a302c5c64231deabb7ea" kind="function"><name>add_message</name></member>
+    <member refid="d0/d23/classbanita_1_1_controller_1a3686102ef847f2f08a1107cfba48f00c" kind="function"><name>set_message_handler</name></member>
+  </compound>
+  <compound refid="dc/dcb/classbanita_1_1_controller___module_1_1_controller___factory" kind="class"><name>banita::Controller_Module::Controller_Factory</name>
+    <member refid="dc/dcb/classbanita_1_1_controller___module_1_1_controller___factory_1adb1e5b58ae1d7196a2eafda08829c2dd" kind="function"><name>Controller_Factory</name></member>
+    <member refid="dc/dcb/classbanita_1_1_controller___module_1_1_controller___factory_1ab2c4918b3556a079397bd06246b13a20" kind="function"><name>create_module</name></member>
+  </compound>
+  <compound refid="d3/d0a/classbanita_1_1_controller___module" kind="class"><name>banita::Controller_Module</name>
+    <member refid="d3/d0a/classbanita_1_1_controller___module_1aca2f9eb335a44171f07af2f864a60dec" kind="variable"><name>task</name></member>
+    <member refid="d3/d0a/classbanita_1_1_controller___module_1a0da114014e41487299db20b99ec15ebe" kind="function"><name>Controller_Module</name></member>
+    <member refid="d3/d0a/classbanita_1_1_controller___module_1acb21ceec082c7ebd025bedaab1cc7c8e" kind="function"><name>Controller_Module</name></member>
+    <member refid="d3/d0a/classbanita_1_1_controller___module_1a0873f454232ce84496bd55fca940c4d4" kind="function"><name>~Controller_Module</name></member>
+    <member refid="d3/d0a/classbanita_1_1_controller___module_1a5176cb9d457c9bd69d6db37b18a79f13" kind="function"><name>create_component</name></member>
+    <member refid="d3/d0a/classbanita_1_1_controller___module_1a8868454d67a5f949b401c9cfc0a12eba" kind="function"><name>get_task</name></member>
+  </compound>
+  <compound refid="dd/dee/classbanita_1_1_controller___task" kind="class"><name>banita::Controller_Task</name>
+    <member refid="dd/dee/classbanita_1_1_controller___task_1a48c10c36d2112473685b6713ae65f26d" kind="function"><name>Controller_Task</name></member>
+    <member refid="dd/dee/classbanita_1_1_controller___task_1a73f0bda0ad130e8449fe0c4c3d58a31b" kind="function"><name>Controller_Task</name></member>
+    <member refid="dd/dee/classbanita_1_1_controller___task_1a87990651d658eb3d26a9b8526e600fd7" kind="function"><name>initialize</name></member>
+    <member refid="dd/dee/classbanita_1_1_controller___task_1a7391e5e47d43ac832fdff9912e140815" kind="function"><name>execute</name></member>
+    <member refid="dd/dee/classbanita_1_1_controller___task_1a6d1e35ea53bb0dcb64d579937dc7d5f4" kind="function"><name>terminate</name></member>
+  </compound>
+  <compound refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data" kind="union"><name>banita::Window::Event::Data</name>
+    <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af75be0b5f21598b666ffb71a636132b1" kind="variable"><name>key_code</name></member>
+    <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1adaabd3c433e3fe78c5ed1fd60cf03329" kind="variable"><name>keyboard</name></member>
+    <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a44148553673e2932cf2aba87ea2e1628" kind="variable"><name>x</name></member>
+    <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af609919ff8743923782aaa2ad5bf49ab" kind="variable"><name>y</name></member>
+    <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a969635a652537b04a9f59cdc38251f5a" kind="variable"><name>buttons</name></member>
+    <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a649a0f5f4ffe82edd5243afdd4d5e10b" kind="variable"><name>mouse</name></member>
+  </compound>
+  <compound refid="db/d9f/classbanita_1_1_entity" kind="class"><name>banita::Entity</name>
+    <member refid="db/d9f/classbanita_1_1_entity_1a6a5ae135d135ecef6a6f4bdaeb7da6b4" kind="typedef"><name>Components</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a59aa5e25cff7b281e39633eb5bfbc74b" kind="typedef"><name>Tr_Comp_sptr</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a8c79cf2a53317cf8e26248a7a68a0193" kind="variable"><name>name</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a0268988c8142094c6b933673329a1b73" kind="variable"><name>components</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1ae8534853967d3ab3395f827ac1a5f24d" kind="variable"><name>scene</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a8f6ed997bc32bfb0c69cb0b643f342fa" kind="variable"><name>transform</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1aea5e59bc61fed11d1c23cd6108613b37" kind="function"><name>Entity</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a01b2f03d793f06528e1d4c4112d4f62d" kind="function"><name>Entity</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1ab426b4d2def681300d007e27626f70da" kind="function"><name>~Entity</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a1e070b4458ecebabbec87e90a3235f8e" kind="function"><name>initialize</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a37c77bf77f2148e886571ef988b98749" kind="function"><name>add_component</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1aa270c75c0dead62a45a39e4b2b016988" kind="function"><name>get_name</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1af19f6e2e27d0f519032da54ef7dec759" kind="function"><name>get_transform</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1a6e24a4ca55bf664035d39ab229f849c1" kind="function"><name>get_component</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1aa8fbd735440d40b2a934828aa5e726d6" kind="function"><name>get_component</name></member>
+    <member refid="db/d9f/classbanita_1_1_entity_1abc8ae6f7a0de629ae3a35d904c4338de" kind="function"><name>get_scene</name></member>
+  </compound>
+  <compound refid="d5/ded/structbanita_1_1_window_1_1_event" kind="struct"><name>banita::Window::Event</name>
+    <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3" kind="enum"><name>Type</name></member>
+    <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a65bab3c2fe8ee38573749bba577b5486" kind="enumvalue"><name>CLOSE</name></member>
+    <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a2d56fe4635e732f310e356891ea68d41" kind="enumvalue"><name>KEY_PRESSED</name></member>
+    <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3ab674d26e557bc61004bb4075a8141943" kind="enumvalue"><name>KEY_RELEASED</name></member>
+    <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a465ac3171aa3d833333b37c4d2d5fff7" kind="variable"><name>type</name></member>
+    <member refid="d5/ded/structbanita_1_1_window_1_1_event_1a1b8d8286e719931337c294db3fd49b11" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="df/d1d/classbanita_1_1_module_1_1_factory" kind="class"><name>banita::Module::Factory</name>
+    <member refid="df/d1d/classbanita_1_1_module_1_1_factory_1a47b2217b54d08bb35dc4c1673cf87d35" kind="function"><name>create_module</name></member>
+  </compound>
+  <compound refid="d7/dc0/classbanita_1_1_input___task" kind="class"><name>banita::Input_Task</name>
+    <member refid="d7/dc0/classbanita_1_1_input___task_1a246b2adf60ac169cb9fafcaedc15cce1" kind="variable"><name>myKeyboardMapping</name></member>
+    <member refid="d7/dc0/classbanita_1_1_input___task_1a75406b32a241df928053b9627954ad1f" kind="function"><name>Input_Task</name></member>
+    <member refid="d7/dc0/classbanita_1_1_input___task_1a53bbe9a3f6505e217785e6ebb4a8e15b" kind="function"><name>~Input_Task</name></member>
+    <member refid="d7/dc0/classbanita_1_1_input___task_1a3f7f72ab848a23a92c3351426b3595c9" kind="function"><name>initialize</name></member>
+    <member refid="d7/dc0/classbanita_1_1_input___task_1a68a88772e60109b5d461b2a75f05ee35" kind="function"><name>execute</name></member>
+    <member refid="d7/dc0/classbanita_1_1_input___task_1af6f524863581208331f6dd08d7e1cbb5" kind="function"><name>terminate</name></member>
+    <member refid="d7/dc0/classbanita_1_1_input___task_1a3c49cbbd067e4eb65a55393207b69bdc" kind="function"><name>translate_key_code_to_action</name></member>
+  </compound>
+  <compound refid="d6/d5d/classbanita_1_1_kernel" kind="class"><name>banita::Kernel</name>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a0ba07b0f218ce93f31fc53feb9905354" kind="typedef"><name>Task_Set</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a5c6be97e502b13a7edbcd3890e453275" kind="variable"><name>tasks</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a5b82b4ee2beeef6ae32c2a8e0da71c7e" kind="variable"><name>scene</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a1936c88e7bd16ac2d88ce3e8e99d6ad0" kind="variable"><name>timer</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a8022e824208332e6df1aa8aecf3b0ed6" kind="variable"><name>time</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1acba51ae50a96e1a997d1092875ccdd09" kind="variable"><name>exit</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a0ca58b4efbcd007ac2e8babb794aa2d9" kind="variable"><name>isPaused</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a07f2a762b74482c2e384c84531151cf4" kind="function"><name>Kernel</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1ad0fef1effc29769a6438653e86e04b25" kind="function"><name>Kernel</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a76d732a249e2b546288488af3fa7f928" kind="function"><name>~Kernel</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1af596d1e111f5d7dd9d9e483eda630695" kind="function"><name>run</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a69c51724e7192464b086b3c357fdcb7f" kind="function"><name>pause</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1aee9ff2e2d1816a4b3c1ef2694034e0ce" kind="function"><name>stop</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a51ad67eb5beec04052643a58698a1263" kind="function"><name>add_task</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a50aee62acd308f995925dab46106ef75" kind="function"><name>add_tasks</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1aad63c1940db1247c8ba02fb84f78ec1f" kind="function"><name>add_tasks</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a463aa154233f381167fc18f6e754b084" kind="function"><name>remove_task</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a7d940a9448b56f01eb2ca1bc415b661f" kind="function"><name>is_paused</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a0a5e53e8727da203aad7dcb730a39244" kind="function"><name>get_scene</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1aee57868ae06093b8f6d836530803f2df" kind="function"><name>initialize_tasks</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a43e188a08a8273f32a018b73c88d7e29" kind="function"><name>execute_tasks</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1ad9662c620f97b2f4fb07481344cde0ba" kind="function"><name>terminate_tasks</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a32e78faeb3605d236939d4e7182fae23" kind="function"><name>task_priority_comparator_lower_than</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a7bddd1303197058cc83fb4c78adfe2d8" kind="function"><name>task_comparator_greater_than</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a84ff44eb0c0d6d01073e01b1aa2c6c55" kind="function"><name>task_comparator_lower_or_equal_than</name></member>
+    <member refid="d6/d5d/classbanita_1_1_kernel_1a4f86a08b65bb2dee12329ddb9ec127a9" kind="function"><name>task_comparator_greater_or_equal_than</name></member>
+  </compound>
+  <compound refid="db/de7/class_kernel" kind="class"><name>Kernel</name>
+  </compound>
+  <compound refid="d5/d29/classbanita_1_1_keyboard" kind="class"><name>banita::Keyboard</name>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ab" kind="enum"><name>Key_Code</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ababa5e2bdb6568d3ec794065d9150163e4" kind="enumvalue"><name>KEY_UNKOWN</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba47f754048d61751daa282d52bb1ab9a3" kind="enumvalue"><name>KEY_RETURN</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3fa75682be0b44280e8740f56ff842ad" kind="enumvalue"><name>KEY_ESCAPE</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7858fa5c081a0428a0f0447e152efc0b" kind="enumvalue"><name>KEY_BACKSPACE</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3f9f3f591a1420d69f165ef857b15e16" kind="enumvalue"><name>KEY_TAB</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7a267bc081508b64d4b0ba299a8d1160" kind="enumvalue"><name>KEY_SPACE</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abab100faaffa9b56018465e34425157933" kind="enumvalue"><name>KEY_A</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaf7b80bb52861bac4d3997fd7736dfb16" kind="enumvalue"><name>KEY_B</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba98120d7d01daf4036fed8d2c702239d1" kind="enumvalue"><name>KEY_C</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba1de33f2731a8a9b58c22d77f826f7f2b" kind="enumvalue"><name>KEY_D</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba80a11c04883aa462dced08c31ba24d56" kind="enumvalue"><name>KEY_E</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba91a202256cb1d29c6179423d0cb0245c" kind="enumvalue"><name>KEY_F</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7f85dda59652e3976a3d606beb0e963a" kind="enumvalue"><name>KEY_G</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba4d89680e43e80a65bd1de2e557b3f8f1" kind="enumvalue"><name>KEY_H</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaf762821e3ba71c28c9ba0bfe562070fd" kind="enumvalue"><name>KEY_I</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaed2ba73ae57f65b06b7faad19640b40c" kind="enumvalue"><name>KEY_J</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba56af57078f82525b71a3a46671de4593" kind="enumvalue"><name>KEY_K</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abab2834e197a51aba3e3b6e99ebc772765" kind="enumvalue"><name>KEY_L</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaff37a9a22acd65052135631f0b508b73" kind="enumvalue"><name>KEY_M</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba57835eddd1cddb7c16108ffcb50e643d" kind="enumvalue"><name>KEY_N</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abafa7b509121d02383f892607574ad9122" kind="enumvalue"><name>KEY_O</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaff2126db9a023b3b89a9c19ab2437177" kind="enumvalue"><name>KEY_P</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7c7959d9eca71cccf975fcd926ea26e3" kind="enumvalue"><name>KEY_Q</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba6c982d7ebe214119ce8be470f3c03488" kind="enumvalue"><name>KEY_R</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba4d9c3c797ffc1428afb485df420c4cab" kind="enumvalue"><name>KEY_S</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abae1b413b1184aca0c1c323c891550f0a6" kind="enumvalue"><name>KEY_T</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba990f42fef1141fda037558cda543ecc3" kind="enumvalue"><name>KEY_U</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba22e156d4dd80ed29dfc0f8e1671365a8" kind="enumvalue"><name>KEY_V</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba088f87e1b2404003a19cae8548d62a1c" kind="enumvalue"><name>KEY_W</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba73575b8202b3e537671db198a86c1860" kind="enumvalue"><name>KEY_X</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba40ceb2ac77d3294e8bc06a5ade653486" kind="enumvalue"><name>KEY_Y</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba6635fc42aef2d03390b4470adc146842" kind="enumvalue"><name>KEY_Z</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7593529de7dea3dee06aa40306ef106d" kind="enumvalue"><name>KEY_0</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abae96ec83793d86f62f4dfa375d1e47e08" kind="enumvalue"><name>KEY_1</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba0918e0c5f007d09a9f2914e458f61e2c" kind="enumvalue"><name>KEY_2</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba875b7b5c86023f4e1ffc89b517333089" kind="enumvalue"><name>KEY_3</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba111e17337cde562c2f301eb86e85d354" kind="enumvalue"><name>KEY_4</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaaf9525a16d900a8e8c37269bc7ee56de" kind="enumvalue"><name>KEY_5</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba4532147314d1f2709c73772297f3f18c" kind="enumvalue"><name>KEY_6</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba85c3bb5304f3e5e0da55a94d12280f7f" kind="enumvalue"><name>KEY_7</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba9b8d111f30225a170941adc2afc1636a" kind="enumvalue"><name>KEY_8</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba1c71c5c18c84dba7d6132dbe4012a6d5" kind="enumvalue"><name>KEY_9</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba10dba826263faf760641adbb1869afec" kind="enumvalue"><name>KEY_ARROW_UP</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3f7cbfd9c6c648de615e1afe85e511ea" kind="enumvalue"><name>KEY_ARROW_DOWN</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7c74ae8e3949662199f61f8d1269707c" kind="enumvalue"><name>KEY_ARROW_LEFT</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba659fec2944b4c7e8cc1c9b971c86d58d" kind="enumvalue"><name>KEY_ARROW_RIGHT</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a0bd55b31db3e776ec4c8a2effc5b3cd8" kind="typedef"><name>Bool_Vector</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1ac39ec62a0a07ee3e90cc742b6b2ecb97" kind="typedef"><name>KC_Vector</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1ab6e3f3c1ecf8a82d714343309ffecd94" kind="variable"><name>state</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a23037aab0ad7e176946b93e971cf946c" kind="function"><name>Keyboard</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1ab74e25dd5635a78f3fa18b4813e22888" kind="function"><name>~Keyboard</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1afba73737bfad5061446a38a5a925cbfe" kind="function"><name>translate_key_code_sdl</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a7d92be8f7f9f629d8ec4f8da0c5367d5" kind="function"><name>check_state_of_key</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1afa10793b2c2bfe8ab32afe8a6d573e5e" kind="function"><name>get_state_of_keys</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1a86160c6cee9390a757e4207feb6d082b" kind="function"><name>get_pressed_keys</name></member>
+    <member refid="d5/d29/classbanita_1_1_keyboard_1ae0d0b78dbb5407e23fa2135be19bf903" kind="function"><name>translate_sdl_key_code</name></member>
+  </compound>
+  <compound refid="de/d14/classbanita_1_1_light___component" kind="class"><name>banita::Light_Component</name>
+    <member refid="de/d14/classbanita_1_1_light___component_1aeec3921ed4ecce5575c22c036f73c61d" kind="typedef"><name>Light</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1ab23135113556b92dd9ed386b6dcde302" kind="typedef"><name>Light_sptr</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1ad45983bd83620c0cc2ff46c02986c4d5" kind="variable"><name>light</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1ab3a24d9ee4cd5d3598588dabef05375b" kind="function"><name>Light_Component</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1a2afec04726df91aee59837fa1481d361" kind="function"><name>initialize</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1a1cba9ef2cb6b798623899ad94f68df9f" kind="function"><name>update</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1aa808026256f8f1050a1a90cc3b6a0602" kind="function"><name>parse_property</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1a4de1a5438ce5f15ecd46544bf27b4d6e" kind="function"><name>get_light</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1a92916e5a6493c735954aec600c1aa77f" kind="function"><name>set_color</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1ad6e5bef3588a571ef6390476fc9c1d42" kind="function"><name>set_color</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1a54164691efbc95979cb869910b4f34fd" kind="function"><name>set_intensity</name></member>
+    <member refid="de/d14/classbanita_1_1_light___component_1acc13089b837daf1b1751c3dca81fa798" kind="function"><name>generator</name></member>
+  </compound>
+  <compound refid="db/dbe/structbanita_1_1_message___handler_1_1_listener" kind="struct"><name>banita::Message_Handler::Listener</name>
+    <member refid="db/dbe/structbanita_1_1_message___handler_1_1_listener_1aa35b0cfb544e9353f6629d87fcc1799d" kind="function"><name>~Listener</name></member>
+    <member refid="db/dbe/structbanita_1_1_message___handler_1_1_listener_1a2dfde040fbc7c8d2f17c6ba52722b749" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="d4/d7f/class_message" kind="class"><name>Message</name>
+  </compound>
+  <compound refid="da/d5c/classbanita_1_1_message" kind="class"><name>banita::Message</name>
+    <member refid="da/d5c/classbanita_1_1_message_1ab38626a5034f095bf7d856e95ab89290" kind="typedef"><name>Properties</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a2624098d22b1c27e468a297fa28a3e1b" kind="variable"><name>ID</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a4a7d101bfa718c6d37d9645718d594a4" kind="variable"><name>messageProperties</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a24549655ea0b48a3a3f19cf3a40988cc" kind="function"><name>Message</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a31f83b3410a80c1bc34c41d33faab5e6" kind="function"><name>Message</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1ade7a1c60f22840e12613a3816e29f0f5" kind="function"><name>Message</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a18f6412c3a331b29e003c9f7b85e9aa7" kind="function"><name>~Message</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a70400180d77ac6461296cd634b5f102a" kind="function"><name>add_property</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1af38e2a1b0ab69d111ba296f549665e13" kind="function"><name>remove_property</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1ac05afd843e1c6cee7965bdc90bcce84f" kind="function"><name>get_property</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a339b3ec9d64aeaeb726fa90d2a6162c3" kind="function"><name>get_properties</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1ac28e1eb6fc91d5cd728bcdc398458d36" kind="function"><name>get_id</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a68cb40efc158cc95be690c2a0f78843e" kind="function"><name>operator[]</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1afd7d83bc7864713a4e0654b39f633263" kind="function"><name>operator[]</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a0a586520c54ba6631e91f907ac6d0dc0" kind="function"><name>operator Int32</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1ae3d403e037b9c9b58ba11821f98b3489" kind="function"><name>operator Properties</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a14f6afe3532703912bab45350dbb848d" kind="function"><name>operator==</name></member>
+    <member refid="da/d5c/classbanita_1_1_message_1a0eafd97ad4fbb72b96f464280c68bec5" kind="function"><name>operator !=</name></member>
+  </compound>
+  <compound refid="dc/ddc/classbanita_1_1_message___handler" kind="class"><name>banita::Message_Handler</name>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1ae9638d03b0397e8853710174c3e1e3f4" kind="typedef"><name>Listener_List</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a15b035a4660e9e6fbced756b1754544c" kind="typedef"><name>Listener_Map</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1addd0c9b855f2f0f3e91738e23671f348" kind="typedef"><name>Listener_List_Map</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a5e651b556b1b7eb56d231d4f6436df3d" kind="variable"><name>singlecastTargets</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a79e9873b3a9449214b5541034af50baa" kind="variable"><name>multicastTargets</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1ab40bf3ee9636f9589b7fb0a325e5a9e4" kind="variable"><name>blockedMessages</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1ab610f5ffc535a86ed43c24323277225c" kind="function"><name>Message_Handler</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1afd3d620e8b639c50504fba6783e4e31f" kind="function"><name>~Message_Handler</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1ac1606f794ec41c49d406524da8450e2f" kind="function"><name>add_singlecast_listener</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a606a8f9a0c7fa63f74d53062a06a25fe" kind="function"><name>add_multicast_listener</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a3833f61bd8a4ef5e0f625b1ed5306b1c" kind="function"><name>block_message</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1ae1f927231f5e2b9807c281dc83decb1d" kind="function"><name>unblock_message</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a9aa44b5857d36ea645f7c1d6631f299e" kind="function"><name>is_message_blocked</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a689c5f2971747e4b7c9e3b5a678adf52" kind="function"><name>singlecast</name></member>
+    <member refid="dc/ddc/classbanita_1_1_message___handler_1a66509928c2131bf12c35192aead8c327" kind="function"><name>multicast</name></member>
+  </compound>
+  <compound refid="d1/d27/classbanita_1_1_model___component" kind="class"><name>banita::Model_Component</name>
+    <member refid="d1/d27/classbanita_1_1_model___component_1a7fd008bda4135489b17b06733d2817e5" kind="typedef"><name>Model</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1a4fc37d365953c498a8740aa9f5e5c848" kind="typedef"><name>Model_sptr</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1aaad3e0da24da813c77e00fdca2dc2271" kind="variable"><name>model</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1a2f9baa86605d6d152e69cd73af41cf7b" kind="function"><name>Model_Component</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1aa8bdeb97075af832ea0c0f32b302e799" kind="function"><name>Model_Component</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1af87c47483437405822718949a448bc14" kind="function"><name>initialize</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1ab8acac6bf05bc01a8529235904b81a5b" kind="function"><name>update</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1a1a6acbf643bd87acabfc2a31b7be4db8" kind="function"><name>parse_property</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1ae0c1a224521a196fad83dcc09e34097b" kind="function"><name>get_model</name></member>
+    <member refid="d1/d27/classbanita_1_1_model___component_1a4a5d4212e321577342bc1a8f4c997ca9" kind="function"><name>generator</name></member>
+  </compound>
+  <compound refid="d0/d84/classbanita_1_1_module" kind="class"><name>banita::Module</name>
+    <member refid="d0/d84/classbanita_1_1_module_1a10a833e8e5e1d2fb732f1aacaea32f30" kind="variable"><name>owner</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1a7295535148079c57f3ab6b4e77908cc5" kind="variable"><name>name</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1a7d70379d14dcf081cd9370224a5d5fda" kind="function"><name>Module</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1a5432095b67b68582d293af3a2c106a73" kind="function"><name>Module</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1a54299f4573f04a87251805de43f3f3b4" kind="function"><name>~Module</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1ace6d7ce15d60044f233d30a43dc961dd" kind="function"><name>create_component</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1a8e29c0b6d7e11a39dac3c0879ef513d9" kind="function"><name>get_task</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1a9a17fbfe0d05359427f2e9cbf956852c" kind="function"><name>get_name</name></member>
+    <member refid="d0/d84/classbanita_1_1_module_1aa2f74f6ba86841383c427199a03b0f9a" kind="function"><name>get_scene</name></member>
+  </compound>
+  <compound refid="dc/dbf/classbanita_1_1_module___factory___central" kind="class"><name>banita::Module_Factory_Central</name>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1aabad82d50003b813d1fb42ae28a6aa80" kind="typedef"><name>ModFactory_Map</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1ad2c82bf7ea67adfdeb06093195cf70ce" kind="variable"><name>moduleFactories</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1ad7153b8c574028a3165263b7159ac450" kind="variable"><name>instance</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1ac2c952171c29b0576055c37c1a7926fa" kind="function"><name>Module_Factory_Central</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1a6e4ebe269d984c77fcb338980d1a0521" kind="function"><name>~Module_Factory_Central</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1aba0eb5d045a61c1e85684c3e00ce62f5" kind="function"><name>get_instance</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1aef12a82bd2c051f7be1fc0ef22747517" kind="function"><name>register_factory</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1a1ac99380daaa5ab3a5dffb29181e6858" kind="function"><name>get_module_factory</name></member>
+    <member refid="dc/dbf/classbanita_1_1_module___factory___central_1a3b594f3e8a6ea6b2f4bf7c05c239c7c7" kind="function"><name>get_module_factory</name></member>
+  </compound>
+  <compound refid="dc/d66/classbanita_1_1_player___controller" kind="class"><name>banita::Player_Controller</name>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a12f578877cb05db086e629e94e8313b0" kind="variable"><name>moveUp</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a4307fd4c7579ffba2a3f14cfcbb636ca" kind="variable"><name>moveDown</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1ad11c6f868420d792e60b59bc75e6ea78" kind="variable"><name>moveLeft</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a8a7b927868e860b3cf6f1bb641eecf8f" kind="variable"><name>moveRight</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a13b0a6c356095bd1ec900b8bc7e1bc40" kind="variable"><name>turn</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a81a060f300158d756bd53285d4b827e1" kind="variable"><name>limits</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a56ffb40adc44a04e06b0008855d9ead8" kind="function"><name>Player_Controller</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1acbb318ac5deac46dc7cd745689406e65" kind="function"><name>Player_Controller</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a42c2960117c977daf72083452fb69e86" kind="function"><name>initialize</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1ab7c47cba21892cac0e9f8a366cf86ca8" kind="function"><name>update</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1ab25a1e791ce020ff226b6324cc2c5c67" kind="function"><name>parse_property</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a6c6aa3a387d36db7306ca557fbb100e6" kind="function"><name>handle</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1aedd233c9dcd10f9c8998f48a840f2e57" kind="function"><name>on_stop</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a0596cf1ee132d70f8f7eabfb3be2cfbc" kind="function"><name>generator</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1aafd1c014af82d216d8892dceb118e8fa" kind="function"><name>create_messages</name></member>
+    <member refid="dc/d66/classbanita_1_1_player___controller_1a83f2a36517baaf3fe20b0ca556bd5fe5" kind="function"><name>game_controller</name></member>
+  </compound>
+  <compound refid="d5/dce/classbanita_1_1_render___module_1_1_render___factory" kind="class"><name>banita::Render_Module::Render_Factory</name>
+    <member refid="d5/dce/classbanita_1_1_render___module_1_1_render___factory_1a99e14c7f5af7d784bc5ccb7a27440780" kind="function"><name>Render_Factory</name></member>
+    <member refid="d5/dce/classbanita_1_1_render___module_1_1_render___factory_1a13c65e4a433b3107602d91d9585bb381" kind="function"><name>create_module</name></member>
+  </compound>
+  <compound refid="de/da2/classbanita_1_1_render___module" kind="class"><name>banita::Render_Module</name>
+    <member refid="de/da2/classbanita_1_1_render___module_1a8d0230b119e9480733818ab2c4d2b614" kind="variable"><name>task</name></member>
+    <member refid="de/da2/classbanita_1_1_render___module_1ac1d3202b1acb7b04b6bab43b6d154417" kind="function"><name>Render_Module</name></member>
+    <member refid="de/da2/classbanita_1_1_render___module_1a3e74fda921261303b79e9f439080bf9d" kind="function"><name>Render_Module</name></member>
+    <member refid="de/da2/classbanita_1_1_render___module_1a338c9943a6a739c0a2517203c2986d2d" kind="function"><name>~Render_Module</name></member>
+    <member refid="de/da2/classbanita_1_1_render___module_1a0fbb9b466fa3fd8f55a0898a4aa87bd0" kind="function"><name>get_task</name></member>
+    <member refid="de/da2/classbanita_1_1_render___module_1a639688937a247c3fcc21e720ec0982b7" kind="function"><name>create_component</name></member>
+  </compound>
+  <compound refid="db/d15/classbanita_1_1_render___task" kind="class"><name>banita::Render_Task</name>
+    <member refid="db/d15/classbanita_1_1_render___task_1a367b0af5923ab4ca819b8901121cacc7" kind="typedef"><name>Render_Node</name></member>
+    <member refid="db/d15/classbanita_1_1_render___task_1ac90f3e16c8bafe5644de67226231a8ab" kind="variable"><name>renderer</name></member>
+    <member refid="db/d15/classbanita_1_1_render___task_1a1b8ba204040888c1b9487cd2d08e2e3d" kind="function"><name>Render_Task</name></member>
+    <member refid="db/d15/classbanita_1_1_render___task_1a556e9242d3cf844f11790daa616e6036" kind="function"><name>Render_Task</name></member>
+    <member refid="db/d15/classbanita_1_1_render___task_1a34f649b5ad434cf7f6bb04604173afed" kind="function"><name>initialize</name></member>
+    <member refid="db/d15/classbanita_1_1_render___task_1a94a8e1921a653ec6da9d1797ad2abcab" kind="function"><name>execute</name></member>
+    <member refid="db/d15/classbanita_1_1_render___task_1a7518f53ea9050d2312f02ba0389188c6" kind="function"><name>terminate</name></member>
+    <member refid="db/d15/classbanita_1_1_render___task_1af909021398c0b93207f2502d172138bf" kind="function"><name>renderize</name></member>
+  </compound>
+  <compound refid="de/d36/classbanita_1_1_sample___renderer" kind="class"><name>banita::Sample_Renderer</name>
+    <member refid="de/d36/classbanita_1_1_sample___renderer_1a5794fc5bff339ec9a473246cc0aae534" kind="variable"><name>renderer</name></member>
+    <member refid="de/d36/classbanita_1_1_sample___renderer_1a447866e31f4a8ca8e93858b7f6c81f87" kind="variable"><name>window</name></member>
+    <member refid="de/d36/classbanita_1_1_sample___renderer_1a73aa68cac1111711f074bdadfde96c2f" kind="function"><name>Sample_Renderer</name></member>
+    <member refid="de/d36/classbanita_1_1_sample___renderer_1a6e8c46345456cc3975348b2d79924183" kind="function"><name>~Sample_Renderer</name></member>
+    <member refid="de/d36/classbanita_1_1_sample___renderer_1aa4b50327809ca20efcfda16117f237d1" kind="function"><name>render</name></member>
+  </compound>
+  <compound refid="da/d56/classbanita_1_1_scene" kind="class"><name>banita::Scene</name>
+    <member refid="da/d56/classbanita_1_1_scene_1aabf996ff2af5e6cb0b6e835f0b6e016a" kind="typedef"><name>Entities_Map</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a530a4842456d11c04505c80c75befc00" kind="typedef"><name>Modules_Map</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1af8e0e440a6498b1e21c8660582ec838a" kind="variable"><name>entities</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a659c09a36271caf6e144d326000874cf" kind="variable"><name>modules</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a2324cfc3519ab453a473a42d04c200d3" kind="variable"><name>kernel</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a7918a3775391dde372743c03e3426911" kind="variable"><name>window</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a6c12e96defcb7d30da946b91d02fb9d2" kind="variable"><name>messageHandler</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1ac1cd51735d74d50dcefa500f715988a2" kind="function"><name>Scene</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a1c17873d5172df34c9a6a62dc3b13fa6" kind="function"><name>~Scene</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1aaf3588951958ee81114f0e58e5aead92" kind="function"><name>execute</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a0b6fe86bd75f0baa4b7d8e259a8ebf07" kind="function"><name>pause</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1ad27b01f5b3a31a7fb81f5ec7dc6c63c6" kind="function"><name>stop</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1adaa0e0879b6714fe1932562f6088892c" kind="function"><name>get_kernel</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1ae3121d9444a4197d3f7ebfffd37d8a4a" kind="function"><name>get_window</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1ab95cc89547ab5d33414a7743bfe9f60f" kind="function"><name>get_message_handler</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1abbb415ef292d34cc6882af2d59e5a25d" kind="function"><name>get_entity</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a9acedd39a5c861b803818635c355a81f" kind="function"><name>get_entity</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a6c535a65a7fcd80bf6d1d04a59b056cb" kind="function"><name>get_module</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1ac931053391e339ef352562f9528c0b11" kind="function"><name>load_scene</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a859bc4a976e5ae0ed3fa29dad24e4124" kind="function"><name>load_entities</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1adf3048ac8c14729c7c0264b104901abe" kind="function"><name>load_components</name></member>
+    <member refid="da/d56/classbanita_1_1_scene_1a980181cda5dbcbda743c63e5f1be7c3e" kind="function"><name>load_module</name></member>
+  </compound>
+  <compound refid="d6/db5/class_scene" kind="class"><name>Scene</name>
+  </compound>
+  <compound refid="d8/dfd/classbanita_1_1_task" kind="class"><name>banita::Task</name>
+    <member refid="d8/dfd/classbanita_1_1_task_1a3ce05486a9ea43de1e74fd4644dad11b" kind="typedef"><name>Components_List</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1aa0a41413c212ad29bb32bd74d35b0585" kind="variable"><name>components</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a6525188adf77e008e70e2b7cae631bd4" kind="variable"><name>kernel</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" kind="variable"><name>priority</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1ac90bfd55ed4f8f90afa2984218c61433" kind="variable"><name>isFinished</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1ae212c6c6b6f007e953ba8406d82528be" kind="function"><name>Task</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1add906131c42cec4d75df03eceeb870e6" kind="function"><name>Task</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a34578cdd41899a338ac09fec3a285487" kind="function"><name>initialize</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1aa79a45c9cbfac80ec9e4f060d5d444aa" kind="function"><name>execute</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1acccbd449402b1e9ce1ba34c26333a1b6" kind="function"><name>terminate</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1ab0d9e75daff35c07cdb6bea71d0bf605" kind="function"><name>add_component</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a46dfe5e26db0311f2a4bc7630bc0e2b7" kind="function"><name>is_finished</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a8b798d792fefb09525e48eb836a8cbb7" kind="function"><name>get_priority</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1acce4efa4b9ded5502ee9a70093f87855" kind="function"><name>get_kernel</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a2f8babba8f085c5a65b58eaf2f73c121" kind="function"><name>set_kernel</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a254be860b0f3f3c687b8f52e090de228" kind="function"><name>set_priority</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a5c635a75f1a8b735354d458684838d5b" kind="function"><name>finalize</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a3727f04d5ac8dcdf3ff41cc0609139e0" kind="function"><name>set_finished</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1ac088e4c87f080fb26dfdfc1ef13f78d6" kind="function"><name>operator&lt;</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a2d5f75c11032d7b6a7c4e0697d4434b1" kind="function"><name>operator &gt;</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a5fe48a7f1fc054c0f2376cf06853253c" kind="function"><name>operator&lt;=</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1ae5392bebeb2c9c1e8c83ab1e48446f90" kind="function"><name>operator &gt;=</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1af893f3c0cfefa81d9311c2b3532c597c" kind="function"><name>operator==</name></member>
+    <member refid="d8/dfd/classbanita_1_1_task_1a475f0812eff764bef68edefc3893df67" kind="function"><name>operator !=</name></member>
+  </compound>
+  <compound refid="d8/de9/classbanita_1_1_transform___component" kind="class"><name>banita::Transform_Component</name>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a82a2d0648699693dbcfcb8d8875bef0d" kind="typedef"><name>Transformation_Matrix</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1ab2a86a3446fe52274b6cb5de8e35319a" kind="variable"><name>parent</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a0edafa7605d43ecd5cf62288775a4e0e" kind="variable"><name>local_scale</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a515656a72fcc17847a2c9c266e017c3a" kind="variable"><name>local_anchor</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a7bffd803c90533ec82dde2924c7caea1" kind="variable"><name>transformation</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a645a4157f00ad6540e7367e8df74c5da" kind="variable"><name>movementList</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a7a3f14ec3052489c6cbec42d735f2b43" kind="variable"><name>visible</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1af0df15865b1b3576bae0fa9cbdce2669" kind="function"><name>Transform_Component</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a87e6794c494fefc601ed15c84eaff97c" kind="function"><name>~Transform_Component</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1af21e03166cba2a8489b2a5e02867ce6a" kind="function"><name>initialize</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a0ca137a40cc84ee0825f37bab82d5d5d" kind="function"><name>update</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a0f3ace424235b3992e01dbddfe85f088" kind="function"><name>parse_property</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a5299c227977c6efd87cc83af7c357a71" kind="function"><name>is_near_to_coordinate</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a376479ef59304837ff6cd5fb50f55058" kind="function"><name>is_near_to_transform</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a080736ede5f09898a8b28c2b22e60c61" kind="function"><name>get_position</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a914ced98c4598751de9448cf1491d990" kind="function"><name>get_rotation</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a9b955e7fd44d256dd862f61502ab9ec1" kind="function"><name>get_transformation</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a8ffcb477f5e312f75cfb5c9eb9c4ebd1" kind="function"><name>get_local_transformation</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a8503ea9581479c4d3a7b5e7992d669f2" kind="function"><name>get_parent</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a670a3c4266dc6e2ae1e89940684acc5b" kind="function"><name>move</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a5e0fa58446fb78788c12b64e37b1e32a" kind="function"><name>move</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a71e4e16cdbd98c641389455b455ceb01" kind="function"><name>add_movement</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1abbcce56f6a091161a8ab5e83499282f0" kind="function"><name>rotate</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a4def5a4bcc460815fbfede39643bd08e" kind="function"><name>rotate</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a05644620f98e07a01f0222182ec5c2f3" kind="function"><name>rotateX</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a627cc373a6e3d2f9067d9380c272c9cc" kind="function"><name>rotateY</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a36eeb4e9eb4d7dfd3fc2e07f650ea70c" kind="function"><name>rotateZ</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a83cc2d972d98fdcff1be55f9f5448df3" kind="function"><name>scale</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1ae7a4af52065190f0a49a78b8f33da4b1" kind="function"><name>set_position</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a8f3783520cfdd86e531cecb1170af193" kind="function"><name>set_position</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a131ef7c654696489df92c39b1135dd90" kind="function"><name>set_positionX</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1ae151b9b33e2afaaa9b8ecfedfa2d9a48" kind="function"><name>set_positionY</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a530739c068f5fcf6ed58118761b93e03" kind="function"><name>set_positionZ</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1afef6c54fd67345ad97b1deb948a4d9e1" kind="function"><name>set_visible</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1acd8c38c25e9ca8aa7f527605907bca7b" kind="function"><name>get_visibility</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a53215c14bf428c45f39df2861bfeda6a" kind="function"><name>reset</name></member>
+    <member refid="d8/de9/classbanita_1_1_transform___component_1a52942de64acefae0655fb17a71add8f3" kind="function"><name>generator</name></member>
+  </compound>
+  <compound refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory" kind="class"><name>banita::Transform_Module::Transform_Factory</name>
+    <member refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory_1a030c569c27df0cf90faf7b87450c70fc" kind="function"><name>Transform_Factory</name></member>
+    <member refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory_1af7dee8a255d901ad4190757ee9c68728" kind="function"><name>create_module</name></member>
+  </compound>
+  <compound refid="df/dfe/classbanita_1_1_transform___module" kind="class"><name>banita::Transform_Module</name>
+    <member refid="df/dfe/classbanita_1_1_transform___module_1a04d2cffdbd103a21c1c7f1857ca8721d" kind="variable"><name>task</name></member>
+    <member refid="df/dfe/classbanita_1_1_transform___module_1a881143ab58437a85c5d4c02dca1e4336" kind="function"><name>Transform_Module</name></member>
+    <member refid="df/dfe/classbanita_1_1_transform___module_1aa698fc7ef98d9a075ef0a5dad9fa18ef" kind="function"><name>Transform_Module</name></member>
+    <member refid="df/dfe/classbanita_1_1_transform___module_1a22ef547c4e2766126a571aeaf4679fc0" kind="function"><name>~Transform_Module</name></member>
+    <member refid="df/dfe/classbanita_1_1_transform___module_1a2a1181f23617bb6dfe71e1f7e16945e9" kind="function"><name>create_component</name></member>
+    <member refid="df/dfe/classbanita_1_1_transform___module_1a6cee3919fd2b22f82c41f056ac87e546" kind="function"><name>get_task</name></member>
+  </compound>
+  <compound refid="dc/da0/classbanita_1_1_transform___task" kind="class"><name>banita::Transform_Task</name>
+    <member refid="dc/da0/classbanita_1_1_transform___task_1aaf63d287eb134e3e8c8ad5f8ef792d43" kind="function"><name>Transform_Task</name></member>
+    <member refid="dc/da0/classbanita_1_1_transform___task_1ad475757b8d3298a37f4b89cc81b72b1f" kind="function"><name>Transform_Task</name></member>
+    <member refid="dc/da0/classbanita_1_1_transform___task_1ab94871acd76fbde7de99755cd6ac4e49" kind="function"><name>initialize</name></member>
+    <member refid="dc/da0/classbanita_1_1_transform___task_1a63ce627e86225d2264093ce932706074" kind="function"><name>execute</name></member>
+    <member refid="dc/da0/classbanita_1_1_transform___task_1a95d857713fec2b3bf90d64260be0a997" kind="function"><name>terminate</name></member>
+  </compound>
+  <compound refid="db/d0a/class_virtual" kind="class"><name>Virtual</name>
+  </compound>
+  <compound refid="d5/d15/classbanita_1_1_window" kind="class"><name>banita::Window</name>
+    <member refid="d5/d15/classbanita_1_1_window_1a8ce0f57c1c200644efabd17ba34636c2" kind="variable"><name>window</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1a7f22b30b3ec95ce234a70a907df663f8" kind="variable"><name>gl_context</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1ae0a1e293ad0a06d2c76faffb2ea2584a" kind="function"><name>Window</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1a7dc6f77899cbb641225ef36b1ab2f83a" kind="function"><name>~Window</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1a5ff600fc2263ed812abbc9395d7a5dde" kind="function"><name>get_width</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1a795dd72e44eb07310830aa516d4d9b99" kind="function"><name>get_height</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1aee3634f0202d871a8fb9cf477cf23a15" kind="function"><name>poll</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1ace182aba92f36eeb05a63160b9f269f8" kind="function"><name>enable_vsync</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1a1fe74bf9ef2333299983ee6198c13f91" kind="function"><name>disable_vsync</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1a535e8db0d7c55078fb708dcacf1226e8" kind="function"><name>clear</name></member>
+    <member refid="d5/d15/classbanita_1_1_window_1a87aa2169094bc025281540a81cfc96a8" kind="function"><name>swap_buffers</name></member>
+  </compound>
+  <compound refid="d6/de5/namespacebanita" kind="namespace"><name>banita</name>
+    <member refid="d6/de5/namespacebanita_1abd75c694144bac2707c40f23bf242509" kind="variable"><name>KEY_PRESSED_ID</name></member>
+  </compound>
+  <compound refid="d6/d14/_banita_engine_8hpp" kind="file"><name>BanitaEngine.hpp</name>
+  </compound>
+  <compound refid="dd/dd5/_camera___component_8hpp" kind="file"><name>Camera_Component.hpp</name>
+    <member refid="dd/dd5/_camera___component_8hpp_1ab45bec6fad4f0c516372be64fcca1d73" kind="define"><name>DEFAULT_FOV</name></member>
+    <member refid="dd/dd5/_camera___component_8hpp_1a1417cf7e68d22784246127e2aee342de" kind="define"><name>DEFAULT_ASPECT_RATIO</name></member>
+    <member refid="dd/dd5/_camera___component_8hpp_1a643eaef95c75256d77bea146114eeb7c" kind="define"><name>DEFAULT_NEAR_PLANE_DISTANCE</name></member>
+    <member refid="dd/dd5/_camera___component_8hpp_1a55c2ae8ef286b359ae10964104b25836" kind="define"><name>DEFAULT_FAR_PLANE_DISTANCE</name></member>
+  </compound>
+  <compound refid="da/d5c/_component_8hpp" kind="file"><name>Component.hpp</name>
+  </compound>
+  <compound refid="d2/de4/_component___generator_8hpp" kind="file"><name>Component_Generator.hpp</name>
+  </compound>
+  <compound refid="d6/d14/_controller_8hpp" kind="file"><name>Controller.hpp</name>
+  </compound>
+  <compound refid="df/dc9/_controller___module_8hpp" kind="file"><name>Controller_Module.hpp</name>
+  </compound>
+  <compound refid="da/da0/_controller___task_8hpp" kind="file"><name>Controller_Task.hpp</name>
+  </compound>
+  <compound refid="d2/db6/_entity_8hpp" kind="file"><name>Entity.hpp</name>
+  </compound>
+  <compound refid="d0/d83/_input___task_8hpp" kind="file"><name>Input_Task.hpp</name>
+  </compound>
+  <compound refid="dd/d8b/_kernel_8hpp" kind="file"><name>Kernel.hpp</name>
+  </compound>
+  <compound refid="db/ddd/_keyboard_8hpp" kind="file"><name>Keyboard.hpp</name>
+  </compound>
+  <compound refid="df/dc8/_light___component_8hpp" kind="file"><name>Light_Component.hpp</name>
+  </compound>
+  <compound refid="dc/dbc/_message_8hpp" kind="file"><name>Message.hpp</name>
+  </compound>
+  <compound refid="d2/d26/_message___handler_8hpp" kind="file"><name>Message_Handler.hpp</name>
+  </compound>
+  <compound refid="d0/da4/_model___component_8hpp" kind="file"><name>Model_Component.hpp</name>
+  </compound>
+  <compound refid="db/db6/_module_8hpp" kind="file"><name>Module.hpp</name>
+  </compound>
+  <compound refid="da/dc1/_module___factory___central_8hpp" kind="file"><name>Module_Factory_Central.hpp</name>
+  </compound>
+  <compound refid="d7/d1e/_player___controller_8hpp" kind="file"><name>Player_Controller.hpp</name>
+  </compound>
+  <compound refid="de/d59/_render___module_8hpp" kind="file"><name>Render_Module.hpp</name>
+  </compound>
+  <compound refid="db/df5/_render___task_8hpp" kind="file"><name>Render_Task.hpp</name>
+  </compound>
+  <compound refid="d5/d6c/_sample___renderer_8hpp" kind="file"><name>Sample_Renderer.hpp</name>
+  </compound>
+  <compound refid="d0/d8f/_scene_8hpp" kind="file"><name>Scene.hpp</name>
+  </compound>
+  <compound refid="d6/d1e/_task_8hpp" kind="file"><name>Task.hpp</name>
+  </compound>
+  <compound refid="d1/d74/_transform___component_8hpp" kind="file"><name>Transform_Component.hpp</name>
+  </compound>
+  <compound refid="d3/dfa/_transform___module_8hpp" kind="file"><name>Transform_Module.hpp</name>
+  </compound>
+  <compound refid="dc/d1d/_transform___task_8hpp" kind="file"><name>Transform_Task.hpp</name>
+  </compound>
+  <compound refid="de/d0b/_window_8hpp" kind="file"><name>Window.hpp</name>
+  </compound>
+  <compound refid="dir_7f57b1e41c5acd0e859ae5f3a2b075a9" kind="dir"><name>headers</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,173 @@
+\hypertarget{classbanita_1_1_camera___component}{}\section{banita\+::Camera\+\_\+\+Component Class Reference}
+\label{classbanita_1_1_camera___component}\index{banita::Camera\_Component@{banita::Camera\_Component}}
+
+
+{\ttfamily \#include $<$Camera\+\_\+\+Component.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Camera\+\_\+\+Component\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Camera\+\_\+\+Component\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_camera___component_a5fcebd13ad636d4973e257ac3b4d7e84}{Camera\+\_\+\+Component}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+owner, float \+\_\+fov=\mbox{\hyperlink{_camera___component_8hpp_ab45bec6fad4f0c516372be64fcca1d73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+OV}}, float \+\_\+aspect\+Ratio=\mbox{\hyperlink{_camera___component_8hpp_a1417cf7e68d22784246127e2aee342de}{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+S\+P\+E\+C\+T\+\_\+\+R\+A\+T\+IO}}, float near\+PlaneD=\mbox{\hyperlink{_camera___component_8hpp_a643eaef95c75256d77bea146114eeb7c}{D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+A\+R\+\_\+\+P\+L\+A\+N\+E\+\_\+\+D\+I\+S\+T\+A\+N\+CE}}, float \+\_\+far\+PlaneD=\mbox{\hyperlink{_camera___component_8hpp_a55c2ae8ef286b359ae10964104b25836}{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+A\+R\+\_\+\+P\+L\+A\+N\+E\+\_\+\+D\+I\+S\+T\+A\+N\+CE}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_camera___component}{Camera\+\_\+\+Component}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_camera___component_a5cf5d281063a61d5c11914d30c512f40}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em initialize the camera component objects and logic \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_camera___component_a177f9d18f146b83d6dc08eab3c576cae}{update}} (float \+\_\+delta\+Time) override
+\begin{DoxyCompactList}\small\item\em update frame to friend the camera component objects and logic \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbanita_1_1_camera___component_a1f494aa6cd8edcbe61866dc5e053c6be}{parse\+\_\+property}} (const String \&\+\_\+name, const String \&value) override
+\begin{DoxyCompactList}\small\item\em parse the properties of the camera, currently unavailable \end{DoxyCompactList}\item 
+Camera\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_camera___component_aa29ffc5af9f30bea479dada4bf588726}{get\+\_\+camera}} ()
+\begin{DoxyCompactList}\small\item\em Get the camera object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Component\+\_\+sptr \mbox{\hyperlink{classbanita_1_1_camera___component_a91756a8ab968d38dae63a2c688d47221}{generator}} (\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity)
+\begin{DoxyCompactList}\small\item\em Generator of camera component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_camera___component_a5fcebd13ad636d4973e257ac3b4d7e84}\label{classbanita_1_1_camera___component_a5fcebd13ad636d4973e257ac3b4d7e84}} 
+\index{banita::Camera\_Component@{banita::Camera\_Component}!Camera\_Component@{Camera\_Component}}
+\index{Camera\_Component@{Camera\_Component}!banita::Camera\_Component@{banita::Camera\_Component}}
+\subsubsection{\texorpdfstring{Camera\_Component()}{Camera\_Component()}}
+{\footnotesize\ttfamily banita\+::\+Camera\+\_\+\+Component\+::\+Camera\+\_\+\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+owner,  }\item[{float}]{\+\_\+fov = {\ttfamily \mbox{\hyperlink{_camera___component_8hpp_ab45bec6fad4f0c516372be64fcca1d73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+OV}}},  }\item[{float}]{\+\_\+aspect\+Ratio = {\ttfamily \mbox{\hyperlink{_camera___component_8hpp_a1417cf7e68d22784246127e2aee342de}{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+S\+P\+E\+C\+T\+\_\+\+R\+A\+T\+IO}}},  }\item[{float}]{near\+PlaneD = {\ttfamily \mbox{\hyperlink{_camera___component_8hpp_a643eaef95c75256d77bea146114eeb7c}{D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+E\+A\+R\+\_\+\+P\+L\+A\+N\+E\+\_\+\+D\+I\+S\+T\+A\+N\+CE}}},  }\item[{float}]{\+\_\+far\+PlaneD = {\ttfamily \mbox{\hyperlink{_camera___component_8hpp_a55c2ae8ef286b359ae10964104b25836}{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+A\+R\+\_\+\+P\+L\+A\+N\+E\+\_\+\+D\+I\+S\+T\+A\+N\+CE}}} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_camera___component}{Camera\+\_\+\+Component}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+owner} & \\
+\hline
+{\em \+\_\+fov} & \\
+\hline
+{\em \+\_\+aspect\+Ratio} & \\
+\hline
+{\em near\+PlaneD} & \\
+\hline
+{\em \+\_\+far\+PlaneD} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_camera___component_a91756a8ab968d38dae63a2c688d47221}\label{classbanita_1_1_camera___component_a91756a8ab968d38dae63a2c688d47221}} 
+\index{banita::Camera\_Component@{banita::Camera\_Component}!generator@{generator}}
+\index{generator@{generator}!banita::Camera\_Component@{banita::Camera\_Component}}
+\subsubsection{\texorpdfstring{generator()}{generator()}}
+{\footnotesize\ttfamily static Component\+\_\+sptr banita\+::\+Camera\+\_\+\+Component\+::generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Generator of camera component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component\+\_\+sptr 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classbanita_1_1_camera___component_aa29ffc5af9f30bea479dada4bf588726}\label{classbanita_1_1_camera___component_aa29ffc5af9f30bea479dada4bf588726}} 
+\index{banita::Camera\_Component@{banita::Camera\_Component}!get\_camera@{get\_camera}}
+\index{get\_camera@{get\_camera}!banita::Camera\_Component@{banita::Camera\_Component}}
+\subsubsection{\texorpdfstring{get\_camera()}{get\_camera()}}
+{\footnotesize\ttfamily Camera\+\_\+sptr banita\+::\+Camera\+\_\+\+Component\+::get\+\_\+camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the camera object. 
+
+\begin{DoxyReturn}{Returns}
+Camera\+\_\+sptr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbanita_1_1_camera___component_a5cf5d281063a61d5c11914d30c512f40}\label{classbanita_1_1_camera___component_a5cf5d281063a61d5c11914d30c512f40}} 
+\index{banita::Camera\_Component@{banita::Camera\_Component}!initialize@{initialize}}
+\index{initialize@{initialize}!banita::Camera\_Component@{banita::Camera\_Component}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool banita\+::\+Camera\+\_\+\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+initialize the camera component objects and logic 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a2f700c071185f7033caa69576dafa9e7}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_camera___component_a1f494aa6cd8edcbe61866dc5e053c6be}\label{classbanita_1_1_camera___component_a1f494aa6cd8edcbe61866dc5e053c6be}} 
+\index{banita::Camera\_Component@{banita::Camera\_Component}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!banita::Camera\_Component@{banita::Camera\_Component}}
+\subsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily bool banita\+::\+Camera\+\_\+\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+name,  }\item[{const String \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+parse the properties of the camera, currently unavailable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_a619154ef2bed8e4493413bdef6117716}{banita\+::\+Component}}.
+
+\mbox{\Hypertarget{classbanita_1_1_camera___component_a177f9d18f146b83d6dc08eab3c576cae}\label{classbanita_1_1_camera___component_a177f9d18f146b83d6dc08eab3c576cae}} 
+\index{banita::Camera\_Component@{banita::Camera\_Component}!update@{update}}
+\index{update@{update}!banita::Camera\_Component@{banita::Camera\_Component}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool banita\+::\+Camera\+\_\+\+Component\+::update (\begin{DoxyParamCaption}\item[{float}]{\+\_\+delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update frame to friend the camera component objects and logic 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+delta\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_component_ae8f9d11dc8e3c920d6d40146668c429b}{banita\+::\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_camera___component_8hpp}{Camera\+\_\+\+Component.\+hpp}}\end{DoxyCompactItemize}

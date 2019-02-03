@@ -1,0 +1,13 @@
+digraph "banita::Controller"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="banita::Controller",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="banita::Component",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dda/classbanita_1_1_component.html",tooltip=" "];
+  Node2 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="banita::Message_Handler\l::Listener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dbe/structbanita_1_1_message___handler_1_1_listener.html",tooltip="almost empty pure virtual struct that let the children handle a received message"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="banita::Player_Controller",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d66/classbanita_1_1_player___controller.html",tooltip=" "];
+}

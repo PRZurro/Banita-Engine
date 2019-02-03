@@ -1,0 +1,167 @@
+\hypertarget{classbanita_1_1_message___handler}{}\section{banita\+::Message\+\_\+\+Handler Class Reference}
+\label{classbanita_1_1_message___handler}\index{banita::Message\_Handler@{banita::Message\_Handler}}
+
+
+{\ttfamily \#include $<$Message\+\_\+\+Handler.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbanita_1_1_message___handler_1_1_listener}{Listener}}
+\begin{DoxyCompactList}\small\item\em almost empty pure virtual struct that let the children handle a received message \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_message___handler_ab610f5ffc535a86ed43c24323277225c}{Message\+\_\+\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} object by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_message___handler_afd3d620e8b639c50504fba6783e4e31f}{$\sim$\+Message\+\_\+\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} object and empty the maps. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_message___handler_ac1606f794ec41c49d406524da8450e2f}{add\+\_\+singlecast\+\_\+listener}} (Int32 listener\+\_\+id, \mbox{\hyperlink{structbanita_1_1_message___handler_1_1_listener}{Listener}} $\ast$\+\_\+listener)
+\begin{DoxyCompactList}\small\item\em Adds a listener to the listeners map singlecast\+Targets with the given listener id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_message___handler_a606a8f9a0c7fa63f74d53062a06a25fe}{add\+\_\+multicast\+\_\+listener}} (Int32 message\+\_\+id, \mbox{\hyperlink{structbanita_1_1_message___handler_1_1_listener}{Listener}} $\ast$\+\_\+listener)
+\begin{DoxyCompactList}\small\item\em Adds a listener to an specific message id list of listeners. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_message___handler_a3833f61bd8a4ef5e0f625b1ed5306b1c}{block\+\_\+message}} (\mbox{\hyperlink{classbanita_1_1_message}{Message}} \+\_\+message)
+\item 
+void \mbox{\hyperlink{classbanita_1_1_message___handler_ae1f927231f5e2b9807c281dc83decb1d}{unblock\+\_\+message}} (\mbox{\hyperlink{classbanita_1_1_message}{Message}} \+\_\+message)
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_message___handler_a9aa44b5857d36ea645f7c1d6631f299e}{is\+\_\+message\+\_\+blocked}} (const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+message)
+\begin{DoxyCompactList}\small\item\em check if the input message is in the blocked messages map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_message___handler_a689c5f2971747e4b7c9e3b5a678adf52}{singlecast}} (Int32 id, const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Check if there it is a pending message for an specific listener id. If it is a message for the listener, let it handle the message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanita_1_1_message___handler_a66509928c2131bf12c35192aead8c327}{multicast}} (const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Check if there it is a pending message. If it is, let the subscribed listeners handle the message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_message___handler_ab610f5ffc535a86ed43c24323277225c}\label{classbanita_1_1_message___handler_ab610f5ffc535a86ed43c24323277225c}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!Message\_Handler@{Message\_Handler}}
+\index{Message\_Handler@{Message\_Handler}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{Message\_Handler()}{Message\_Handler()}}
+{\footnotesize\ttfamily banita\+::\+Message\+\_\+\+Handler\+::\+Message\+\_\+\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} object by default. 
+
+\mbox{\Hypertarget{classbanita_1_1_message___handler_afd3d620e8b639c50504fba6783e4e31f}\label{classbanita_1_1_message___handler_afd3d620e8b639c50504fba6783e4e31f}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!````~Message\_Handler@{$\sim$Message\_Handler}}
+\index{````~Message\_Handler@{$\sim$Message\_Handler}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{$\sim$Message\_Handler()}{~Message\_Handler()}}
+{\footnotesize\ttfamily banita\+::\+Message\+\_\+\+Handler\+::$\sim$\+Message\+\_\+\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \mbox{\hyperlink{classbanita_1_1_message___handler}{Message\+\_\+\+Handler}} object and empty the maps. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_message___handler_a606a8f9a0c7fa63f74d53062a06a25fe}\label{classbanita_1_1_message___handler_a606a8f9a0c7fa63f74d53062a06a25fe}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!add\_multicast\_listener@{add\_multicast\_listener}}
+\index{add\_multicast\_listener@{add\_multicast\_listener}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{add\_multicast\_listener()}{add\_multicast\_listener()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+\_\+\+Handler\+::add\+\_\+multicast\+\_\+listener (\begin{DoxyParamCaption}\item[{Int32}]{message\+\_\+id,  }\item[{\mbox{\hyperlink{structbanita_1_1_message___handler_1_1_listener}{Listener}} $\ast$}]{\+\_\+listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a listener to an specific message id list of listeners. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em message\+\_\+id} & Identifier for the message. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em \+\_\+listener} & The listener. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_message___handler_ac1606f794ec41c49d406524da8450e2f}\label{classbanita_1_1_message___handler_ac1606f794ec41c49d406524da8450e2f}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!add\_singlecast\_listener@{add\_singlecast\_listener}}
+\index{add\_singlecast\_listener@{add\_singlecast\_listener}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{add\_singlecast\_listener()}{add\_singlecast\_listener()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+\_\+\+Handler\+::add\+\_\+singlecast\+\_\+listener (\begin{DoxyParamCaption}\item[{Int32}]{listener\+\_\+id,  }\item[{\mbox{\hyperlink{structbanita_1_1_message___handler_1_1_listener}{Listener}} $\ast$}]{\+\_\+listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a listener to the listeners map singlecast\+Targets with the given listener id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em listener\+\_\+id} & Identifier for the listener. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em \+\_\+listener} & The listener. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_message___handler_a3833f61bd8a4ef5e0f625b1ed5306b1c}\label{classbanita_1_1_message___handler_a3833f61bd8a4ef5e0f625b1ed5306b1c}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!block\_message@{block\_message}}
+\index{block\_message@{block\_message}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{block\_message()}{block\_message()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+\_\+\+Handler\+::block\+\_\+message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_message}{Message}}}]{\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classbanita_1_1_message___handler_a9aa44b5857d36ea645f7c1d6631f299e}\label{classbanita_1_1_message___handler_a9aa44b5857d36ea645f7c1d6631f299e}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!is\_message\_blocked@{is\_message\_blocked}}
+\index{is\_message\_blocked@{is\_message\_blocked}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{is\_message\_blocked()}{is\_message\_blocked()}}
+{\footnotesize\ttfamily bool banita\+::\+Message\+\_\+\+Handler\+::is\+\_\+message\+\_\+blocked (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check if the input message is in the blocked messages map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classbanita_1_1_message___handler_a66509928c2131bf12c35192aead8c327}\label{classbanita_1_1_message___handler_a66509928c2131bf12c35192aead8c327}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!multicast@{multicast}}
+\index{multicast@{multicast}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{multicast()}{multicast()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+\_\+\+Handler\+::multicast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Check if there it is a pending message. If it is, let the subscribed listeners handle the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & The message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_message___handler_a689c5f2971747e4b7c9e3b5a678adf52}\label{classbanita_1_1_message___handler_a689c5f2971747e4b7c9e3b5a678adf52}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!singlecast@{singlecast}}
+\index{singlecast@{singlecast}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{singlecast()}{singlecast()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+\_\+\+Handler\+::singlecast (\begin{DoxyParamCaption}\item[{Int32}]{id,  }\item[{const \mbox{\hyperlink{classbanita_1_1_message}{Message}} \&}]{\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Check if there it is a pending message for an specific listener id. If it is a message for the listener, let it handle the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier. \\
+\hline
+{\em \+\_\+message} & The message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_message___handler_ae1f927231f5e2b9807c281dc83decb1d}\label{classbanita_1_1_message___handler_ae1f927231f5e2b9807c281dc83decb1d}} 
+\index{banita::Message\_Handler@{banita::Message\_Handler}!unblock\_message@{unblock\_message}}
+\index{unblock\_message@{unblock\_message}!banita::Message\_Handler@{banita::Message\_Handler}}
+\subsubsection{\texorpdfstring{unblock\_message()}{unblock\_message()}}
+{\footnotesize\ttfamily void banita\+::\+Message\+\_\+\+Handler\+::unblock\+\_\+message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_message}{Message}}}]{\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_message___handler_8hpp}{Message\+\_\+\+Handler.\+hpp}}\end{DoxyCompactItemize}

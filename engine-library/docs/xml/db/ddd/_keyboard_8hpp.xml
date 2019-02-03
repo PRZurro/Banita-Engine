@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="db/ddd/_keyboard_8hpp" kind="file" language="C++">
+    <compoundname>Keyboard.hpp</compoundname>
+    <includes local="yes">declarations.hpp</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="de/d0b/_window_8hpp" local="no">headers/Window.hpp</includedby>
+    <includedby refid="d0/d83/_input___task_8hpp" local="yes">headers/Input_Task.hpp</includedby>
+    <incdepgraph>
+      <node id="134">
+        <label>vector</label>
+      </node>
+      <node id="133">
+        <label>declarations.hpp</label>
+      </node>
+      <node id="132">
+        <label>headers/Keyboard.hpp</label>
+        <link refid="db/ddd/_keyboard_8hpp"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="141">
+        <label>headers/Component_Generator.hpp</label>
+        <link refid="d2/de4/_component___generator_8hpp"/>
+      </node>
+      <node id="142">
+        <label>headers/Module_Factory_Central.hpp</label>
+        <link refid="da/dc1/_module___factory___central_8hpp"/>
+      </node>
+      <node id="140">
+        <label>headers/Model_Component.hpp</label>
+        <link refid="d0/da4/_model___component_8hpp"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>headers/Input_Task.hpp</label>
+        <link refid="d0/d83/_input___task_8hpp"/>
+      </node>
+      <node id="139">
+        <label>headers/Render_Module.hpp</label>
+        <link refid="de/d59/_render___module_8hpp"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>headers/Render_Task.hpp</label>
+        <link refid="db/df5/_render___task_8hpp"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>headers/Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>headers/Window.hpp</label>
+        <link refid="de/d0b/_window_8hpp"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>headers/Keyboard.hpp</label>
+        <link refid="db/ddd/_keyboard_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d5/d29/classbanita_1_1_keyboard" prot="public">banita::Keyboard</innerclass>
+    <innernamespace refid="d6/de5/namespacebanita">banita</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>free<sp/>code<sp/>released<sp/>into<sp/>the<sp/>public<sp/>domain.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Drafted<sp/>by<sp/>Ángel<sp/>in<sp/>January<sp/>2019.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>it<sp/>at<sp/>your<sp/>own<sp/>risk.<sp/>It<sp/>might<sp/>have<sp/>bugs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>angel.rodriguez@esne.edu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;declarations.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/de5/namespacebanita" kindref="compound">banita</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="d5/d29/classbanita_1_1_keyboard" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d29/classbanita_1_1_keyboard" kindref="compound">Keyboard</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ab" kindref="member">Key_Code</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ababa5e2bdb6568d3ec794065d9150163e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ababa5e2bdb6568d3ec794065d9150163e4" kindref="member">KEY_UNKOWN</ref>,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba47f754048d61751daa282d52bb1ab9a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba47f754048d61751daa282d52bb1ab9a3" kindref="member">KEY_RETURN</ref>,</highlight></codeline>
+<codeline lineno="22" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3fa75682be0b44280e8740f56ff842ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3fa75682be0b44280e8740f56ff842ad" kindref="member">KEY_ESCAPE</ref>,</highlight></codeline>
+<codeline lineno="23" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7858fa5c081a0428a0f0447e152efc0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7858fa5c081a0428a0f0447e152efc0b" kindref="member">KEY_BACKSPACE</ref>,</highlight></codeline>
+<codeline lineno="24" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3f9f3f591a1420d69f165ef857b15e16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3f9f3f591a1420d69f165ef857b15e16" kindref="member">KEY_TAB</ref>,</highlight></codeline>
+<codeline lineno="25" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7a267bc081508b64d4b0ba299a8d1160" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7a267bc081508b64d4b0ba299a8d1160" kindref="member">KEY_SPACE</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba80a11c04883aa462dced08c31ba24d56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abab100faaffa9b56018465e34425157933" kindref="member">KEY_A</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaf7b80bb52861bac4d3997fd7736dfb16" kindref="member">KEY_B</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba98120d7d01daf4036fed8d2c702239d1" kindref="member">KEY_C</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba1de33f2731a8a9b58c22d77f826f7f2b" kindref="member">KEY_D</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba80a11c04883aa462dced08c31ba24d56" kindref="member">KEY_E</ref>,</highlight></codeline>
+<codeline lineno="28" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaed2ba73ae57f65b06b7faad19640b40c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba91a202256cb1d29c6179423d0cb0245c" kindref="member">KEY_F</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7f85dda59652e3976a3d606beb0e963a" kindref="member">KEY_G</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba4d89680e43e80a65bd1de2e557b3f8f1" kindref="member">KEY_H</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaf762821e3ba71c28c9ba0bfe562070fd" kindref="member">KEY_I</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaed2ba73ae57f65b06b7faad19640b40c" kindref="member">KEY_J</ref>,</highlight></codeline>
+<codeline lineno="29" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abafa7b509121d02383f892607574ad9122" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba56af57078f82525b71a3a46671de4593" kindref="member">KEY_K</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abab2834e197a51aba3e3b6e99ebc772765" kindref="member">KEY_L</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaff37a9a22acd65052135631f0b508b73" kindref="member">KEY_M</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba57835eddd1cddb7c16108ffcb50e643d" kindref="member">KEY_N</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abafa7b509121d02383f892607574ad9122" kindref="member">KEY_O</ref>,</highlight></codeline>
+<codeline lineno="30" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abae1b413b1184aca0c1c323c891550f0a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaff2126db9a023b3b89a9c19ab2437177" kindref="member">KEY_P</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7c7959d9eca71cccf975fcd926ea26e3" kindref="member">KEY_Q</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba6c982d7ebe214119ce8be470f3c03488" kindref="member">KEY_R</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba4d9c3c797ffc1428afb485df420c4cab" kindref="member">KEY_S</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abae1b413b1184aca0c1c323c891550f0a6" kindref="member">KEY_T</ref>,</highlight></codeline>
+<codeline lineno="31" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba40ceb2ac77d3294e8bc06a5ade653486" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba990f42fef1141fda037558cda543ecc3" kindref="member">KEY_U</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba22e156d4dd80ed29dfc0f8e1671365a8" kindref="member">KEY_V</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba088f87e1b2404003a19cae8548d62a1c" kindref="member">KEY_W</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba73575b8202b3e537671db198a86c1860" kindref="member">KEY_X</ref>,<sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba40ceb2ac77d3294e8bc06a5ade653486" kindref="member">KEY_Y</ref>,</highlight></codeline>
+<codeline lineno="32" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba6635fc42aef2d03390b4470adc146842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba6635fc42aef2d03390b4470adc146842" kindref="member">KEY_Z</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7593529de7dea3dee06aa40306ef106d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7593529de7dea3dee06aa40306ef106d" kindref="member">KEY_0</ref>,</highlight></codeline>
+<codeline lineno="35" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abae96ec83793d86f62f4dfa375d1e47e08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abae96ec83793d86f62f4dfa375d1e47e08" kindref="member">KEY_1</ref>,</highlight></codeline>
+<codeline lineno="36" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba0918e0c5f007d09a9f2914e458f61e2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba0918e0c5f007d09a9f2914e458f61e2c" kindref="member">KEY_2</ref>,</highlight></codeline>
+<codeline lineno="37" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba875b7b5c86023f4e1ffc89b517333089" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba875b7b5c86023f4e1ffc89b517333089" kindref="member">KEY_3</ref>,</highlight></codeline>
+<codeline lineno="38" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba111e17337cde562c2f301eb86e85d354" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba111e17337cde562c2f301eb86e85d354" kindref="member">KEY_4</ref>,</highlight></codeline>
+<codeline lineno="39" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaaf9525a16d900a8e8c37269bc7ee56de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9abaaf9525a16d900a8e8c37269bc7ee56de" kindref="member">KEY_5</ref>,</highlight></codeline>
+<codeline lineno="40" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba4532147314d1f2709c73772297f3f18c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba4532147314d1f2709c73772297f3f18c" kindref="member">KEY_6</ref>,</highlight></codeline>
+<codeline lineno="41" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba85c3bb5304f3e5e0da55a94d12280f7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba85c3bb5304f3e5e0da55a94d12280f7f" kindref="member">KEY_7</ref>,</highlight></codeline>
+<codeline lineno="42" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba9b8d111f30225a170941adc2afc1636a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba9b8d111f30225a170941adc2afc1636a" kindref="member">KEY_8</ref>,</highlight></codeline>
+<codeline lineno="43" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba1c71c5c18c84dba7d6132dbe4012a6d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba1c71c5c18c84dba7d6132dbe4012a6d5" kindref="member">KEY_9</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba10dba826263faf760641adbb1869afec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba10dba826263faf760641adbb1869afec" kindref="member">KEY_ARROW_UP</ref>,</highlight></codeline>
+<codeline lineno="46" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3f7cbfd9c6c648de615e1afe85e511ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba3f7cbfd9c6c648de615e1afe85e511ea" kindref="member">KEY_ARROW_DOWN</ref>,</highlight></codeline>
+<codeline lineno="47" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7c74ae8e3949662199f61f8d1269707c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba7c74ae8e3949662199f61f8d1269707c" kindref="member">KEY_ARROW_LEFT</ref>,</highlight></codeline>
+<codeline lineno="48" refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba659fec2944b4c7e8cc1c9b971c86d58d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9aba659fec2944b4c7e8cc1c9b971c86d58d" kindref="member">KEY_ARROW_RIGHT</ref>,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d5/d29/classbanita_1_1_keyboard_1a0bd55b31db3e776ec4c8a2effc5b3cd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0bd55b31db3e776ec4c8a2effc5b3cd8" kindref="member">Bool_Vector</ref><sp/>=<sp/>std::vector&lt;bool&gt;;</highlight></codeline>
+<codeline lineno="57" refid="d5/d29/classbanita_1_1_keyboard_1ac39ec62a0a07ee3e90cc742b6b2ecb97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1ac39ec62a0a07ee3e90cc742b6b2ecb97" kindref="member">KC_Vector</ref><sp/>=<sp/>std::vector&lt;Key_Code&gt;;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/>state;<sp/></highlight><highlight class="comment">//Saves<sp/>a<sp/>buffer<sp/>of<sp/>pointers<sp/>to<sp/>the<sp/>sdl<sp/>state<sp/>of<sp/>the<sp/>keyboard,<sp/>deprecated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a23037aab0ad7e176946b93e971cf946c" kindref="member">Keyboard</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="d5/d29/classbanita_1_1_keyboard_1ab74e25dd5635a78f3fa18b4813e22888" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1ab74e25dd5635a78f3fa18b4813e22888" kindref="member">~Keyboard</ref>()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ab" kindref="member">Key_Code</ref><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1ae0d0b78dbb5407e23fa2135be19bf903" kindref="member">translate_sdl_key_code</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sdl_key_code);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Key_Code<sp/>translate_sdl_key_code<sp/>(int<sp/>sdl_key_code);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1afba73737bfad5061446a38a5a925cbfe" kindref="member">translate_key_code_sdl</ref>(<ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ab" kindref="member">Key_Code</ref><sp/>_key);<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="d5/d29/classbanita_1_1_keyboard_1a7d92be8f7f9f629d8ec4f8da0c5367d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a7d92be8f7f9f629d8ec4f8da0c5367d5" kindref="member">check_state_of_key</ref>(<ref refid="d5/d29/classbanita_1_1_keyboard_1a0dee214e6cb4f246866603b85568b9ab" kindref="member">Key_Code</ref><sp/>_key)<sp/></highlight><highlight class="comment">//<sp/>Deprecated.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>state[<ref refid="d5/d29/classbanita_1_1_keyboard_1afba73737bfad5061446a38a5a925cbfe" kindref="member">translate_key_code_sdl</ref>(_key)];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a0bd55b31db3e776ec4c8a2effc5b3cd8" kindref="member">Bool_Vector</ref><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1afa10793b2c2bfe8ab32afe8a6d573e5e" kindref="member">get_state_of_keys</ref>(std::vector&lt;Key_Code&gt;<sp/>&amp;<sp/>_keys);<sp/></highlight><highlight class="comment">//Deprecated,<sp/>currently<sp/>using<sp/>window<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1ac39ec62a0a07ee3e90cc742b6b2ecb97" kindref="member">KC_Vector</ref><sp/><ref refid="d5/d29/classbanita_1_1_keyboard_1a86160c6cee9390a757e4207feb6d082b" kindref="member">get_pressed_keys</ref>(<ref refid="d5/d29/classbanita_1_1_keyboard_1ac39ec62a0a07ee3e90cc742b6b2ecb97" kindref="member">KC_Vector</ref><sp/>&amp;<sp/>_keys);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="headers/Keyboard.hpp"/>
+  </compounddef>
+</doxygen>

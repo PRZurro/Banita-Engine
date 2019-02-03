@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d6/d14/_banita_engine_8hpp" kind="file" language="C++">
+    <compoundname>BanitaEngine.hpp</compoundname>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>string</label>
+      </node>
+      <node id="0">
+        <label>headers/BanitaEngine.hpp</label>
+        <link refid="d6/d14/_banita_engine_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d4/d9c/classbanita_1_1_banita_engine" prot="public">banita::BanitaEngine</innerclass>
+    <innernamespace refid="d6/de5/namespacebanita">banita</innernamespace>
+    <briefdescription>
+<para>Core class that encapsulates the engine library to avoid header inclusion errors. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Pablo Rodríguez Zurro (<ulink url="mailto:pablorodriguezzurro@gmail.com">pablorodriguezzurro@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2019-02-01</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2019 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d6/de5/namespacebanita" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/de5/namespacebanita" kindref="compound">banita</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18" refid="d4/d9c/classbanita_1_1_banita_engine" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/d9c/classbanita_1_1_banita_engine" kindref="compound">BanitaEngine</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/classbanita_1_1_banita_engine_1abdb08737880ae46f671e0780251ea4c4" kindref="member">BanitaEngine</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="d4/d9c/classbanita_1_1_banita_engine_1a9bd490383a9a8baaed3a2b4a3d8c7bcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d9c/classbanita_1_1_banita_engine_1a9bd490383a9a8baaed3a2b4a3d8c7bcc" kindref="member">~BanitaEngine</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d9c/classbanita_1_1_banita_engine_1ac2b3d79609be0bad75ec9ed6b5b3cd1f" kindref="member">run</ref>(std::string<sp/>scenePath<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../../assets/Scenes/test_scene.xml&quot;</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowWidth<sp/>=<sp/>1280,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowHeight<sp/>=<sp/>720,<sp/>std::string<sp/>windowName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;BanitaEngine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fullscreen<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="headers/BanitaEngine.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="df/d1d/classbanita_1_1_module_1_1_factory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>banita::Module::Factory</compoundname>
+    <derivedcompoundref refid="d5/dce/classbanita_1_1_render___module_1_1_render___factory" prot="public" virt="non-virtual">banita::Render_Module::Render_Factory</derivedcompoundref>
+    <includes refid="db/db6/_module_8hpp" local="no">Module.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d1d/classbanita_1_1_module_1_1_factory_1a47b2217b54d08bb35dc4c1673cf87d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>Module_sptr</type>
+        <definition>virtual Module_sptr banita::Module::Factory::create_module</definition>
+        <argsstring>(Scene *_scene)=0</argsstring>
+        <name>create_module</name>
+        <reimplementedby refid="d5/dce/classbanita_1_1_render___module_1_1_render___factory_1a13c65e4a433b3107602d91d9585bb381">create_module</reimplementedby>
+        <param>
+          <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Module.hpp" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="db/d0a/class_virtual" kindref="compound">Virtual</ref> pure factory of the module class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="52">
+        <label>banita::Module::Factory</label>
+        <link refid="df/d1d/classbanita_1_1_module_1_1_factory"/>
+      </node>
+      <node id="53">
+        <label>banita::Render_Module::Render_Factory</label>
+        <link refid="d5/dce/classbanita_1_1_render___module_1_1_render___factory"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="headers/Module.hpp" line="34" column="1" bodyfile="headers/Module.hpp" bodystart="33" bodyend="37"/>
+    <listofallmembers>
+      <member refid="df/d1d/classbanita_1_1_module_1_1_factory_1a47b2217b54d08bb35dc4c1673cf87d35" prot="public" virt="pure-virtual"><scope>banita::Module::Factory</scope><name>create_module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

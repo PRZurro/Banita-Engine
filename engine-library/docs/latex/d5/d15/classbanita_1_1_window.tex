@@ -1,0 +1,97 @@
+\hypertarget{classbanita_1_1_window}{}\section{banita\+::Window Class Reference}
+\label{classbanita_1_1_window}\index{banita::Window@{banita::Window}}
+
+
+{\ttfamily \#include $<$Window.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbanita_1_1_window_1_1_event}{Event}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_window_ae0a1e293ad0a06d2c76faffb2ea2584a}{Window}} (const std\+::string \&title, int width, int height, bool fullscreen=false)
+\item 
+\mbox{\hyperlink{classbanita_1_1_window_a7dc6f77899cbb641225ef36b1ab2f83a}{$\sim$\+Window}} ()
+\item 
+unsigned \mbox{\hyperlink{classbanita_1_1_window_a5ff600fc2263ed812abbc9395d7a5dde}{get\+\_\+width}} () const
+\item 
+unsigned \mbox{\hyperlink{classbanita_1_1_window_a795dd72e44eb07310830aa516d4d9b99}{get\+\_\+height}} () const
+\item 
+bool \mbox{\hyperlink{classbanita_1_1_window_aee3634f0202d871a8fb9cf477cf23a15}{poll}} (\mbox{\hyperlink{structbanita_1_1_window_1_1_event}{Event}} \&event) const
+\item 
+void \mbox{\hyperlink{classbanita_1_1_window_ace182aba92f36eeb05a63160b9f269f8}{enable\+\_\+vsync}} ()
+\item 
+void \mbox{\hyperlink{classbanita_1_1_window_a1fe74bf9ef2333299983ee6198c13f91}{disable\+\_\+vsync}} ()
+\item 
+void \mbox{\hyperlink{classbanita_1_1_window_a535e8db0d7c55078fb708dcacf1226e8}{clear}} () const
+\item 
+void \mbox{\hyperlink{classbanita_1_1_window_a87aa2169094bc025281540a81cfc96a8}{swap\+\_\+buffers}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_window_ae0a1e293ad0a06d2c76faffb2ea2584a}\label{classbanita_1_1_window_ae0a1e293ad0a06d2c76faffb2ea2584a}} 
+\index{banita::Window@{banita::Window}!Window@{Window}}
+\index{Window@{Window}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily banita\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{fullscreen = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbanita_1_1_window_a7dc6f77899cbb641225ef36b1ab2f83a}\label{classbanita_1_1_window_a7dc6f77899cbb641225ef36b1ab2f83a}} 
+\index{banita::Window@{banita::Window}!````~Window@{$\sim$Window}}
+\index{````~Window@{$\sim$Window}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{$\sim$Window()}{~Window()}}
+{\footnotesize\ttfamily banita\+::\+Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_window_a535e8db0d7c55078fb708dcacf1226e8}\label{classbanita_1_1_window_a535e8db0d7c55078fb708dcacf1226e8}} 
+\index{banita::Window@{banita::Window}!clear@{clear}}
+\index{clear@{clear}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void banita\+::\+Window\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Borra el buffer de la pantalla usando Open\+GL. \mbox{\Hypertarget{classbanita_1_1_window_a1fe74bf9ef2333299983ee6198c13f91}\label{classbanita_1_1_window_a1fe74bf9ef2333299983ee6198c13f91}} 
+\index{banita::Window@{banita::Window}!disable\_vsync@{disable\_vsync}}
+\index{disable\_vsync@{disable\_vsync}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{disable\_vsync()}{disable\_vsync()}}
+{\footnotesize\ttfamily void banita\+::\+Window\+::disable\+\_\+vsync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbanita_1_1_window_ace182aba92f36eeb05a63160b9f269f8}\label{classbanita_1_1_window_ace182aba92f36eeb05a63160b9f269f8}} 
+\index{banita::Window@{banita::Window}!enable\_vsync@{enable\_vsync}}
+\index{enable\_vsync@{enable\_vsync}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{enable\_vsync()}{enable\_vsync()}}
+{\footnotesize\ttfamily void banita\+::\+Window\+::enable\+\_\+vsync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbanita_1_1_window_a795dd72e44eb07310830aa516d4d9b99}\label{classbanita_1_1_window_a795dd72e44eb07310830aa516d4d9b99}} 
+\index{banita::Window@{banita::Window}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily unsigned banita\+::\+Window\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna el alto actual de la ventana (el usuario puede cambiarlo). \mbox{\Hypertarget{classbanita_1_1_window_a5ff600fc2263ed812abbc9395d7a5dde}\label{classbanita_1_1_window_a5ff600fc2263ed812abbc9395d7a5dde}} 
+\index{banita::Window@{banita::Window}!get\_width@{get\_width}}
+\index{get\_width@{get\_width}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{get\_width()}{get\_width()}}
+{\footnotesize\ttfamily unsigned banita\+::\+Window\+::get\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna el ancho actual de la ventana (el usuario puede cambiarlo). \mbox{\Hypertarget{classbanita_1_1_window_aee3634f0202d871a8fb9cf477cf23a15}\label{classbanita_1_1_window_aee3634f0202d871a8fb9cf477cf23a15}} 
+\index{banita::Window@{banita::Window}!poll@{poll}}
+\index{poll@{poll}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily bool banita\+::\+Window\+::poll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbanita_1_1_window_1_1_event}{Event}} \&}]{event }\end{DoxyParamCaption}) const}
+
+Permite extraer un evento de la cola de eventos asociada a la ventana. \mbox{\Hypertarget{classbanita_1_1_window_a87aa2169094bc025281540a81cfc96a8}\label{classbanita_1_1_window_a87aa2169094bc025281540a81cfc96a8}} 
+\index{banita::Window@{banita::Window}!swap\_buffers@{swap\_buffers}}
+\index{swap\_buffers@{swap\_buffers}!banita::Window@{banita::Window}}
+\subsubsection{\texorpdfstring{swap\_buffers()}{swap\_buffers()}}
+{\footnotesize\ttfamily void banita\+::\+Window\+::swap\+\_\+buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Intercambia el buffer visible con el buffer oculto. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_window_8hpp}{Window.\+hpp}}\end{DoxyCompactItemize}

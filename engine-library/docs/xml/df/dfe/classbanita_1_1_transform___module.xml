@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="df/dfe/classbanita_1_1_transform___module" kind="class" language="C++" prot="public">
+    <compoundname>banita::Transform_Module</compoundname>
+    <basecompoundref refid="d0/d84/classbanita_1_1_module" prot="public" virt="non-virtual">banita::Module</basecompoundref>
+    <includes refid="d3/dfa/_transform___module_8hpp" local="no">Transform_Module.hpp</includes>
+    <innerclass refid="dd/d3f/classbanita_1_1_transform___module_1_1_transform___factory" prot="public">banita::Transform_Module::Transform_Factory</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/dfe/classbanita_1_1_transform___module_1a04d2cffdbd103a21c1c7f1857ca8721d" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/da0/classbanita_1_1_transform___task" kindref="compound">Transform_Task</ref></type>
+        <definition>Transform_Task banita::Transform_Module::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="78" column="1" bodyfile="headers/Transform_Module.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/dfe/classbanita_1_1_transform___module_1a881143ab58437a85c5d4c02dca1e4336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Transform_Module::Transform_Module</definition>
+        <argsstring>()</argsstring>
+        <name>Transform_Module</name>
+        <briefdescription>
+<para>Construct a new <ref refid="df/dfe/classbanita_1_1_transform___module" kindref="compound">Transform_Module</ref> object by default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dfe/classbanita_1_1_transform___module_1aa698fc7ef98d9a075ef0a5dad9fa18ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Transform_Module::Transform_Module</definition>
+        <argsstring>(Scene *_owner)</argsstring>
+        <name>Transform_Module</name>
+        <param>
+          <type><ref refid="da/d56/classbanita_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>_owner</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="df/dfe/classbanita_1_1_transform___module" kindref="compound">Transform_Module</ref> object saving the received entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dfe/classbanita_1_1_transform___module_1a22ef547c4e2766126a571aeaf4679fc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Transform_Module::~Transform_Module</definition>
+        <argsstring>()</argsstring>
+        <name>~Transform_Module</name>
+        <briefdescription>
+<para>Destroy the <ref refid="df/dfe/classbanita_1_1_transform___module" kindref="compound">Transform_Module</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="74" column="1" bodyfile="headers/Transform_Module.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dfe/classbanita_1_1_transform___module_1a2a1181f23617bb6dfe71e1f7e16945e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void banita::Transform_Module::create_component</definition>
+        <argsstring>(XML_Node *_componentNode, Entity *_entity) override</argsstring>
+        <name>create_component</name>
+        <reimplements refid="d0/d84/classbanita_1_1_module_1ace6d7ce15d60044f233d30a43dc961dd">create_component</reimplements>
+        <param>
+          <type>XML_Node *</type>
+          <declname>_componentNode</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d9f/classbanita_1_1_entity" kindref="compound">Entity</ref> *</type>
+          <declname>_entity</declname>
+        </param>
+        <briefdescription>
+<para>Create a component object in the entity received by parsing the attributes and values of the xml node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_componentNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dfe/classbanita_1_1_transform___module_1a6cee3919fd2b22f82c41f056ac87e546" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="d8/dfd/classbanita_1_1_task" kindref="compound">Task</ref> *</type>
+        <definition>Task* banita::Transform_Module::get_task</definition>
+        <argsstring>() override</argsstring>
+        <name>get_task</name>
+        <reimplements refid="d0/d84/classbanita_1_1_module_1a8e29c0b6d7e11a39dac3c0879ef513d9">get_task</reimplements>
+        <briefdescription>
+<para>Get the task object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Task* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Transform_Module.hpp" line="101" column="1" bodyfile="headers/Transform_Module.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="141">
+        <label>banita::Module</label>
+        <link refid="d0/d84/classbanita_1_1_module"/>
+      </node>
+      <node id="140">
+        <label>banita::Transform_Module</label>
+        <link refid="df/dfe/classbanita_1_1_transform___module"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="143">
+        <label>banita::Module</label>
+        <link refid="d0/d84/classbanita_1_1_module"/>
+        <childnode refid="144" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="142">
+        <label>banita::Transform_Module</label>
+        <link refid="df/dfe/classbanita_1_1_transform___module"/>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>banita::Scene</label>
+        <link refid="da/d56/classbanita_1_1_scene"/>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Transform_Module.hpp" line="27" column="1" bodyfile="headers/Transform_Module.hpp" bodystart="26" bodyend="105"/>
+    <listofallmembers>
+      <member refid="df/dfe/classbanita_1_1_transform___module_1a2a1181f23617bb6dfe71e1f7e16945e9" prot="public" virt="virtual"><scope>banita::Transform_Module</scope><name>create_component</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a9a17fbfe0d05359427f2e9cbf956852c" prot="public" virt="non-virtual"><scope>banita::Transform_Module</scope><name>get_name</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1aa2f74f6ba86841383c427199a03b0f9a" prot="public" virt="non-virtual"><scope>banita::Transform_Module</scope><name>get_scene</name></member>
+      <member refid="df/dfe/classbanita_1_1_transform___module_1a6cee3919fd2b22f82c41f056ac87e546" prot="public" virt="virtual"><scope>banita::Transform_Module</scope><name>get_task</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a7d70379d14dcf081cd9370224a5d5fda" prot="protected" virt="non-virtual"><scope>banita::Transform_Module</scope><name>Module</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a5432095b67b68582d293af3a2c106a73" prot="protected" virt="non-virtual"><scope>banita::Transform_Module</scope><name>Module</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a7295535148079c57f3ab6b4e77908cc5" prot="protected" virt="non-virtual"><scope>banita::Transform_Module</scope><name>name</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a10a833e8e5e1d2fb732f1aacaea32f30" prot="protected" virt="non-virtual"><scope>banita::Transform_Module</scope><name>owner</name></member>
+      <member refid="df/dfe/classbanita_1_1_transform___module_1a04d2cffdbd103a21c1c7f1857ca8721d" prot="private" virt="non-virtual"><scope>banita::Transform_Module</scope><name>task</name></member>
+      <member refid="df/dfe/classbanita_1_1_transform___module_1a881143ab58437a85c5d4c02dca1e4336" prot="public" virt="non-virtual"><scope>banita::Transform_Module</scope><name>Transform_Module</name></member>
+      <member refid="df/dfe/classbanita_1_1_transform___module_1aa698fc7ef98d9a075ef0a5dad9fa18ef" prot="public" virt="non-virtual"><scope>banita::Transform_Module</scope><name>Transform_Module</name></member>
+      <member refid="d0/d84/classbanita_1_1_module_1a54299f4573f04a87251805de43f3f3b4" prot="protected" virt="virtual"><scope>banita::Transform_Module</scope><name>~Module</name></member>
+      <member refid="df/dfe/classbanita_1_1_transform___module_1a22ef547c4e2766126a571aeaf4679fc0" prot="public" virt="non-virtual"><scope>banita::Transform_Module</scope><name>~Transform_Module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

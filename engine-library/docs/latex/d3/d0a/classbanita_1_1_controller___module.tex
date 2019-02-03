@@ -1,0 +1,113 @@
+\hypertarget{classbanita_1_1_controller___module}{}\section{banita\+::Controller\+\_\+\+Module Class Reference}
+\label{classbanita_1_1_controller___module}\index{banita::Controller\_Module@{banita::Controller\_Module}}
+
+
+{\ttfamily \#include $<$Controller\+\_\+\+Module.\+hpp$>$}
+
+
+
+Inheritance diagram for banita\+::Controller\+\_\+\+Module\+:
+% FIG 0
+
+
+Collaboration diagram for banita\+::Controller\+\_\+\+Module\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbanita_1_1_controller___module_1_1_controller___factory}{Controller\+\_\+\+Factory}}
+\begin{DoxyCompactList}\small\item\em Factory of the controller module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbanita_1_1_controller___module_a0da114014e41487299db20b99ec15ebe}{Controller\+\_\+\+Module}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_controller___module}{Controller\+\_\+\+Module}} object by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_controller___module_acb21ceec082c7ebd025bedaab1cc7c8e}{Controller\+\_\+\+Module}} (\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$\+\_\+owner)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classbanita_1_1_controller___module}{Controller\+\_\+\+Module}} object in the received scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_controller___module_a0873f454232ce84496bd55fca940c4d4}{$\sim$\+Controller\+\_\+\+Module}} ()
+\item 
+void \mbox{\hyperlink{classbanita_1_1_controller___module_a5176cb9d457c9bd69d6db37b18a79f13}{create\+\_\+component}} (X\+M\+L\+\_\+\+Node $\ast$\+\_\+component\+Node, \mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$\+\_\+entity) override
+\begin{DoxyCompactList}\small\item\em Create a component object by processing the received xml node to the input entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbanita_1_1_task}{Task}} $\ast$ \mbox{\hyperlink{classbanita_1_1_controller___module_a8868454d67a5f949b401c9cfc0a12eba}{get\+\_\+task}} () override
+\begin{DoxyCompactList}\small\item\em Get the task object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbanita_1_1_controller___module_a0da114014e41487299db20b99ec15ebe}\label{classbanita_1_1_controller___module_a0da114014e41487299db20b99ec15ebe}} 
+\index{banita::Controller\_Module@{banita::Controller\_Module}!Controller\_Module@{Controller\_Module}}
+\index{Controller\_Module@{Controller\_Module}!banita::Controller\_Module@{banita::Controller\_Module}}
+\subsubsection{\texorpdfstring{Controller\_Module()}{Controller\_Module()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily banita\+::\+Controller\+\_\+\+Module\+::\+Controller\+\_\+\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_controller___module}{Controller\+\_\+\+Module}} object by default. 
+
+\mbox{\Hypertarget{classbanita_1_1_controller___module_acb21ceec082c7ebd025bedaab1cc7c8e}\label{classbanita_1_1_controller___module_acb21ceec082c7ebd025bedaab1cc7c8e}} 
+\index{banita::Controller\_Module@{banita::Controller\_Module}!Controller\_Module@{Controller\_Module}}
+\index{Controller\_Module@{Controller\_Module}!banita::Controller\_Module@{banita::Controller\_Module}}
+\subsubsection{\texorpdfstring{Controller\_Module()}{Controller\_Module()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily banita\+::\+Controller\+\_\+\+Module\+::\+Controller\+\_\+\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbanita_1_1_scene}{Scene}} $\ast$}]{\+\_\+owner }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classbanita_1_1_controller___module}{Controller\+\_\+\+Module}} object in the received scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+owner} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanita_1_1_controller___module_a0873f454232ce84496bd55fca940c4d4}\label{classbanita_1_1_controller___module_a0873f454232ce84496bd55fca940c4d4}} 
+\index{banita::Controller\_Module@{banita::Controller\_Module}!````~Controller\_Module@{$\sim$Controller\_Module}}
+\index{````~Controller\_Module@{$\sim$Controller\_Module}!banita::Controller\_Module@{banita::Controller\_Module}}
+\subsubsection{\texorpdfstring{$\sim$Controller\_Module()}{~Controller\_Module()}}
+{\footnotesize\ttfamily banita\+::\+Controller\+\_\+\+Module\+::$\sim$\+Controller\+\_\+\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanita_1_1_controller___module_a5176cb9d457c9bd69d6db37b18a79f13}\label{classbanita_1_1_controller___module_a5176cb9d457c9bd69d6db37b18a79f13}} 
+\index{banita::Controller\_Module@{banita::Controller\_Module}!create\_component@{create\_component}}
+\index{create\_component@{create\_component}!banita::Controller\_Module@{banita::Controller\_Module}}
+\subsubsection{\texorpdfstring{create\_component()}{create\_component()}}
+{\footnotesize\ttfamily void banita\+::\+Controller\+\_\+\+Module\+::create\+\_\+component (\begin{DoxyParamCaption}\item[{X\+M\+L\+\_\+\+Node $\ast$}]{\+\_\+component\+Node,  }\item[{\mbox{\hyperlink{classbanita_1_1_entity}{Entity}} $\ast$}]{\+\_\+entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a component object by processing the received xml node to the input entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+component\+Node} & \\
+\hline
+{\em \+\_\+entity} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_module_ace6d7ce15d60044f233d30a43dc961dd}{banita\+::\+Module}}.
+
+\mbox{\Hypertarget{classbanita_1_1_controller___module_a8868454d67a5f949b401c9cfc0a12eba}\label{classbanita_1_1_controller___module_a8868454d67a5f949b401c9cfc0a12eba}} 
+\index{banita::Controller\_Module@{banita::Controller\_Module}!get\_task@{get\_task}}
+\index{get\_task@{get\_task}!banita::Controller\_Module@{banita::Controller\_Module}}
+\subsubsection{\texorpdfstring{get\_task()}{get\_task()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbanita_1_1_task}{Task}}$\ast$ banita\+::\+Controller\+\_\+\+Module\+::get\+\_\+task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the task object. 
+
+\begin{DoxyReturn}{Returns}
+Task$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbanita_1_1_module_a8e29c0b6d7e11a39dac3c0879ef513d9}{banita\+::\+Module}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_controller___module_8hpp}{Controller\+\_\+\+Module.\+hpp}}\end{DoxyCompactItemize}

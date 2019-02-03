@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="db/d15/classbanita_1_1_render___task" kind="class" language="C++" prot="public">
+    <compoundname>banita::Render_Task</compoundname>
+    <basecompoundref refid="d8/dfd/classbanita_1_1_task" prot="public" virt="non-virtual">banita::Task</basecompoundref>
+    <includes refid="db/df5/_render___task_8hpp" local="no">Render_Task.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="db/d15/classbanita_1_1_render___task_1a367b0af5923ab4ca819b8901121cacc7" prot="private" static="no">
+        <type>glt::Render_Node</type>
+        <definition>using banita::Render_Task::Render_Node =  glt::Render_Node</definition>
+        <argsstring></argsstring>
+        <name>Render_Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="24" column="1" bodyfile="headers/Render_Task.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d15/classbanita_1_1_render___task_1ac90f3e16c8bafe5644de67226231a8ab" prot="public" static="no" mutable="no">
+        <type>Render_Node</type>
+        <definition>Render_Node banita::Render_Task::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="29" column="1" bodyfile="headers/Render_Task.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d15/classbanita_1_1_render___task_1a1b8ba204040888c1b9487cd2d08e2e3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Render_Task::Render_Task</definition>
+        <argsstring>(Kernel *_kernel)</argsstring>
+        <name>Render_Task</name>
+        <param>
+          <type><ref refid="d6/d5d/classbanita_1_1_kernel" kindref="compound">Kernel</ref> *</type>
+          <declname>_kernel</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="db/d15/classbanita_1_1_render___task" kindref="compound">Render_Task</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_kernel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d15/classbanita_1_1_render___task_1a556e9242d3cf844f11790daa616e6036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Render_Task::Render_Task</definition>
+        <argsstring>()</argsstring>
+        <name>Render_Task</name>
+        <briefdescription>
+<para>Construct a new <ref refid="db/d15/classbanita_1_1_render___task" kindref="compound">Render_Task</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d15/classbanita_1_1_render___task_1a34f649b5ad434cf7f6bb04604173afed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void banita::Render_Task::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="d8/dfd/classbanita_1_1_task_1a34578cdd41899a338ac09fec3a285487">initialize</reimplements>
+        <briefdescription>
+<para>initialize the members and attributes of this task </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d15/classbanita_1_1_render___task_1a94a8e1921a653ec6da9d1797ad2abcab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void banita::Render_Task::execute</definition>
+        <argsstring>(float _deltaTime) override</argsstring>
+        <name>execute</name>
+        <reimplements refid="d8/dfd/classbanita_1_1_task_1aa79a45c9cbfac80ec9e4f060d5d444aa">execute</reimplements>
+        <param>
+          <type>float</type>
+          <declname>_deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>update the members and attributes of this task </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d15/classbanita_1_1_render___task_1a7518f53ea9050d2312f02ba0389188c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void banita::Render_Task::terminate</definition>
+        <argsstring>() override</argsstring>
+        <name>terminate</name>
+        <reimplements refid="d8/dfd/classbanita_1_1_task_1acccbd449402b1e9ce1ba34c26333a1b6">terminate</reimplements>
+        <briefdescription>
+<para>finalize this task </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d15/classbanita_1_1_render___task_1af909021398c0b93207f2502d172138bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Render_Task::renderize</definition>
+        <argsstring>()</argsstring>
+        <name>renderize</name>
+        <briefdescription>
+<para>renderize the scene by the window and renderer node members </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Render_Task.hpp" line="72" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="113">
+        <label>banita::Render_Task</label>
+        <link refid="db/d15/classbanita_1_1_render___task"/>
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>banita::Task</label>
+        <link refid="d8/dfd/classbanita_1_1_task"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="117">
+        <label>banita::Kernel</label>
+        <link refid="d6/d5d/classbanita_1_1_kernel"/>
+      </node>
+      <node id="115">
+        <label>banita::Render_Task</label>
+        <link refid="db/d15/classbanita_1_1_render___task"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>banita::Task</label>
+        <link refid="d8/dfd/classbanita_1_1_task"/>
+        <childnode refid="117" relation="usage">
+          <edgelabel>kernel</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="headers/Render_Task.hpp" line="23" column="1" bodyfile="headers/Render_Task.hpp" bodystart="22" bodyend="73"/>
+    <listofallmembers>
+      <member refid="d8/dfd/classbanita_1_1_task_1ab0d9e75daff35c07cdb6bea71d0bf605" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>add_component</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1aa0a41413c212ad29bb32bd74d35b0585" prot="protected" virt="non-virtual"><scope>banita::Render_Task</scope><name>components</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1a94a8e1921a653ec6da9d1797ad2abcab" prot="public" virt="virtual"><scope>banita::Render_Task</scope><name>execute</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a5c635a75f1a8b735354d458684838d5b" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>finalize</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1acce4efa4b9ded5502ee9a70093f87855" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>get_kernel</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a8b798d792fefb09525e48eb836a8cbb7" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>get_priority</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1a34f649b5ad434cf7f6bb04604173afed" prot="public" virt="virtual"><scope>banita::Render_Task</scope><name>initialize</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a46dfe5e26db0311f2a4bc7630bc0e2b7" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>is_finished</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ac90bfd55ed4f8f90afa2984218c61433" prot="protected" virt="non-virtual"><scope>banita::Render_Task</scope><name>isFinished</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a6525188adf77e008e70e2b7cae631bd4" prot="protected" virt="non-virtual"><scope>banita::Render_Task</scope><name>kernel</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a475f0812eff764bef68edefc3893df67" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>operator !=</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a2d5f75c11032d7b6a7c4e0697d4434b1" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>operator &gt;</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ae5392bebeb2c9c1e8c83ab1e48446f90" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>operator &gt;=</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ac088e4c87f080fb26dfdfc1ef13f78d6" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>operator&lt;</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a5fe48a7f1fc054c0f2376cf06853253c" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>operator&lt;=</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1af893f3c0cfefa81d9311c2b3532c597c" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>operator==</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ad2bb89f0c32415917e5b336fdcd9fd5d" prot="protected" virt="non-virtual"><scope>banita::Render_Task</scope><name>priority</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1a367b0af5923ab4ca819b8901121cacc7" prot="private" virt="non-virtual"><scope>banita::Render_Task</scope><name>Render_Node</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1a1b8ba204040888c1b9487cd2d08e2e3d" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>Render_Task</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1a556e9242d3cf844f11790daa616e6036" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>Render_Task</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1ac90f3e16c8bafe5644de67226231a8ab" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>renderer</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1af909021398c0b93207f2502d172138bf" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>renderize</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a3727f04d5ac8dcdf3ff41cc0609139e0" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>set_finished</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a2f8babba8f085c5a65b58eaf2f73c121" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>set_kernel</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1a254be860b0f3f3c687b8f52e090de228" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>set_priority</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1ae212c6c6b6f007e953ba8406d82528be" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>Task</name></member>
+      <member refid="d8/dfd/classbanita_1_1_task_1add906131c42cec4d75df03eceeb870e6" prot="public" virt="non-virtual"><scope>banita::Render_Task</scope><name>Task</name></member>
+      <member refid="db/d15/classbanita_1_1_render___task_1a7518f53ea9050d2312f02ba0389188c6" prot="public" virt="virtual"><scope>banita::Render_Task</scope><name>terminate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

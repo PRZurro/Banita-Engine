@@ -1,0 +1,11 @@
+digraph "banita::Render_Module"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="banita::Render_Module",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="banita::Module",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d84/classbanita_1_1_module.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" owner" ,fontname="Helvetica"];
+  Node4 [label="banita::Scene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d56/classbanita_1_1_scene.html",tooltip=" "];
+}

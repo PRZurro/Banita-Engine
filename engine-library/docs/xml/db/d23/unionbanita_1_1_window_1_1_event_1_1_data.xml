@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="db/d23/unionbanita_1_1_window_1_1_event_1_1_data" kind="union" language="C++" prot="public">
+    <compoundname>banita::Window::Event::Data</compoundname>
+    <includes refid="de/d0b/_window_8hpp" local="no">Window.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af75be0b5f21598b666ffb71a636132b1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int banita::Window::Event::Data::key_code</definition>
+        <argsstring></argsstring>
+        <name>key_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="35" column="1" bodyfile="headers/Window.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1adaabd3c433e3fe78c5ed1fd60cf03329" prot="public" static="no" mutable="no">
+        <type>struct banita::Window::Event::Data::@0</type>
+        <definition>struct banita::Window::Event::Data::@0  banita::Window::Event::Data::keyboard</definition>
+        <argsstring></argsstring>
+        <name>keyboard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a44148553673e2932cf2aba87ea2e1628" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float banita::Window::Event::Data::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="39" column="1" bodyfile="headers/Window.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af609919ff8743923782aaa2ad5bf49ab" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float banita::Window::Event::Data::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="39" column="1" bodyfile="headers/Window.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a969635a652537b04a9f59cdc38251f5a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int banita::Window::Event::Data::buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="40" column="1" bodyfile="headers/Window.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a649a0f5f4ffe82edd5243afdd4d5e10b" prot="public" static="no" mutable="no">
+        <type>struct banita::Window::Event::Data::@1</type>
+        <definition>struct banita::Window::Event::Data::@1
+                 banita::Window::Event::Data::mouse</definition>
+        <argsstring></argsstring>
+        <name>mouse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Window.hpp" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Window.hpp" line="34" column="1" bodyfile="headers/Window.hpp" bodystart="33" bodyend="43"/>
+    <listofallmembers>
+      <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a969635a652537b04a9f59cdc38251f5a" prot="public" virt="non-virtual"><scope>banita::Window::Event::Data</scope><name>buttons</name></member>
+      <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af75be0b5f21598b666ffb71a636132b1" prot="public" virt="non-virtual"><scope>banita::Window::Event::Data</scope><name>key_code</name></member>
+      <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1adaabd3c433e3fe78c5ed1fd60cf03329" prot="public" virt="non-virtual"><scope>banita::Window::Event::Data</scope><name>keyboard</name></member>
+      <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a649a0f5f4ffe82edd5243afdd4d5e10b" prot="public" virt="non-virtual"><scope>banita::Window::Event::Data</scope><name>mouse</name></member>
+      <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a44148553673e2932cf2aba87ea2e1628" prot="public" virt="non-virtual"><scope>banita::Window::Event::Data</scope><name>x</name></member>
+      <member refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af609919ff8743923782aaa2ad5bf49ab" prot="public" virt="non-virtual"><scope>banita::Window::Event::Data</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

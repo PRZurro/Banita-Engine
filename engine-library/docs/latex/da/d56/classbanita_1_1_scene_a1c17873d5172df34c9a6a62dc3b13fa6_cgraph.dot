@@ -1,0 +1,10 @@
+digraph "banita::Scene::~Scene"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="banita::Scene::~Scene",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Destroy the Scene object."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="banita::Kernel::stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d5d/classbanita_1_1_kernel.html#aee9ff2e2d1816a4b3c1ef2694034e0ce",tooltip="stop the kernel"];
+}

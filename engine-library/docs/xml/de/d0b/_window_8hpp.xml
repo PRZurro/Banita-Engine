@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="de/d0b/_window_8hpp" kind="file" language="C++">
+    <compoundname>Window.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="db/ddd/_keyboard_8hpp" local="no">Keyboard.hpp</includes>
+    <includes local="no">declarations.hpp</includes>
+    <includedby refid="d0/d8f/_scene_8hpp" local="yes">headers/Scene.hpp</includedby>
+    <incdepgraph>
+      <node id="423">
+        <label>string</label>
+      </node>
+      <node id="426">
+        <label>vector</label>
+      </node>
+      <node id="422">
+        <label>headers/Window.hpp</label>
+        <link refid="de/d0b/_window_8hpp"/>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>declarations.hpp</label>
+      </node>
+      <node id="424">
+        <label>Keyboard.hpp</label>
+        <link refid="db/ddd/_keyboard_8hpp"/>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="432">
+        <label>headers/Component_Generator.hpp</label>
+        <link refid="d2/de4/_component___generator_8hpp"/>
+      </node>
+      <node id="433">
+        <label>headers/Module_Factory_Central.hpp</label>
+        <link refid="da/dc1/_module___factory___central_8hpp"/>
+      </node>
+      <node id="431">
+        <label>headers/Model_Component.hpp</label>
+        <link refid="d0/da4/_model___component_8hpp"/>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>headers/Render_Module.hpp</label>
+        <link refid="de/d59/_render___module_8hpp"/>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>headers/Render_Task.hpp</label>
+        <link refid="db/df5/_render___task_8hpp"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>headers/Scene.hpp</label>
+        <link refid="d0/d8f/_scene_8hpp"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>headers/Window.hpp</label>
+        <link refid="de/d0b/_window_8hpp"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d5/d15/classbanita_1_1_window" prot="public">banita::Window</innerclass>
+    <innerclass refid="d5/ded/structbanita_1_1_window_1_1_event" prot="public">banita::Window::Event</innerclass>
+    <innerclass refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data" prot="public">banita::Window::Event::Data</innerclass>
+    <innernamespace refid="d6/de5/namespacebanita">banita</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>free<sp/>code<sp/>released<sp/>into<sp/>the<sp/>public<sp/>domain.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Drafted<sp/>by<sp/>Ángel<sp/>in<sp/>January<sp/>2019.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>it<sp/>at<sp/>your<sp/>own<sp/>risk.<sp/>It<sp/>might<sp/>have<sp/>bugs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>angel.rodriguez@esne.edu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="db/ddd/_keyboard_8hpp" kindref="compound">Keyboard.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;declarations.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/de5/namespacebanita" kindref="compound">banita</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d5/d15/classbanita_1_1_window" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d15/classbanita_1_1_window" kindref="compound">Window</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d5/ded/structbanita_1_1_window_1_1_event" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d5/ded/structbanita_1_1_window_1_1_event" kindref="compound">Event</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25" refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3" kindref="member">Type</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a65bab3c2fe8ee38573749bba577b5486" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a65bab3c2fe8ee38573749bba577b5486" kindref="member">CLOSE</ref>,</highlight></codeline>
+<codeline lineno="28" refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a2d56fe4635e732f310e356891ea68d41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3a2d56fe4635e732f310e356891ea68d41" kindref="member">KEY_PRESSED</ref>,</highlight></codeline>
+<codeline lineno="29" refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3ab674d26e557bc61004bb4075a8141943" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/ded/structbanita_1_1_window_1_1_event_1a9124fe8193c7ed78b96220363ce692c3ab674d26e557bc61004bb4075a8141943" kindref="member">KEY_RELEASED</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/ded/structbanita_1_1_window_1_1_event_1a465ac3171aa3d833333b37c4d2d5fff7" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data" kindref="compound">Data</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af75be0b5f21598b666ffb71a636132b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af75be0b5f21598b666ffb71a636132b1" kindref="member">key_code</ref>;<sp/>}<sp/><ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1adaabd3c433e3fe78c5ed1fd60cf03329" kindref="member">keyboard</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af609919ff8743923782aaa2ad5bf49ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a44148553673e2932cf2aba87ea2e1628" kindref="member">x</ref>,<sp/><ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1af609919ff8743923782aaa2ad5bf49ab" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="40" refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a969635a652537b04a9f59cdc38251f5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a969635a652537b04a9f59cdc38251f5a" kindref="member">buttons</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d23/unionbanita_1_1_window_1_1_event_1_1_data_1a649a0f5f4ffe82edd5243afdd4d5e10b" kindref="member">mouse</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/ded/structbanita_1_1_window_1_1_event_1a1b8d8286e719931337c294db3fd49b11" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Window<sp/><sp/>*<sp/>window;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_GLContext<sp/>gl_context;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d15/classbanita_1_1_window_1ae0a1e293ad0a06d2c76faffb2ea2584a" kindref="member">Window</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>title,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fullscreen<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d15/classbanita_1_1_window_1a7dc6f77899cbb641225ef36b1ab2f83a" kindref="member">~Window</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d5/d15/classbanita_1_1_window_1a5ff600fc2263ed812abbc9395d7a5dde" kindref="member">get_width</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="d5/d15/classbanita_1_1_window_1a795dd72e44eb07310830aa516d4d9b99" kindref="member">get_height</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/d15/classbanita_1_1_window_1aee3634f0202d871a8fb9cf477cf23a15" kindref="member">poll</ref><sp/>(Event<sp/>&amp;<sp/>event)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d15/classbanita_1_1_window_1ace182aba92f36eeb05a63160b9f269f8" kindref="member">enable_vsync</ref><sp/>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d15/classbanita_1_1_window_1a1fe74bf9ef2333299983ee6198c13f91" kindref="member">disable_vsync</ref><sp/>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d15/classbanita_1_1_window_1a535e8db0d7c55078fb708dcacf1226e8" kindref="member">clear</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d15/classbanita_1_1_window_1a87aa2169094bc025281540a81cfc96a8" kindref="member">swap_buffers</ref><sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="headers/Window.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d8/dc5/classbanita_1_1_component___generator" kind="class" language="C++" prot="public">
+    <compoundname>banita::Component_Generator</compoundname>
+    <includes refid="d2/de4/_component___generator_8hpp" local="no">Component_Generator.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="d8/dc5/classbanita_1_1_component___generator_1a8b2269a65faddcc9d4e63c6ce897977f" prot="private" static="no">
+        <type>std::unordered_map&lt; String, fnComponentGenerator &gt;</type>
+        <definition>using banita::Component_Generator::generatorsMap =  std::unordered_map&lt;String, fnComponentGenerator &gt;</definition>
+        <argsstring></argsstring>
+        <name>generatorsMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="28" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d8/dc5/classbanita_1_1_component___generator_1a42ffeedf4da597714c09110433a04a2a" prot="private" static="yes" mutable="no">
+        <type><ref refid="d8/dc5/classbanita_1_1_component___generator" kindref="compound">Component_Generator</ref> *</type>
+        <definition>Component_Generator* banita::Component_Generator::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="32" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/dc5/classbanita_1_1_component___generator_1a7edb9f12ce6ac20208926f2ee298674a" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; String, generatorsMap &gt;</type>
+        <definition>std::unordered_map&lt;String, generatorsMap&gt; banita::Component_Generator::mapOfGeneratorMaps</definition>
+        <argsstring></argsstring>
+        <name>mapOfGeneratorMaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="35" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dc5/classbanita_1_1_component___generator_1a5380e3ea4676775c3dfe080bfa3b962c" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; String, fnControllerComponentGenerator &gt;</type>
+        <definition>std::unordered_map&lt;String, fnControllerComponentGenerator&gt; banita::Component_Generator::controllerGenerators</definition>
+        <argsstring></argsstring>
+        <name>controllerGenerators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="37" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Component_Generator::Component_Generator</definition>
+        <argsstring>()</argsstring>
+        <name>Component_Generator</name>
+        <briefdescription>
+<para>Construct a new <ref refid="d8/dc5/classbanita_1_1_component___generator" kindref="compound">Component_Generator</ref> object. Currently doing a unintended step in order to register new component. Each component should auto-register invoking this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="46" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="46" bodyend="53"/>
+        <references refid="d8/dc5/classbanita_1_1_component___generator_1a6c94801a7c5c3eb6aedc0c97bf786b39" compoundref="d2/de4/_component___generator_8hpp" startline="80" endline="83">register_component_generator</references>
+        <references refid="d8/de9/classbanita_1_1_transform___component_1a52942de64acefae0655fb17a71add8f3" compoundref="d1/d74/_transform___component_8hpp" startline="388" endline="391">banita::Transform_Component::generator</references>
+        <references refid="d8/d6f/classbanita_1_1_camera___component_1a91756a8ab968d38dae63a2c688d47221" compoundref="dd/dd5/_camera___component_8hpp" startline="103" endline="106">banita::Camera_Component::generator</references>
+        <references refid="de/d14/classbanita_1_1_light___component_1acc13089b837daf1b1751c3dca81fa798" compoundref="df/dc8/_light___component_8hpp" startline="117" endline="120">banita::Light_Component::generator</references>
+        <references refid="d1/d27/classbanita_1_1_model___component_1a4a5d4212e321577342bc1a8f4c997ca9" compoundref="d0/da4/_model___component_8hpp" startline="102" endline="105">banita::Model_Component::generator</references>
+        <references refid="d8/dc5/classbanita_1_1_component___generator_1af81270da5efa804c17285d1a6ffc861f" compoundref="d2/de4/_component___generator_8hpp" startline="92" endline="95">register_controller</references>
+        <references refid="dc/d66/classbanita_1_1_player___controller_1a0596cf1ee132d70f8f7eabfb3be2cfbc" compoundref="d7/d1e/_player___controller_8hpp" startline="37" endline="41">banita::Player_Controller::generator</references>
+        <referencedby refid="d8/dc5/classbanita_1_1_component___generator_1a58161267b33b3a6e67edfed079196ebd" compoundref="d2/de4/_component___generator_8hpp" startline="105" endline="111">get_instance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1a7d43e1dbee3a0addf85bd96422bef52d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>banita::Component_Generator::~Component_Generator</definition>
+        <argsstring>()</argsstring>
+        <name>~Component_Generator</name>
+        <briefdescription>
+<para>Destroy the <ref refid="d8/dc5/classbanita_1_1_component___generator" kindref="compound">Component_Generator</ref> object and it&apos;s maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="59" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="59" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1a6c94801a7c5c3eb6aedc0c97bf786b39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fnComponentGenerator</type>
+        <definition>fnComponentGenerator banita::Component_Generator::register_component_generator</definition>
+        <argsstring>(String _module, String _type, fnComponentGenerator _generator)</argsstring>
+        <name>register_component_generator</name>
+        <param>
+          <type>String</type>
+          <declname>_module</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>fnComponentGenerator</type>
+          <declname>_generator</declname>
+        </param>
+        <briefdescription>
+<para>register a new component generator function pointer </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_module</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_generator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the component generator function pointer that receives </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="80" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="80" bodyend="83"/>
+        <referencedby refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" compoundref="d2/de4/_component___generator_8hpp" startline="46" endline="53">Component_Generator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1af81270da5efa804c17285d1a6ffc861f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fnControllerComponentGenerator</type>
+        <definition>fnControllerComponentGenerator banita::Component_Generator::register_controller</definition>
+        <argsstring>(String _type, fnControllerComponentGenerator _generator)</argsstring>
+        <name>register_controller</name>
+        <param>
+          <type>String</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>fnControllerComponentGenerator</type>
+          <declname>_generator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_generator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the controller function pointer that receives </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="92" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="92" bodyend="95"/>
+        <referencedby refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" compoundref="d2/de4/_component___generator_8hpp" startline="46" endline="53">Component_Generator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1a607e2c3ac5e7f0b8d419e610d419f3a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fnControllerComponentGenerator</type>
+        <definition>fnControllerComponentGenerator banita::Component_Generator::get_controller</definition>
+        <argsstring>(String _type)</argsstring>
+        <name>get_controller</name>
+        <param>
+          <type>String</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+<para>Get the controller generator function pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fnControllerComponentGenerator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="119" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1ad8a76cb6dfb2b8667d412b0b014ca75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>fnComponentGenerator</type>
+        <definition>fnComponentGenerator banita::Component_Generator::get_component_generator</definition>
+        <argsstring>(String _module, String _type)</argsstring>
+        <name>get_component_generator</name>
+        <param>
+          <type>String</type>
+          <declname>_module</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+<para>Get the component generator function pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_module</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fnComponentGenerator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1a026cadc610c5c75a911ed1299047190a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fnControllerComponentGenerator</type>
+        <definition>fnControllerComponentGenerator banita::Component_Generator::get_controller_generator</definition>
+        <argsstring>(String _type)</argsstring>
+        <name>get_controller_generator</name>
+        <param>
+          <type>String</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+<para>Get the controller generator function pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fnControllerComponentGenerator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="144" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d8/dc5/classbanita_1_1_component___generator_1a58161267b33b3a6e67edfed079196ebd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d8/dc5/classbanita_1_1_component___generator" kindref="compound">Component_Generator</ref> *</type>
+        <definition>static Component_Generator* banita::Component_Generator::get_instance</definition>
+        <argsstring>()</argsstring>
+        <name>get_instance</name>
+        <briefdescription>
+<para>Get the instance object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Component_Generator* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Component_Generator.hpp" line="105" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="105" bodyend="111"/>
+        <references refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" compoundref="d2/de4/_component___generator_8hpp" startline="46" endline="53">Component_Generator</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Component_Generator.hpp" line="27" column="1" bodyfile="headers/Component_Generator.hpp" bodystart="26" bodyend="148"/>
+    <listofallmembers>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a2eeb40bd9675d0c1828de601324c503d" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>Component_Generator</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a5380e3ea4676775c3dfe080bfa3b962c" prot="private" virt="non-virtual"><scope>banita::Component_Generator</scope><name>controllerGenerators</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a8b2269a65faddcc9d4e63c6ce897977f" prot="private" virt="non-virtual"><scope>banita::Component_Generator</scope><name>generatorsMap</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1ad8a76cb6dfb2b8667d412b0b014ca75d" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>get_component_generator</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a607e2c3ac5e7f0b8d419e610d419f3a6" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>get_controller</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a026cadc610c5c75a911ed1299047190a" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>get_controller_generator</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a58161267b33b3a6e67edfed079196ebd" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>get_instance</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a42ffeedf4da597714c09110433a04a2a" prot="private" virt="non-virtual"><scope>banita::Component_Generator</scope><name>instance</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a7edb9f12ce6ac20208926f2ee298674a" prot="private" virt="non-virtual"><scope>banita::Component_Generator</scope><name>mapOfGeneratorMaps</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a6c94801a7c5c3eb6aedc0c97bf786b39" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>register_component_generator</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1af81270da5efa804c17285d1a6ffc861f" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>register_controller</name></member>
+      <member refid="d8/dc5/classbanita_1_1_component___generator_1a7d43e1dbee3a0addf85bd96422bef52d" prot="public" virt="non-virtual"><scope>banita::Component_Generator</scope><name>~Component_Generator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

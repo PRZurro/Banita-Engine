@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="de/d36/classbanita_1_1_sample___renderer" kind="class" language="C++" prot="public">
+    <compoundname>banita::Sample_Renderer</compoundname>
+    <includes refid="d5/d6c/_sample___renderer_8hpp" local="no">Sample_Renderer.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d36/classbanita_1_1_sample___renderer_1a5794fc5bff339ec9a473246cc0aae534" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; glt::Render_Node &gt;</type>
+        <definition>std::unique_ptr&lt; glt::Render_Node &gt; banita::Sample_Renderer::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Sample_Renderer.hpp" line="25" column="1" bodyfile="headers/Sample_Renderer.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d36/classbanita_1_1_sample___renderer_1a447866e31f4a8ca8e93858b7f6c81f87" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d15/classbanita_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>Window* banita::Sample_Renderer::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Sample_Renderer.hpp" line="27" column="1" bodyfile="headers/Sample_Renderer.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d36/classbanita_1_1_sample___renderer_1a73aa68cac1111711f074bdadfde96c2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Sample_Renderer::Sample_Renderer</definition>
+        <argsstring>(Window &amp;given_window)</argsstring>
+        <name>Sample_Renderer</name>
+        <param>
+          <type><ref refid="d5/d15/classbanita_1_1_window" kindref="compound">Window</ref> &amp;</type>
+          <declname>given_window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Sample_Renderer.hpp" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d36/classbanita_1_1_sample___renderer_1a6e8c46345456cc3975348b2d79924183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>banita::Sample_Renderer::~Sample_Renderer</definition>
+        <argsstring>()</argsstring>
+        <name>~Sample_Renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>En este caso es necesario definir explícitamente el destructor en el archivo de implementación (CPP) para que el compilador pueda destruir el Render_Node. Si se deja que el compilador cree un destructor por defecto en el programa que use el engine, como solo tendrá una declaración adelantada, no sabrá cómo destruirlo y ello dará lugar a un error de compilación. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Sample_Renderer.hpp" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d36/classbanita_1_1_sample___renderer_1aa4b50327809ca20efcfda16117f237d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void banita::Sample_Renderer::render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="headers/Sample_Renderer.hpp" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="headers/Sample_Renderer.hpp" line="19" column="1" bodyfile="headers/Sample_Renderer.hpp" bodystart="18" bodyend="43"/>
+    <listofallmembers>
+      <member refid="de/d36/classbanita_1_1_sample___renderer_1aa4b50327809ca20efcfda16117f237d1" prot="public" virt="non-virtual"><scope>banita::Sample_Renderer</scope><name>render</name></member>
+      <member refid="de/d36/classbanita_1_1_sample___renderer_1a5794fc5bff339ec9a473246cc0aae534" prot="private" virt="non-virtual"><scope>banita::Sample_Renderer</scope><name>renderer</name></member>
+      <member refid="de/d36/classbanita_1_1_sample___renderer_1a73aa68cac1111711f074bdadfde96c2f" prot="public" virt="non-virtual"><scope>banita::Sample_Renderer</scope><name>Sample_Renderer</name></member>
+      <member refid="de/d36/classbanita_1_1_sample___renderer_1a447866e31f4a8ca8e93858b7f6c81f87" prot="private" virt="non-virtual"><scope>banita::Sample_Renderer</scope><name>window</name></member>
+      <member refid="de/d36/classbanita_1_1_sample___renderer_1a6e8c46345456cc3975348b2d79924183" prot="public" virt="non-virtual"><scope>banita::Sample_Renderer</scope><name>~Sample_Renderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
